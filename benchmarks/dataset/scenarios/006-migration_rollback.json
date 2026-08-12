@@ -1,0 +1,302 @@
+{
+  "id": "migration_rollback",
+  "query": "What evidence supports the current migration rollback decision?",
+  "current_state": "migration_rollback_current",
+  "required_fact_ids": [
+    "migration_rollback:F3",
+    "migration_rollback:F2"
+  ],
+  "states": [
+    {
+      "id": "migration_rollback_a",
+      "sequence_index": 0,
+      "content": "migration rollback a decision and evidence",
+      "depends_on": [],
+      "facts": [
+        "migration_rollback:F0"
+      ]
+    },
+    {
+      "id": "migration_rollback_b",
+      "sequence_index": 1,
+      "content": "migration rollback b decision and evidence",
+      "depends_on": [
+        "migration_rollback_a"
+      ],
+      "facts": [
+        "migration_rollback:F1"
+      ]
+    },
+    {
+      "id": "migration_rollback_c",
+      "sequence_index": 2,
+      "content": "migration rollback c decision and evidence",
+      "depends_on": [
+        "migration_rollback_a"
+      ],
+      "facts": [
+        "migration_rollback:F2"
+      ]
+    },
+    {
+      "id": "migration_rollback_merge",
+      "sequence_index": 3,
+      "content": "migration rollback merge decision and evidence",
+      "depends_on": [
+        "migration_rollback_b",
+        "migration_rollback_c"
+      ],
+      "facts": [
+        "migration_rollback:F3"
+      ]
+    },
+    {
+      "id": "migration_rollback_parallel_0",
+      "sequence_index": 5,
+      "content": "parallel unrelated migration_rollback workstream 0 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "migration_rollback:N0"
+      ]
+    },
+    {
+      "id": "migration_rollback_parallel_1",
+      "sequence_index": 6,
+      "content": "parallel unrelated migration_rollback workstream 1 distractor detail",
+      "depends_on": [
+        "migration_rollback_parallel_0"
+      ],
+      "facts": [
+        "migration_rollback:N1"
+      ]
+    },
+    {
+      "id": "migration_rollback_parallel_2",
+      "sequence_index": 7,
+      "content": "parallel unrelated migration_rollback workstream 2 distractor detail",
+      "depends_on": [
+        "migration_rollback_parallel_1"
+      ],
+      "facts": [
+        "migration_rollback:N2"
+      ]
+    },
+    {
+      "id": "migration_rollback_parallel_3",
+      "sequence_index": 8,
+      "content": "parallel unrelated migration_rollback workstream 3 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "migration_rollback:N3"
+      ]
+    },
+    {
+      "id": "migration_rollback_parallel_4",
+      "sequence_index": 9,
+      "content": "parallel unrelated migration_rollback workstream 4 distractor detail",
+      "depends_on": [
+        "migration_rollback_parallel_3"
+      ],
+      "facts": [
+        "migration_rollback:N4"
+      ]
+    },
+    {
+      "id": "migration_rollback_parallel_5",
+      "sequence_index": 10,
+      "content": "parallel unrelated migration_rollback workstream 5 distractor detail",
+      "depends_on": [
+        "migration_rollback_parallel_4"
+      ],
+      "facts": [
+        "migration_rollback:N5"
+      ]
+    },
+    {
+      "id": "migration_rollback_parallel_6",
+      "sequence_index": 11,
+      "content": "parallel unrelated migration_rollback workstream 6 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "migration_rollback:N6"
+      ]
+    },
+    {
+      "id": "migration_rollback_parallel_7",
+      "sequence_index": 12,
+      "content": "parallel unrelated migration_rollback workstream 7 distractor detail",
+      "depends_on": [
+        "migration_rollback_parallel_6"
+      ],
+      "facts": [
+        "migration_rollback:N7"
+      ]
+    },
+    {
+      "id": "migration_rollback_parallel_8",
+      "sequence_index": 13,
+      "content": "parallel unrelated migration_rollback workstream 8 distractor detail",
+      "depends_on": [
+        "migration_rollback_parallel_7"
+      ],
+      "facts": [
+        "migration_rollback:N8"
+      ]
+    },
+    {
+      "id": "migration_rollback_parallel_9",
+      "sequence_index": 14,
+      "content": "parallel unrelated migration_rollback workstream 9 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "migration_rollback:N9"
+      ]
+    },
+    {
+      "id": "migration_rollback_parallel_10",
+      "sequence_index": 15,
+      "content": "parallel unrelated migration_rollback workstream 10 distractor detail",
+      "depends_on": [
+        "migration_rollback_parallel_9"
+      ],
+      "facts": [
+        "migration_rollback:N10"
+      ]
+    },
+    {
+      "id": "migration_rollback_parallel_11",
+      "sequence_index": 16,
+      "content": "parallel unrelated migration_rollback workstream 11 distractor detail",
+      "depends_on": [
+        "migration_rollback_parallel_10"
+      ],
+      "facts": [
+        "migration_rollback:N11"
+      ]
+    },
+    {
+      "id": "migration_rollback_parallel_12",
+      "sequence_index": 17,
+      "content": "parallel unrelated migration_rollback workstream 12 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "migration_rollback:N12"
+      ]
+    },
+    {
+      "id": "migration_rollback_parallel_13",
+      "sequence_index": 18,
+      "content": "parallel unrelated migration_rollback workstream 13 distractor detail",
+      "depends_on": [
+        "migration_rollback_parallel_12"
+      ],
+      "facts": [
+        "migration_rollback:N13"
+      ]
+    },
+    {
+      "id": "migration_rollback_parallel_14",
+      "sequence_index": 19,
+      "content": "parallel unrelated migration_rollback workstream 14 distractor detail",
+      "depends_on": [
+        "migration_rollback_parallel_13"
+      ],
+      "facts": [
+        "migration_rollback:N14"
+      ]
+    },
+    {
+      "id": "migration_rollback_parallel_15",
+      "sequence_index": 20,
+      "content": "parallel unrelated migration_rollback workstream 15 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "migration_rollback:N15"
+      ]
+    },
+    {
+      "id": "migration_rollback_parallel_16",
+      "sequence_index": 21,
+      "content": "parallel unrelated migration_rollback workstream 16 distractor detail",
+      "depends_on": [
+        "migration_rollback_parallel_15"
+      ],
+      "facts": [
+        "migration_rollback:N16"
+      ]
+    },
+    {
+      "id": "migration_rollback_parallel_17",
+      "sequence_index": 22,
+      "content": "parallel unrelated migration_rollback workstream 17 distractor detail",
+      "depends_on": [
+        "migration_rollback_parallel_16"
+      ],
+      "facts": [
+        "migration_rollback:N17"
+      ]
+    },
+    {
+      "id": "migration_rollback_parallel_18",
+      "sequence_index": 23,
+      "content": "parallel unrelated migration_rollback workstream 18 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "migration_rollback:N18"
+      ]
+    },
+    {
+      "id": "migration_rollback_parallel_19",
+      "sequence_index": 24,
+      "content": "parallel unrelated migration_rollback workstream 19 distractor detail",
+      "depends_on": [
+        "migration_rollback_parallel_18"
+      ],
+      "facts": [
+        "migration_rollback:N19"
+      ]
+    },
+    {
+      "id": "migration_rollback_parallel_20",
+      "sequence_index": 25,
+      "content": "parallel unrelated migration_rollback workstream 20 distractor detail",
+      "depends_on": [
+        "migration_rollback_parallel_19"
+      ],
+      "facts": [
+        "migration_rollback:N20"
+      ]
+    },
+    {
+      "id": "migration_rollback_parallel_21",
+      "sequence_index": 26,
+      "content": "parallel unrelated migration_rollback workstream 21 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "migration_rollback:N21"
+      ]
+    },
+    {
+      "id": "migration_rollback_parallel_22",
+      "sequence_index": 27,
+      "content": "parallel unrelated migration_rollback workstream 22 distractor detail",
+      "depends_on": [
+        "migration_rollback_parallel_21"
+      ],
+      "facts": [
+        "migration_rollback:N22"
+      ]
+    },
+    {
+      "id": "migration_rollback_current",
+      "sequence_index": 28,
+      "content": "migration rollback current decision and evidence",
+      "depends_on": [
+        "migration_rollback_merge"
+      ],
+      "facts": [
+        "migration_rollback:F4"
+      ]
+    }
+  ]
+}

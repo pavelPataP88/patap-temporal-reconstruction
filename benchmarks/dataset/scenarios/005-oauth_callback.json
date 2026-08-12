@@ -1,0 +1,280 @@
+{
+  "id": "oauth_callback",
+  "query": "What evidence supports the current oauth callback decision?",
+  "current_state": "oauth_callback_current",
+  "required_fact_ids": [
+    "oauth_callback:F2",
+    "oauth_callback:F1"
+  ],
+  "states": [
+    {
+      "id": "oauth_callback_policy",
+      "sequence_index": 0,
+      "content": "oauth callback policy decision and evidence",
+      "depends_on": [],
+      "facts": [
+        "oauth_callback:F0"
+      ]
+    },
+    {
+      "id": "oauth_callback_validator",
+      "sequence_index": 1,
+      "content": "oauth callback validator decision and evidence",
+      "depends_on": [
+        "oauth_callback_policy"
+      ],
+      "facts": [
+        "oauth_callback:F1"
+      ]
+    },
+    {
+      "id": "oauth_callback_tests",
+      "sequence_index": 2,
+      "content": "oauth callback tests decision and evidence",
+      "depends_on": [
+        "oauth_callback_validator"
+      ],
+      "facts": [
+        "oauth_callback:F2"
+      ]
+    },
+    {
+      "id": "oauth_callback_parallel_0",
+      "sequence_index": 4,
+      "content": "parallel unrelated oauth_callback workstream 0 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "oauth_callback:N0"
+      ]
+    },
+    {
+      "id": "oauth_callback_parallel_1",
+      "sequence_index": 5,
+      "content": "parallel unrelated oauth_callback workstream 1 distractor detail",
+      "depends_on": [
+        "oauth_callback_parallel_0"
+      ],
+      "facts": [
+        "oauth_callback:N1"
+      ]
+    },
+    {
+      "id": "oauth_callback_parallel_2",
+      "sequence_index": 6,
+      "content": "parallel unrelated oauth_callback workstream 2 distractor detail",
+      "depends_on": [
+        "oauth_callback_parallel_1"
+      ],
+      "facts": [
+        "oauth_callback:N2"
+      ]
+    },
+    {
+      "id": "oauth_callback_parallel_3",
+      "sequence_index": 7,
+      "content": "parallel unrelated oauth_callback workstream 3 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "oauth_callback:N3"
+      ]
+    },
+    {
+      "id": "oauth_callback_parallel_4",
+      "sequence_index": 8,
+      "content": "parallel unrelated oauth_callback workstream 4 distractor detail",
+      "depends_on": [
+        "oauth_callback_parallel_3"
+      ],
+      "facts": [
+        "oauth_callback:N4"
+      ]
+    },
+    {
+      "id": "oauth_callback_parallel_5",
+      "sequence_index": 9,
+      "content": "parallel unrelated oauth_callback workstream 5 distractor detail",
+      "depends_on": [
+        "oauth_callback_parallel_4"
+      ],
+      "facts": [
+        "oauth_callback:N5"
+      ]
+    },
+    {
+      "id": "oauth_callback_parallel_6",
+      "sequence_index": 10,
+      "content": "parallel unrelated oauth_callback workstream 6 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "oauth_callback:N6"
+      ]
+    },
+    {
+      "id": "oauth_callback_parallel_7",
+      "sequence_index": 11,
+      "content": "parallel unrelated oauth_callback workstream 7 distractor detail",
+      "depends_on": [
+        "oauth_callback_parallel_6"
+      ],
+      "facts": [
+        "oauth_callback:N7"
+      ]
+    },
+    {
+      "id": "oauth_callback_parallel_8",
+      "sequence_index": 12,
+      "content": "parallel unrelated oauth_callback workstream 8 distractor detail",
+      "depends_on": [
+        "oauth_callback_parallel_7"
+      ],
+      "facts": [
+        "oauth_callback:N8"
+      ]
+    },
+    {
+      "id": "oauth_callback_parallel_9",
+      "sequence_index": 13,
+      "content": "parallel unrelated oauth_callback workstream 9 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "oauth_callback:N9"
+      ]
+    },
+    {
+      "id": "oauth_callback_parallel_10",
+      "sequence_index": 14,
+      "content": "parallel unrelated oauth_callback workstream 10 distractor detail",
+      "depends_on": [
+        "oauth_callback_parallel_9"
+      ],
+      "facts": [
+        "oauth_callback:N10"
+      ]
+    },
+    {
+      "id": "oauth_callback_parallel_11",
+      "sequence_index": 15,
+      "content": "parallel unrelated oauth_callback workstream 11 distractor detail",
+      "depends_on": [
+        "oauth_callback_parallel_10"
+      ],
+      "facts": [
+        "oauth_callback:N11"
+      ]
+    },
+    {
+      "id": "oauth_callback_parallel_12",
+      "sequence_index": 16,
+      "content": "parallel unrelated oauth_callback workstream 12 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "oauth_callback:N12"
+      ]
+    },
+    {
+      "id": "oauth_callback_parallel_13",
+      "sequence_index": 17,
+      "content": "parallel unrelated oauth_callback workstream 13 distractor detail",
+      "depends_on": [
+        "oauth_callback_parallel_12"
+      ],
+      "facts": [
+        "oauth_callback:N13"
+      ]
+    },
+    {
+      "id": "oauth_callback_parallel_14",
+      "sequence_index": 18,
+      "content": "parallel unrelated oauth_callback workstream 14 distractor detail",
+      "depends_on": [
+        "oauth_callback_parallel_13"
+      ],
+      "facts": [
+        "oauth_callback:N14"
+      ]
+    },
+    {
+      "id": "oauth_callback_parallel_15",
+      "sequence_index": 19,
+      "content": "parallel unrelated oauth_callback workstream 15 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "oauth_callback:N15"
+      ]
+    },
+    {
+      "id": "oauth_callback_parallel_16",
+      "sequence_index": 20,
+      "content": "parallel unrelated oauth_callback workstream 16 distractor detail",
+      "depends_on": [
+        "oauth_callback_parallel_15"
+      ],
+      "facts": [
+        "oauth_callback:N16"
+      ]
+    },
+    {
+      "id": "oauth_callback_parallel_17",
+      "sequence_index": 21,
+      "content": "parallel unrelated oauth_callback workstream 17 distractor detail",
+      "depends_on": [
+        "oauth_callback_parallel_16"
+      ],
+      "facts": [
+        "oauth_callback:N17"
+      ]
+    },
+    {
+      "id": "oauth_callback_parallel_18",
+      "sequence_index": 22,
+      "content": "parallel unrelated oauth_callback workstream 18 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "oauth_callback:N18"
+      ]
+    },
+    {
+      "id": "oauth_callback_parallel_19",
+      "sequence_index": 23,
+      "content": "parallel unrelated oauth_callback workstream 19 distractor detail",
+      "depends_on": [
+        "oauth_callback_parallel_18"
+      ],
+      "facts": [
+        "oauth_callback:N19"
+      ]
+    },
+    {
+      "id": "oauth_callback_parallel_20",
+      "sequence_index": 24,
+      "content": "parallel unrelated oauth_callback workstream 20 distractor detail",
+      "depends_on": [
+        "oauth_callback_parallel_19"
+      ],
+      "facts": [
+        "oauth_callback:N20"
+      ]
+    },
+    {
+      "id": "oauth_callback_parallel_21",
+      "sequence_index": 25,
+      "content": "parallel unrelated oauth_callback workstream 21 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "oauth_callback:N21"
+      ]
+    },
+    {
+      "id": "oauth_callback_current",
+      "sequence_index": 26,
+      "content": "oauth callback current decision and evidence",
+      "depends_on": [
+        "oauth_callback_validator",
+        "oauth_callback_tests"
+      ],
+      "facts": [
+        "oauth_callback:F3"
+      ]
+    }
+  ]
+}

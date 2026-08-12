@@ -123,6 +123,12 @@ class PATAPTests(unittest.TestCase):
         self.assertEqual(graph.get_state("A").data, {"kind": "artifact"})
         self.assertEqual(graph.get_state("A").evidence, ["record"])
 
+    def test_public_state_snapshot_deep_copies_nested_data(self):
+        graph = PATAP().add_state("A", data={"config": {"roles": ["admin", "user"]}})
+        snapshot = graph.get_state("A")
+        snapshot.data["config"]["roles"].append("auditor")
+        self.assertEqual(graph.get_state("A").data["config"]["roles"], ["admin", "user"])
+
 
 if __name__ == "__main__":
     unittest.main()

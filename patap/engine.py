@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 from collections import defaultdict
+from copy import deepcopy
 from typing import Any, Iterable
 
 from .models import State
@@ -75,8 +76,8 @@ class PATAP:
         return State(
             state.id,
             set(state.records),
-            dict(state.data) if state.data is not None else None,
-            list(state.evidence) if state.evidence is not None else None,
+            deepcopy(state.data),
+            deepcopy(state.evidence),
         )
 
     def _parents(self) -> dict[str, set[str]]:

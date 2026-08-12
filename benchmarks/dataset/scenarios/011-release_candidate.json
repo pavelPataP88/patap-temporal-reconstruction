@@ -1,0 +1,271 @@
+{
+  "id": "release_candidate",
+  "query": "What evidence supports the current release candidate decision?",
+  "current_state": "release_candidate_current",
+  "required_fact_ids": [
+    "release_candidate:F3",
+    "release_candidate:F2"
+  ],
+  "states": [
+    {
+      "id": "release_candidate_spec",
+      "sequence_index": 0,
+      "content": "release candidate spec decision and evidence",
+      "depends_on": [],
+      "facts": [
+        "release_candidate:F0"
+      ]
+    },
+    {
+      "id": "release_candidate_module_a",
+      "sequence_index": 1,
+      "content": "release candidate module_a decision and evidence",
+      "depends_on": [
+        "release_candidate_spec"
+      ],
+      "facts": [
+        "release_candidate:F1"
+      ]
+    },
+    {
+      "id": "release_candidate_module_b",
+      "sequence_index": 2,
+      "content": "release candidate module_b decision and evidence",
+      "depends_on": [
+        "release_candidate_spec"
+      ],
+      "facts": [
+        "release_candidate:F2"
+      ]
+    },
+    {
+      "id": "release_candidate_module_c",
+      "sequence_index": 3,
+      "content": "release candidate module_c decision and evidence",
+      "depends_on": [
+        "release_candidate_spec"
+      ],
+      "facts": [
+        "release_candidate:F3"
+      ]
+    },
+    {
+      "id": "release_candidate_parallel_0",
+      "sequence_index": 5,
+      "content": "parallel unrelated release_candidate workstream 0 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "release_candidate:N0"
+      ]
+    },
+    {
+      "id": "release_candidate_parallel_1",
+      "sequence_index": 6,
+      "content": "parallel unrelated release_candidate workstream 1 distractor detail",
+      "depends_on": [
+        "release_candidate_parallel_0"
+      ],
+      "facts": [
+        "release_candidate:N1"
+      ]
+    },
+    {
+      "id": "release_candidate_parallel_2",
+      "sequence_index": 7,
+      "content": "parallel unrelated release_candidate workstream 2 distractor detail",
+      "depends_on": [
+        "release_candidate_parallel_1"
+      ],
+      "facts": [
+        "release_candidate:N2"
+      ]
+    },
+    {
+      "id": "release_candidate_parallel_3",
+      "sequence_index": 8,
+      "content": "parallel unrelated release_candidate workstream 3 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "release_candidate:N3"
+      ]
+    },
+    {
+      "id": "release_candidate_parallel_4",
+      "sequence_index": 9,
+      "content": "parallel unrelated release_candidate workstream 4 distractor detail",
+      "depends_on": [
+        "release_candidate_parallel_3"
+      ],
+      "facts": [
+        "release_candidate:N4"
+      ]
+    },
+    {
+      "id": "release_candidate_parallel_5",
+      "sequence_index": 10,
+      "content": "parallel unrelated release_candidate workstream 5 distractor detail",
+      "depends_on": [
+        "release_candidate_parallel_4"
+      ],
+      "facts": [
+        "release_candidate:N5"
+      ]
+    },
+    {
+      "id": "release_candidate_parallel_6",
+      "sequence_index": 11,
+      "content": "parallel unrelated release_candidate workstream 6 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "release_candidate:N6"
+      ]
+    },
+    {
+      "id": "release_candidate_parallel_7",
+      "sequence_index": 12,
+      "content": "parallel unrelated release_candidate workstream 7 distractor detail",
+      "depends_on": [
+        "release_candidate_parallel_6"
+      ],
+      "facts": [
+        "release_candidate:N7"
+      ]
+    },
+    {
+      "id": "release_candidate_parallel_8",
+      "sequence_index": 13,
+      "content": "parallel unrelated release_candidate workstream 8 distractor detail",
+      "depends_on": [
+        "release_candidate_parallel_7"
+      ],
+      "facts": [
+        "release_candidate:N8"
+      ]
+    },
+    {
+      "id": "release_candidate_parallel_9",
+      "sequence_index": 14,
+      "content": "parallel unrelated release_candidate workstream 9 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "release_candidate:N9"
+      ]
+    },
+    {
+      "id": "release_candidate_parallel_10",
+      "sequence_index": 15,
+      "content": "parallel unrelated release_candidate workstream 10 distractor detail",
+      "depends_on": [
+        "release_candidate_parallel_9"
+      ],
+      "facts": [
+        "release_candidate:N10"
+      ]
+    },
+    {
+      "id": "release_candidate_parallel_11",
+      "sequence_index": 16,
+      "content": "parallel unrelated release_candidate workstream 11 distractor detail",
+      "depends_on": [
+        "release_candidate_parallel_10"
+      ],
+      "facts": [
+        "release_candidate:N11"
+      ]
+    },
+    {
+      "id": "release_candidate_parallel_12",
+      "sequence_index": 17,
+      "content": "parallel unrelated release_candidate workstream 12 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "release_candidate:N12"
+      ]
+    },
+    {
+      "id": "release_candidate_parallel_13",
+      "sequence_index": 18,
+      "content": "parallel unrelated release_candidate workstream 13 distractor detail",
+      "depends_on": [
+        "release_candidate_parallel_12"
+      ],
+      "facts": [
+        "release_candidate:N13"
+      ]
+    },
+    {
+      "id": "release_candidate_parallel_14",
+      "sequence_index": 19,
+      "content": "parallel unrelated release_candidate workstream 14 distractor detail",
+      "depends_on": [
+        "release_candidate_parallel_13"
+      ],
+      "facts": [
+        "release_candidate:N14"
+      ]
+    },
+    {
+      "id": "release_candidate_parallel_15",
+      "sequence_index": 20,
+      "content": "parallel unrelated release_candidate workstream 15 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "release_candidate:N15"
+      ]
+    },
+    {
+      "id": "release_candidate_parallel_16",
+      "sequence_index": 21,
+      "content": "parallel unrelated release_candidate workstream 16 distractor detail",
+      "depends_on": [
+        "release_candidate_parallel_15"
+      ],
+      "facts": [
+        "release_candidate:N16"
+      ]
+    },
+    {
+      "id": "release_candidate_parallel_17",
+      "sequence_index": 22,
+      "content": "parallel unrelated release_candidate workstream 17 distractor detail",
+      "depends_on": [
+        "release_candidate_parallel_16"
+      ],
+      "facts": [
+        "release_candidate:N17"
+      ]
+    },
+    {
+      "id": "release_candidate_parallel_18",
+      "sequence_index": 23,
+      "content": "parallel unrelated release_candidate workstream 18 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "release_candidate:N18"
+      ]
+    },
+    {
+      "id": "release_candidate_parallel_19",
+      "sequence_index": 24,
+      "content": "parallel unrelated release_candidate workstream 19 distractor detail",
+      "depends_on": [
+        "release_candidate_parallel_18"
+      ],
+      "facts": [
+        "release_candidate:N19"
+      ]
+    },
+    {
+      "id": "release_candidate_current",
+      "sequence_index": 25,
+      "content": "release candidate current decision and evidence",
+      "depends_on": [
+        "release_candidate_module_a",
+        "release_candidate_module_c"
+      ],
+      "facts": [
+        "release_candidate:F4"
+      ]
+    }
+  ]
+}

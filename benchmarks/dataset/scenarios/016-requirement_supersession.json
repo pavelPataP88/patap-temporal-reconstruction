@@ -1,0 +1,311 @@
+{
+  "id": "requirement_supersession",
+  "query": "What evidence supports the current requirement supersession decision?",
+  "current_state": "requirement_supersession_current",
+  "required_fact_ids": [
+    "requirement_supersession:F2",
+    "requirement_supersession:F1"
+  ],
+  "states": [
+    {
+      "id": "requirement_supersession_alert",
+      "sequence_index": 0,
+      "content": "requirement supersession alert decision and evidence",
+      "depends_on": [],
+      "facts": [
+        "requirement_supersession:F0"
+      ]
+    },
+    {
+      "id": "requirement_supersession_containment",
+      "sequence_index": 1,
+      "content": "requirement supersession containment decision and evidence",
+      "depends_on": [
+        "requirement_supersession_alert"
+      ],
+      "facts": [
+        "requirement_supersession:F1"
+      ]
+    },
+    {
+      "id": "requirement_supersession_analysis",
+      "sequence_index": 2,
+      "content": "requirement supersession analysis decision and evidence",
+      "depends_on": [
+        "requirement_supersession_alert"
+      ],
+      "facts": [
+        "requirement_supersession:F2"
+      ]
+    },
+    {
+      "id": "requirement_supersession_parallel_0",
+      "sequence_index": 4,
+      "content": "parallel unrelated requirement_supersession workstream 0 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "requirement_supersession:N0"
+      ]
+    },
+    {
+      "id": "requirement_supersession_parallel_1",
+      "sequence_index": 5,
+      "content": "parallel unrelated requirement_supersession workstream 1 distractor detail",
+      "depends_on": [
+        "requirement_supersession_parallel_0"
+      ],
+      "facts": [
+        "requirement_supersession:N1"
+      ]
+    },
+    {
+      "id": "requirement_supersession_parallel_2",
+      "sequence_index": 6,
+      "content": "parallel unrelated requirement_supersession workstream 2 distractor detail",
+      "depends_on": [
+        "requirement_supersession_parallel_1"
+      ],
+      "facts": [
+        "requirement_supersession:N2"
+      ]
+    },
+    {
+      "id": "requirement_supersession_parallel_3",
+      "sequence_index": 7,
+      "content": "parallel unrelated requirement_supersession workstream 3 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "requirement_supersession:N3"
+      ]
+    },
+    {
+      "id": "requirement_supersession_parallel_4",
+      "sequence_index": 8,
+      "content": "parallel unrelated requirement_supersession workstream 4 distractor detail",
+      "depends_on": [
+        "requirement_supersession_parallel_3"
+      ],
+      "facts": [
+        "requirement_supersession:N4"
+      ]
+    },
+    {
+      "id": "requirement_supersession_parallel_5",
+      "sequence_index": 9,
+      "content": "parallel unrelated requirement_supersession workstream 5 distractor detail",
+      "depends_on": [
+        "requirement_supersession_parallel_4"
+      ],
+      "facts": [
+        "requirement_supersession:N5"
+      ]
+    },
+    {
+      "id": "requirement_supersession_parallel_6",
+      "sequence_index": 10,
+      "content": "parallel unrelated requirement_supersession workstream 6 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "requirement_supersession:N6"
+      ]
+    },
+    {
+      "id": "requirement_supersession_parallel_7",
+      "sequence_index": 11,
+      "content": "parallel unrelated requirement_supersession workstream 7 distractor detail",
+      "depends_on": [
+        "requirement_supersession_parallel_6"
+      ],
+      "facts": [
+        "requirement_supersession:N7"
+      ]
+    },
+    {
+      "id": "requirement_supersession_parallel_8",
+      "sequence_index": 12,
+      "content": "parallel unrelated requirement_supersession workstream 8 distractor detail",
+      "depends_on": [
+        "requirement_supersession_parallel_7"
+      ],
+      "facts": [
+        "requirement_supersession:N8"
+      ]
+    },
+    {
+      "id": "requirement_supersession_parallel_9",
+      "sequence_index": 13,
+      "content": "parallel unrelated requirement_supersession workstream 9 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "requirement_supersession:N9"
+      ]
+    },
+    {
+      "id": "requirement_supersession_parallel_10",
+      "sequence_index": 14,
+      "content": "parallel unrelated requirement_supersession workstream 10 distractor detail",
+      "depends_on": [
+        "requirement_supersession_parallel_9"
+      ],
+      "facts": [
+        "requirement_supersession:N10"
+      ]
+    },
+    {
+      "id": "requirement_supersession_parallel_11",
+      "sequence_index": 15,
+      "content": "parallel unrelated requirement_supersession workstream 11 distractor detail",
+      "depends_on": [
+        "requirement_supersession_parallel_10"
+      ],
+      "facts": [
+        "requirement_supersession:N11"
+      ]
+    },
+    {
+      "id": "requirement_supersession_parallel_12",
+      "sequence_index": 16,
+      "content": "parallel unrelated requirement_supersession workstream 12 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "requirement_supersession:N12"
+      ]
+    },
+    {
+      "id": "requirement_supersession_parallel_13",
+      "sequence_index": 17,
+      "content": "parallel unrelated requirement_supersession workstream 13 distractor detail",
+      "depends_on": [
+        "requirement_supersession_parallel_12"
+      ],
+      "facts": [
+        "requirement_supersession:N13"
+      ]
+    },
+    {
+      "id": "requirement_supersession_parallel_14",
+      "sequence_index": 18,
+      "content": "parallel unrelated requirement_supersession workstream 14 distractor detail",
+      "depends_on": [
+        "requirement_supersession_parallel_13"
+      ],
+      "facts": [
+        "requirement_supersession:N14"
+      ]
+    },
+    {
+      "id": "requirement_supersession_parallel_15",
+      "sequence_index": 19,
+      "content": "parallel unrelated requirement_supersession workstream 15 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "requirement_supersession:N15"
+      ]
+    },
+    {
+      "id": "requirement_supersession_parallel_16",
+      "sequence_index": 20,
+      "content": "parallel unrelated requirement_supersession workstream 16 distractor detail",
+      "depends_on": [
+        "requirement_supersession_parallel_15"
+      ],
+      "facts": [
+        "requirement_supersession:N16"
+      ]
+    },
+    {
+      "id": "requirement_supersession_parallel_17",
+      "sequence_index": 21,
+      "content": "parallel unrelated requirement_supersession workstream 17 distractor detail",
+      "depends_on": [
+        "requirement_supersession_parallel_16"
+      ],
+      "facts": [
+        "requirement_supersession:N17"
+      ]
+    },
+    {
+      "id": "requirement_supersession_parallel_18",
+      "sequence_index": 22,
+      "content": "parallel unrelated requirement_supersession workstream 18 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "requirement_supersession:N18"
+      ]
+    },
+    {
+      "id": "requirement_supersession_parallel_19",
+      "sequence_index": 23,
+      "content": "parallel unrelated requirement_supersession workstream 19 distractor detail",
+      "depends_on": [
+        "requirement_supersession_parallel_18"
+      ],
+      "facts": [
+        "requirement_supersession:N19"
+      ]
+    },
+    {
+      "id": "requirement_supersession_parallel_20",
+      "sequence_index": 24,
+      "content": "parallel unrelated requirement_supersession workstream 20 distractor detail",
+      "depends_on": [
+        "requirement_supersession_parallel_19"
+      ],
+      "facts": [
+        "requirement_supersession:N20"
+      ]
+    },
+    {
+      "id": "requirement_supersession_parallel_21",
+      "sequence_index": 25,
+      "content": "parallel unrelated requirement_supersession workstream 21 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "requirement_supersession:N21"
+      ]
+    },
+    {
+      "id": "requirement_supersession_parallel_22",
+      "sequence_index": 26,
+      "content": "parallel unrelated requirement_supersession workstream 22 distractor detail",
+      "depends_on": [
+        "requirement_supersession_parallel_21"
+      ],
+      "facts": [
+        "requirement_supersession:N22"
+      ]
+    },
+    {
+      "id": "requirement_supersession_parallel_23",
+      "sequence_index": 27,
+      "content": "parallel unrelated requirement_supersession workstream 23 distractor detail",
+      "depends_on": [
+        "requirement_supersession_parallel_22"
+      ],
+      "facts": [
+        "requirement_supersession:N23"
+      ]
+    },
+    {
+      "id": "requirement_supersession_parallel_24",
+      "sequence_index": 28,
+      "content": "parallel unrelated requirement_supersession workstream 24 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "requirement_supersession:N24"
+      ]
+    },
+    {
+      "id": "requirement_supersession_current",
+      "sequence_index": 29,
+      "content": "requirement supersession current decision and evidence",
+      "depends_on": [
+        "requirement_supersession_containment",
+        "requirement_supersession_analysis"
+      ],
+      "facts": [
+        "requirement_supersession:F3"
+      ]
+    }
+  ]
+}

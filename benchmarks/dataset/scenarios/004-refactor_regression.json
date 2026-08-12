@@ -1,0 +1,270 @@
+{
+  "id": "refactor_regression",
+  "query": "What evidence supports the current refactor regression decision?",
+  "current_state": "refactor_regression_current",
+  "required_fact_ids": [
+    "refactor_regression:F2",
+    "refactor_regression:F1"
+  ],
+  "states": [
+    {
+      "id": "refactor_regression_schema",
+      "sequence_index": 0,
+      "content": "refactor regression schema decision and evidence",
+      "depends_on": [],
+      "facts": [
+        "refactor_regression:F0"
+      ]
+    },
+    {
+      "id": "refactor_regression_migration",
+      "sequence_index": 1,
+      "content": "refactor regression migration decision and evidence",
+      "depends_on": [
+        "refactor_regression_schema"
+      ],
+      "facts": [
+        "refactor_regression:F1"
+      ]
+    },
+    {
+      "id": "refactor_regression_backfill",
+      "sequence_index": 2,
+      "content": "refactor regression backfill decision and evidence",
+      "depends_on": [
+        "refactor_regression_migration"
+      ],
+      "facts": [
+        "refactor_regression:F2"
+      ]
+    },
+    {
+      "id": "refactor_regression_parallel_0",
+      "sequence_index": 4,
+      "content": "parallel unrelated refactor_regression workstream 0 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "refactor_regression:N0"
+      ]
+    },
+    {
+      "id": "refactor_regression_parallel_1",
+      "sequence_index": 5,
+      "content": "parallel unrelated refactor_regression workstream 1 distractor detail",
+      "depends_on": [
+        "refactor_regression_parallel_0"
+      ],
+      "facts": [
+        "refactor_regression:N1"
+      ]
+    },
+    {
+      "id": "refactor_regression_parallel_2",
+      "sequence_index": 6,
+      "content": "parallel unrelated refactor_regression workstream 2 distractor detail",
+      "depends_on": [
+        "refactor_regression_parallel_1"
+      ],
+      "facts": [
+        "refactor_regression:N2"
+      ]
+    },
+    {
+      "id": "refactor_regression_parallel_3",
+      "sequence_index": 7,
+      "content": "parallel unrelated refactor_regression workstream 3 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "refactor_regression:N3"
+      ]
+    },
+    {
+      "id": "refactor_regression_parallel_4",
+      "sequence_index": 8,
+      "content": "parallel unrelated refactor_regression workstream 4 distractor detail",
+      "depends_on": [
+        "refactor_regression_parallel_3"
+      ],
+      "facts": [
+        "refactor_regression:N4"
+      ]
+    },
+    {
+      "id": "refactor_regression_parallel_5",
+      "sequence_index": 9,
+      "content": "parallel unrelated refactor_regression workstream 5 distractor detail",
+      "depends_on": [
+        "refactor_regression_parallel_4"
+      ],
+      "facts": [
+        "refactor_regression:N5"
+      ]
+    },
+    {
+      "id": "refactor_regression_parallel_6",
+      "sequence_index": 10,
+      "content": "parallel unrelated refactor_regression workstream 6 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "refactor_regression:N6"
+      ]
+    },
+    {
+      "id": "refactor_regression_parallel_7",
+      "sequence_index": 11,
+      "content": "parallel unrelated refactor_regression workstream 7 distractor detail",
+      "depends_on": [
+        "refactor_regression_parallel_6"
+      ],
+      "facts": [
+        "refactor_regression:N7"
+      ]
+    },
+    {
+      "id": "refactor_regression_parallel_8",
+      "sequence_index": 12,
+      "content": "parallel unrelated refactor_regression workstream 8 distractor detail",
+      "depends_on": [
+        "refactor_regression_parallel_7"
+      ],
+      "facts": [
+        "refactor_regression:N8"
+      ]
+    },
+    {
+      "id": "refactor_regression_parallel_9",
+      "sequence_index": 13,
+      "content": "parallel unrelated refactor_regression workstream 9 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "refactor_regression:N9"
+      ]
+    },
+    {
+      "id": "refactor_regression_parallel_10",
+      "sequence_index": 14,
+      "content": "parallel unrelated refactor_regression workstream 10 distractor detail",
+      "depends_on": [
+        "refactor_regression_parallel_9"
+      ],
+      "facts": [
+        "refactor_regression:N10"
+      ]
+    },
+    {
+      "id": "refactor_regression_parallel_11",
+      "sequence_index": 15,
+      "content": "parallel unrelated refactor_regression workstream 11 distractor detail",
+      "depends_on": [
+        "refactor_regression_parallel_10"
+      ],
+      "facts": [
+        "refactor_regression:N11"
+      ]
+    },
+    {
+      "id": "refactor_regression_parallel_12",
+      "sequence_index": 16,
+      "content": "parallel unrelated refactor_regression workstream 12 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "refactor_regression:N12"
+      ]
+    },
+    {
+      "id": "refactor_regression_parallel_13",
+      "sequence_index": 17,
+      "content": "parallel unrelated refactor_regression workstream 13 distractor detail",
+      "depends_on": [
+        "refactor_regression_parallel_12"
+      ],
+      "facts": [
+        "refactor_regression:N13"
+      ]
+    },
+    {
+      "id": "refactor_regression_parallel_14",
+      "sequence_index": 18,
+      "content": "parallel unrelated refactor_regression workstream 14 distractor detail",
+      "depends_on": [
+        "refactor_regression_parallel_13"
+      ],
+      "facts": [
+        "refactor_regression:N14"
+      ]
+    },
+    {
+      "id": "refactor_regression_parallel_15",
+      "sequence_index": 19,
+      "content": "parallel unrelated refactor_regression workstream 15 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "refactor_regression:N15"
+      ]
+    },
+    {
+      "id": "refactor_regression_parallel_16",
+      "sequence_index": 20,
+      "content": "parallel unrelated refactor_regression workstream 16 distractor detail",
+      "depends_on": [
+        "refactor_regression_parallel_15"
+      ],
+      "facts": [
+        "refactor_regression:N16"
+      ]
+    },
+    {
+      "id": "refactor_regression_parallel_17",
+      "sequence_index": 21,
+      "content": "parallel unrelated refactor_regression workstream 17 distractor detail",
+      "depends_on": [
+        "refactor_regression_parallel_16"
+      ],
+      "facts": [
+        "refactor_regression:N17"
+      ]
+    },
+    {
+      "id": "refactor_regression_parallel_18",
+      "sequence_index": 22,
+      "content": "parallel unrelated refactor_regression workstream 18 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "refactor_regression:N18"
+      ]
+    },
+    {
+      "id": "refactor_regression_parallel_19",
+      "sequence_index": 23,
+      "content": "parallel unrelated refactor_regression workstream 19 distractor detail",
+      "depends_on": [
+        "refactor_regression_parallel_18"
+      ],
+      "facts": [
+        "refactor_regression:N19"
+      ]
+    },
+    {
+      "id": "refactor_regression_parallel_20",
+      "sequence_index": 24,
+      "content": "parallel unrelated refactor_regression workstream 20 distractor detail",
+      "depends_on": [
+        "refactor_regression_parallel_19"
+      ],
+      "facts": [
+        "refactor_regression:N20"
+      ]
+    },
+    {
+      "id": "refactor_regression_current",
+      "sequence_index": 25,
+      "content": "refactor regression current decision and evidence",
+      "depends_on": [
+        "refactor_regression_backfill"
+      ],
+      "facts": [
+        "refactor_regression:F3"
+      ]
+    }
+  ]
+}

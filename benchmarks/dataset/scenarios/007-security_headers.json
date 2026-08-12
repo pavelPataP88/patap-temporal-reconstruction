@@ -1,0 +1,302 @@
+{
+  "id": "security_headers",
+  "query": "What evidence supports the current security headers decision?",
+  "current_state": "security_headers_current",
+  "required_fact_ids": [
+    "security_headers:F2",
+    "security_headers:F1"
+  ],
+  "states": [
+    {
+      "id": "security_headers_root",
+      "sequence_index": 0,
+      "content": "security headers root decision and evidence",
+      "depends_on": [],
+      "facts": [
+        "security_headers:F0"
+      ]
+    },
+    {
+      "id": "security_headers_left",
+      "sequence_index": 1,
+      "content": "security headers left decision and evidence",
+      "depends_on": [
+        "security_headers_root"
+      ],
+      "facts": [
+        "security_headers:F1"
+      ]
+    },
+    {
+      "id": "security_headers_right",
+      "sequence_index": 2,
+      "content": "security headers right decision and evidence",
+      "depends_on": [
+        "security_headers_root"
+      ],
+      "facts": [
+        "security_headers:F2"
+      ]
+    },
+    {
+      "id": "security_headers_parallel_0",
+      "sequence_index": 4,
+      "content": "parallel unrelated security_headers workstream 0 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "security_headers:N0"
+      ]
+    },
+    {
+      "id": "security_headers_parallel_1",
+      "sequence_index": 5,
+      "content": "parallel unrelated security_headers workstream 1 distractor detail",
+      "depends_on": [
+        "security_headers_parallel_0"
+      ],
+      "facts": [
+        "security_headers:N1"
+      ]
+    },
+    {
+      "id": "security_headers_parallel_2",
+      "sequence_index": 6,
+      "content": "parallel unrelated security_headers workstream 2 distractor detail",
+      "depends_on": [
+        "security_headers_parallel_1"
+      ],
+      "facts": [
+        "security_headers:N2"
+      ]
+    },
+    {
+      "id": "security_headers_parallel_3",
+      "sequence_index": 7,
+      "content": "parallel unrelated security_headers workstream 3 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "security_headers:N3"
+      ]
+    },
+    {
+      "id": "security_headers_parallel_4",
+      "sequence_index": 8,
+      "content": "parallel unrelated security_headers workstream 4 distractor detail",
+      "depends_on": [
+        "security_headers_parallel_3"
+      ],
+      "facts": [
+        "security_headers:N4"
+      ]
+    },
+    {
+      "id": "security_headers_parallel_5",
+      "sequence_index": 9,
+      "content": "parallel unrelated security_headers workstream 5 distractor detail",
+      "depends_on": [
+        "security_headers_parallel_4"
+      ],
+      "facts": [
+        "security_headers:N5"
+      ]
+    },
+    {
+      "id": "security_headers_parallel_6",
+      "sequence_index": 10,
+      "content": "parallel unrelated security_headers workstream 6 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "security_headers:N6"
+      ]
+    },
+    {
+      "id": "security_headers_parallel_7",
+      "sequence_index": 11,
+      "content": "parallel unrelated security_headers workstream 7 distractor detail",
+      "depends_on": [
+        "security_headers_parallel_6"
+      ],
+      "facts": [
+        "security_headers:N7"
+      ]
+    },
+    {
+      "id": "security_headers_parallel_8",
+      "sequence_index": 12,
+      "content": "parallel unrelated security_headers workstream 8 distractor detail",
+      "depends_on": [
+        "security_headers_parallel_7"
+      ],
+      "facts": [
+        "security_headers:N8"
+      ]
+    },
+    {
+      "id": "security_headers_parallel_9",
+      "sequence_index": 13,
+      "content": "parallel unrelated security_headers workstream 9 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "security_headers:N9"
+      ]
+    },
+    {
+      "id": "security_headers_parallel_10",
+      "sequence_index": 14,
+      "content": "parallel unrelated security_headers workstream 10 distractor detail",
+      "depends_on": [
+        "security_headers_parallel_9"
+      ],
+      "facts": [
+        "security_headers:N10"
+      ]
+    },
+    {
+      "id": "security_headers_parallel_11",
+      "sequence_index": 15,
+      "content": "parallel unrelated security_headers workstream 11 distractor detail",
+      "depends_on": [
+        "security_headers_parallel_10"
+      ],
+      "facts": [
+        "security_headers:N11"
+      ]
+    },
+    {
+      "id": "security_headers_parallel_12",
+      "sequence_index": 16,
+      "content": "parallel unrelated security_headers workstream 12 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "security_headers:N12"
+      ]
+    },
+    {
+      "id": "security_headers_parallel_13",
+      "sequence_index": 17,
+      "content": "parallel unrelated security_headers workstream 13 distractor detail",
+      "depends_on": [
+        "security_headers_parallel_12"
+      ],
+      "facts": [
+        "security_headers:N13"
+      ]
+    },
+    {
+      "id": "security_headers_parallel_14",
+      "sequence_index": 18,
+      "content": "parallel unrelated security_headers workstream 14 distractor detail",
+      "depends_on": [
+        "security_headers_parallel_13"
+      ],
+      "facts": [
+        "security_headers:N14"
+      ]
+    },
+    {
+      "id": "security_headers_parallel_15",
+      "sequence_index": 19,
+      "content": "parallel unrelated security_headers workstream 15 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "security_headers:N15"
+      ]
+    },
+    {
+      "id": "security_headers_parallel_16",
+      "sequence_index": 20,
+      "content": "parallel unrelated security_headers workstream 16 distractor detail",
+      "depends_on": [
+        "security_headers_parallel_15"
+      ],
+      "facts": [
+        "security_headers:N16"
+      ]
+    },
+    {
+      "id": "security_headers_parallel_17",
+      "sequence_index": 21,
+      "content": "parallel unrelated security_headers workstream 17 distractor detail",
+      "depends_on": [
+        "security_headers_parallel_16"
+      ],
+      "facts": [
+        "security_headers:N17"
+      ]
+    },
+    {
+      "id": "security_headers_parallel_18",
+      "sequence_index": 22,
+      "content": "parallel unrelated security_headers workstream 18 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "security_headers:N18"
+      ]
+    },
+    {
+      "id": "security_headers_parallel_19",
+      "sequence_index": 23,
+      "content": "parallel unrelated security_headers workstream 19 distractor detail",
+      "depends_on": [
+        "security_headers_parallel_18"
+      ],
+      "facts": [
+        "security_headers:N19"
+      ]
+    },
+    {
+      "id": "security_headers_parallel_20",
+      "sequence_index": 24,
+      "content": "parallel unrelated security_headers workstream 20 distractor detail",
+      "depends_on": [
+        "security_headers_parallel_19"
+      ],
+      "facts": [
+        "security_headers:N20"
+      ]
+    },
+    {
+      "id": "security_headers_parallel_21",
+      "sequence_index": 25,
+      "content": "parallel unrelated security_headers workstream 21 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "security_headers:N21"
+      ]
+    },
+    {
+      "id": "security_headers_parallel_22",
+      "sequence_index": 26,
+      "content": "parallel unrelated security_headers workstream 22 distractor detail",
+      "depends_on": [
+        "security_headers_parallel_21"
+      ],
+      "facts": [
+        "security_headers:N22"
+      ]
+    },
+    {
+      "id": "security_headers_parallel_23",
+      "sequence_index": 27,
+      "content": "parallel unrelated security_headers workstream 23 distractor detail",
+      "depends_on": [
+        "security_headers_parallel_22"
+      ],
+      "facts": [
+        "security_headers:N23"
+      ]
+    },
+    {
+      "id": "security_headers_current",
+      "sequence_index": 28,
+      "content": "security headers current decision and evidence",
+      "depends_on": [
+        "security_headers_left",
+        "security_headers_right"
+      ],
+      "facts": [
+        "security_headers:F3"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1084 @@
+{
+  "benchmark_version": "0.3.0",
+  "dataset_freeze_commit": "2297f54da6fea2dfd42e58d23811676f61ffca1b",
+  "original_combined_dataset_sha256": "68b36b55747b9f0b997712c9aa9daf0140a7664422e1d834c91c169a3c7fb8f1",
+  "dataset_manifest_sha256": "dfbc2ed0288cff89c0658c905396f686d8882325d70100475d734a2ef8826a74",
+  "python": "3.14.0",
+  "random_seed": 2026030,
+  "dataset_scenario_count": 20,
+  "per_scenario": [
+    {
+      "scenario": "auth_password_policy",
+      "query": "What evidence supports the current auth password policy decision?",
+      "required_fact_ids": [
+        "auth_password_policy:F2",
+        "auth_password_policy:F1"
+      ],
+      "metrics": {
+        "FULL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 2954,
+          "full_context_chars": 2954,
+          "context_ratio": 1.0,
+          "irrelevant_fact_load": 20,
+          "all_required_present": true,
+          "selected_state_count": 22,
+          "full_state_count": 22
+        },
+        "PATAP": {
+          "required_fact_recall": 1.0,
+          "context_chars": 428,
+          "full_context_chars": 2954,
+          "context_ratio": 0.14488828706838186,
+          "irrelevant_fact_load": 2,
+          "all_required_present": true,
+          "selected_state_count": 4,
+          "full_state_count": 22
+        },
+        "RECENCY": {
+          "required_fact_recall": 0.0,
+          "context_chars": 426,
+          "full_context_chars": 2954,
+          "context_ratio": 0.14421123899796887,
+          "irrelevant_fact_load": 3,
+          "all_required_present": false,
+          "selected_state_count": 3,
+          "full_state_count": 22
+        },
+        "LEXICAL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 312,
+          "full_context_chars": 2954,
+          "context_ratio": 0.10561949898442789,
+          "irrelevant_fact_load": 1,
+          "all_required_present": true,
+          "selected_state_count": 3,
+          "full_state_count": 22
+        }
+      }
+    },
+    {
+      "scenario": "database_backfill",
+      "query": "What evidence supports the current database backfill decision?",
+      "required_fact_ids": [
+        "database_backfill:F2",
+        "database_backfill:F1"
+      ],
+      "metrics": {
+        "FULL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 2915,
+          "full_context_chars": 2915,
+          "context_ratio": 1.0,
+          "irrelevant_fact_load": 21,
+          "all_required_present": true,
+          "selected_state_count": 23,
+          "full_state_count": 23
+        },
+        "PATAP": {
+          "required_fact_recall": 1.0,
+          "context_chars": 418,
+          "full_context_chars": 2915,
+          "context_ratio": 0.14339622641509434,
+          "irrelevant_fact_load": 2,
+          "all_required_present": true,
+          "selected_state_count": 4,
+          "full_state_count": 23
+        },
+        "RECENCY": {
+          "required_fact_recall": 0.0,
+          "context_chars": 399,
+          "full_context_chars": 2915,
+          "context_ratio": 0.13687821612349915,
+          "irrelevant_fact_load": 3,
+          "all_required_present": false,
+          "selected_state_count": 3,
+          "full_state_count": 23
+        },
+        "LEXICAL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 311,
+          "full_context_chars": 2915,
+          "context_ratio": 0.10668953687821613,
+          "irrelevant_fact_load": 1,
+          "all_required_present": true,
+          "selected_state_count": 3,
+          "full_state_count": 23
+        }
+      }
+    },
+    {
+      "scenario": "api_deprecation",
+      "query": "What evidence supports the current api deprecation decision?",
+      "required_fact_ids": [
+        "api_deprecation:F2",
+        "api_deprecation:F1"
+      ],
+      "metrics": {
+        "FULL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 2898,
+          "full_context_chars": 2898,
+          "context_ratio": 1.0,
+          "irrelevant_fact_load": 22,
+          "all_required_present": true,
+          "selected_state_count": 24,
+          "full_state_count": 24
+        },
+        "PATAP": {
+          "required_fact_recall": 1.0,
+          "context_chars": 388,
+          "full_context_chars": 2898,
+          "context_ratio": 0.13388543823326432,
+          "irrelevant_fact_load": 2,
+          "all_required_present": true,
+          "selected_state_count": 4,
+          "full_state_count": 24
+        },
+        "RECENCY": {
+          "required_fact_recall": 0.0,
+          "context_chars": 381,
+          "full_context_chars": 2898,
+          "context_ratio": 0.13146997929606624,
+          "irrelevant_fact_load": 3,
+          "all_required_present": false,
+          "selected_state_count": 3,
+          "full_state_count": 24
+        },
+        "LEXICAL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 287,
+          "full_context_chars": 2898,
+          "context_ratio": 0.09903381642512077,
+          "irrelevant_fact_load": 1,
+          "all_required_present": true,
+          "selected_state_count": 3,
+          "full_state_count": 24
+        }
+      }
+    },
+    {
+      "scenario": "refactor_regression",
+      "query": "What evidence supports the current refactor regression decision?",
+      "required_fact_ids": [
+        "refactor_regression:F2",
+        "refactor_regression:F1"
+      ],
+      "metrics": {
+        "FULL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 3345,
+          "full_context_chars": 3345,
+          "context_ratio": 1.0,
+          "irrelevant_fact_load": 23,
+          "all_required_present": true,
+          "selected_state_count": 25,
+          "full_state_count": 25
+        },
+        "PATAP": {
+          "required_fact_recall": 1.0,
+          "context_chars": 456,
+          "full_context_chars": 3345,
+          "context_ratio": 0.13632286995515694,
+          "irrelevant_fact_load": 2,
+          "all_required_present": true,
+          "selected_state_count": 4,
+          "full_state_count": 25
+        },
+        "RECENCY": {
+          "required_fact_recall": 0.0,
+          "context_chars": 417,
+          "full_context_chars": 3345,
+          "context_ratio": 0.12466367713004484,
+          "irrelevant_fact_load": 3,
+          "all_required_present": false,
+          "selected_state_count": 3,
+          "full_state_count": 25
+        },
+        "LEXICAL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 343,
+          "full_context_chars": 3345,
+          "context_ratio": 0.10254110612855008,
+          "irrelevant_fact_load": 1,
+          "all_required_present": true,
+          "selected_state_count": 3,
+          "full_state_count": 25
+        }
+      }
+    },
+    {
+      "scenario": "oauth_callback",
+      "query": "What evidence supports the current oauth callback decision?",
+      "required_fact_ids": [
+        "oauth_callback:F2",
+        "oauth_callback:F1"
+      ],
+      "metrics": {
+        "FULL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 3088,
+          "full_context_chars": 3088,
+          "context_ratio": 1.0,
+          "irrelevant_fact_load": 24,
+          "all_required_present": true,
+          "selected_state_count": 26,
+          "full_state_count": 26
+        },
+        "PATAP": {
+          "required_fact_recall": 1.0,
+          "context_chars": 390,
+          "full_context_chars": 3088,
+          "context_ratio": 0.12629533678756477,
+          "irrelevant_fact_load": 2,
+          "all_required_present": true,
+          "selected_state_count": 4,
+          "full_state_count": 26
+        },
+        "RECENCY": {
+          "required_fact_recall": 0.0,
+          "context_chars": 372,
+          "full_context_chars": 3088,
+          "context_ratio": 0.12046632124352331,
+          "irrelevant_fact_load": 3,
+          "all_required_present": false,
+          "selected_state_count": 3,
+          "full_state_count": 26
+        },
+        "LEXICAL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 292,
+          "full_context_chars": 3088,
+          "context_ratio": 0.09455958549222798,
+          "irrelevant_fact_load": 1,
+          "all_required_present": true,
+          "selected_state_count": 3,
+          "full_state_count": 26
+        }
+      }
+    },
+    {
+      "scenario": "migration_rollback",
+      "query": "What evidence supports the current migration rollback decision?",
+      "required_fact_ids": [
+        "migration_rollback:F3",
+        "migration_rollback:F2"
+      ],
+      "metrics": {
+        "FULL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 3608,
+          "full_context_chars": 3608,
+          "context_ratio": 1.0,
+          "irrelevant_fact_load": 26,
+          "all_required_present": true,
+          "selected_state_count": 28,
+          "full_state_count": 28
+        },
+        "PATAP": {
+          "required_fact_recall": 1.0,
+          "context_chars": 510,
+          "full_context_chars": 3608,
+          "context_ratio": 0.14135254988913526,
+          "irrelevant_fact_load": 3,
+          "all_required_present": true,
+          "selected_state_count": 5,
+          "full_state_count": 28
+        },
+        "RECENCY": {
+          "required_fact_recall": 0.5,
+          "context_chars": 506,
+          "full_context_chars": 3608,
+          "context_ratio": 0.1402439024390244,
+          "irrelevant_fact_load": 3,
+          "all_required_present": false,
+          "selected_state_count": 4,
+          "full_state_count": 28
+        },
+        "LEXICAL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 400,
+          "full_context_chars": 3608,
+          "context_ratio": 0.11086474501108648,
+          "irrelevant_fact_load": 2,
+          "all_required_present": true,
+          "selected_state_count": 4,
+          "full_state_count": 28
+        }
+      }
+    },
+    {
+      "scenario": "security_headers",
+      "query": "What evidence supports the current security headers decision?",
+      "required_fact_ids": [
+        "security_headers:F2",
+        "security_headers:F1"
+      ],
+      "metrics": {
+        "FULL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 3490,
+          "full_context_chars": 3490,
+          "context_ratio": 1.0,
+          "irrelevant_fact_load": 26,
+          "all_required_present": true,
+          "selected_state_count": 28,
+          "full_state_count": 28
+        },
+        "PATAP": {
+          "required_fact_recall": 1.0,
+          "context_chars": 400,
+          "full_context_chars": 3490,
+          "context_ratio": 0.11461318051575932,
+          "irrelevant_fact_load": 2,
+          "all_required_present": true,
+          "selected_state_count": 4,
+          "full_state_count": 28
+        },
+        "RECENCY": {
+          "required_fact_recall": 0.0,
+          "context_chars": 390,
+          "full_context_chars": 3490,
+          "context_ratio": 0.11174785100286533,
+          "irrelevant_fact_load": 3,
+          "all_required_present": false,
+          "selected_state_count": 3,
+          "full_state_count": 28
+        },
+        "LEXICAL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 296,
+          "full_context_chars": 3490,
+          "context_ratio": 0.08481375358166189,
+          "irrelevant_fact_load": 1,
+          "all_required_present": true,
+          "selected_state_count": 3,
+          "full_state_count": 28
+        }
+      }
+    },
+    {
+      "scenario": "config_flag",
+      "query": "What evidence supports the current config flag decision?",
+      "required_fact_ids": [
+        "config_flag:F2",
+        "config_flag:F1"
+      ],
+      "metrics": {
+        "FULL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 3191,
+          "full_context_chars": 3191,
+          "context_ratio": 1.0,
+          "irrelevant_fact_load": 27,
+          "all_required_present": true,
+          "selected_state_count": 29,
+          "full_state_count": 29
+        },
+        "PATAP": {
+          "required_fact_recall": 1.0,
+          "context_chars": 346,
+          "full_context_chars": 3191,
+          "context_ratio": 0.10842995926041993,
+          "irrelevant_fact_load": 2,
+          "all_required_present": true,
+          "selected_state_count": 4,
+          "full_state_count": 29
+        },
+        "RECENCY": {
+          "required_fact_recall": 0.0,
+          "context_chars": 345,
+          "full_context_chars": 3191,
+          "context_ratio": 0.1081165778752742,
+          "irrelevant_fact_load": 3,
+          "all_required_present": false,
+          "selected_state_count": 3,
+          "full_state_count": 29
+        },
+        "LEXICAL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 257,
+          "full_context_chars": 3191,
+          "context_ratio": 0.08053901598245064,
+          "irrelevant_fact_load": 1,
+          "all_required_present": true,
+          "selected_state_count": 3,
+          "full_state_count": 29
+        }
+      }
+    },
+    {
+      "scenario": "test_flake",
+      "query": "What evidence supports the current test flake decision?",
+      "required_fact_ids": [
+        "test_flake:F3",
+        "test_flake:F2"
+      ],
+      "metrics": {
+        "FULL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 2412,
+          "full_context_chars": 2412,
+          "context_ratio": 1.0,
+          "irrelevant_fact_load": 21,
+          "all_required_present": true,
+          "selected_state_count": 23,
+          "full_state_count": 23
+        },
+        "PATAP": {
+          "required_fact_recall": 1.0,
+          "context_chars": 426,
+          "full_context_chars": 2412,
+          "context_ratio": 0.17661691542288557,
+          "irrelevant_fact_load": 3,
+          "all_required_present": true,
+          "selected_state_count": 5,
+          "full_state_count": 23
+        },
+        "RECENCY": {
+          "required_fact_recall": 0.5,
+          "context_chars": 420,
+          "full_context_chars": 2412,
+          "context_ratio": 0.17412935323383086,
+          "irrelevant_fact_load": 3,
+          "all_required_present": false,
+          "selected_state_count": 4,
+          "full_state_count": 23
+        },
+        "LEXICAL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 340,
+          "full_context_chars": 2412,
+          "context_ratio": 0.14096185737976782,
+          "irrelevant_fact_load": 2,
+          "all_required_present": true,
+          "selected_state_count": 4,
+          "full_state_count": 23
+        }
+      }
+    },
+    {
+      "scenario": "dependency_upgrade",
+      "query": "What evidence supports the current dependency upgrade decision?",
+      "required_fact_ids": [
+        "dependency_upgrade:F2",
+        "dependency_upgrade:F1"
+      ],
+      "metrics": {
+        "FULL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 3004,
+          "full_context_chars": 3004,
+          "context_ratio": 1.0,
+          "irrelevant_fact_load": 21,
+          "all_required_present": true,
+          "selected_state_count": 23,
+          "full_state_count": 23
+        },
+        "PATAP": {
+          "required_fact_recall": 1.0,
+          "context_chars": 450,
+          "full_context_chars": 3004,
+          "context_ratio": 0.14980026631158455,
+          "irrelevant_fact_load": 2,
+          "all_required_present": true,
+          "selected_state_count": 4,
+          "full_state_count": 23
+        },
+        "RECENCY": {
+          "required_fact_recall": 0.0,
+          "context_chars": 408,
+          "full_context_chars": 3004,
+          "context_ratio": 0.13581890812250333,
+          "irrelevant_fact_load": 3,
+          "all_required_present": false,
+          "selected_state_count": 3,
+          "full_state_count": 23
+        },
+        "LEXICAL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 340,
+          "full_context_chars": 3004,
+          "context_ratio": 0.11318242343541944,
+          "irrelevant_fact_load": 1,
+          "all_required_present": true,
+          "selected_state_count": 3,
+          "full_state_count": 23
+        }
+      }
+    },
+    {
+      "scenario": "release_candidate",
+      "query": "What evidence supports the current release candidate decision?",
+      "required_fact_ids": [
+        "release_candidate:F3",
+        "release_candidate:F2"
+      ],
+      "metrics": {
+        "FULL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 3165,
+          "full_context_chars": 3165,
+          "context_ratio": 1.0,
+          "irrelevant_fact_load": 23,
+          "all_required_present": true,
+          "selected_state_count": 25,
+          "full_state_count": 25
+        },
+        "PATAP": {
+          "required_fact_recall": 0.5,
+          "context_chars": 426,
+          "full_context_chars": 3165,
+          "context_ratio": 0.13459715639810427,
+          "irrelevant_fact_load": 3,
+          "all_required_present": false,
+          "selected_state_count": 4,
+          "full_state_count": 25
+        },
+        "RECENCY": {
+          "required_fact_recall": 0.0,
+          "context_chars": 399,
+          "full_context_chars": 3165,
+          "context_ratio": 0.12606635071090047,
+          "irrelevant_fact_load": 3,
+          "all_required_present": false,
+          "selected_state_count": 3,
+          "full_state_count": 25
+        },
+        "LEXICAL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 319,
+          "full_context_chars": 3165,
+          "context_ratio": 0.10078988941548184,
+          "irrelevant_fact_load": 1,
+          "all_required_present": true,
+          "selected_state_count": 3,
+          "full_state_count": 25
+        }
+      }
+    },
+    {
+      "scenario": "incident_triage",
+      "query": "What evidence supports the current incident triage decision?",
+      "required_fact_ids": [
+        "incident_triage:F3",
+        "incident_triage:F2"
+      ],
+      "metrics": {
+        "FULL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 3142,
+          "full_context_chars": 3142,
+          "context_ratio": 1.0,
+          "irrelevant_fact_load": 24,
+          "all_required_present": true,
+          "selected_state_count": 26,
+          "full_state_count": 26
+        },
+        "PATAP": {
+          "required_fact_recall": 1.0,
+          "context_chars": 505,
+          "full_context_chars": 3142,
+          "context_ratio": 0.16072565245066836,
+          "irrelevant_fact_load": 3,
+          "all_required_present": true,
+          "selected_state_count": 5,
+          "full_state_count": 26
+        },
+        "RECENCY": {
+          "required_fact_recall": 0.0,
+          "context_chars": 505,
+          "full_context_chars": 3142,
+          "context_ratio": 0.16072565245066836,
+          "irrelevant_fact_load": 4,
+          "all_required_present": false,
+          "selected_state_count": 4,
+          "full_state_count": 26
+        },
+        "LEXICAL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 404,
+          "full_context_chars": 3142,
+          "context_ratio": 0.12858052196053468,
+          "irrelevant_fact_load": 2,
+          "all_required_present": true,
+          "selected_state_count": 4,
+          "full_state_count": 26
+        }
+      }
+    },
+    {
+      "scenario": "multi_module_search",
+      "query": "What evidence supports the current multi module search decision?",
+      "required_fact_ids": [
+        "multi_module_search:F3",
+        "multi_module_search:F2"
+      ],
+      "metrics": {
+        "FULL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 3597,
+          "full_context_chars": 3597,
+          "context_ratio": 1.0,
+          "irrelevant_fact_load": 25,
+          "all_required_present": true,
+          "selected_state_count": 27,
+          "full_state_count": 27
+        },
+        "PATAP": {
+          "required_fact_recall": 1.0,
+          "context_chars": 569,
+          "full_context_chars": 3597,
+          "context_ratio": 0.1581873783708646,
+          "irrelevant_fact_load": 3,
+          "all_required_present": true,
+          "selected_state_count": 5,
+          "full_state_count": 27
+        },
+        "RECENCY": {
+          "required_fact_recall": 0.0,
+          "context_chars": 556,
+          "full_context_chars": 3597,
+          "context_ratio": 0.15457325549068668,
+          "irrelevant_fact_load": 4,
+          "all_required_present": false,
+          "selected_state_count": 4,
+          "full_state_count": 27
+        },
+        "LEXICAL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 456,
+          "full_context_chars": 3597,
+          "context_ratio": 0.1267723102585488,
+          "irrelevant_fact_load": 2,
+          "all_required_present": true,
+          "selected_state_count": 4,
+          "full_state_count": 27
+        }
+      }
+    },
+    {
+      "scenario": "docs_contract",
+      "query": "What evidence supports the current docs contract decision?",
+      "required_fact_ids": [
+        "docs_contract:F2",
+        "docs_contract:F1"
+      ],
+      "metrics": {
+        "FULL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 3141,
+          "full_context_chars": 3141,
+          "context_ratio": 1.0,
+          "irrelevant_fact_load": 25,
+          "all_required_present": true,
+          "selected_state_count": 27,
+          "full_state_count": 27
+        },
+        "PATAP": {
+          "required_fact_recall": 1.0,
+          "context_chars": 388,
+          "full_context_chars": 3141,
+          "context_ratio": 0.12352753900031838,
+          "irrelevant_fact_load": 2,
+          "all_required_present": true,
+          "selected_state_count": 4,
+          "full_state_count": 27
+        },
+        "RECENCY": {
+          "required_fact_recall": 0.0,
+          "context_chars": 363,
+          "full_context_chars": 3141,
+          "context_ratio": 0.11556829035339064,
+          "irrelevant_fact_load": 3,
+          "all_required_present": false,
+          "selected_state_count": 3,
+          "full_state_count": 27
+        },
+        "LEXICAL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 293,
+          "full_context_chars": 3141,
+          "context_ratio": 0.09328239414199299,
+          "irrelevant_fact_load": 1,
+          "all_required_present": true,
+          "selected_state_count": 3,
+          "full_state_count": 27
+        }
+      }
+    },
+    {
+      "scenario": "parallel_checkout",
+      "query": "What evidence supports the current parallel checkout decision?",
+      "required_fact_ids": [
+        "parallel_checkout:F2",
+        "parallel_checkout:F1"
+      ],
+      "metrics": {
+        "FULL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 3588,
+          "full_context_chars": 3588,
+          "context_ratio": 1.0,
+          "irrelevant_fact_load": 26,
+          "all_required_present": true,
+          "selected_state_count": 28,
+          "full_state_count": 28
+        },
+        "PATAP": {
+          "required_fact_recall": 1.0,
+          "context_chars": 426,
+          "full_context_chars": 3588,
+          "context_ratio": 0.11872909698996656,
+          "irrelevant_fact_load": 2,
+          "all_required_present": true,
+          "selected_state_count": 4,
+          "full_state_count": 28
+        },
+        "RECENCY": {
+          "required_fact_recall": 0.0,
+          "context_chars": 399,
+          "full_context_chars": 3588,
+          "context_ratio": 0.11120401337792642,
+          "irrelevant_fact_load": 3,
+          "all_required_present": false,
+          "selected_state_count": 3,
+          "full_state_count": 28
+        },
+        "LEXICAL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 319,
+          "full_context_chars": 3588,
+          "context_ratio": 0.08890746934225195,
+          "irrelevant_fact_load": 1,
+          "all_required_present": true,
+          "selected_state_count": 3,
+          "full_state_count": 28
+        }
+      }
+    },
+    {
+      "scenario": "requirement_supersession",
+      "query": "What evidence supports the current requirement supersession decision?",
+      "required_fact_ids": [
+        "requirement_supersession:F2",
+        "requirement_supersession:F1"
+      ],
+      "metrics": {
+        "FULL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 4338,
+          "full_context_chars": 4338,
+          "context_ratio": 1.0,
+          "irrelevant_fact_load": 27,
+          "all_required_present": true,
+          "selected_state_count": 29,
+          "full_state_count": 29
+        },
+        "PATAP": {
+          "required_fact_recall": 1.0,
+          "context_chars": 518,
+          "full_context_chars": 4338,
+          "context_ratio": 0.11940986629783311,
+          "irrelevant_fact_load": 2,
+          "all_required_present": true,
+          "selected_state_count": 4,
+          "full_state_count": 29
+        },
+        "RECENCY": {
+          "required_fact_recall": 0.0,
+          "context_chars": 462,
+          "full_context_chars": 4338,
+          "context_ratio": 0.10650069156293222,
+          "irrelevant_fact_load": 3,
+          "all_required_present": false,
+          "selected_state_count": 3,
+          "full_state_count": 29
+        },
+        "LEXICAL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 390,
+          "full_context_chars": 4338,
+          "context_ratio": 0.08990318118948824,
+          "irrelevant_fact_load": 1,
+          "all_required_present": true,
+          "selected_state_count": 3,
+          "full_state_count": 29
+        }
+      }
+    },
+    {
+      "scenario": "cache_fix",
+      "query": "What evidence supports the current cache fix decision?",
+      "required_fact_ids": [
+        "cache_fix:F2",
+        "cache_fix:F1"
+      ],
+      "metrics": {
+        "FULL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 2272,
+          "full_context_chars": 2272,
+          "context_ratio": 1.0,
+          "irrelevant_fact_load": 20,
+          "all_required_present": true,
+          "selected_state_count": 22,
+          "full_state_count": 22
+        },
+        "PATAP": {
+          "required_fact_recall": 1.0,
+          "context_chars": 340,
+          "full_context_chars": 2272,
+          "context_ratio": 0.14964788732394366,
+          "irrelevant_fact_load": 2,
+          "all_required_present": true,
+          "selected_state_count": 4,
+          "full_state_count": 22
+        },
+        "RECENCY": {
+          "required_fact_recall": 0.0,
+          "context_chars": 327,
+          "full_context_chars": 2272,
+          "context_ratio": 0.14392605633802816,
+          "irrelevant_fact_load": 3,
+          "all_required_present": false,
+          "selected_state_count": 3,
+          "full_state_count": 22
+        },
+        "LEXICAL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 257,
+          "full_context_chars": 2272,
+          "context_ratio": 0.1131161971830986,
+          "irrelevant_fact_load": 1,
+          "all_required_present": true,
+          "selected_state_count": 3,
+          "full_state_count": 22
+        }
+      }
+    },
+    {
+      "scenario": "permission_audit",
+      "query": "What evidence supports the current permission audit decision?",
+      "required_fact_ids": [
+        "permission_audit:F2",
+        "permission_audit:F1"
+      ],
+      "metrics": {
+        "FULL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 2856,
+          "full_context_chars": 2856,
+          "context_ratio": 1.0,
+          "irrelevant_fact_load": 21,
+          "all_required_present": true,
+          "selected_state_count": 23,
+          "full_state_count": 23
+        },
+        "PATAP": {
+          "required_fact_recall": 1.0,
+          "context_chars": 416,
+          "full_context_chars": 2856,
+          "context_ratio": 0.14565826330532214,
+          "irrelevant_fact_load": 2,
+          "all_required_present": true,
+          "selected_state_count": 4,
+          "full_state_count": 23
+        },
+        "RECENCY": {
+          "required_fact_recall": 0.0,
+          "context_chars": 390,
+          "full_context_chars": 2856,
+          "context_ratio": 0.13655462184873948,
+          "irrelevant_fact_load": 3,
+          "all_required_present": false,
+          "selected_state_count": 3,
+          "full_state_count": 23
+        },
+        "LEXICAL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 312,
+          "full_context_chars": 2856,
+          "context_ratio": 0.1092436974789916,
+          "irrelevant_fact_load": 1,
+          "all_required_present": true,
+          "selected_state_count": 3,
+          "full_state_count": 23
+        }
+      }
+    },
+    {
+      "scenario": "schema_validation",
+      "query": "What evidence supports the current schema validation decision?",
+      "required_fact_ids": [
+        "schema_validation:F2",
+        "schema_validation:F1"
+      ],
+      "metrics": {
+        "FULL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 3066,
+          "full_context_chars": 3066,
+          "context_ratio": 1.0,
+          "irrelevant_fact_load": 22,
+          "all_required_present": true,
+          "selected_state_count": 24,
+          "full_state_count": 24
+        },
+        "PATAP": {
+          "required_fact_recall": 1.0,
+          "context_chars": 436,
+          "full_context_chars": 3066,
+          "context_ratio": 0.14220482713633398,
+          "irrelevant_fact_load": 2,
+          "all_required_present": true,
+          "selected_state_count": 4,
+          "full_state_count": 24
+        },
+        "RECENCY": {
+          "required_fact_recall": 0.0,
+          "context_chars": 399,
+          "full_context_chars": 3066,
+          "context_ratio": 0.13013698630136986,
+          "irrelevant_fact_load": 3,
+          "all_required_present": false,
+          "selected_state_count": 3,
+          "full_state_count": 24
+        },
+        "LEXICAL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 329,
+          "full_context_chars": 3066,
+          "context_ratio": 0.10730593607305935,
+          "irrelevant_fact_load": 1,
+          "all_required_present": true,
+          "selected_state_count": 3,
+          "full_state_count": 24
+        }
+      }
+    },
+    {
+      "scenario": "deployment_gate",
+      "query": "What evidence supports the current deployment gate decision?",
+      "required_fact_ids": [
+        "deployment_gate:F2",
+        "deployment_gate:F1"
+      ],
+      "metrics": {
+        "FULL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 3049,
+          "full_context_chars": 3049,
+          "context_ratio": 1.0,
+          "irrelevant_fact_load": 23,
+          "all_required_present": true,
+          "selected_state_count": 25,
+          "full_state_count": 25
+        },
+        "PATAP": {
+          "required_fact_recall": 1.0,
+          "context_chars": 412,
+          "full_context_chars": 3049,
+          "context_ratio": 0.13512627090849458,
+          "irrelevant_fact_load": 2,
+          "all_required_present": true,
+          "selected_state_count": 4,
+          "full_state_count": 25
+        },
+        "RECENCY": {
+          "required_fact_recall": 0.0,
+          "context_chars": 381,
+          "full_context_chars": 3049,
+          "context_ratio": 0.12495900295178747,
+          "irrelevant_fact_load": 3,
+          "all_required_present": false,
+          "selected_state_count": 3,
+          "full_state_count": 25
+        },
+        "LEXICAL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 311,
+          "full_context_chars": 3049,
+          "context_ratio": 0.1020006559527714,
+          "irrelevant_fact_load": 1,
+          "all_required_present": true,
+          "selected_state_count": 3,
+          "full_state_count": 25
+        }
+      }
+    }
+  ],
+  "aggregate": {
+    "FULL": {
+      "required_fact_recall": 1.0,
+      "all_required_success_rate": 1.0,
+      "mean_context_ratio": 1.0,
+      "median_context_ratio": 1.0,
+      "mean_selected_states": 25.35,
+      "mean_irrelevant_fact_load": 23.35
+    },
+    "PATAP": {
+      "required_fact_recall": 0.975,
+      "all_required_success_rate": 0.95,
+      "mean_context_ratio": 0.13817074840205484,
+      "median_context_ratio": 0.14135254988913526,
+      "mean_selected_states": 4.2,
+      "mean_irrelevant_fact_load": 2.25
+    },
+    "RECENCY": {
+      "required_fact_recall": 0.05,
+      "all_required_success_rate": 0.0,
+      "mean_context_ratio": 0.1318980473425515,
+      "median_context_ratio": 0.13146997929606624,
+      "mean_selected_states": 3.2,
+      "mean_irrelevant_fact_load": 3.1
+    },
+    "LEXICAL": {
+      "required_fact_recall": 1.0,
+      "all_required_success_rate": 1.0,
+      "mean_context_ratio": 0.10493537961475743,
+      "median_context_ratio": 0.10561949898442789,
+      "mean_selected_states": 3.2,
+      "mean_irrelevant_fact_load": 1.2
+    }
+  },
+  "sensitivity": {
+    "0% missing": {
+      "required_fact_recall": 0.975,
+      "context_ratio": 0.13817074840205484,
+      "all_required_present": 0.95,
+      "invalid_graph_rate": 0
+    },
+    "5% missing": {
+      "required_fact_recall": 0.875,
+      "context_ratio": 0.12881067119442297,
+      "all_required_present": 0.8,
+      "invalid_graph_rate": 0
+    },
+    "10% missing": {
+      "required_fact_recall": 0.825,
+      "context_ratio": 0.12372263377442108,
+      "all_required_present": 0.7,
+      "invalid_graph_rate": 0
+    },
+    "20% missing": {
+      "required_fact_recall": 0.75,
+      "context_ratio": 0.11632553038292785,
+      "all_required_present": 0.6,
+      "invalid_graph_rate": 0
+    },
+    "5% false edges": {
+      "required_fact_recall": 0.975,
+      "context_ratio": 0.14664285943386962,
+      "all_required_present": 0.95,
+      "invalid_graph_rate": 0
+    },
+    "10% false edges": {
+      "required_fact_recall": 0.975,
+      "context_ratio": 0.14576918844754347,
+      "all_required_present": 0.95,
+      "invalid_graph_rate": 0
+    }
+  }
+}
+
