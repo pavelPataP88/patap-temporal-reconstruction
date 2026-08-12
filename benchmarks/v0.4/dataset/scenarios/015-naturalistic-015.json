@@ -1,0 +1,96 @@
+{
+  "id": "naturalistic-015",
+  "track": "NATURALISTIC",
+  "title": "deployment gate",
+  "query": "Why is production deployment blocked without smoke tests?",
+  "current_state": "S0015-08",
+  "required_fact_ids": [
+    "F015-A",
+    "F015-D"
+  ],
+  "states": [
+    {
+      "id": "S0015-01",
+      "sequence_index": 1,
+      "content": "Requirement record: the release checklist requires a successful production-like smoke suite.",
+      "depends_on": [],
+      "facts": [
+        "F015-A"
+      ]
+    },
+    {
+      "id": "S0015-02",
+      "sequence_index": 2,
+      "content": "Design review translates the requirement into the current service boundary for deployment gate.",
+      "depends_on": [
+        "S0015-01"
+      ],
+      "facts": [
+        "F015-B"
+      ]
+    },
+    {
+      "id": "S0015-03",
+      "sequence_index": 4,
+      "content": "Implementation note: the deployed change follows the reviewed design for deployment gate.",
+      "depends_on": [
+        "S0015-02"
+      ],
+      "facts": [
+        "F015-C"
+      ]
+    },
+    {
+      "id": "S0015-04",
+      "sequence_index": 7,
+      "content": "Verification result confirms the implementation behavior required for deployment gate.",
+      "depends_on": [
+        "S0015-03"
+      ],
+      "facts": [
+        "F015-D"
+      ]
+    },
+    {
+      "id": "S0015-05",
+      "sequence_index": 3,
+      "content": "An unrelated deployment gate discussion repeats several query terms but concerns a different workstream.",
+      "depends_on": [],
+      "facts": [
+        "N015-1"
+      ]
+    },
+    {
+      "id": "S0015-06",
+      "sequence_index": 5,
+      "content": "Parallel workstream: deployment gate terminology appears in a test plan with no dependency on the accepted decision.",
+      "depends_on": [
+        "S0015-05"
+      ],
+      "facts": [
+        "N015-2"
+      ]
+    },
+    {
+      "id": "S0015-07",
+      "sequence_index": 6,
+      "content": "Unrelated operational note for another team repeats deployment gate language without changing this feature.",
+      "depends_on": [],
+      "facts": [
+        "N015-3"
+      ]
+    },
+    {
+      "id": "S0015-08",
+      "sequence_index": 8,
+      "content": "Current decision: deployment gate is active because the reviewed implementation and verification satisfy the governing requirement.",
+      "depends_on": [
+        "S0015-04"
+      ],
+      "facts": [
+        "F015-E"
+      ]
+    }
+  ]
+}
+

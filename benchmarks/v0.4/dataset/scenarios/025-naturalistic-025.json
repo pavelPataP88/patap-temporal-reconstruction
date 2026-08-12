@@ -1,0 +1,96 @@
+{
+  "id": "naturalistic-025",
+  "track": "NATURALISTIC",
+  "title": "service ownership",
+  "query": "Why was the billing job moved to the billing service?",
+  "current_state": "S0025-08",
+  "required_fact_ids": [
+    "F025-A",
+    "F025-D"
+  ],
+  "states": [
+    {
+      "id": "S0025-01",
+      "sequence_index": 1,
+      "content": "Requirement record: the architecture decision assigns invoice lifecycle ownership to billing.",
+      "depends_on": [],
+      "facts": [
+        "F025-A"
+      ]
+    },
+    {
+      "id": "S0025-02",
+      "sequence_index": 2,
+      "content": "Design review translates the requirement into the current service boundary for service ownership.",
+      "depends_on": [
+        "S0025-01"
+      ],
+      "facts": [
+        "F025-B"
+      ]
+    },
+    {
+      "id": "S0025-03",
+      "sequence_index": 4,
+      "content": "Implementation note: the deployed change follows the reviewed design for service ownership.",
+      "depends_on": [
+        "S0025-02"
+      ],
+      "facts": [
+        "F025-C"
+      ]
+    },
+    {
+      "id": "S0025-04",
+      "sequence_index": 7,
+      "content": "Verification result confirms the implementation behavior required for service ownership.",
+      "depends_on": [
+        "S0025-03"
+      ],
+      "facts": [
+        "F025-D"
+      ]
+    },
+    {
+      "id": "S0025-05",
+      "sequence_index": 3,
+      "content": "An unrelated service ownership discussion repeats several query terms but concerns a different workstream.",
+      "depends_on": [],
+      "facts": [
+        "N025-1"
+      ]
+    },
+    {
+      "id": "S0025-06",
+      "sequence_index": 5,
+      "content": "Parallel workstream: service ownership terminology appears in a test plan with no dependency on the accepted decision.",
+      "depends_on": [
+        "S0025-05"
+      ],
+      "facts": [
+        "N025-2"
+      ]
+    },
+    {
+      "id": "S0025-07",
+      "sequence_index": 6,
+      "content": "Unrelated operational note for another team repeats service ownership language without changing this feature.",
+      "depends_on": [],
+      "facts": [
+        "N025-3"
+      ]
+    },
+    {
+      "id": "S0025-08",
+      "sequence_index": 8,
+      "content": "Current decision: service ownership is active because the reviewed implementation and verification satisfy the governing requirement.",
+      "depends_on": [
+        "S0025-04"
+      ],
+      "facts": [
+        "F025-E"
+      ]
+    }
+  ]
+}
+

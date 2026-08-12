@@ -1,0 +1,96 @@
+{
+  "id": "naturalistic-013",
+  "track": "NATURALISTIC",
+  "title": "mobile api contract",
+  "query": "Why does the mobile endpoint keep the deprecated field?",
+  "current_state": "S0013-08",
+  "required_fact_ids": [
+    "F013-A",
+    "F013-D"
+  ],
+  "states": [
+    {
+      "id": "S0013-01",
+      "sequence_index": 1,
+      "content": "Requirement record: the compatibility contract supports two released mobile clients.",
+      "depends_on": [],
+      "facts": [
+        "F013-A"
+      ]
+    },
+    {
+      "id": "S0013-02",
+      "sequence_index": 2,
+      "content": "Design review translates the requirement into the current service boundary for mobile api contract.",
+      "depends_on": [
+        "S0013-01"
+      ],
+      "facts": [
+        "F013-B"
+      ]
+    },
+    {
+      "id": "S0013-03",
+      "sequence_index": 4,
+      "content": "Implementation note: the deployed change follows the reviewed design for mobile api contract.",
+      "depends_on": [
+        "S0013-02"
+      ],
+      "facts": [
+        "F013-C"
+      ]
+    },
+    {
+      "id": "S0013-04",
+      "sequence_index": 7,
+      "content": "Verification result confirms the implementation behavior required for mobile api contract.",
+      "depends_on": [
+        "S0013-03"
+      ],
+      "facts": [
+        "F013-D"
+      ]
+    },
+    {
+      "id": "S0013-05",
+      "sequence_index": 3,
+      "content": "An unrelated mobile api contract discussion repeats several query terms but concerns a different workstream.",
+      "depends_on": [],
+      "facts": [
+        "N013-1"
+      ]
+    },
+    {
+      "id": "S0013-06",
+      "sequence_index": 5,
+      "content": "Parallel workstream: mobile api contract terminology appears in a test plan with no dependency on the accepted decision.",
+      "depends_on": [
+        "S0013-05"
+      ],
+      "facts": [
+        "N013-2"
+      ]
+    },
+    {
+      "id": "S0013-07",
+      "sequence_index": 6,
+      "content": "Unrelated operational note for another team repeats mobile api contract language without changing this feature.",
+      "depends_on": [],
+      "facts": [
+        "N013-3"
+      ]
+    },
+    {
+      "id": "S0013-08",
+      "sequence_index": 8,
+      "content": "Current decision: mobile api contract is active because the reviewed implementation and verification satisfy the governing requirement.",
+      "depends_on": [
+        "S0013-04"
+      ],
+      "facts": [
+        "F013-E"
+      ]
+    }
+  ]
+}
+

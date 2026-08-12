@@ -1,0 +1,96 @@
+{
+  "id": "structural_stress-051",
+  "track": "STRUCTURAL_STRESS",
+  "title": "high overlap invoice",
+  "query": "Why is tax calculated before discount allocation?",
+  "current_state": "S0051-08",
+  "required_fact_ids": [
+    "F051-A",
+    "F051-D"
+  ],
+  "states": [
+    {
+      "id": "S0051-01",
+      "sequence_index": 1,
+      "content": "Requirement record: the accounting rule defines tax on the pre-allocation amount.",
+      "depends_on": [],
+      "facts": [
+        "F051-A"
+      ]
+    },
+    {
+      "id": "S0051-02",
+      "sequence_index": 2,
+      "content": "Design review translates the requirement into the current service boundary for high overlap invoice.",
+      "depends_on": [
+        "S0051-01"
+      ],
+      "facts": [
+        "F051-B"
+      ]
+    },
+    {
+      "id": "S0051-03",
+      "sequence_index": 4,
+      "content": "Implementation note: the deployed change follows the reviewed design for high overlap invoice.",
+      "depends_on": [
+        "S0051-02"
+      ],
+      "facts": [
+        "F051-C"
+      ]
+    },
+    {
+      "id": "S0051-04",
+      "sequence_index": 7,
+      "content": "Verification result confirms the implementation behavior required for high overlap invoice.",
+      "depends_on": [
+        "S0051-03"
+      ],
+      "facts": [
+        "F051-D"
+      ]
+    },
+    {
+      "id": "S0051-05",
+      "sequence_index": 3,
+      "content": "an obsolete invoice experiment calculated tax after discount allocation.",
+      "depends_on": [],
+      "facts": [
+        "N051-1"
+      ]
+    },
+    {
+      "id": "S0051-06",
+      "sequence_index": 5,
+      "content": "Parallel workstream: high overlap invoice terminology appears in a test plan with no dependency on the accepted decision.",
+      "depends_on": [
+        "S0051-05"
+      ],
+      "facts": [
+        "N051-2"
+      ]
+    },
+    {
+      "id": "S0051-07",
+      "sequence_index": 6,
+      "content": "Unrelated operational note for another team repeats high overlap invoice language without changing this feature.",
+      "depends_on": [],
+      "facts": [
+        "N051-3"
+      ]
+    },
+    {
+      "id": "S0051-08",
+      "sequence_index": 8,
+      "content": "Current decision: high overlap invoice is active because the reviewed implementation and verification satisfy the governing requirement.",
+      "depends_on": [
+        "S0051-04"
+      ],
+      "facts": [
+        "F051-E"
+      ]
+    }
+  ]
+}
+

@@ -1,0 +1,96 @@
+{
+  "id": "structural_stress-057",
+  "track": "STRUCTURAL_STRESS",
+  "title": "api vocabulary",
+  "query": "Why does the client send an idempotency key?",
+  "current_state": "S0057-08",
+  "required_fact_ids": [
+    "F057-A",
+    "F057-D"
+  ],
+  "states": [
+    {
+      "id": "S0057-01",
+      "sequence_index": 1,
+      "content": "Requirement record: the payment protocol calls repeated submissions replay-safe only with a request key.",
+      "depends_on": [],
+      "facts": [
+        "F057-A"
+      ]
+    },
+    {
+      "id": "S0057-02",
+      "sequence_index": 2,
+      "content": "Design review translates the requirement into the current service boundary for api vocabulary.",
+      "depends_on": [
+        "S0057-01"
+      ],
+      "facts": [
+        "F057-B"
+      ]
+    },
+    {
+      "id": "S0057-03",
+      "sequence_index": 4,
+      "content": "Implementation note: the deployed change follows the reviewed design for api vocabulary.",
+      "depends_on": [
+        "S0057-02"
+      ],
+      "facts": [
+        "F057-C"
+      ]
+    },
+    {
+      "id": "S0057-04",
+      "sequence_index": 7,
+      "content": "Verification result confirms the implementation behavior required for api vocabulary.",
+      "depends_on": [
+        "S0057-03"
+      ],
+      "facts": [
+        "F057-D"
+      ]
+    },
+    {
+      "id": "S0057-05",
+      "sequence_index": 3,
+      "content": "a blog draft repeats idempotency key while describing a different endpoint.",
+      "depends_on": [],
+      "facts": [
+        "N057-1"
+      ]
+    },
+    {
+      "id": "S0057-06",
+      "sequence_index": 5,
+      "content": "Parallel workstream: api vocabulary terminology appears in a test plan with no dependency on the accepted decision.",
+      "depends_on": [
+        "S0057-05"
+      ],
+      "facts": [
+        "N057-2"
+      ]
+    },
+    {
+      "id": "S0057-07",
+      "sequence_index": 6,
+      "content": "Unrelated operational note for another team repeats api vocabulary language without changing this feature.",
+      "depends_on": [],
+      "facts": [
+        "N057-3"
+      ]
+    },
+    {
+      "id": "S0057-08",
+      "sequence_index": 8,
+      "content": "Current decision: api vocabulary is active because the reviewed implementation and verification satisfy the governing requirement.",
+      "depends_on": [
+        "S0057-04"
+      ],
+      "facts": [
+        "F057-E"
+      ]
+    }
+  ]
+}
+

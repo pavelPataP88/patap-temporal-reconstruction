@@ -1,0 +1,308 @@
+{
+  "dataset_version": "0.4.0",
+  "scenario_count": 60,
+  "dataset_content_sha256": "0f64dad6d6e91987df62309be86c276f63c85ffb4bea43ad0a6e4b7230a577d2",
+  "scenario_files": [
+    {
+      "file": "scenarios/001-naturalistic-001.json",
+      "track": "NATURALISTIC",
+      "sha256": "ba1f15cb84ff04b5a0953124166c1d4c5493cbe725ab1fabb581530b6d354775"
+    },
+    {
+      "file": "scenarios/002-naturalistic-002.json",
+      "track": "NATURALISTIC",
+      "sha256": "b7cbc3657666e19925304db15fa54d90c8725459b895a32d6036de10844880c7"
+    },
+    {
+      "file": "scenarios/003-naturalistic-003.json",
+      "track": "NATURALISTIC",
+      "sha256": "1d60db1b9f5a9c5728195445acb3cbd10f2920d0112815b0e975e80a590fa027"
+    },
+    {
+      "file": "scenarios/004-naturalistic-004.json",
+      "track": "NATURALISTIC",
+      "sha256": "40756531f48a9a78df3df6b38932030492655038bfd21ecac37c8b521d9f8ce7"
+    },
+    {
+      "file": "scenarios/005-naturalistic-005.json",
+      "track": "NATURALISTIC",
+      "sha256": "1041eea72958a1e4434e349042a2d1140c483ca5eb3521bd7e994cbc33408d61"
+    },
+    {
+      "file": "scenarios/006-naturalistic-006.json",
+      "track": "NATURALISTIC",
+      "sha256": "8f6918cdca80e8c0d616865a5d5fcaee831194c945b047f10934f1e103607e85"
+    },
+    {
+      "file": "scenarios/007-naturalistic-007.json",
+      "track": "NATURALISTIC",
+      "sha256": "176eda19d03c4de8c274797435170e14f16071dba580812898a126be275e1b86"
+    },
+    {
+      "file": "scenarios/008-naturalistic-008.json",
+      "track": "NATURALISTIC",
+      "sha256": "82b65291756d8bdb49476a5a8362e9f6e31661fe1d0a380d40d3cff6cca7551d"
+    },
+    {
+      "file": "scenarios/009-naturalistic-009.json",
+      "track": "NATURALISTIC",
+      "sha256": "db6742405a2da481150789cd0d746db89662d5b08a719efb5a3bc2222fff1f8c"
+    },
+    {
+      "file": "scenarios/010-naturalistic-010.json",
+      "track": "NATURALISTIC",
+      "sha256": "dbb3b3a14679ebd9531361a58cb802b2d803a663b6081dc1f3b44d6281b97846"
+    },
+    {
+      "file": "scenarios/011-naturalistic-011.json",
+      "track": "NATURALISTIC",
+      "sha256": "e235f8d1483e2e60cbc42f1165f6231b477faeadabab9a5faa704f38cd40be0c"
+    },
+    {
+      "file": "scenarios/012-naturalistic-012.json",
+      "track": "NATURALISTIC",
+      "sha256": "eae8e844186e7d6285900646d9d5f9e76a2418a2f1c9aac03c5d3e6ee6faec7f"
+    },
+    {
+      "file": "scenarios/013-naturalistic-013.json",
+      "track": "NATURALISTIC",
+      "sha256": "0ef992cc878504d14bc8adfa3a5fed936e2511f6835efda30178e08313087ded"
+    },
+    {
+      "file": "scenarios/014-naturalistic-014.json",
+      "track": "NATURALISTIC",
+      "sha256": "7af0bd58aaa1d5d7f7ff16d14df0ae40f493833cf9ddcffd9f24981a3d441b25"
+    },
+    {
+      "file": "scenarios/015-naturalistic-015.json",
+      "track": "NATURALISTIC",
+      "sha256": "e1508e311415e57f4d814e5852cd2d42539f8312522590a696af2b0062c06977"
+    },
+    {
+      "file": "scenarios/016-naturalistic-016.json",
+      "track": "NATURALISTIC",
+      "sha256": "4678b88041ff1599dadb4bbc15eeaac50a02ae5fe31e76bf6b5c0979e8911dbc"
+    },
+    {
+      "file": "scenarios/017-naturalistic-017.json",
+      "track": "NATURALISTIC",
+      "sha256": "dcff3ecdd2207fa32bb193cb1f30b4c6ac77789698b015d7e19d0a07a8f4155b"
+    },
+    {
+      "file": "scenarios/018-naturalistic-018.json",
+      "track": "NATURALISTIC",
+      "sha256": "f40aa569c8f843cd49d4f185b2b736c6a4a951c29d4044b9e9200a043e02a65d"
+    },
+    {
+      "file": "scenarios/019-naturalistic-019.json",
+      "track": "NATURALISTIC",
+      "sha256": "ca90ca0ec588bab461cc4acd39e346ae9de197eb19b1161504a7d57f5b6c1eee"
+    },
+    {
+      "file": "scenarios/020-naturalistic-020.json",
+      "track": "NATURALISTIC",
+      "sha256": "533cd9e8f3930a184b355613c0ec559d74b41192247c7781361ff2949950c8d9"
+    },
+    {
+      "file": "scenarios/021-naturalistic-021.json",
+      "track": "NATURALISTIC",
+      "sha256": "015d24031355e3c47abbe6d78e4404b47f609f03d4fde271c0ad78efa69e6c80"
+    },
+    {
+      "file": "scenarios/022-naturalistic-022.json",
+      "track": "NATURALISTIC",
+      "sha256": "77147202a73b430aa3ef6744240c0c84bf32d13fdce55d0110ddb94ccaf34293"
+    },
+    {
+      "file": "scenarios/023-naturalistic-023.json",
+      "track": "NATURALISTIC",
+      "sha256": "87674bc8b5cf6697f39b31b3759e06e7c283dfed6718535d6185f310f30dbef8"
+    },
+    {
+      "file": "scenarios/024-naturalistic-024.json",
+      "track": "NATURALISTIC",
+      "sha256": "3a2b2ae40219d0b57e4cfe81b68f6232f1408ca15886b00a90dde0102ff89a9d"
+    },
+    {
+      "file": "scenarios/025-naturalistic-025.json",
+      "track": "NATURALISTIC",
+      "sha256": "7b8a9e3f05c9162b5482c5c794b07497cefff51b7ba21296612f814cee9db1ef"
+    },
+    {
+      "file": "scenarios/026-naturalistic-026.json",
+      "track": "NATURALISTIC",
+      "sha256": "e9717bdcac9a094343e32e7e5b5ac5427dd2e9fb68e4442819b6d3b4e6516c9d"
+    },
+    {
+      "file": "scenarios/027-naturalistic-027.json",
+      "track": "NATURALISTIC",
+      "sha256": "6d4a4eb5a8f4854d5446c649987dd7d9ae3bac2901c3bf76e39f130ab77000cf"
+    },
+    {
+      "file": "scenarios/028-naturalistic-028.json",
+      "track": "NATURALISTIC",
+      "sha256": "77b744b302a410788450f7bceb32a4818d7940b9f4f67ae68d3555410fa01157"
+    },
+    {
+      "file": "scenarios/029-naturalistic-029.json",
+      "track": "NATURALISTIC",
+      "sha256": "43c31282dfb170a1872df1e727bab9ae1cb3307ce0d3a2fb3496fd73234b7725"
+    },
+    {
+      "file": "scenarios/030-naturalistic-030.json",
+      "track": "NATURALISTIC",
+      "sha256": "3d896864611225b6898570f2a9bd207bd9b829f2f25a26457d558ad23f8cb671"
+    },
+    {
+      "file": "scenarios/031-naturalistic-031.json",
+      "track": "NATURALISTIC",
+      "sha256": "76bf91eb8103a21f2fe6616918ffd2b0d43af953ce3e9925f4398f2ae2df8bd3"
+    },
+    {
+      "file": "scenarios/032-naturalistic-032.json",
+      "track": "NATURALISTIC",
+      "sha256": "72dd97283947f41358d4f2e454aad6f24ef46bd60514dc37d2abcd2852a13dae"
+    },
+    {
+      "file": "scenarios/033-naturalistic-033.json",
+      "track": "NATURALISTIC",
+      "sha256": "0fa8564c8c4665b81b42099ffd0d641717cbb44306b69d4d642c7220e16c2983"
+    },
+    {
+      "file": "scenarios/034-naturalistic-034.json",
+      "track": "NATURALISTIC",
+      "sha256": "0da0fd26b4d59615f75c3a00e7d41da0b70f6bfe65d7198c3107ca9110049527"
+    },
+    {
+      "file": "scenarios/035-naturalistic-035.json",
+      "track": "NATURALISTIC",
+      "sha256": "a93f5ac62b9c0f845c6d0f1e94235ec84aaef7ea11e26355c3e2687762c6b2ab"
+    },
+    {
+      "file": "scenarios/036-naturalistic-036.json",
+      "track": "NATURALISTIC",
+      "sha256": "03d95f2acdc5d0f01caa291a573856a0fd41a3fce7dac3e79115ee8d75c3be86"
+    },
+    {
+      "file": "scenarios/037-naturalistic-037.json",
+      "track": "NATURALISTIC",
+      "sha256": "668b5909d00561d01c6b158428bf5a99d14447ee5eaab14140f7f57c072fb22f"
+    },
+    {
+      "file": "scenarios/038-naturalistic-038.json",
+      "track": "NATURALISTIC",
+      "sha256": "de88202c4cdd0d80940a022caa88ec3be559c54a5c643d73c4e8998dc90271e3"
+    },
+    {
+      "file": "scenarios/039-naturalistic-039.json",
+      "track": "NATURALISTIC",
+      "sha256": "1280eabadf1c4a8c433c7679b5ae4dae48c649d7ada12492a9ca499bec9df288"
+    },
+    {
+      "file": "scenarios/040-naturalistic-040.json",
+      "track": "NATURALISTIC",
+      "sha256": "18f1dde6cc605eb90ce87001919961f9cc3c18db874685e3bba01894be6ca8f5"
+    },
+    {
+      "file": "scenarios/041-structural_stress-041.json",
+      "track": "STRUCTURAL_STRESS",
+      "sha256": "28abd037fe13598e8e2ef56c0fa548f3700fb8fcc88583bd334bceeec0584404"
+    },
+    {
+      "file": "scenarios/042-structural_stress-042.json",
+      "track": "STRUCTURAL_STRESS",
+      "sha256": "1e6b51ceee6be0ec7fb41a68deca115745d622babafc71f8f365f5a18352f22e"
+    },
+    {
+      "file": "scenarios/043-structural_stress-043.json",
+      "track": "STRUCTURAL_STRESS",
+      "sha256": "25355aaf77b7e91209d34df7706c4cd274c08dd72cd56a613e713c009cb5a96e"
+    },
+    {
+      "file": "scenarios/044-structural_stress-044.json",
+      "track": "STRUCTURAL_STRESS",
+      "sha256": "aa2aa1a8203907ec7526235f72897879a2ff7adae7d7dca03010332bc3fa283e"
+    },
+    {
+      "file": "scenarios/045-structural_stress-045.json",
+      "track": "STRUCTURAL_STRESS",
+      "sha256": "f069d0460ab1ffd6f5f9c2868948073b81e78cf5578003ed0336003cd7d79211"
+    },
+    {
+      "file": "scenarios/046-structural_stress-046.json",
+      "track": "STRUCTURAL_STRESS",
+      "sha256": "878ff62d8afbfaa50ccfb65cbe05714ec903448fd0cd00486934355646571482"
+    },
+    {
+      "file": "scenarios/047-structural_stress-047.json",
+      "track": "STRUCTURAL_STRESS",
+      "sha256": "d80cae49b3f3195019481057c3ca06e6cc26cfbcab626d7e84356ed068506de5"
+    },
+    {
+      "file": "scenarios/048-structural_stress-048.json",
+      "track": "STRUCTURAL_STRESS",
+      "sha256": "4fff8b54099870c1dd8a98e01500db7067b2e388a59f882233d74ce4d4360984"
+    },
+    {
+      "file": "scenarios/049-structural_stress-049.json",
+      "track": "STRUCTURAL_STRESS",
+      "sha256": "e8ca40df95a75e4bea094b5e5a9e8db72d9e7bd0070972dcf1cf1bce7eba2d03"
+    },
+    {
+      "file": "scenarios/050-structural_stress-050.json",
+      "track": "STRUCTURAL_STRESS",
+      "sha256": "1fdbb66d62ef5befb93dae850a10f52a479ec46a9a3b274f5c7aa2201b230f7c"
+    },
+    {
+      "file": "scenarios/051-structural_stress-051.json",
+      "track": "STRUCTURAL_STRESS",
+      "sha256": "635524973027efff96ea057abe195ec6c79790fb9d253f8135b82416a3ca8968"
+    },
+    {
+      "file": "scenarios/052-structural_stress-052.json",
+      "track": "STRUCTURAL_STRESS",
+      "sha256": "76e75969405aea500dd32710a5614add70f2a38f21601cf4d0c6a53aa2c3de77"
+    },
+    {
+      "file": "scenarios/053-structural_stress-053.json",
+      "track": "STRUCTURAL_STRESS",
+      "sha256": "2493eb1d78dc1ffb6772a8d81b581ec748fcabdcf52a0abc980f5d95da3c7c14"
+    },
+    {
+      "file": "scenarios/054-structural_stress-054.json",
+      "track": "STRUCTURAL_STRESS",
+      "sha256": "e1b2d097b8686893e73a8be949ef3998c979d911f3b2b55d624dd4cd3e3a8828"
+    },
+    {
+      "file": "scenarios/055-structural_stress-055.json",
+      "track": "STRUCTURAL_STRESS",
+      "sha256": "8b7e7eee03abadf8fe60ec48db6d1012cc72da75a9b4045c663446719bcd5bf1"
+    },
+    {
+      "file": "scenarios/056-structural_stress-056.json",
+      "track": "STRUCTURAL_STRESS",
+      "sha256": "c7f418f626f37d3407873831fcb3905835c3e1b29de1a0dc53c1e6ce9e31025c"
+    },
+    {
+      "file": "scenarios/057-structural_stress-057.json",
+      "track": "STRUCTURAL_STRESS",
+      "sha256": "4c90a8c213f095c4c4413aa7dd9bd39c7fd47aca4739ab471d13eaaf0eebdfe9"
+    },
+    {
+      "file": "scenarios/058-structural_stress-058.json",
+      "track": "STRUCTURAL_STRESS",
+      "sha256": "b29563ea0e289c9f9906b8fb131e8e162d7d53729218806c5144608b62eda1e4"
+    },
+    {
+      "file": "scenarios/059-structural_stress-059.json",
+      "track": "STRUCTURAL_STRESS",
+      "sha256": "f0778614df071ca4966ab99269ab0565d1a368fe059442b9c9c63f1aaaf57414"
+    },
+    {
+      "file": "scenarios/060-structural_stress-060.json",
+      "track": "STRUCTURAL_STRESS",
+      "sha256": "3add75f07146f975b2f4599ed57d8e073381c1885cb25407618b0d8e1893a2ec"
+    }
+  ]
+}
+

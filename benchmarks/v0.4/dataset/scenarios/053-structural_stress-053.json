@@ -1,0 +1,96 @@
+{
+  "id": "structural_stress-053",
+  "track": "STRUCTURAL_STRESS",
+  "title": "semantic security",
+  "query": "Why is the administrator token short-lived?",
+  "current_state": "S0053-08",
+  "required_fact_ids": [
+    "F053-A",
+    "F053-D"
+  ],
+  "states": [
+    {
+      "id": "S0053-01",
+      "sequence_index": 1,
+      "content": "Requirement record: the privileged-session control limits elevated credentials to fifteen minutes.",
+      "depends_on": [],
+      "facts": [
+        "F053-A"
+      ]
+    },
+    {
+      "id": "S0053-02",
+      "sequence_index": 2,
+      "content": "Design review translates the requirement into the current service boundary for semantic security.",
+      "depends_on": [
+        "S0053-01"
+      ],
+      "facts": [
+        "F053-B"
+      ]
+    },
+    {
+      "id": "S0053-03",
+      "sequence_index": 4,
+      "content": "Implementation note: the deployed change follows the reviewed design for semantic security.",
+      "depends_on": [
+        "S0053-02"
+      ],
+      "facts": [
+        "F053-C"
+      ]
+    },
+    {
+      "id": "S0053-04",
+      "sequence_index": 7,
+      "content": "Verification result confirms the implementation behavior required for semantic security.",
+      "depends_on": [
+        "S0053-03"
+      ],
+      "facts": [
+        "F053-D"
+      ]
+    },
+    {
+      "id": "S0053-05",
+      "sequence_index": 3,
+      "content": "a dashboard session note uses the words token and fifteen minutes without controlling access.",
+      "depends_on": [],
+      "facts": [
+        "N053-1"
+      ]
+    },
+    {
+      "id": "S0053-06",
+      "sequence_index": 5,
+      "content": "Parallel workstream: semantic security terminology appears in a test plan with no dependency on the accepted decision.",
+      "depends_on": [
+        "S0053-05"
+      ],
+      "facts": [
+        "N053-2"
+      ]
+    },
+    {
+      "id": "S0053-07",
+      "sequence_index": 6,
+      "content": "Unrelated operational note for another team repeats semantic security language without changing this feature.",
+      "depends_on": [],
+      "facts": [
+        "N053-3"
+      ]
+    },
+    {
+      "id": "S0053-08",
+      "sequence_index": 8,
+      "content": "Current decision: semantic security is active because the reviewed implementation and verification satisfy the governing requirement.",
+      "depends_on": [
+        "S0053-04"
+      ],
+      "facts": [
+        "F053-E"
+      ]
+    }
+  ]
+}
+

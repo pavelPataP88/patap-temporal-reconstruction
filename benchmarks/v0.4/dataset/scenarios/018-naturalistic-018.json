@@ -1,0 +1,96 @@
+{
+  "id": "naturalistic-018",
+  "track": "NATURALISTIC",
+  "title": "permission inheritance",
+  "query": "Why does a child workspace inherit the parent role?",
+  "current_state": "S0018-08",
+  "required_fact_ids": [
+    "F018-A",
+    "F018-D"
+  ],
+  "states": [
+    {
+      "id": "S0018-01",
+      "sequence_index": 1,
+      "content": "Requirement record: the authorization design defines parent roles as the default for child workspaces.",
+      "depends_on": [],
+      "facts": [
+        "F018-A"
+      ]
+    },
+    {
+      "id": "S0018-02",
+      "sequence_index": 2,
+      "content": "Design review translates the requirement into the current service boundary for permission inheritance.",
+      "depends_on": [
+        "S0018-01"
+      ],
+      "facts": [
+        "F018-B"
+      ]
+    },
+    {
+      "id": "S0018-03",
+      "sequence_index": 4,
+      "content": "Implementation note: the deployed change follows the reviewed design for permission inheritance.",
+      "depends_on": [
+        "S0018-02"
+      ],
+      "facts": [
+        "F018-C"
+      ]
+    },
+    {
+      "id": "S0018-04",
+      "sequence_index": 7,
+      "content": "Verification result confirms the implementation behavior required for permission inheritance.",
+      "depends_on": [
+        "S0018-03"
+      ],
+      "facts": [
+        "F018-D"
+      ]
+    },
+    {
+      "id": "S0018-05",
+      "sequence_index": 3,
+      "content": "An unrelated permission inheritance discussion repeats several query terms but concerns a different workstream.",
+      "depends_on": [],
+      "facts": [
+        "N018-1"
+      ]
+    },
+    {
+      "id": "S0018-06",
+      "sequence_index": 5,
+      "content": "Parallel workstream: permission inheritance terminology appears in a test plan with no dependency on the accepted decision.",
+      "depends_on": [
+        "S0018-05"
+      ],
+      "facts": [
+        "N018-2"
+      ]
+    },
+    {
+      "id": "S0018-07",
+      "sequence_index": 6,
+      "content": "Unrelated operational note for another team repeats permission inheritance language without changing this feature.",
+      "depends_on": [],
+      "facts": [
+        "N018-3"
+      ]
+    },
+    {
+      "id": "S0018-08",
+      "sequence_index": 8,
+      "content": "Current decision: permission inheritance is active because the reviewed implementation and verification satisfy the governing requirement.",
+      "depends_on": [
+        "S0018-04"
+      ],
+      "facts": [
+        "F018-E"
+      ]
+    }
+  ]
+}
+

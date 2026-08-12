@@ -1,0 +1,96 @@
+{
+  "id": "structural_stress-043",
+  "track": "STRUCTURAL_STRESS",
+  "title": "module rename",
+  "query": "Why does the billing worker publish ledger events?",
+  "current_state": "S0043-08",
+  "required_fact_ids": [
+    "F043-A",
+    "F043-D"
+  ],
+  "states": [
+    {
+      "id": "S0043-01",
+      "sequence_index": 1,
+      "content": "Requirement record: the architecture note moved invoice ownership from payments-core to ledger-service.",
+      "depends_on": [],
+      "facts": [
+        "F043-A"
+      ]
+    },
+    {
+      "id": "S0043-02",
+      "sequence_index": 2,
+      "content": "Design review translates the requirement into the current service boundary for module rename.",
+      "depends_on": [
+        "S0043-01"
+      ],
+      "facts": [
+        "F043-B"
+      ]
+    },
+    {
+      "id": "S0043-03",
+      "sequence_index": 4,
+      "content": "Implementation note: the deployed change follows the reviewed design for module rename.",
+      "depends_on": [
+        "S0043-02"
+      ],
+      "facts": [
+        "F043-C"
+      ]
+    },
+    {
+      "id": "S0043-04",
+      "sequence_index": 7,
+      "content": "Verification result confirms the implementation behavior required for module rename.",
+      "depends_on": [
+        "S0043-03"
+      ],
+      "facts": [
+        "F043-D"
+      ]
+    },
+    {
+      "id": "S0043-05",
+      "sequence_index": 3,
+      "content": "payments-core ledger events were discussed in an unrelated cleanup.",
+      "depends_on": [],
+      "facts": [
+        "N043-1"
+      ]
+    },
+    {
+      "id": "S0043-06",
+      "sequence_index": 5,
+      "content": "Parallel workstream: module rename terminology appears in a test plan with no dependency on the accepted decision.",
+      "depends_on": [
+        "S0043-05"
+      ],
+      "facts": [
+        "N043-2"
+      ]
+    },
+    {
+      "id": "S0043-07",
+      "sequence_index": 6,
+      "content": "Unrelated operational note for another team repeats module rename language without changing this feature.",
+      "depends_on": [],
+      "facts": [
+        "N043-3"
+      ]
+    },
+    {
+      "id": "S0043-08",
+      "sequence_index": 8,
+      "content": "Current decision: module rename is active because the reviewed implementation and verification satisfy the governing requirement.",
+      "depends_on": [
+        "S0043-04"
+      ],
+      "facts": [
+        "F043-E"
+      ]
+    }
+  ]
+}
+

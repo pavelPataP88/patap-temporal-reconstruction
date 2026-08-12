@@ -1,0 +1,96 @@
+{
+  "id": "naturalistic-011",
+  "track": "NATURALISTIC",
+  "title": "cache consistency",
+  "query": "Why is this cache entry invalidated on profile updates?",
+  "current_state": "S0011-08",
+  "required_fact_ids": [
+    "F011-A",
+    "F011-D"
+  ],
+  "states": [
+    {
+      "id": "S0011-01",
+      "sequence_index": 1,
+      "content": "Requirement record: the consistency review identified profile changes as the invalidation boundary.",
+      "depends_on": [],
+      "facts": [
+        "F011-A"
+      ]
+    },
+    {
+      "id": "S0011-02",
+      "sequence_index": 2,
+      "content": "Design review translates the requirement into the current service boundary for cache consistency.",
+      "depends_on": [
+        "S0011-01"
+      ],
+      "facts": [
+        "F011-B"
+      ]
+    },
+    {
+      "id": "S0011-03",
+      "sequence_index": 4,
+      "content": "Implementation note: the deployed change follows the reviewed design for cache consistency.",
+      "depends_on": [
+        "S0011-02"
+      ],
+      "facts": [
+        "F011-C"
+      ]
+    },
+    {
+      "id": "S0011-04",
+      "sequence_index": 7,
+      "content": "Verification result confirms the implementation behavior required for cache consistency.",
+      "depends_on": [
+        "S0011-03"
+      ],
+      "facts": [
+        "F011-D"
+      ]
+    },
+    {
+      "id": "S0011-05",
+      "sequence_index": 3,
+      "content": "An unrelated cache consistency discussion repeats several query terms but concerns a different workstream.",
+      "depends_on": [],
+      "facts": [
+        "N011-1"
+      ]
+    },
+    {
+      "id": "S0011-06",
+      "sequence_index": 5,
+      "content": "Parallel workstream: cache consistency terminology appears in a test plan with no dependency on the accepted decision.",
+      "depends_on": [
+        "S0011-05"
+      ],
+      "facts": [
+        "N011-2"
+      ]
+    },
+    {
+      "id": "S0011-07",
+      "sequence_index": 6,
+      "content": "Unrelated operational note for another team repeats cache consistency language without changing this feature.",
+      "depends_on": [],
+      "facts": [
+        "N011-3"
+      ]
+    },
+    {
+      "id": "S0011-08",
+      "sequence_index": 8,
+      "content": "Current decision: cache consistency is active because the reviewed implementation and verification satisfy the governing requirement.",
+      "depends_on": [
+        "S0011-04"
+      ],
+      "facts": [
+        "F011-E"
+      ]
+    }
+  ]
+}
+

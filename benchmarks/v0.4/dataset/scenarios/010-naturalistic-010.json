@@ -1,0 +1,96 @@
+{
+  "id": "naturalistic-010",
+  "track": "NATURALISTIC",
+  "title": "feature flag retirement",
+  "query": "Why was the legacy feature flag removed?",
+  "current_state": "S0010-08",
+  "required_fact_ids": [
+    "F010-A",
+    "F010-D"
+  ],
+  "states": [
+    {
+      "id": "S0010-01",
+      "sequence_index": 1,
+      "content": "Requirement record: the rollout decision records that all supported tenants use the replacement path.",
+      "depends_on": [],
+      "facts": [
+        "F010-A"
+      ]
+    },
+    {
+      "id": "S0010-02",
+      "sequence_index": 2,
+      "content": "Design review translates the requirement into the current service boundary for feature flag retirement.",
+      "depends_on": [
+        "S0010-01"
+      ],
+      "facts": [
+        "F010-B"
+      ]
+    },
+    {
+      "id": "S0010-03",
+      "sequence_index": 4,
+      "content": "Implementation note: the deployed change follows the reviewed design for feature flag retirement.",
+      "depends_on": [
+        "S0010-02"
+      ],
+      "facts": [
+        "F010-C"
+      ]
+    },
+    {
+      "id": "S0010-04",
+      "sequence_index": 7,
+      "content": "Verification result confirms the implementation behavior required for feature flag retirement.",
+      "depends_on": [
+        "S0010-03"
+      ],
+      "facts": [
+        "F010-D"
+      ]
+    },
+    {
+      "id": "S0010-05",
+      "sequence_index": 3,
+      "content": "An unrelated feature flag retirement discussion repeats several query terms but concerns a different workstream.",
+      "depends_on": [],
+      "facts": [
+        "N010-1"
+      ]
+    },
+    {
+      "id": "S0010-06",
+      "sequence_index": 5,
+      "content": "Parallel workstream: feature flag retirement terminology appears in a test plan with no dependency on the accepted decision.",
+      "depends_on": [
+        "S0010-05"
+      ],
+      "facts": [
+        "N010-2"
+      ]
+    },
+    {
+      "id": "S0010-07",
+      "sequence_index": 6,
+      "content": "Unrelated operational note for another team repeats feature flag retirement language without changing this feature.",
+      "depends_on": [],
+      "facts": [
+        "N010-3"
+      ]
+    },
+    {
+      "id": "S0010-08",
+      "sequence_index": 8,
+      "content": "Current decision: feature flag retirement is active because the reviewed implementation and verification satisfy the governing requirement.",
+      "depends_on": [
+        "S0010-04"
+      ],
+      "facts": [
+        "F010-E"
+      ]
+    }
+  ]
+}
+

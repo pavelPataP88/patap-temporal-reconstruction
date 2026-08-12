@@ -1,0 +1,96 @@
+{
+  "id": "structural_stress-049",
+  "track": "STRUCTURAL_STRESS",
+  "title": "abandoned branch",
+  "query": "Why is the feature disabled for external accounts?",
+  "current_state": "S0049-08",
+  "required_fact_ids": [
+    "F049-A",
+    "F049-D"
+  ],
+  "states": [
+    {
+      "id": "S0049-01",
+      "sequence_index": 1,
+      "content": "Requirement record: the accepted risk review limits the feature to internal accounts.",
+      "depends_on": [],
+      "facts": [
+        "F049-A"
+      ]
+    },
+    {
+      "id": "S0049-02",
+      "sequence_index": 2,
+      "content": "Design review translates the requirement into the current service boundary for abandoned branch.",
+      "depends_on": [
+        "S0049-01"
+      ],
+      "facts": [
+        "F049-B"
+      ]
+    },
+    {
+      "id": "S0049-03",
+      "sequence_index": 4,
+      "content": "Implementation note: the deployed change follows the reviewed design for abandoned branch.",
+      "depends_on": [
+        "S0049-02"
+      ],
+      "facts": [
+        "F049-C"
+      ]
+    },
+    {
+      "id": "S0049-04",
+      "sequence_index": 7,
+      "content": "Verification result confirms the implementation behavior required for abandoned branch.",
+      "depends_on": [
+        "S0049-03"
+      ],
+      "facts": [
+        "F049-D"
+      ]
+    },
+    {
+      "id": "S0049-05",
+      "sequence_index": 3,
+      "content": "external accounts were enabled in an abandoned prototype with identical feature wording.",
+      "depends_on": [],
+      "facts": [
+        "N049-1"
+      ]
+    },
+    {
+      "id": "S0049-06",
+      "sequence_index": 5,
+      "content": "Parallel workstream: abandoned branch terminology appears in a test plan with no dependency on the accepted decision.",
+      "depends_on": [
+        "S0049-05"
+      ],
+      "facts": [
+        "N049-2"
+      ]
+    },
+    {
+      "id": "S0049-07",
+      "sequence_index": 6,
+      "content": "Unrelated operational note for another team repeats abandoned branch language without changing this feature.",
+      "depends_on": [],
+      "facts": [
+        "N049-3"
+      ]
+    },
+    {
+      "id": "S0049-08",
+      "sequence_index": 8,
+      "content": "Current decision: abandoned branch is active because the reviewed implementation and verification satisfy the governing requirement.",
+      "depends_on": [
+        "S0049-04"
+      ],
+      "facts": [
+        "F049-E"
+      ]
+    }
+  ]
+}
+

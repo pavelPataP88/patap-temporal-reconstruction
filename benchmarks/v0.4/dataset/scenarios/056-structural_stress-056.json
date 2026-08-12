@@ -1,0 +1,96 @@
+{
+  "id": "structural_stress-056",
+  "track": "STRUCTURAL_STRESS",
+  "title": "incident provenance",
+  "query": "Why is traffic shifted away from region B?",
+  "current_state": "S0056-08",
+  "required_fact_ids": [
+    "F056-A",
+    "F056-D"
+  ],
+  "states": [
+    {
+      "id": "S0056-01",
+      "sequence_index": 1,
+      "content": "Requirement record: the incident finding linked region B packet loss to checkout failures.",
+      "depends_on": [],
+      "facts": [
+        "F056-A"
+      ]
+    },
+    {
+      "id": "S0056-02",
+      "sequence_index": 2,
+      "content": "Design review translates the requirement into the current service boundary for incident provenance.",
+      "depends_on": [
+        "S0056-01"
+      ],
+      "facts": [
+        "F056-B"
+      ]
+    },
+    {
+      "id": "S0056-03",
+      "sequence_index": 4,
+      "content": "Implementation note: the deployed change follows the reviewed design for incident provenance.",
+      "depends_on": [
+        "S0056-02"
+      ],
+      "facts": [
+        "F056-C"
+      ]
+    },
+    {
+      "id": "S0056-04",
+      "sequence_index": 7,
+      "content": "Verification result confirms the implementation behavior required for incident provenance.",
+      "depends_on": [
+        "S0056-03"
+      ],
+      "facts": [
+        "F056-D"
+      ]
+    },
+    {
+      "id": "S0056-05",
+      "sequence_index": 3,
+      "content": "a routine traffic test mentions region B and checkout without the incident finding.",
+      "depends_on": [],
+      "facts": [
+        "N056-1"
+      ]
+    },
+    {
+      "id": "S0056-06",
+      "sequence_index": 5,
+      "content": "Parallel workstream: incident provenance terminology appears in a test plan with no dependency on the accepted decision.",
+      "depends_on": [
+        "S0056-05"
+      ],
+      "facts": [
+        "N056-2"
+      ]
+    },
+    {
+      "id": "S0056-07",
+      "sequence_index": 6,
+      "content": "Unrelated operational note for another team repeats incident provenance language without changing this feature.",
+      "depends_on": [],
+      "facts": [
+        "N056-3"
+      ]
+    },
+    {
+      "id": "S0056-08",
+      "sequence_index": 8,
+      "content": "Current decision: incident provenance is active because the reviewed implementation and verification satisfy the governing requirement.",
+      "depends_on": [
+        "S0056-04"
+      ],
+      "facts": [
+        "F056-E"
+      ]
+    }
+  ]
+}
+

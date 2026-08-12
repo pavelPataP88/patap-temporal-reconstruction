@@ -1,0 +1,96 @@
+{
+  "id": "structural_stress-046",
+  "track": "STRUCTURAL_STRESS",
+  "title": "superseded requirement",
+  "query": "Why does the service refuse plain HTTP callbacks?",
+  "current_state": "S0046-08",
+  "required_fact_ids": [
+    "F046-A",
+    "F046-D"
+  ],
+  "states": [
+    {
+      "id": "S0046-01",
+      "sequence_index": 1,
+      "content": "Requirement record: the final transport requirement mandates TLS callbacks.",
+      "depends_on": [],
+      "facts": [
+        "F046-A"
+      ]
+    },
+    {
+      "id": "S0046-02",
+      "sequence_index": 2,
+      "content": "Design review translates the requirement into the current service boundary for superseded requirement.",
+      "depends_on": [
+        "S0046-01"
+      ],
+      "facts": [
+        "F046-B"
+      ]
+    },
+    {
+      "id": "S0046-03",
+      "sequence_index": 4,
+      "content": "Implementation note: the deployed change follows the reviewed design for superseded requirement.",
+      "depends_on": [
+        "S0046-02"
+      ],
+      "facts": [
+        "F046-C"
+      ]
+    },
+    {
+      "id": "S0046-04",
+      "sequence_index": 7,
+      "content": "Verification result confirms the implementation behavior required for superseded requirement.",
+      "depends_on": [
+        "S0046-03"
+      ],
+      "facts": [
+        "F046-D"
+      ]
+    },
+    {
+      "id": "S0046-05",
+      "sequence_index": 3,
+      "content": "the superseded draft permitted plain HTTP callbacks for local testing.",
+      "depends_on": [],
+      "facts": [
+        "N046-1"
+      ]
+    },
+    {
+      "id": "S0046-06",
+      "sequence_index": 5,
+      "content": "Parallel workstream: superseded requirement terminology appears in a test plan with no dependency on the accepted decision.",
+      "depends_on": [
+        "S0046-05"
+      ],
+      "facts": [
+        "N046-2"
+      ]
+    },
+    {
+      "id": "S0046-07",
+      "sequence_index": 6,
+      "content": "Unrelated operational note for another team repeats superseded requirement language without changing this feature.",
+      "depends_on": [],
+      "facts": [
+        "N046-3"
+      ]
+    },
+    {
+      "id": "S0046-08",
+      "sequence_index": 8,
+      "content": "Current decision: superseded requirement is active because the reviewed implementation and verification satisfy the governing requirement.",
+      "depends_on": [
+        "S0046-04"
+      ],
+      "facts": [
+        "F046-E"
+      ]
+    }
+  ]
+}
+

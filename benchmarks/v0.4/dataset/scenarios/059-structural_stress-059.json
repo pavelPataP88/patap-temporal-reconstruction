@@ -1,0 +1,96 @@
+{
+  "id": "structural_stress-059",
+  "track": "STRUCTURAL_STRESS",
+  "title": "multi hop audit",
+  "query": "Why is the export request recorded before execution?",
+  "current_state": "S0059-08",
+  "required_fact_ids": [
+    "F059-A",
+    "F059-D"
+  ],
+  "states": [
+    {
+      "id": "S0059-01",
+      "sequence_index": 1,
+      "content": "Requirement record: the audit control requires a durable approval record before data leaves the system.",
+      "depends_on": [],
+      "facts": [
+        "F059-A"
+      ]
+    },
+    {
+      "id": "S0059-02",
+      "sequence_index": 2,
+      "content": "Design review translates the requirement into the current service boundary for multi hop audit.",
+      "depends_on": [
+        "S0059-01"
+      ],
+      "facts": [
+        "F059-B"
+      ]
+    },
+    {
+      "id": "S0059-03",
+      "sequence_index": 4,
+      "content": "Implementation note: the deployed change follows the reviewed design for multi hop audit.",
+      "depends_on": [
+        "S0059-02"
+      ],
+      "facts": [
+        "F059-C"
+      ]
+    },
+    {
+      "id": "S0059-04",
+      "sequence_index": 7,
+      "content": "Verification result confirms the implementation behavior required for multi hop audit.",
+      "depends_on": [
+        "S0059-03"
+      ],
+      "facts": [
+        "F059-D"
+      ]
+    },
+    {
+      "id": "S0059-05",
+      "sequence_index": 3,
+      "content": "a parallel export test records execution wording without approval semantics.",
+      "depends_on": [],
+      "facts": [
+        "N059-1"
+      ]
+    },
+    {
+      "id": "S0059-06",
+      "sequence_index": 5,
+      "content": "Parallel workstream: multi hop audit terminology appears in a test plan with no dependency on the accepted decision.",
+      "depends_on": [
+        "S0059-05"
+      ],
+      "facts": [
+        "N059-2"
+      ]
+    },
+    {
+      "id": "S0059-07",
+      "sequence_index": 6,
+      "content": "Unrelated operational note for another team repeats multi hop audit language without changing this feature.",
+      "depends_on": [],
+      "facts": [
+        "N059-3"
+      ]
+    },
+    {
+      "id": "S0059-08",
+      "sequence_index": 8,
+      "content": "Current decision: multi hop audit is active because the reviewed implementation and verification satisfy the governing requirement.",
+      "depends_on": [
+        "S0059-04"
+      ],
+      "facts": [
+        "F059-E"
+      ]
+    }
+  ]
+}
+

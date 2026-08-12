@@ -1,0 +1,96 @@
+{
+  "id": "structural_stress-060",
+  "track": "STRUCTURAL_STRESS",
+  "title": "requirement rewording",
+  "query": "Why are secrets excluded from debug output?",
+  "current_state": "S0060-08",
+  "required_fact_ids": [
+    "F060-A",
+    "F060-D"
+  ],
+  "states": [
+    {
+      "id": "S0060-01",
+      "sequence_index": 1,
+      "content": "Requirement record: the confidentiality rule forbids credential material in diagnostic traces.",
+      "depends_on": [],
+      "facts": [
+        "F060-A"
+      ]
+    },
+    {
+      "id": "S0060-02",
+      "sequence_index": 2,
+      "content": "Design review translates the requirement into the current service boundary for requirement rewording.",
+      "depends_on": [
+        "S0060-01"
+      ],
+      "facts": [
+        "F060-B"
+      ]
+    },
+    {
+      "id": "S0060-03",
+      "sequence_index": 4,
+      "content": "Implementation note: the deployed change follows the reviewed design for requirement rewording.",
+      "depends_on": [
+        "S0060-02"
+      ],
+      "facts": [
+        "F060-C"
+      ]
+    },
+    {
+      "id": "S0060-04",
+      "sequence_index": 7,
+      "content": "Verification result confirms the implementation behavior required for requirement rewording.",
+      "depends_on": [
+        "S0060-03"
+      ],
+      "facts": [
+        "F060-D"
+      ]
+    },
+    {
+      "id": "S0060-05",
+      "sequence_index": 3,
+      "content": "an old debug proposal uses secret and output wording but permits sanitized samples.",
+      "depends_on": [],
+      "facts": [
+        "N060-1"
+      ]
+    },
+    {
+      "id": "S0060-06",
+      "sequence_index": 5,
+      "content": "Parallel workstream: requirement rewording terminology appears in a test plan with no dependency on the accepted decision.",
+      "depends_on": [
+        "S0060-05"
+      ],
+      "facts": [
+        "N060-2"
+      ]
+    },
+    {
+      "id": "S0060-07",
+      "sequence_index": 6,
+      "content": "Unrelated operational note for another team repeats requirement rewording language without changing this feature.",
+      "depends_on": [],
+      "facts": [
+        "N060-3"
+      ]
+    },
+    {
+      "id": "S0060-08",
+      "sequence_index": 8,
+      "content": "Current decision: requirement rewording is active because the reviewed implementation and verification satisfy the governing requirement.",
+      "depends_on": [
+        "S0060-04"
+      ],
+      "facts": [
+        "F060-E"
+      ]
+    }
+  ]
+}
+

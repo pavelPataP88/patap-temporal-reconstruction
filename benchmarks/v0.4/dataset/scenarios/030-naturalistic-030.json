@@ -1,0 +1,96 @@
+{
+  "id": "naturalistic-030",
+  "track": "NATURALISTIC",
+  "title": "access review",
+  "query": "Why are administrator grants reviewed quarterly?",
+  "current_state": "S0030-08",
+  "required_fact_ids": [
+    "F030-A",
+    "F030-D"
+  ],
+  "states": [
+    {
+      "id": "S0030-01",
+      "sequence_index": 1,
+      "content": "Requirement record: the control framework requires periodic privileged-access review.",
+      "depends_on": [],
+      "facts": [
+        "F030-A"
+      ]
+    },
+    {
+      "id": "S0030-02",
+      "sequence_index": 2,
+      "content": "Design review translates the requirement into the current service boundary for access review.",
+      "depends_on": [
+        "S0030-01"
+      ],
+      "facts": [
+        "F030-B"
+      ]
+    },
+    {
+      "id": "S0030-03",
+      "sequence_index": 4,
+      "content": "Implementation note: the deployed change follows the reviewed design for access review.",
+      "depends_on": [
+        "S0030-02"
+      ],
+      "facts": [
+        "F030-C"
+      ]
+    },
+    {
+      "id": "S0030-04",
+      "sequence_index": 7,
+      "content": "Verification result confirms the implementation behavior required for access review.",
+      "depends_on": [
+        "S0030-03"
+      ],
+      "facts": [
+        "F030-D"
+      ]
+    },
+    {
+      "id": "S0030-05",
+      "sequence_index": 3,
+      "content": "An unrelated access review discussion repeats several query terms but concerns a different workstream.",
+      "depends_on": [],
+      "facts": [
+        "N030-1"
+      ]
+    },
+    {
+      "id": "S0030-06",
+      "sequence_index": 5,
+      "content": "Parallel workstream: access review terminology appears in a test plan with no dependency on the accepted decision.",
+      "depends_on": [
+        "S0030-05"
+      ],
+      "facts": [
+        "N030-2"
+      ]
+    },
+    {
+      "id": "S0030-07",
+      "sequence_index": 6,
+      "content": "Unrelated operational note for another team repeats access review language without changing this feature.",
+      "depends_on": [],
+      "facts": [
+        "N030-3"
+      ]
+    },
+    {
+      "id": "S0030-08",
+      "sequence_index": 8,
+      "content": "Current decision: access review is active because the reviewed implementation and verification satisfy the governing requirement.",
+      "depends_on": [
+        "S0030-04"
+      ],
+      "facts": [
+        "F030-E"
+      ]
+    }
+  ]
+}
+

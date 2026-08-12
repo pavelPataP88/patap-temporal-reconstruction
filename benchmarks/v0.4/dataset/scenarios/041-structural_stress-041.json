@@ -1,0 +1,96 @@
+{
+  "id": "structural_stress-041",
+  "track": "STRUCTURAL_STRESS",
+  "title": "renamed credential policy",
+  "query": "Why does the login validator reject short passwords?",
+  "current_state": "S0041-08",
+  "required_fact_ids": [
+    "F041-A",
+    "F041-D"
+  ],
+  "states": [
+    {
+      "id": "S0041-01",
+      "sequence_index": 1,
+      "content": "Requirement record: SEC-41 requires twelve-character secrets.",
+      "depends_on": [],
+      "facts": [
+        "F041-A"
+      ]
+    },
+    {
+      "id": "S0041-02",
+      "sequence_index": 2,
+      "content": "Design review translates the requirement into the current service boundary for renamed credential policy.",
+      "depends_on": [
+        "S0041-01"
+      ],
+      "facts": [
+        "F041-B"
+      ]
+    },
+    {
+      "id": "S0041-03",
+      "sequence_index": 4,
+      "content": "Implementation note: the deployed change follows the reviewed design for renamed credential policy.",
+      "depends_on": [
+        "S0041-02"
+      ],
+      "facts": [
+        "F041-C"
+      ]
+    },
+    {
+      "id": "S0041-04",
+      "sequence_index": 7,
+      "content": "Verification result confirms the implementation behavior required for renamed credential policy.",
+      "depends_on": [
+        "S0041-03"
+      ],
+      "facts": [
+        "F041-D"
+      ]
+    },
+    {
+      "id": "S0041-05",
+      "sequence_index": 3,
+      "content": "Password minimum changed from twelve to eight in an abandoned prototype.",
+      "depends_on": [],
+      "facts": [
+        "N041-1"
+      ]
+    },
+    {
+      "id": "S0041-06",
+      "sequence_index": 5,
+      "content": "Parallel workstream: renamed credential policy terminology appears in a test plan with no dependency on the accepted decision.",
+      "depends_on": [
+        "S0041-05"
+      ],
+      "facts": [
+        "N041-2"
+      ]
+    },
+    {
+      "id": "S0041-07",
+      "sequence_index": 6,
+      "content": "Unrelated operational note for another team repeats renamed credential policy language without changing this feature.",
+      "depends_on": [],
+      "facts": [
+        "N041-3"
+      ]
+    },
+    {
+      "id": "S0041-08",
+      "sequence_index": 8,
+      "content": "Current decision: renamed credential policy is active because the reviewed implementation and verification satisfy the governing requirement.",
+      "depends_on": [
+        "S0041-04"
+      ],
+      "facts": [
+        "F041-E"
+      ]
+    }
+  ]
+}
+

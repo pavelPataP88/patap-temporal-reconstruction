@@ -1,0 +1,96 @@
+{
+  "id": "naturalistic-003",
+  "track": "NATURALISTIC",
+  "title": "rate limit rollout",
+  "query": "Why does the public API enforce the new request ceiling?",
+  "current_state": "S0003-08",
+  "required_fact_ids": [
+    "F003-A",
+    "F003-D"
+  ],
+  "states": [
+    {
+      "id": "S0003-01",
+      "sequence_index": 1,
+      "content": "Requirement record: the capacity decision protects the shared worker pool.",
+      "depends_on": [],
+      "facts": [
+        "F003-A"
+      ]
+    },
+    {
+      "id": "S0003-02",
+      "sequence_index": 2,
+      "content": "Design review translates the requirement into the current service boundary for rate limit rollout.",
+      "depends_on": [
+        "S0003-01"
+      ],
+      "facts": [
+        "F003-B"
+      ]
+    },
+    {
+      "id": "S0003-03",
+      "sequence_index": 4,
+      "content": "Implementation note: the deployed change follows the reviewed design for rate limit rollout.",
+      "depends_on": [
+        "S0003-02"
+      ],
+      "facts": [
+        "F003-C"
+      ]
+    },
+    {
+      "id": "S0003-04",
+      "sequence_index": 7,
+      "content": "Verification result confirms the implementation behavior required for rate limit rollout.",
+      "depends_on": [
+        "S0003-03"
+      ],
+      "facts": [
+        "F003-D"
+      ]
+    },
+    {
+      "id": "S0003-05",
+      "sequence_index": 3,
+      "content": "An unrelated rate limit rollout discussion repeats several query terms but concerns a different workstream.",
+      "depends_on": [],
+      "facts": [
+        "N003-1"
+      ]
+    },
+    {
+      "id": "S0003-06",
+      "sequence_index": 5,
+      "content": "Parallel workstream: rate limit rollout terminology appears in a test plan with no dependency on the accepted decision.",
+      "depends_on": [
+        "S0003-05"
+      ],
+      "facts": [
+        "N003-2"
+      ]
+    },
+    {
+      "id": "S0003-07",
+      "sequence_index": 6,
+      "content": "Unrelated operational note for another team repeats rate limit rollout language without changing this feature.",
+      "depends_on": [],
+      "facts": [
+        "N003-3"
+      ]
+    },
+    {
+      "id": "S0003-08",
+      "sequence_index": 8,
+      "content": "Current decision: rate limit rollout is active because the reviewed implementation and verification satisfy the governing requirement.",
+      "depends_on": [
+        "S0003-04"
+      ],
+      "facts": [
+        "F003-E"
+      ]
+    }
+  ]
+}
+

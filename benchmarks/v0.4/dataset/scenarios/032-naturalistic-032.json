@@ -1,0 +1,96 @@
+{
+  "id": "naturalistic-032",
+  "track": "NATURALISTIC",
+  "title": "frontend bundle",
+  "query": "Why is the dashboard bundle split by route?",
+  "current_state": "S0032-08",
+  "required_fact_ids": [
+    "F032-A",
+    "F032-D"
+  ],
+  "states": [
+    {
+      "id": "S0032-01",
+      "sequence_index": 1,
+      "content": "Requirement record: the performance budget limits initial dashboard transfer size.",
+      "depends_on": [],
+      "facts": [
+        "F032-A"
+      ]
+    },
+    {
+      "id": "S0032-02",
+      "sequence_index": 2,
+      "content": "Design review translates the requirement into the current service boundary for frontend bundle.",
+      "depends_on": [
+        "S0032-01"
+      ],
+      "facts": [
+        "F032-B"
+      ]
+    },
+    {
+      "id": "S0032-03",
+      "sequence_index": 4,
+      "content": "Implementation note: the deployed change follows the reviewed design for frontend bundle.",
+      "depends_on": [
+        "S0032-02"
+      ],
+      "facts": [
+        "F032-C"
+      ]
+    },
+    {
+      "id": "S0032-04",
+      "sequence_index": 7,
+      "content": "Verification result confirms the implementation behavior required for frontend bundle.",
+      "depends_on": [
+        "S0032-03"
+      ],
+      "facts": [
+        "F032-D"
+      ]
+    },
+    {
+      "id": "S0032-05",
+      "sequence_index": 3,
+      "content": "An unrelated frontend bundle discussion repeats several query terms but concerns a different workstream.",
+      "depends_on": [],
+      "facts": [
+        "N032-1"
+      ]
+    },
+    {
+      "id": "S0032-06",
+      "sequence_index": 5,
+      "content": "Parallel workstream: frontend bundle terminology appears in a test plan with no dependency on the accepted decision.",
+      "depends_on": [
+        "S0032-05"
+      ],
+      "facts": [
+        "N032-2"
+      ]
+    },
+    {
+      "id": "S0032-07",
+      "sequence_index": 6,
+      "content": "Unrelated operational note for another team repeats frontend bundle language without changing this feature.",
+      "depends_on": [],
+      "facts": [
+        "N032-3"
+      ]
+    },
+    {
+      "id": "S0032-08",
+      "sequence_index": 8,
+      "content": "Current decision: frontend bundle is active because the reviewed implementation and verification satisfy the governing requirement.",
+      "depends_on": [
+        "S0032-04"
+      ],
+      "facts": [
+        "F032-E"
+      ]
+    }
+  ]
+}
+

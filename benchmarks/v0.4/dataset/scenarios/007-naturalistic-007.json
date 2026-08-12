@@ -1,0 +1,96 @@
+{
+  "id": "naturalistic-007",
+  "track": "NATURALISTIC",
+  "title": "schema backfill",
+  "query": "Why does the backfill use checkpoints?",
+  "current_state": "S0007-08",
+  "required_fact_ids": [
+    "F007-A",
+    "F007-D"
+  ],
+  "states": [
+    {
+      "id": "S0007-01",
+      "sequence_index": 1,
+      "content": "Requirement record: the operations plan requires resumable processing after maintenance interruption.",
+      "depends_on": [],
+      "facts": [
+        "F007-A"
+      ]
+    },
+    {
+      "id": "S0007-02",
+      "sequence_index": 2,
+      "content": "Design review translates the requirement into the current service boundary for schema backfill.",
+      "depends_on": [
+        "S0007-01"
+      ],
+      "facts": [
+        "F007-B"
+      ]
+    },
+    {
+      "id": "S0007-03",
+      "sequence_index": 4,
+      "content": "Implementation note: the deployed change follows the reviewed design for schema backfill.",
+      "depends_on": [
+        "S0007-02"
+      ],
+      "facts": [
+        "F007-C"
+      ]
+    },
+    {
+      "id": "S0007-04",
+      "sequence_index": 7,
+      "content": "Verification result confirms the implementation behavior required for schema backfill.",
+      "depends_on": [
+        "S0007-03"
+      ],
+      "facts": [
+        "F007-D"
+      ]
+    },
+    {
+      "id": "S0007-05",
+      "sequence_index": 3,
+      "content": "An unrelated schema backfill discussion repeats several query terms but concerns a different workstream.",
+      "depends_on": [],
+      "facts": [
+        "N007-1"
+      ]
+    },
+    {
+      "id": "S0007-06",
+      "sequence_index": 5,
+      "content": "Parallel workstream: schema backfill terminology appears in a test plan with no dependency on the accepted decision.",
+      "depends_on": [
+        "S0007-05"
+      ],
+      "facts": [
+        "N007-2"
+      ]
+    },
+    {
+      "id": "S0007-07",
+      "sequence_index": 6,
+      "content": "Unrelated operational note for another team repeats schema backfill language without changing this feature.",
+      "depends_on": [],
+      "facts": [
+        "N007-3"
+      ]
+    },
+    {
+      "id": "S0007-08",
+      "sequence_index": 8,
+      "content": "Current decision: schema backfill is active because the reviewed implementation and verification satisfy the governing requirement.",
+      "depends_on": [
+        "S0007-04"
+      ],
+      "facts": [
+        "F007-E"
+      ]
+    }
+  ]
+}
+

@@ -1,0 +1,96 @@
+{
+  "id": "naturalistic-017",
+  "track": "NATURALISTIC",
+  "title": "notification digest",
+  "query": "Why are notifications grouped into a daily digest?",
+  "current_state": "S0017-08",
+  "required_fact_ids": [
+    "F017-A",
+    "F017-D"
+  ],
+  "states": [
+    {
+      "id": "S0017-01",
+      "sequence_index": 1,
+      "content": "Requirement record: the product decision reduces repeated alerts for the same account.",
+      "depends_on": [],
+      "facts": [
+        "F017-A"
+      ]
+    },
+    {
+      "id": "S0017-02",
+      "sequence_index": 2,
+      "content": "Design review translates the requirement into the current service boundary for notification digest.",
+      "depends_on": [
+        "S0017-01"
+      ],
+      "facts": [
+        "F017-B"
+      ]
+    },
+    {
+      "id": "S0017-03",
+      "sequence_index": 4,
+      "content": "Implementation note: the deployed change follows the reviewed design for notification digest.",
+      "depends_on": [
+        "S0017-02"
+      ],
+      "facts": [
+        "F017-C"
+      ]
+    },
+    {
+      "id": "S0017-04",
+      "sequence_index": 7,
+      "content": "Verification result confirms the implementation behavior required for notification digest.",
+      "depends_on": [
+        "S0017-03"
+      ],
+      "facts": [
+        "F017-D"
+      ]
+    },
+    {
+      "id": "S0017-05",
+      "sequence_index": 3,
+      "content": "An unrelated notification digest discussion repeats several query terms but concerns a different workstream.",
+      "depends_on": [],
+      "facts": [
+        "N017-1"
+      ]
+    },
+    {
+      "id": "S0017-06",
+      "sequence_index": 5,
+      "content": "Parallel workstream: notification digest terminology appears in a test plan with no dependency on the accepted decision.",
+      "depends_on": [
+        "S0017-05"
+      ],
+      "facts": [
+        "N017-2"
+      ]
+    },
+    {
+      "id": "S0017-07",
+      "sequence_index": 6,
+      "content": "Unrelated operational note for another team repeats notification digest language without changing this feature.",
+      "depends_on": [],
+      "facts": [
+        "N017-3"
+      ]
+    },
+    {
+      "id": "S0017-08",
+      "sequence_index": 8,
+      "content": "Current decision: notification digest is active because the reviewed implementation and verification satisfy the governing requirement.",
+      "depends_on": [
+        "S0017-04"
+      ],
+      "facts": [
+        "F017-E"
+      ]
+    }
+  ]
+}
+

@@ -1,0 +1,96 @@
+{
+  "id": "naturalistic-029",
+  "track": "NATURALISTIC",
+  "title": "backup restore",
+  "query": "Why is restore verified in an isolated environment?",
+  "current_state": "S0029-08",
+  "required_fact_ids": [
+    "F029-A",
+    "F029-D"
+  ],
+  "states": [
+    {
+      "id": "S0029-01",
+      "sequence_index": 1,
+      "content": "Requirement record: the recovery procedure requires evidence that backups are usable.",
+      "depends_on": [],
+      "facts": [
+        "F029-A"
+      ]
+    },
+    {
+      "id": "S0029-02",
+      "sequence_index": 2,
+      "content": "Design review translates the requirement into the current service boundary for backup restore.",
+      "depends_on": [
+        "S0029-01"
+      ],
+      "facts": [
+        "F029-B"
+      ]
+    },
+    {
+      "id": "S0029-03",
+      "sequence_index": 4,
+      "content": "Implementation note: the deployed change follows the reviewed design for backup restore.",
+      "depends_on": [
+        "S0029-02"
+      ],
+      "facts": [
+        "F029-C"
+      ]
+    },
+    {
+      "id": "S0029-04",
+      "sequence_index": 7,
+      "content": "Verification result confirms the implementation behavior required for backup restore.",
+      "depends_on": [
+        "S0029-03"
+      ],
+      "facts": [
+        "F029-D"
+      ]
+    },
+    {
+      "id": "S0029-05",
+      "sequence_index": 3,
+      "content": "An unrelated backup restore discussion repeats several query terms but concerns a different workstream.",
+      "depends_on": [],
+      "facts": [
+        "N029-1"
+      ]
+    },
+    {
+      "id": "S0029-06",
+      "sequence_index": 5,
+      "content": "Parallel workstream: backup restore terminology appears in a test plan with no dependency on the accepted decision.",
+      "depends_on": [
+        "S0029-05"
+      ],
+      "facts": [
+        "N029-2"
+      ]
+    },
+    {
+      "id": "S0029-07",
+      "sequence_index": 6,
+      "content": "Unrelated operational note for another team repeats backup restore language without changing this feature.",
+      "depends_on": [],
+      "facts": [
+        "N029-3"
+      ]
+    },
+    {
+      "id": "S0029-08",
+      "sequence_index": 8,
+      "content": "Current decision: backup restore is active because the reviewed implementation and verification satisfy the governing requirement.",
+      "depends_on": [
+        "S0029-04"
+      ],
+      "facts": [
+        "F029-E"
+      ]
+    }
+  ]
+}
+

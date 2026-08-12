@@ -1,0 +1,96 @@
+{
+  "id": "naturalistic-036",
+  "track": "NATURALISTIC",
+  "title": "object storage",
+  "query": "Why are retained files versioned instead of overwritten?",
+  "current_state": "S0036-08",
+  "required_fact_ids": [
+    "F036-A",
+    "F036-D"
+  ],
+  "states": [
+    {
+      "id": "S0036-01",
+      "sequence_index": 1,
+      "content": "Requirement record: the legal hold workflow requires preserving prior retained versions.",
+      "depends_on": [],
+      "facts": [
+        "F036-A"
+      ]
+    },
+    {
+      "id": "S0036-02",
+      "sequence_index": 2,
+      "content": "Design review translates the requirement into the current service boundary for object storage.",
+      "depends_on": [
+        "S0036-01"
+      ],
+      "facts": [
+        "F036-B"
+      ]
+    },
+    {
+      "id": "S0036-03",
+      "sequence_index": 4,
+      "content": "Implementation note: the deployed change follows the reviewed design for object storage.",
+      "depends_on": [
+        "S0036-02"
+      ],
+      "facts": [
+        "F036-C"
+      ]
+    },
+    {
+      "id": "S0036-04",
+      "sequence_index": 7,
+      "content": "Verification result confirms the implementation behavior required for object storage.",
+      "depends_on": [
+        "S0036-03"
+      ],
+      "facts": [
+        "F036-D"
+      ]
+    },
+    {
+      "id": "S0036-05",
+      "sequence_index": 3,
+      "content": "An unrelated object storage discussion repeats several query terms but concerns a different workstream.",
+      "depends_on": [],
+      "facts": [
+        "N036-1"
+      ]
+    },
+    {
+      "id": "S0036-06",
+      "sequence_index": 5,
+      "content": "Parallel workstream: object storage terminology appears in a test plan with no dependency on the accepted decision.",
+      "depends_on": [
+        "S0036-05"
+      ],
+      "facts": [
+        "N036-2"
+      ]
+    },
+    {
+      "id": "S0036-07",
+      "sequence_index": 6,
+      "content": "Unrelated operational note for another team repeats object storage language without changing this feature.",
+      "depends_on": [],
+      "facts": [
+        "N036-3"
+      ]
+    },
+    {
+      "id": "S0036-08",
+      "sequence_index": 8,
+      "content": "Current decision: object storage is active because the reviewed implementation and verification satisfy the governing requirement.",
+      "depends_on": [
+        "S0036-04"
+      ],
+      "facts": [
+        "F036-E"
+      ]
+    }
+  ]
+}
+

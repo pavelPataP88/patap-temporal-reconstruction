@@ -1,0 +1,96 @@
+{
+  "id": "naturalistic-035",
+  "track": "NATURALISTIC",
+  "title": "metric cardinality",
+  "query": "Why are user identifiers excluded from metric labels?",
+  "current_state": "S0035-08",
+  "required_fact_ids": [
+    "F035-A",
+    "F035-D"
+  ],
+  "states": [
+    {
+      "id": "S0035-01",
+      "sequence_index": 1,
+      "content": "Requirement record: the observability standard prohibits unbounded label cardinality.",
+      "depends_on": [],
+      "facts": [
+        "F035-A"
+      ]
+    },
+    {
+      "id": "S0035-02",
+      "sequence_index": 2,
+      "content": "Design review translates the requirement into the current service boundary for metric cardinality.",
+      "depends_on": [
+        "S0035-01"
+      ],
+      "facts": [
+        "F035-B"
+      ]
+    },
+    {
+      "id": "S0035-03",
+      "sequence_index": 4,
+      "content": "Implementation note: the deployed change follows the reviewed design for metric cardinality.",
+      "depends_on": [
+        "S0035-02"
+      ],
+      "facts": [
+        "F035-C"
+      ]
+    },
+    {
+      "id": "S0035-04",
+      "sequence_index": 7,
+      "content": "Verification result confirms the implementation behavior required for metric cardinality.",
+      "depends_on": [
+        "S0035-03"
+      ],
+      "facts": [
+        "F035-D"
+      ]
+    },
+    {
+      "id": "S0035-05",
+      "sequence_index": 3,
+      "content": "An unrelated metric cardinality discussion repeats several query terms but concerns a different workstream.",
+      "depends_on": [],
+      "facts": [
+        "N035-1"
+      ]
+    },
+    {
+      "id": "S0035-06",
+      "sequence_index": 5,
+      "content": "Parallel workstream: metric cardinality terminology appears in a test plan with no dependency on the accepted decision.",
+      "depends_on": [
+        "S0035-05"
+      ],
+      "facts": [
+        "N035-2"
+      ]
+    },
+    {
+      "id": "S0035-07",
+      "sequence_index": 6,
+      "content": "Unrelated operational note for another team repeats metric cardinality language without changing this feature.",
+      "depends_on": [],
+      "facts": [
+        "N035-3"
+      ]
+    },
+    {
+      "id": "S0035-08",
+      "sequence_index": 8,
+      "content": "Current decision: metric cardinality is active because the reviewed implementation and verification satisfy the governing requirement.",
+      "depends_on": [
+        "S0035-04"
+      ],
+      "facts": [
+        "F035-E"
+      ]
+    }
+  ]
+}
+

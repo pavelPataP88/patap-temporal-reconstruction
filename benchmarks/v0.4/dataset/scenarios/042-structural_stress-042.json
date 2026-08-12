@@ -1,0 +1,96 @@
+{
+  "id": "structural_stress-042",
+  "track": "STRUCTURAL_STRESS",
+  "title": "alias retirement",
+  "query": "Why does the resolver translate the old customer key?",
+  "current_state": "S0042-08",
+  "required_fact_ids": [
+    "F042-A",
+    "F042-D"
+  ],
+  "states": [
+    {
+      "id": "S0042-01",
+      "sequence_index": 1,
+      "content": "Requirement record: the account identity contract preserves legacy aliases during transition.",
+      "depends_on": [],
+      "facts": [
+        "F042-A"
+      ]
+    },
+    {
+      "id": "S0042-02",
+      "sequence_index": 2,
+      "content": "Design review translates the requirement into the current service boundary for alias retirement.",
+      "depends_on": [
+        "S0042-01"
+      ],
+      "facts": [
+        "F042-B"
+      ]
+    },
+    {
+      "id": "S0042-03",
+      "sequence_index": 4,
+      "content": "Implementation note: the deployed change follows the reviewed design for alias retirement.",
+      "depends_on": [
+        "S0042-02"
+      ],
+      "facts": [
+        "F042-C"
+      ]
+    },
+    {
+      "id": "S0042-04",
+      "sequence_index": 7,
+      "content": "Verification result confirms the implementation behavior required for alias retirement.",
+      "depends_on": [
+        "S0042-03"
+      ],
+      "facts": [
+        "F042-D"
+      ]
+    },
+    {
+      "id": "S0042-05",
+      "sequence_index": 3,
+      "content": "the old customer key is removed from a prototype resolver.",
+      "depends_on": [],
+      "facts": [
+        "N042-1"
+      ]
+    },
+    {
+      "id": "S0042-06",
+      "sequence_index": 5,
+      "content": "Parallel workstream: alias retirement terminology appears in a test plan with no dependency on the accepted decision.",
+      "depends_on": [
+        "S0042-05"
+      ],
+      "facts": [
+        "N042-2"
+      ]
+    },
+    {
+      "id": "S0042-07",
+      "sequence_index": 6,
+      "content": "Unrelated operational note for another team repeats alias retirement language without changing this feature.",
+      "depends_on": [],
+      "facts": [
+        "N042-3"
+      ]
+    },
+    {
+      "id": "S0042-08",
+      "sequence_index": 8,
+      "content": "Current decision: alias retirement is active because the reviewed implementation and verification satisfy the governing requirement.",
+      "depends_on": [
+        "S0042-04"
+      ],
+      "facts": [
+        "F042-E"
+      ]
+    }
+  ]
+}
+
