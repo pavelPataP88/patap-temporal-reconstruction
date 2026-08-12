@@ -1,1511 +1,1222 @@
 {
   "version": "0.3.0",
+  "schema": "context-selection-v2",
   "scenarios": [
     {
-      "id": "authentication_0",
-      "query": "Why does the authentication current change preserve contract?",
-      "current_state": "s0_current",
+      "id": "auth_password_policy",
+      "query": "What evidence supports the current auth password policy decision?",
+      "current_state": "auth_password_policy_current",
       "required_fact_ids": [
-        "R0",
-        "I0"
+        "auth_password_policy:F2",
+        "auth_password_policy:F1"
       ],
       "states": [
         {
-          "id": "s0_requirement",
-          "content": "authentication requirement: preserve contract R0",
-          "facts": [
-            "R0"
-          ]
-        },
-        {
-          "id": "s0_implementation",
-          "content": "authentication implementation applies requirement R0",
-          "depends_on": [
-            "s0_requirement"
-          ],
-          "facts": [
-            "I0"
-          ]
-        },
-        {
-          "id": "s0_current",
-          "content": "Why does the authentication current change preserve contract?",
-          "depends_on": [
-            "s0_implementation"
-          ],
-          "facts": [
-            "C0"
-          ]
-        },
-        {
-          "id": "s0_noise_0",
-          "content": "unrelated parallel work authentication distractor 0 notes",
+          "id": "auth_password_policy_requirement",
+          "sequence_index": 0,
+          "content": "auth password policy requirement decision and evidence",
           "depends_on": [],
           "facts": [
-            "N0_0"
+            "auth_password_policy:F0"
           ]
         },
         {
-          "id": "s0_noise_1",
-          "content": "unrelated parallel work authentication distractor 1 notes",
+          "id": "auth_password_policy_design",
+          "sequence_index": 1,
+          "content": "auth password policy design decision and evidence",
           "depends_on": [
-            "s0_noise_0"
+            "auth_password_policy_requirement"
           ],
           "facts": [
-            "N0_1"
+            "auth_password_policy:F1"
           ]
         },
         {
-          "id": "s0_noise_2",
-          "content": "unrelated parallel work authentication distractor 2 notes",
+          "id": "auth_password_policy_implementation",
+          "sequence_index": 2,
+          "content": "auth password policy implementation decision and evidence",
           "depends_on": [
-            "s0_noise_1"
+            "auth_password_policy_design"
           ],
           "facts": [
-            "N0_2"
+            "auth_password_policy:F2"
           ]
         },
         {
-          "id": "s0_noise_3",
-          "content": "unrelated parallel work authentication distractor 3 notes",
-          "depends_on": [
-            "s0_noise_2"
-          ],
-          "facts": [
-            "N0_3"
-          ]
-        },
-        {
-          "id": "s0_noise_4",
-          "content": "unrelated parallel work authentication distractor 4 notes",
-          "depends_on": [
-            "s0_noise_3"
-          ],
+          "id": "auth_password_policy_parallel_0",
+          "sequence_index": 4,
+          "content": "parallel unrelated auth_password_policy workstream 0 distractor detail",
+          "depends_on": [],
           "facts": [
-            "N0_4"
+            "auth_password_policy:N0"
           ]
         },
         {
-          "id": "s0_noise_5",
-          "content": "unrelated parallel work authentication distractor 5 notes",
+          "id": "auth_password_policy_parallel_1",
+          "sequence_index": 5,
+          "content": "parallel unrelated auth_password_policy workstream 1 distractor detail",
           "depends_on": [
-            "s0_noise_4"
+            "auth_password_policy_parallel_0"
           ],
           "facts": [
-            "N0_5"
+            "auth_password_policy:N1"
           ]
         },
         {
-          "id": "s0_noise_6",
-          "content": "unrelated parallel work authentication distractor 6 notes",
+          "id": "auth_password_policy_parallel_2",
+          "sequence_index": 6,
+          "content": "parallel unrelated auth_password_policy workstream 2 distractor detail",
           "depends_on": [
-            "s0_noise_5"
+            "auth_password_policy_parallel_1"
           ],
           "facts": [
-            "N0_6"
+            "auth_password_policy:N2"
           ]
         },
         {
-          "id": "s0_noise_7",
-          "content": "unrelated parallel work authentication distractor 7 notes",
-          "depends_on": [
-            "s0_noise_6"
-          ],
+          "id": "auth_password_policy_parallel_3",
+          "sequence_index": 7,
+          "content": "parallel unrelated auth_password_policy workstream 3 distractor detail",
+          "depends_on": [],
           "facts": [
-            "N0_7"
+            "auth_password_policy:N3"
           ]
         },
         {
-          "id": "s0_noise_8",
-          "content": "unrelated parallel work authentication distractor 8 notes",
+          "id": "auth_password_policy_parallel_4",
+          "sequence_index": 8,
+          "content": "parallel unrelated auth_password_policy workstream 4 distractor detail",
           "depends_on": [
-            "s0_noise_7"
+            "auth_password_policy_parallel_3"
           ],
           "facts": [
-            "N0_8"
+            "auth_password_policy:N4"
           ]
         },
         {
-          "id": "s0_noise_9",
-          "content": "unrelated parallel work authentication distractor 9 notes",
+          "id": "auth_password_policy_parallel_5",
+          "sequence_index": 9,
+          "content": "parallel unrelated auth_password_policy workstream 5 distractor detail",
           "depends_on": [
-            "s0_noise_8"
+            "auth_password_policy_parallel_4"
           ],
           "facts": [
-            "N0_9"
+            "auth_password_policy:N5"
           ]
         },
         {
-          "id": "s0_noise_10",
-          "content": "unrelated parallel work authentication distractor 10 notes",
-          "depends_on": [
-            "s0_noise_9"
-          ],
+          "id": "auth_password_policy_parallel_6",
+          "sequence_index": 10,
+          "content": "parallel unrelated auth_password_policy workstream 6 distractor detail",
+          "depends_on": [],
           "facts": [
-            "N0_10"
+            "auth_password_policy:N6"
           ]
         },
         {
-          "id": "s0_noise_11",
-          "content": "unrelated parallel work authentication distractor 11 notes",
+          "id": "auth_password_policy_parallel_7",
+          "sequence_index": 11,
+          "content": "parallel unrelated auth_password_policy workstream 7 distractor detail",
           "depends_on": [
-            "s0_noise_10"
+            "auth_password_policy_parallel_6"
           ],
           "facts": [
-            "N0_11"
+            "auth_password_policy:N7"
           ]
         },
         {
-          "id": "s0_noise_12",
-          "content": "unrelated parallel work authentication distractor 12 notes",
+          "id": "auth_password_policy_parallel_8",
+          "sequence_index": 12,
+          "content": "parallel unrelated auth_password_policy workstream 8 distractor detail",
           "depends_on": [
-            "s0_noise_11"
+            "auth_password_policy_parallel_7"
           ],
           "facts": [
-            "N0_12"
+            "auth_password_policy:N8"
           ]
         },
         {
-          "id": "s0_noise_13",
-          "content": "unrelated parallel work authentication distractor 13 notes",
-          "depends_on": [
-            "s0_noise_12"
-          ],
+          "id": "auth_password_policy_parallel_9",
+          "sequence_index": 13,
+          "content": "parallel unrelated auth_password_policy workstream 9 distractor detail",
+          "depends_on": [],
           "facts": [
-            "N0_13"
+            "auth_password_policy:N9"
           ]
         },
         {
-          "id": "s0_noise_14",
-          "content": "unrelated parallel work authentication distractor 14 notes",
+          "id": "auth_password_policy_parallel_10",
+          "sequence_index": 14,
+          "content": "parallel unrelated auth_password_policy workstream 10 distractor detail",
           "depends_on": [
-            "s0_noise_13"
+            "auth_password_policy_parallel_9"
           ],
           "facts": [
-            "N0_14"
+            "auth_password_policy:N10"
           ]
         },
         {
-          "id": "s0_noise_15",
-          "content": "unrelated parallel work authentication distractor 15 notes",
+          "id": "auth_password_policy_parallel_11",
+          "sequence_index": 15,
+          "content": "parallel unrelated auth_password_policy workstream 11 distractor detail",
           "depends_on": [
-            "s0_noise_14"
+            "auth_password_policy_parallel_10"
           ],
           "facts": [
-            "N0_15"
+            "auth_password_policy:N11"
           ]
         },
         {
-          "id": "s0_noise_16",
-          "content": "unrelated parallel work authentication distractor 16 notes",
-          "depends_on": [
-            "s0_noise_15"
-          ],
+          "id": "auth_password_policy_parallel_12",
+          "sequence_index": 16,
+          "content": "parallel unrelated auth_password_policy workstream 12 distractor detail",
+          "depends_on": [],
           "facts": [
-            "N0_16"
+            "auth_password_policy:N12"
           ]
         },
         {
-          "id": "s0_noise_17",
-          "content": "unrelated parallel work authentication distractor 17 notes",
+          "id": "auth_password_policy_parallel_13",
+          "sequence_index": 17,
+          "content": "parallel unrelated auth_password_policy workstream 13 distractor detail",
           "depends_on": [
-            "s0_noise_16"
+            "auth_password_policy_parallel_12"
           ],
           "facts": [
-            "N0_17"
+            "auth_password_policy:N13"
           ]
         },
         {
-          "id": "s0_noise_18",
-          "content": "unrelated parallel work authentication distractor 18 notes",
+          "id": "auth_password_policy_parallel_14",
+          "sequence_index": 18,
+          "content": "parallel unrelated auth_password_policy workstream 14 distractor detail",
           "depends_on": [
-            "s0_noise_17"
+            "auth_password_policy_parallel_13"
           ],
           "facts": [
-            "N0_18"
+            "auth_password_policy:N14"
           ]
         },
         {
-          "id": "s0_noise_19",
-          "content": "unrelated parallel work authentication distractor 19 notes",
-          "depends_on": [
-            "s0_noise_18"
-          ],
+          "id": "auth_password_policy_parallel_15",
+          "sequence_index": 19,
+          "content": "parallel unrelated auth_password_policy workstream 15 distractor detail",
+          "depends_on": [],
           "facts": [
-            "N0_19"
+            "auth_password_policy:N15"
           ]
         },
         {
-          "id": "s0_noise_20",
-          "content": "unrelated parallel work authentication distractor 20 notes",
+          "id": "auth_password_policy_parallel_16",
+          "sequence_index": 20,
+          "content": "parallel unrelated auth_password_policy workstream 16 distractor detail",
           "depends_on": [
-            "s0_noise_19"
+            "auth_password_policy_parallel_15"
           ],
           "facts": [
-            "N0_20"
+            "auth_password_policy:N16"
           ]
         },
         {
-          "id": "s0_noise_21",
-          "content": "unrelated parallel work authentication distractor 21 notes",
+          "id": "auth_password_policy_parallel_17",
+          "sequence_index": 21,
+          "content": "parallel unrelated auth_password_policy workstream 17 distractor detail",
           "depends_on": [
-            "s0_noise_20"
+            "auth_password_policy_parallel_16"
           ],
           "facts": [
-            "N0_21"
+            "auth_password_policy:N17"
           ]
         },
         {
-          "id": "s0_noise_22",
-          "content": "unrelated parallel work authentication distractor 22 notes",
-          "depends_on": [
-            "s0_noise_21"
-          ],
+          "id": "auth_password_policy_parallel_18",
+          "sequence_index": 22,
+          "content": "parallel unrelated auth_password_policy workstream 18 distractor detail",
+          "depends_on": [],
           "facts": [
-            "N0_22"
+            "auth_password_policy:N18"
           ]
         },
         {
-          "id": "s0_noise_23",
-          "content": "unrelated parallel work authentication distractor 23 notes",
+          "id": "auth_password_policy_parallel_19",
+          "sequence_index": 23,
+          "content": "parallel unrelated auth_password_policy workstream 19 distractor detail",
           "depends_on": [
-            "s0_noise_22"
+            "auth_password_policy_parallel_18"
           ],
           "facts": [
-            "N0_23"
+            "auth_password_policy:N19"
           ]
         },
         {
-          "id": "s0_noise_24",
-          "content": "unrelated parallel work authentication distractor 24 notes",
+          "id": "auth_password_policy_parallel_20",
+          "sequence_index": 24,
+          "content": "parallel unrelated auth_password_policy workstream 20 distractor detail",
           "depends_on": [
-            "s0_noise_23"
+            "auth_password_policy_parallel_19"
           ],
           "facts": [
-            "N0_24"
+            "auth_password_policy:N20"
           ]
         },
         {
-          "id": "s0_noise_25",
-          "content": "unrelated parallel work authentication distractor 25 notes",
-          "depends_on": [
-            "s0_noise_24"
-          ],
+          "id": "auth_password_policy_parallel_21",
+          "sequence_index": 25,
+          "content": "parallel unrelated auth_password_policy workstream 21 distractor detail",
+          "depends_on": [],
           "facts": [
-            "N0_25"
+            "auth_password_policy:N21"
           ]
         },
         {
-          "id": "s0_noise_26",
-          "content": "unrelated parallel work authentication distractor 26 notes",
+          "id": "auth_password_policy_parallel_22",
+          "sequence_index": 26,
+          "content": "parallel unrelated auth_password_policy workstream 22 distractor detail",
           "depends_on": [
-            "s0_noise_25"
+            "auth_password_policy_parallel_21"
           ],
           "facts": [
-            "N0_26"
+            "auth_password_policy:N22"
           ]
         },
         {
-          "id": "s0_noise_27",
-          "content": "unrelated parallel work authentication distractor 27 notes",
+          "id": "auth_password_policy_parallel_23",
+          "sequence_index": 27,
+          "content": "parallel unrelated auth_password_policy workstream 23 distractor detail",
           "depends_on": [
-            "s0_noise_26"
+            "auth_password_policy_parallel_22"
           ],
           "facts": [
-            "N0_27"
+            "auth_password_policy:N23"
           ]
         },
         {
-          "id": "s0_noise_28",
-          "content": "unrelated parallel work authentication distractor 28 notes",
-          "depends_on": [
-            "s0_noise_27"
-          ],
+          "id": "auth_password_policy_parallel_24",
+          "sequence_index": 28,
+          "content": "parallel unrelated auth_password_policy workstream 24 distractor detail",
+          "depends_on": [],
           "facts": [
-            "N0_28"
+            "auth_password_policy:N24"
           ]
         },
         {
-          "id": "s0_noise_29",
-          "content": "unrelated parallel work authentication distractor 29 notes",
+          "id": "auth_password_policy_parallel_25",
+          "sequence_index": 29,
+          "content": "parallel unrelated auth_password_policy workstream 25 distractor detail",
           "depends_on": [
-            "s0_noise_28"
+            "auth_password_policy_parallel_24"
           ],
           "facts": [
-            "N0_29"
+            "auth_password_policy:N25"
           ]
         },
         {
-          "id": "s0_noise_30",
-          "content": "unrelated parallel work authentication distractor 30 notes",
+          "id": "auth_password_policy_parallel_26",
+          "sequence_index": 30,
+          "content": "parallel unrelated auth_password_policy workstream 26 distractor detail",
           "depends_on": [
-            "s0_noise_29"
+            "auth_password_policy_parallel_25"
           ],
           "facts": [
-            "N0_30"
+            "auth_password_policy:N26"
           ]
         },
         {
-          "id": "s0_noise_31",
-          "content": "unrelated parallel work authentication distractor 31 notes",
-          "depends_on": [
-            "s0_noise_30"
-          ],
+          "id": "auth_password_policy_parallel_27",
+          "sequence_index": 31,
+          "content": "parallel unrelated auth_password_policy workstream 27 distractor detail",
+          "depends_on": [],
           "facts": [
-            "N0_31"
+            "auth_password_policy:N27"
           ]
         },
         {
-          "id": "s0_noise_32",
-          "content": "unrelated parallel work authentication distractor 32 notes",
+          "id": "auth_password_policy_parallel_28",
+          "sequence_index": 32,
+          "content": "parallel unrelated auth_password_policy workstream 28 distractor detail",
           "depends_on": [
-            "s0_noise_31"
+            "auth_password_policy_parallel_27"
           ],
           "facts": [
-            "N0_32"
+            "auth_password_policy:N28"
           ]
         },
         {
-          "id": "s0_noise_33",
-          "content": "unrelated parallel work authentication distractor 33 notes",
+          "id": "auth_password_policy_parallel_29",
+          "sequence_index": 33,
+          "content": "parallel unrelated auth_password_policy workstream 29 distractor detail",
           "depends_on": [
-            "s0_noise_32"
+            "auth_password_policy_parallel_28"
           ],
           "facts": [
-            "N0_33"
+            "auth_password_policy:N29"
           ]
         },
         {
-          "id": "s0_noise_34",
-          "content": "unrelated parallel work authentication distractor 34 notes",
-          "depends_on": [
-            "s0_noise_33"
-          ],
+          "id": "auth_password_policy_parallel_30",
+          "sequence_index": 34,
+          "content": "parallel unrelated auth_password_policy workstream 30 distractor detail",
+          "depends_on": [],
           "facts": [
-            "N0_34"
+            "auth_password_policy:N30"
           ]
         },
         {
-          "id": "s0_noise_35",
-          "content": "unrelated parallel work authentication distractor 35 notes",
+          "id": "auth_password_policy_parallel_31",
+          "sequence_index": 35,
+          "content": "parallel unrelated auth_password_policy workstream 31 distractor detail",
           "depends_on": [
-            "s0_noise_34"
+            "auth_password_policy_parallel_30"
           ],
           "facts": [
-            "N0_35"
+            "auth_password_policy:N31"
           ]
         },
         {
-          "id": "s0_noise_36",
-          "content": "unrelated parallel work authentication distractor 36 notes",
+          "id": "auth_password_policy_parallel_32",
+          "sequence_index": 36,
+          "content": "parallel unrelated auth_password_policy workstream 32 distractor detail",
           "depends_on": [
-            "s0_noise_35"
+            "auth_password_policy_parallel_31"
           ],
           "facts": [
-            "N0_36"
+            "auth_password_policy:N32"
           ]
         },
         {
-          "id": "s0_noise_37",
-          "content": "unrelated parallel work authentication distractor 37 notes",
-          "depends_on": [
-            "s0_noise_36"
-          ],
+          "id": "auth_password_policy_parallel_33",
+          "sequence_index": 37,
+          "content": "parallel unrelated auth_password_policy workstream 33 distractor detail",
+          "depends_on": [],
           "facts": [
-            "N0_37"
+            "auth_password_policy:N33"
           ]
         },
         {
-          "id": "s0_noise_38",
-          "content": "unrelated parallel work authentication distractor 38 notes",
+          "id": "auth_password_policy_parallel_34",
+          "sequence_index": 38,
+          "content": "parallel unrelated auth_password_policy workstream 34 distractor detail",
           "depends_on": [
-            "s0_noise_37"
+            "auth_password_policy_parallel_33"
           ],
           "facts": [
-            "N0_38"
+            "auth_password_policy:N34"
           ]
         },
         {
-          "id": "s0_noise_39",
-          "content": "unrelated parallel work authentication distractor 39 notes",
+          "id": "auth_password_policy_parallel_35",
+          "sequence_index": 39,
+          "content": "parallel unrelated auth_password_policy workstream 35 distractor detail",
           "depends_on": [
-            "s0_noise_38"
+            "auth_password_policy_parallel_34"
           ],
           "facts": [
-            "N0_39"
+            "auth_password_policy:N35"
           ]
         },
         {
-          "id": "s0_noise_40",
-          "content": "unrelated parallel work authentication distractor 40 notes",
-          "depends_on": [
-            "s0_noise_39"
-          ],
+          "id": "auth_password_policy_parallel_36",
+          "sequence_index": 40,
+          "content": "parallel unrelated auth_password_policy workstream 36 distractor detail",
+          "depends_on": [],
           "facts": [
-            "N0_40"
+            "auth_password_policy:N36"
           ]
         },
         {
-          "id": "s0_noise_41",
-          "content": "unrelated parallel work authentication distractor 41 notes",
+          "id": "auth_password_policy_parallel_37",
+          "sequence_index": 41,
+          "content": "parallel unrelated auth_password_policy workstream 37 distractor detail",
           "depends_on": [
-            "s0_noise_40"
+            "auth_password_policy_parallel_36"
           ],
           "facts": [
-            "N0_41"
+            "auth_password_policy:N37"
           ]
         },
         {
-          "id": "s0_noise_42",
-          "content": "unrelated parallel work authentication distractor 42 notes",
+          "id": "auth_password_policy_parallel_38",
+          "sequence_index": 42,
+          "content": "parallel unrelated auth_password_policy workstream 38 distractor detail",
           "depends_on": [
-            "s0_noise_41"
+            "auth_password_policy_parallel_37"
           ],
           "facts": [
-            "N0_42"
+            "auth_password_policy:N38"
           ]
         },
         {
-          "id": "s0_noise_43",
-          "content": "unrelated parallel work authentication distractor 43 notes",
-          "depends_on": [
-            "s0_noise_42"
-          ],
+          "id": "auth_password_policy_parallel_39",
+          "sequence_index": 43,
+          "content": "parallel unrelated auth_password_policy workstream 39 distractor detail",
+          "depends_on": [],
           "facts": [
-            "N0_43"
+            "auth_password_policy:N39"
           ]
         },
         {
-          "id": "s0_noise_44",
-          "content": "unrelated parallel work authentication distractor 44 notes",
+          "id": "auth_password_policy_parallel_40",
+          "sequence_index": 44,
+          "content": "parallel unrelated auth_password_policy workstream 40 distractor detail",
           "depends_on": [
-            "s0_noise_43"
+            "auth_password_policy_parallel_39"
           ],
           "facts": [
-            "N0_44"
+            "auth_password_policy:N40"
           ]
         },
         {
-          "id": "s0_noise_45",
-          "content": "unrelated parallel work authentication distractor 45 notes",
+          "id": "auth_password_policy_parallel_41",
+          "sequence_index": 45,
+          "content": "parallel unrelated auth_password_policy workstream 41 distractor detail",
           "depends_on": [
-            "s0_noise_44"
+            "auth_password_policy_parallel_40"
           ],
           "facts": [
-            "N0_45"
+            "auth_password_policy:N41"
           ]
         },
         {
-          "id": "s0_noise_46",
-          "content": "unrelated parallel work authentication distractor 46 notes",
-          "depends_on": [
-            "s0_noise_45"
-          ],
+          "id": "auth_password_policy_parallel_42",
+          "sequence_index": 46,
+          "content": "parallel unrelated auth_password_policy workstream 42 distractor detail",
+          "depends_on": [],
           "facts": [
-            "N0_46"
+            "auth_password_policy:N42"
           ]
         },
         {
-          "id": "s0_noise_47",
-          "content": "unrelated parallel work authentication distractor 47 notes",
+          "id": "auth_password_policy_parallel_43",
+          "sequence_index": 47,
+          "content": "parallel unrelated auth_password_policy workstream 43 distractor detail",
           "depends_on": [
-            "s0_noise_46"
+            "auth_password_policy_parallel_42"
           ],
           "facts": [
-            "N0_47"
+            "auth_password_policy:N43"
           ]
         },
         {
-          "id": "s0_noise_48",
-          "content": "unrelated parallel work authentication distractor 48 notes",
+          "id": "auth_password_policy_parallel_44",
+          "sequence_index": 48,
+          "content": "parallel unrelated auth_password_policy workstream 44 distractor detail",
           "depends_on": [
-            "s0_noise_47"
+            "auth_password_policy_parallel_43"
           ],
           "facts": [
-            "N0_48"
+            "auth_password_policy:N44"
           ]
         },
         {
-          "id": "s0_noise_49",
-          "content": "unrelated parallel work authentication distractor 49 notes",
-          "depends_on": [
-            "s0_noise_48"
-          ],
+          "id": "auth_password_policy_parallel_45",
+          "sequence_index": 49,
+          "content": "parallel unrelated auth_password_policy workstream 45 distractor detail",
+          "depends_on": [],
           "facts": [
-            "N0_49"
+            "auth_password_policy:N45"
           ]
         },
         {
-          "id": "s0_noise_50",
-          "content": "unrelated parallel work authentication distractor 50 notes",
+          "id": "auth_password_policy_parallel_46",
+          "sequence_index": 50,
+          "content": "parallel unrelated auth_password_policy workstream 46 distractor detail",
           "depends_on": [
-            "s0_noise_49"
+            "auth_password_policy_parallel_45"
           ],
           "facts": [
-            "N0_50"
+            "auth_password_policy:N46"
           ]
         },
         {
-          "id": "s0_noise_51",
-          "content": "unrelated parallel work authentication distractor 51 notes",
+          "id": "auth_password_policy_parallel_47",
+          "sequence_index": 51,
+          "content": "parallel unrelated auth_password_policy workstream 47 distractor detail",
           "depends_on": [
-            "s0_noise_50"
+            "auth_password_policy_parallel_46"
           ],
           "facts": [
-            "N0_51"
+            "auth_password_policy:N47"
           ]
         },
         {
-          "id": "s0_noise_52",
-          "content": "unrelated parallel work authentication distractor 52 notes",
-          "depends_on": [
-            "s0_noise_51"
-          ],
+          "id": "auth_password_policy_parallel_48",
+          "sequence_index": 52,
+          "content": "parallel unrelated auth_password_policy workstream 48 distractor detail",
+          "depends_on": [],
           "facts": [
-            "N0_52"
+            "auth_password_policy:N48"
           ]
         },
         {
-          "id": "s0_noise_53",
-          "content": "unrelated parallel work authentication distractor 53 notes",
+          "id": "auth_password_policy_parallel_49",
+          "sequence_index": 53,
+          "content": "parallel unrelated auth_password_policy workstream 49 distractor detail",
           "depends_on": [
-            "s0_noise_52"
+            "auth_password_policy_parallel_48"
           ],
           "facts": [
-            "N0_53"
+            "auth_password_policy:N49"
           ]
         },
         {
-          "id": "s0_noise_54",
-          "content": "unrelated parallel work authentication distractor 54 notes",
+          "id": "auth_password_policy_parallel_50",
+          "sequence_index": 54,
+          "content": "parallel unrelated auth_password_policy workstream 50 distractor detail",
           "depends_on": [
-            "s0_noise_53"
+            "auth_password_policy_parallel_49"
           ],
           "facts": [
-            "N0_54"
+            "auth_password_policy:N50"
           ]
         },
         {
-          "id": "s0_noise_55",
-          "content": "unrelated parallel work authentication distractor 55 notes",
-          "depends_on": [
-            "s0_noise_54"
-          ],
+          "id": "auth_password_policy_parallel_51",
+          "sequence_index": 55,
+          "content": "parallel unrelated auth_password_policy workstream 51 distractor detail",
+          "depends_on": [],
           "facts": [
-            "N0_55"
+            "auth_password_policy:N51"
           ]
         },
         {
-          "id": "s0_noise_56",
-          "content": "unrelated parallel work authentication distractor 56 notes",
+          "id": "auth_password_policy_parallel_52",
+          "sequence_index": 56,
+          "content": "parallel unrelated auth_password_policy workstream 52 distractor detail",
           "depends_on": [
-            "s0_noise_55"
+            "auth_password_policy_parallel_51"
           ],
           "facts": [
-            "N0_56"
+            "auth_password_policy:N52"
           ]
         },
         {
-          "id": "s0_noise_57",
-          "content": "unrelated parallel work authentication distractor 57 notes",
-          "depends_on": [
-            "s0_noise_56"
-          ],
-          "facts": [
-            "N0_57"
+          "id": "auth_password_policy_parallel_53",
+          "sequence_index": 57,
+          "content": "parallel unrel…129719 tokens truncated…        "facts": [
+            "schema_validation:N18"
           ]
         },
         {
-          "id": "s0_noise_58",
-          "content": "unrelated parallel work authentication distractor 58 notes",
+          "id": "schema_validation_parallel_19",
+          "sequence_index": 23,
+          "content": "parallel unrelated schema_validation workstream 19 distractor detail",
           "depends_on": [
-            "s0_noise_57"
+            "schema_validation_parallel_18"
           ],
           "facts": [
-            "N0_58"
+            "schema_validation:N19"
           ]
         },
         {
-          "id": "s0_noise_59",
-          "content": "unrelated parallel work authentication distractor 59 notes",
+          "id": "schema_validation_parallel_20",
+          "sequence_index": 24,
+          "content": "parallel unrelated schema_validation workstream 20 distractor detail",
           "depends_on": [
-            "s0_noise_58"
+            "schema_validation_parallel_19"
           ],
           "facts": [
-            "N0_59"
+            "schema_validation:N20"
           ]
         },
         {
-          "id": "s0_noise_60",
-          "content": "unrelated parallel work authentication distractor 60 notes",
-          "depends_on": [
-            "s0_noise_59"
-          ],
+          "id": "schema_validation_parallel_21",
+          "sequence_index": 25,
+          "content": "parallel unrelated schema_validation workstream 21 distractor detail",
+          "depends_on": [],
           "facts": [
-            "N0_60"
+            "schema_validation:N21"
           ]
         },
         {
-          "id": "s0_noise_61",
-          "content": "unrelated parallel work authentication distractor 61 notes",
+          "id": "schema_validation_parallel_22",
+          "sequence_index": 26,
+          "content": "parallel unrelated schema_validation workstream 22 distractor detail",
           "depends_on": [
-            "s0_noise_60"
+            "schema_validation_parallel_21"
           ],
           "facts": [
-            "N0_61"
+            "schema_validation:N22"
           ]
         },
         {
-          "id": "s0_noise_62",
-          "content": "unrelated parallel work authentication distractor 62 notes",
+          "id": "schema_validation_parallel_23",
+          "sequence_index": 27,
+          "content": "parallel unrelated schema_validation workstream 23 distractor detail",
           "depends_on": [
-            "s0_noise_61"
+            "schema_validation_parallel_22"
           ],
           "facts": [
-            "N0_62"
+            "schema_validation:N23"
           ]
         },
         {
-          "id": "s0_noise_63",
-          "content": "unrelated parallel work authentication distractor 63 notes",
-          "depends_on": [
-            "s0_noise_62"
-          ],
+          "id": "schema_validation_parallel_24",
+          "sequence_index": 28,
+          "content": "parallel unrelated schema_validation workstream 24 distractor detail",
+          "depends_on": [],
           "facts": [
-            "N0_63"
+            "schema_validation:N24"
           ]
         },
         {
-          "id": "s0_noise_64",
-          "content": "unrelated parallel work authentication distractor 64 notes",
+          "id": "schema_validation_parallel_25",
+          "sequence_index": 29,
+          "content": "parallel unrelated schema_validation workstream 25 distractor detail",
           "depends_on": [
-            "s0_noise_63"
+            "schema_validation_parallel_24"
           ],
           "facts": [
-            "N0_64"
+            "schema_validation:N25"
           ]
         },
         {
-          "id": "s0_noise_65",
-          "content": "unrelated parallel work authentication distractor 65 notes",
+          "id": "schema_validation_parallel_26",
+          "sequence_index": 30,
+          "content": "parallel unrelated schema_validation workstream 26 distractor detail",
           "depends_on": [
-            "s0_noise_64"
+            "schema_validation_parallel_25"
           ],
           "facts": [
-            "N0_65"
+            "schema_validation:N26"
           ]
         },
         {
-          "id": "s0_noise_66",
-          "content": "unrelated parallel work authentication distractor 66 notes",
-          "depends_on": [
-            "s0_noise_65"
-          ],
+          "id": "schema_validation_parallel_27",
+          "sequence_index": 31,
+          "content": "parallel unrelated schema_validation workstream 27 distractor detail",
+          "depends_on": [],
           "facts": [
-            "N0_66"
+            "schema_validation:N27"
           ]
         },
         {
-          "id": "s0_noise_67",
-          "content": "unrelated parallel work authentication distractor 67 notes",
+          "id": "schema_validation_parallel_28",
+          "sequence_index": 32,
+          "content": "parallel unrelated schema_validation workstream 28 distractor detail",
           "depends_on": [
-            "s0_noise_66"
+            "schema_validation_parallel_27"
           ],
           "facts": [
-            "N0_67"
+            "schema_validation:N28"
           ]
         },
         {
-          "id": "s0_noise_68",
-          "content": "unrelated parallel work authentication distractor 68 notes",
+          "id": "schema_validation_parallel_29",
+          "sequence_index": 33,
+          "content": "parallel unrelated schema_validation workstream 29 distractor detail",
           "depends_on": [
-            "s0_noise_67"
+            "schema_validation_parallel_28"
           ],
           "facts": [
-            "N0_68"
+            "schema_validation:N29"
           ]
         },
         {
-          "id": "s0_noise_69",
-          "content": "unrelated parallel work authentication distractor 69 notes",
-          "depends_on": [
-            "s0_noise_68"
-          ],
+          "id": "schema_validation_parallel_30",
+          "sequence_index": 34,
+          "content": "parallel unrelated schema_validation workstream 30 distractor detail",
+          "depends_on": [],
           "facts": [
-            "N0_69"
+            "schema_validation:N30"
           ]
         },
         {
-          "id": "s0_noise_70",
-          "content": "unrelated parallel work authentication distractor 70 notes",
+          "id": "schema_validation_parallel_31",
+          "sequence_index": 35,
+          "content": "parallel unrelated schema_validation workstream 31 distractor detail",
           "depends_on": [
-            "s0_noise_69"
+            "schema_validation_parallel_30"
           ],
           "facts": [
-            "N0_70"
+            "schema_validation:N31"
           ]
         },
         {
-          "id": "s0_noise_71",
-          "content": "unrelated parallel work authentication distractor 71 notes",
+          "id": "schema_validation_parallel_32",
+          "sequence_index": 36,
+          "content": "parallel unrelated schema_validation workstream 32 distractor detail",
           "depends_on": [
-            "s0_noise_70"
+            "schema_validation_parallel_31"
           ],
           "facts": [
-            "N0_71"
+            "schema_validation:N32"
           ]
         },
         {
-          "id": "s0_noise_72",
-          "content": "unrelated parallel work authentication distractor 72 notes",
-         …92198 tokens truncated…": "unrelated parallel work deployment safety distractor 28 notes",
-          "depends_on": [
-            "s17_noise_27"
-          ],
+          "id": "schema_validation_parallel_33",
+          "sequence_index": 37,
+          "content": "parallel unrelated schema_validation workstream 33 distractor detail",
+          "depends_on": [],
           "facts": [
-            "N17_28"
+            "schema_validation:N33"
           ]
         },
         {
-          "id": "s17_noise_29",
-          "content": "unrelated parallel work deployment safety distractor 29 notes",
+          "id": "schema_validation_parallel_34",
+          "sequence_index": 38,
+          "content": "parallel unrelated schema_validation workstream 34 distractor detail",
           "depends_on": [
-            "s17_noise_28"
+            "schema_validation_parallel_33"
           ],
           "facts": [
-            "N17_29"
+            "schema_validation:N34"
           ]
         },
         {
-          "id": "s17_noise_30",
-          "content": "unrelated parallel work deployment safety distractor 30 notes",
+          "id": "schema_validation_parallel_35",
+          "sequence_index": 39,
+          "content": "parallel unrelated schema_validation workstream 35 distractor detail",
           "depends_on": [
-            "s17_noise_29"
+            "schema_validation_parallel_34"
           ],
           "facts": [
-            "N17_30"
+            "schema_validation:N35"
           ]
         },
         {
-          "id": "s17_noise_31",
-          "content": "unrelated parallel work deployment safety distractor 31 notes",
+          "id": "schema_validation_current",
+          "sequence_index": 40,
+          "content": "schema validation current decision and evidence",
           "depends_on": [
-            "s17_noise_30"
+            "schema_validation_backfill"
           ],
           "facts": [
-            "N17_31"
+            "schema_validation:F3"
           ]
         }
       ]
     },
     {
-      "id": "schema_validation_18",
-      "query": "Why does the schema validation current change preserve contract?",
-      "current_state": "s18_current",
+      "id": "deployment_gate",
+      "query": "What evidence supports the current deployment gate decision?",
+      "current_state": "deployment_gate_current",
       "required_fact_ids": [
-        "R18",
-        "I18"
+        "deployment_gate:F2",
+        "deployment_gate:F1"
       ],
       "states": [
         {
-          "id": "s18_requirement",
-          "content": "schema validation requirement: preserve contract R18",
-          "facts": [
-            "R18"
-          ]
-        },
-        {
-          "id": "s18_implementation",
-          "content": "schema validation implementation applies requirement R18",
-          "depends_on": [
-            "s18_requirement"
-          ],
-          "facts": [
-            "I18"
-          ]
-        },
-        {
-          "id": "s18_current",
-          "content": "Why does the schema validation current change preserve contract?",
-          "depends_on": [
-            "s18_implementation"
-          ],
-          "facts": [
-            "C18"
-          ]
-        },
-        {
-          "id": "s18_noise_0",
-          "content": "unrelated parallel work schema validation distractor 0 notes",
+          "id": "deployment_gate_policy",
+          "sequence_index": 0,
+          "content": "deployment gate policy decision and evidence",
           "depends_on": [],
           "facts": [
-            "N18_0"
+            "deployment_gate:F0"
           ]
         },
         {
-          "id": "s18_noise_1",
-          "content": "unrelated parallel work schema validation distractor 1 notes",
+          "id": "deployment_gate_validator",
+          "sequence_index": 1,
+          "content": "deployment gate validator decision and evidence",
           "depends_on": [
-            "s18_noise_0"
+            "deployment_gate_policy"
           ],
           "facts": [
-            "N18_1"
+            "deployment_gate:F1"
           ]
         },
         {
-          "id": "s18_noise_2",
-          "content": "unrelated parallel work schema validation distractor 2 notes",
+          "id": "deployment_gate_tests",
+          "sequence_index": 2,
+          "content": "deployment gate tests decision and evidence",
           "depends_on": [
-            "s18_noise_1"
+            "deployment_gate_validator"
           ],
           "facts": [
-            "N18_2"
+            "deployment_gate:F2"
           ]
         },
         {
-          "id": "s18_noise_3",
-          "content": "unrelated parallel work schema validation distractor 3 notes",
-          "depends_on": [
-            "s18_noise_2"
-          ],
-          "facts": [
-            "N18_3"
-          ]
-        },
-        {
-          "id": "s18_noise_4",
-          "content": "unrelated parallel work schema validation distractor 4 notes",
-          "depends_on": [
-            "s18_noise_3"
-          ],
-          "facts": [
-            "N18_4"
-          ]
-        },
-        {
-          "id": "s18_noise_5",
-          "content": "unrelated parallel work schema validation distractor 5 notes",
-          "depends_on": [
-            "s18_noise_4"
-          ],
-          "facts": [
-            "N18_5"
-          ]
-        },
-        {
-          "id": "s18_noise_6",
-          "content": "unrelated parallel work schema validation distractor 6 notes",
-          "depends_on": [
-            "s18_noise_5"
-          ],
-          "facts": [
-            "N18_6"
-          ]
-        },
-        {
-          "id": "s18_noise_7",
-          "content": "unrelated parallel work schema validation distractor 7 notes",
-          "depends_on": [
-            "s18_noise_6"
-          ],
-          "facts": [
-            "N18_7"
-          ]
-        },
-        {
-          "id": "s18_noise_8",
-          "content": "unrelated parallel work schema validation distractor 8 notes",
-          "depends_on": [
-            "s18_noise_7"
-          ],
-          "facts": [
-            "N18_8"
-          ]
-        },
-        {
-          "id": "s18_noise_9",
-          "content": "unrelated parallel work schema validation distractor 9 notes",
-          "depends_on": [
-            "s18_noise_8"
-          ],
-          "facts": [
-            "N18_9"
-          ]
-        },
-        {
-          "id": "s18_noise_10",
-          "content": "unrelated parallel work schema validation distractor 10 notes",
-          "depends_on": [
-            "s18_noise_9"
-          ],
-          "facts": [
-            "N18_10"
-          ]
-        },
-        {
-          "id": "s18_noise_11",
-          "content": "unrelated parallel work schema validation distractor 11 notes",
-          "depends_on": [
-            "s18_noise_10"
-          ],
-          "facts": [
-            "N18_11"
-          ]
-        },
-        {
-          "id": "s18_noise_12",
-          "content": "unrelated parallel work schema validation distractor 12 notes",
-          "depends_on": [
-            "s18_noise_11"
-          ],
-          "facts": [
-            "N18_12"
-          ]
-        },
-        {
-          "id": "s18_noise_13",
-          "content": "unrelated parallel work schema validation distractor 13 notes",
-          "depends_on": [
-            "s18_noise_12"
-          ],
-          "facts": [
-            "N18_13"
-          ]
-        },
-        {
-          "id": "s18_noise_14",
-          "content": "unrelated parallel work schema validation distractor 14 notes",
-          "depends_on": [
-            "s18_noise_13"
-          ],
-          "facts": [
-            "N18_14"
-          ]
-        },
-        {
-          "id": "s18_noise_15",
-          "content": "unrelated parallel work schema validation distractor 15 notes",
-          "depends_on": [
-            "s18_noise_14"
-          ],
-          "facts": [
-            "N18_15"
-          ]
-        },
-        {
-          "id": "s18_noise_16",
-          "content": "unrelated parallel work schema validation distractor 16 notes",
-          "depends_on": [
-            "s18_noise_15"
-          ],
-          "facts": [
-            "N18_16"
-          ]
-        },
-        {
-          "id": "s18_noise_17",
-          "content": "unrelated parallel work schema validation distractor 17 notes",
-          "depends_on": [
-            "s18_noise_16"
-          ],
-          "facts": [
-            "N18_17"
-          ]
-        },
-        {
-          "id": "s18_noise_18",
-          "content": "unrelated parallel work schema validation distractor 18 notes",
-          "depends_on": [
-            "s18_noise_17"
-          ],
-          "facts": [
-            "N18_18"
-          ]
-        },
-        {
-          "id": "s18_noise_19",
-          "content": "unrelated parallel work schema validation distractor 19 notes",
-          "depends_on": [
-            "s18_noise_18"
-          ],
-          "facts": [
-            "N18_19"
-          ]
-        },
-        {
-          "id": "s18_noise_20",
-          "content": "unrelated parallel work schema validation distractor 20 notes",
-          "depends_on": [
-            "s18_noise_19"
-          ],
-          "facts": [
-            "N18_20"
-          ]
-        },
-        {
-          "id": "s18_noise_21",
-          "content": "unrelated parallel work schema validation distractor 21 notes",
-          "depends_on": [
-            "s18_noise_20"
-          ],
-          "facts": [
-            "N18_21"
-          ]
-        },
-        {
-          "id": "s18_noise_22",
-          "content": "unrelated parallel work schema validation distractor 22 notes",
-          "depends_on": [
-            "s18_noise_21"
-          ],
-          "facts": [
-            "N18_22"
-          ]
-        },
-        {
-          "id": "s18_noise_23",
-          "content": "unrelated parallel work schema validation distractor 23 notes",
-          "depends_on": [
-            "s18_noise_22"
-          ],
-          "facts": [
-            "N18_23"
-          ]
-        },
-        {
-          "id": "s18_noise_24",
-          "content": "unrelated parallel work schema validation distractor 24 notes",
-          "depends_on": [
-            "s18_noise_23"
-          ],
-          "facts": [
-            "N18_24"
-          ]
-        },
-        {
-          "id": "s18_noise_25",
-          "content": "unrelated parallel work schema validation distractor 25 notes",
-          "depends_on": [
-            "s18_noise_24"
-          ],
-          "facts": [
-            "N18_25"
-          ]
-        },
-        {
-          "id": "s18_noise_26",
-          "content": "unrelated parallel work schema validation distractor 26 notes",
-          "depends_on": [
-            "s18_noise_25"
-          ],
-          "facts": [
-            "N18_26"
-          ]
-        },
-        {
-          "id": "s18_noise_27",
-          "content": "unrelated parallel work schema validation distractor 27 notes",
-          "depends_on": [
-            "s18_noise_26"
-          ],
-          "facts": [
-            "N18_27"
-          ]
-        },
-        {
-          "id": "s18_noise_28",
-          "content": "unrelated parallel work schema validation distractor 28 notes",
-          "depends_on": [
-            "s18_noise_27"
-          ],
-          "facts": [
-            "N18_28"
-          ]
-        },
-        {
-          "id": "s18_noise_29",
-          "content": "unrelated parallel work schema validation distractor 29 notes",
-          "depends_on": [
-            "s18_noise_28"
-          ],
-          "facts": [
-            "N18_29"
-          ]
-        },
-        {
-          "id": "s18_noise_30",
-          "content": "unrelated parallel work schema validation distractor 30 notes",
-          "depends_on": [
-            "s18_noise_29"
-          ],
-          "facts": [
-            "N18_30"
-          ]
-        },
-        {
-          "id": "s18_noise_31",
-          "content": "unrelated parallel work schema validation distractor 31 notes",
-          "depends_on": [
-            "s18_noise_30"
-          ],
-          "facts": [
-            "N18_31"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "access_control_19",
-      "query": "Why does the access control current change preserve contract?",
-      "current_state": "s19_current",
-      "required_fact_ids": [
-        "R19",
-        "I19"
-      ],
-      "states": [
-        {
-          "id": "s19_requirement",
-          "content": "access control requirement: preserve contract R19",
-          "facts": [
-            "R19"
-          ]
-        },
-        {
-          "id": "s19_implementation",
-          "content": "access control implementation applies requirement R19",
-          "depends_on": [
-            "s19_requirement"
-          ],
-          "facts": [
-            "I19"
-          ]
-        },
-        {
-          "id": "s19_current",
-          "content": "Why does the access control current change preserve contract?",
-          "depends_on": [
-            "s19_implementation"
-          ],
-          "facts": [
-            "C19"
-          ]
-        },
-        {
-          "id": "s19_noise_0",
-          "content": "unrelated parallel work access control distractor 0 notes",
+          "id": "deployment_gate_parallel_0",
+          "sequence_index": 4,
+          "content": "parallel unrelated deployment_gate workstream 0 distractor detail",
           "depends_on": [],
           "facts": [
-            "N19_0"
+            "deployment_gate:N0"
           ]
         },
         {
-          "id": "s19_noise_1",
-          "content": "unrelated parallel work access control distractor 1 notes",
+          "id": "deployment_gate_parallel_1",
+          "sequence_index": 5,
+          "content": "parallel unrelated deployment_gate workstream 1 distractor detail",
           "depends_on": [
-            "s19_noise_0"
+            "deployment_gate_parallel_0"
           ],
           "facts": [
-            "N19_1"
+            "deployment_gate:N1"
           ]
         },
         {
-          "id": "s19_noise_2",
-          "content": "unrelated parallel work access control distractor 2 notes",
+          "id": "deployment_gate_parallel_2",
+          "sequence_index": 6,
+          "content": "parallel unrelated deployment_gate workstream 2 distractor detail",
           "depends_on": [
-            "s19_noise_1"
+            "deployment_gate_parallel_1"
           ],
           "facts": [
-            "N19_2"
+            "deployment_gate:N2"
           ]
         },
         {
-          "id": "s19_noise_3",
-          "content": "unrelated parallel work access control distractor 3 notes",
-          "depends_on": [
-            "s19_noise_2"
-          ],
+          "id": "deployment_gate_parallel_3",
+          "sequence_index": 7,
+          "content": "parallel unrelated deployment_gate workstream 3 distractor detail",
+          "depends_on": [],
           "facts": [
-            "N19_3"
+            "deployment_gate:N3"
           ]
         },
         {
-          "id": "s19_noise_4",
-          "content": "unrelated parallel work access control distractor 4 notes",
+          "id": "deployment_gate_parallel_4",
+          "sequence_index": 8,
+          "content": "parallel unrelated deployment_gate workstream 4 distractor detail",
           "depends_on": [
-            "s19_noise_3"
+            "deployment_gate_parallel_3"
           ],
           "facts": [
-            "N19_4"
+            "deployment_gate:N4"
           ]
         },
         {
-          "id": "s19_noise_5",
-          "content": "unrelated parallel work access control distractor 5 notes",
+          "id": "deployment_gate_parallel_5",
+          "sequence_index": 9,
+          "content": "parallel unrelated deployment_gate workstream 5 distractor detail",
           "depends_on": [
-            "s19_noise_4"
+            "deployment_gate_parallel_4"
           ],
           "facts": [
-            "N19_5"
+            "deployment_gate:N5"
           ]
         },
         {
-          "id": "s19_noise_6",
-          "content": "unrelated parallel work access control distractor 6 notes",
-          "depends_on": [
-            "s19_noise_5"
-          ],
+          "id": "deployment_gate_parallel_6",
+          "sequence_index": 10,
+          "content": "parallel unrelated deployment_gate workstream 6 distractor detail",
+          "depends_on": [],
           "facts": [
-            "N19_6"
+            "deployment_gate:N6"
           ]
         },
         {
-          "id": "s19_noise_7",
-          "content": "unrelated parallel work access control distractor 7 notes",
+          "id": "deployment_gate_parallel_7",
+          "sequence_index": 11,
+          "content": "parallel unrelated deployment_gate workstream 7 distractor detail",
           "depends_on": [
-            "s19_noise_6"
+            "deployment_gate_parallel_6"
           ],
           "facts": [
-            "N19_7"
+            "deployment_gate:N7"
           ]
         },
         {
-          "id": "s19_noise_8",
-          "content": "unrelated parallel work access control distractor 8 notes",
+          "id": "deployment_gate_parallel_8",
+          "sequence_index": 12,
+          "content": "parallel unrelated deployment_gate workstream 8 distractor detail",
           "depends_on": [
-            "s19_noise_7"
+            "deployment_gate_parallel_7"
           ],
           "facts": [
-            "N19_8"
+            "deployment_gate:N8"
           ]
         },
         {
-          "id": "s19_noise_9",
-          "content": "unrelated parallel work access control distractor 9 notes",
-          "depends_on": [
-            "s19_noise_8"
-          ],
+          "id": "deployment_gate_parallel_9",
+          "sequence_index": 13,
+          "content": "parallel unrelated deployment_gate workstream 9 distractor detail",
+          "depends_on": [],
           "facts": [
-            "N19_9"
+            "deployment_gate:N9"
           ]
         },
         {
-          "id": "s19_noise_10",
-          "content": "unrelated parallel work access control distractor 10 notes",
+          "id": "deployment_gate_parallel_10",
+          "sequence_index": 14,
+          "content": "parallel unrelated deployment_gate workstream 10 distractor detail",
           "depends_on": [
-            "s19_noise_9"
+            "deployment_gate_parallel_9"
           ],
           "facts": [
-            "N19_10"
+            "deployment_gate:N10"
           ]
         },
         {
-          "id": "s19_noise_11",
-          "content": "unrelated parallel work access control distractor 11 notes",
+          "id": "deployment_gate_parallel_11",
+          "sequence_index": 15,
+          "content": "parallel unrelated deployment_gate workstream 11 distractor detail",
           "depends_on": [
-            "s19_noise_10"
+            "deployment_gate_parallel_10"
           ],
           "facts": [
-            "N19_11"
+            "deployment_gate:N11"
           ]
         },
         {
-          "id": "s19_noise_12",
-          "content": "unrelated parallel work access control distractor 12 notes",
-          "depends_on": [
-            "s19_noise_11"
-          ],
+          "id": "deployment_gate_parallel_12",
+          "sequence_index": 16,
+          "content": "parallel unrelated deployment_gate workstream 12 distractor detail",
+          "depends_on": [],
           "facts": [
-            "N19_12"
+            "deployment_gate:N12"
           ]
         },
         {
-          "id": "s19_noise_13",
-          "content": "unrelated parallel work access control distractor 13 notes",
+          "id": "deployment_gate_parallel_13",
+          "sequence_index": 17,
+          "content": "parallel unrelated deployment_gate workstream 13 distractor detail",
           "depends_on": [
-            "s19_noise_12"
+            "deployment_gate_parallel_12"
           ],
           "facts": [
-            "N19_13"
+            "deployment_gate:N13"
           ]
         },
         {
-          "id": "s19_noise_14",
-          "content": "unrelated parallel work access control distractor 14 notes",
+          "id": "deployment_gate_parallel_14",
+          "sequence_index": 18,
+          "content": "parallel unrelated deployment_gate workstream 14 distractor detail",
           "depends_on": [
-            "s19_noise_13"
+            "deployment_gate_parallel_13"
           ],
           "facts": [
-            "N19_14"
+            "deployment_gate:N14"
           ]
         },
         {
-          "id": "s19_noise_15",
-          "content": "unrelated parallel work access control distractor 15 notes",
-          "depends_on": [
-            "s19_noise_14"
-          ],
+          "id": "deployment_gate_parallel_15",
+          "sequence_index": 19,
+          "content": "parallel unrelated deployment_gate workstream 15 distractor detail",
+          "depends_on": [],
           "facts": [
-            "N19_15"
+            "deployment_gate:N15"
           ]
         },
         {
-          "id": "s19_noise_16",
-          "content": "unrelated parallel work access control distractor 16 notes",
+          "id": "deployment_gate_parallel_16",
+          "sequence_index": 20,
+          "content": "parallel unrelated deployment_gate workstream 16 distractor detail",
           "depends_on": [
-            "s19_noise_15"
+            "deployment_gate_parallel_15"
           ],
           "facts": [
-            "N19_16"
+            "deployment_gate:N16"
           ]
         },
         {
-          "id": "s19_noise_17",
-          "content": "unrelated parallel work access control distractor 17 notes",
+          "id": "deployment_gate_parallel_17",
+          "sequence_index": 21,
+          "content": "parallel unrelated deployment_gate workstream 17 distractor detail",
           "depends_on": [
-            "s19_noise_16"
+            "deployment_gate_parallel_16"
           ],
           "facts": [
-            "N19_17"
+            "deployment_gate:N17"
           ]
         },
         {
-          "id": "s19_noise_18",
-          "content": "unrelated parallel work access control distractor 18 notes",
-          "depends_on": [
-            "s19_noise_17"
-          ],
+          "id": "deployment_gate_parallel_18",
+          "sequence_index": 22,
+          "content": "parallel unrelated deployment_gate workstream 18 distractor detail",
+          "depends_on": [],
           "facts": [
-            "N19_18"
+            "deployment_gate:N18"
           ]
         },
         {
-          "id": "s19_noise_19",
-          "content": "unrelated parallel work access control distractor 19 notes",
+          "id": "deployment_gate_parallel_19",
+          "sequence_index": 23,
+          "content": "parallel unrelated deployment_gate workstream 19 distractor detail",
           "depends_on": [
-            "s19_noise_18"
+            "deployment_gate_parallel_18"
           ],
           "facts": [
-            "N19_19"
+            "deployment_gate:N19"
           ]
         },
         {
-          "id": "s19_noise_20",
-          "content": "unrelated parallel work access control distractor 20 notes",
+          "id": "deployment_gate_parallel_20",
+          "sequence_index": 24,
+          "content": "parallel unrelated deployment_gate workstream 20 distractor detail",
           "depends_on": [
-            "s19_noise_19"
+            "deployment_gate_parallel_19"
           ],
           "facts": [
-            "N19_20"
+            "deployment_gate:N20"
           ]
         },
         {
-          "id": "s19_noise_21",
-          "content": "unrelated parallel work access control distractor 21 notes",
-          "depends_on": [
-            "s19_noise_20"
-          ],
+          "id": "deployment_gate_parallel_21",
+          "sequence_index": 25,
+          "content": "parallel unrelated deployment_gate workstream 21 distractor detail",
+          "depends_on": [],
           "facts": [
-            "N19_21"
+            "deployment_gate:N21"
           ]
         },
         {
-          "id": "s19_noise_22",
-          "content": "unrelated parallel work access control distractor 22 notes",
+          "id": "deployment_gate_parallel_22",
+          "sequence_index": 26,
+          "content": "parallel unrelated deployment_gate workstream 22 distractor detail",
           "depends_on": [
-            "s19_noise_21"
+            "deployment_gate_parallel_21"
           ],
           "facts": [
-            "N19_22"
+            "deployment_gate:N22"
           ]
         },
         {
-          "id": "s19_noise_23",
-          "content": "unrelated parallel work access control distractor 23 notes",
+          "id": "deployment_gate_parallel_23",
+          "sequence_index": 27,
+          "content": "parallel unrelated deployment_gate workstream 23 distractor detail",
           "depends_on": [
-            "s19_noise_22"
+            "deployment_gate_parallel_22"
           ],
           "facts": [
-            "N19_23"
+            "deployment_gate:N23"
           ]
         },
         {
-          "id": "s19_noise_24",
-          "content": "unrelated parallel work access control distractor 24 notes",
-          "depends_on": [
-            "s19_noise_23"
-          ],
+          "id": "deployment_gate_parallel_24",
+          "sequence_index": 28,
+          "content": "parallel unrelated deployment_gate workstream 24 distractor detail",
+          "depends_on": [],
           "facts": [
-            "N19_24"
+            "deployment_gate:N24"
           ]
         },
         {
-          "id": "s19_noise_25",
-          "content": "unrelated parallel work access control distractor 25 notes",
+          "id": "deployment_gate_parallel_25",
+          "sequence_index": 29,
+          "content": "parallel unrelated deployment_gate workstream 25 distractor detail",
           "depends_on": [
-            "s19_noise_24"
+            "deployment_gate_parallel_24"
           ],
           "facts": [
-            "N19_25"
+            "deployment_gate:N25"
           ]
         },
         {
-          "id": "s19_noise_26",
-          "content": "unrelated parallel work access control distractor 26 notes",
+          "id": "deployment_gate_parallel_26",
+          "sequence_index": 30,
+          "content": "parallel unrelated deployment_gate workstream 26 distractor detail",
           "depends_on": [
-            "s19_noise_25"
+            "deployment_gate_parallel_25"
           ],
           "facts": [
-            "N19_26"
+            "deployment_gate:N26"
           ]
         },
         {
-          "id": "s19_noise_27",
-          "content": "unrelated parallel work access control distractor 27 notes",
-          "depends_on": [
-            "s19_noise_26"
-          ],
+          "id": "deployment_gate_parallel_27",
+          "sequence_index": 31,
+          "content": "parallel unrelated deployment_gate workstream 27 distractor detail",
+          "depends_on": [],
           "facts": [
-            "N19_27"
+            "deployment_gate:N27"
           ]
         },
         {
-          "id": "s19_noise_28",
-          "content": "unrelated parallel work access control distractor 28 notes",
+          "id": "deployment_gate_parallel_28",
+          "sequence_index": 32,
+          "content": "parallel unrelated deployment_gate workstream 28 distractor detail",
           "depends_on": [
-            "s19_noise_27"
+            "deployment_gate_parallel_27"
           ],
           "facts": [
-            "N19_28"
+            "deployment_gate:N28"
           ]
         },
         {
-          "id": "s19_noise_29",
-          "content": "unrelated parallel work access control distractor 29 notes",
+          "id": "deployment_gate_parallel_29",
+          "sequence_index": 33,
+          "content": "parallel unrelated deployment_gate workstream 29 distractor detail",
           "depends_on": [
-            "s19_noise_28"
+            "deployment_gate_parallel_28"
           ],
           "facts": [
-            "N19_29"
+            "deployment_gate:N29"
           ]
         },
         {
-          "id": "s19_noise_30",
-          "content": "unrelated parallel work access control distractor 30 notes",
-          "depends_on": [
-            "s19_noise_29"
-          ],
+          "id": "deployment_gate_parallel_30",
+          "sequence_index": 34,
+          "content": "parallel unrelated deployment_gate workstream 30 distractor detail",
+          "depends_on": [],
           "facts": [
-            "N19_30"
+            "deployment_gate:N30"
           ]
         },
         {
-          "id": "s19_noise_31",
-          "content": "unrelated parallel work access control distractor 31 notes",
+          "id": "deployment_gate_parallel_31",
+          "sequence_index": 35,
+          "content": "parallel unrelated deployment_gate workstream 31 distractor detail",
           "depends_on": [
-            "s19_noise_30"
+            "deployment_gate_parallel_30"
           ],
           "facts": [
-            "N19_31"
+            "deployment_gate:N31"
+          ]
+        },
+        {
+          "id": "deployment_gate_parallel_32",
+          "sequence_index": 36,
+          "content": "parallel unrelated deployment_gate workstream 32 distractor detail",
+          "depends_on": [
+            "deployment_gate_parallel_31"
+          ],
+          "facts": [
+            "deployment_gate:N32"
+          ]
+        },
+        {
+          "id": "deployment_gate_parallel_33",
+          "sequence_index": 37,
+          "content": "parallel unrelated deployment_gate workstream 33 distractor detail",
+          "depends_on": [],
+          "facts": [
+            "deployment_gate:N33"
+          ]
+        },
+        {
+          "id": "deployment_gate_parallel_34",
+          "sequence_index": 38,
+          "content": "parallel unrelated deployment_gate workstream 34 distractor detail",
+          "depends_on": [
+            "deployment_gate_parallel_33"
+          ],
+          "facts": [
+            "deployment_gate:N34"
+          ]
+        },
+        {
+          "id": "deployment_gate_parallel_35",
+          "sequence_index": 39,
+          "content": "parallel unrelated deployment_gate workstream 35 distractor detail",
+          "depends_on": [
+            "deployment_gate_parallel_34"
+          ],
+          "facts": [
+            "deployment_gate:N35"
+          ]
+        },
+        {
+          "id": "deployment_gate_parallel_36",
+          "sequence_index": 40,
+          "content": "parallel unrelated deployment_gate workstream 36 distractor detail",
+          "depends_on": [],
+          "facts": [
+            "deployment_gate:N36"
+          ]
+        },
+        {
+          "id": "deployment_gate_current",
+          "sequence_index": 41,
+          "content": "deployment gate current decision and evidence",
+          "depends_on": [
+            "deployment_gate_validator",
+            "deployment_gate_tests"
+          ],
+          "facts": [
+            "deployment_gate:F3"
           ]
         }
       ]
