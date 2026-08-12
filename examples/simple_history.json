@@ -1,0 +1,9 @@
+{
+  "states": [
+    {"id": "tests", "records": ["auth"]},
+    {"id": "database", "records": []},
+    {"id": "auth", "records": ["database"]},
+    {"id": "docs", "records": ["requirements"]},
+    {"id": "requirements", "records": []}
+  ]
+}
