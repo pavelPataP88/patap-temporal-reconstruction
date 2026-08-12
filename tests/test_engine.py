@@ -1,7 +1,9 @@
 import itertools
+import tempfile
 import unittest
+from pathlib import Path
 
-from patap import CycleError, PATAP, ValidationError
+from patap import CycleError, PATAP, PATAPMemory, ValidationError
 
 
 class PATAPTests(unittest.TestCase):
@@ -56,6 +58,47 @@ class PATAPTests(unittest.TestCase):
     def test_explain_shows_ancestry(self):
         graph = PATAP().add_state("schema").add_state("requirement").add_state("login", ["schema", "requirement"])
         self.assertEqual(graph.explain("login"), ["login", "<- requirement", "<- schema"])
+
+    def test_memory_records_context_and_excludes_descendants(self):
+        memory = PATAPMemory()
+        memory.record("D", ["C"])
+        memory.record("C", ["B"], evidence=["test"])
+        memory.record("A", data={"kind": "root"})
+        memory.record("B", ["A"])
+        context = memory.context_for("C")
+        self.assertEqual(context["past"], ["A", "B"])
+        self.assertEqual(context["future"], "unknown_by_design")
+        self.assertNotIn("D", context["states"])
+        self.assertEqual(context["states"]["C"]["evidence"], ["test"])
+
+    def test_memory_excludes_independent_branch(self):
+        memory = PATAPMemory()
+        for state, dependencies in [("C", ["B"]), ("Y", ["X"]), ("A", []), ("B", ["A"]), ("X", [])]:
+            memory.record(state, dependencies)
+        self.assertEqual(set(memory.context_for("C")["states"]), {"A", "B", "C"})
+
+    def test_memory_forward_references_and_cycles(self):
+        memory = PATAPMemory().record("tests", ["login"]).record("login", ["schema"]).record("schema")
+        memory.validate()
+        self.assertEqual(memory.context_for("tests")["layers"], [["schema"], ["login"], ["tests"]])
+        with self.assertRaises(CycleError):
+            PATAPMemory().record("A", ["B"]).record("B", ["A"]).validate()
+
+    def test_memory_save_load_preserves_data_evidence_and_order(self):
+        memory = PATAPMemory().record("C", ["B"], {"created_at": "1900"}, ["proof"]).record("A").record("B", ["A"], {"created_at": "9999"})
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "memory.json"
+            memory.save(path)
+            restored = PATAPMemory.load(path)
+        self.assertEqual(restored.context_for("C"), memory.context_for("C"))
+        self.assertEqual(restored._engine.layers(), [["A"], ["B"], ["C"]])
+
+    def test_memory_input_order_metadata_and_context_ratio(self):
+        memory = PATAPMemory()
+        for state, dependencies in [("D", ["C"]), ("X", []), ("B", ["A"]), ("C", ["B"]), ("A", [])]:
+            memory.record(state, dependencies, {"timestamp": state})
+        self.assertEqual(memory.context_for("D")["layers"], [["A"], ["B"], ["C"], ["D"]])
+        self.assertEqual(memory.stats("D"), {"total_states": 5, "visible_states": 4, "context_ratio": 0.8})
 
 
 if __name__ == "__main__":
