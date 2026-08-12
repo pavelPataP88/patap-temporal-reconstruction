@@ -1,6 +1,6 @@
 # PATAP Temporal Reconstruction
 
-PATAP is a dependency-based temporal reconstruction engine that reconstructs partial event order and relevant history from structural dependencies without relying on timestamps.
+PATAP is a dependency-based temporal reconstruction engine and structural-memory layer. It reconstructs partial event order and relevant history from structural dependencies without relying on timestamps.
 
 It is a small, deterministic Python core for situations where a state carries records of the states that made it possible. A record `X` inside `Y` means `X -> Y`; PATAP reconstructs only the order implied by those edges. It never uses timestamps, sequence numbers, JSON array position, names, or Git history.
 
@@ -9,6 +9,52 @@ It is a small, deterministic Python core for situations where a state carries re
 Dependency structure preserves the provenance relevant to a decision without forcing unrelated events into an invented total order. This is useful for build provenance, workflows, audit trails, branching histories, and AI-agent memory.
 
 The software demonstrates dependency-based partial-order reconstruction without timestamp ordering. Physical interpretation is a separate research question.
+
+## PATAP Core
+
+The core maps explicit dependencies to a partial order:
+
+```text
+dependencies -> partial order
+```
+
+It preserves independent events as incomparable rather than inventing a total order. Array position, timestamps, state names, and metadata never determine order.
+
+## PATAP Memory
+
+`PATAPMemory` is a small layer for an AI agent or another stateful program:
+
+```text
+agent state -> structural records -> relevant ancestry -> local context
+```
+
+```python
+from patap import PATAPMemory
+
+memory = PATAPMemory()
+memory.record("database_schema", data={"kind": "artifact"})
+memory.record("auth_requirement", data={"kind": "requirement"})
+memory.record(
+    "login_api",
+    depends_on=["database_schema", "auth_requirement"],
+    evidence=["code_diff", "tests", "decision_record"],
+)
+
+context = memory.context_for("login_api")
+print(context["past"])
+# ['auth_requirement', 'database_schema']
+print(memory.stats("login_api"))
+# {'total_states': 3, 'visible_states': 3, 'context_ratio': 1.0}
+```
+
+Memory JSON is portable and dependency-only:
+
+```python
+memory.save("memory.json")
+restored = PATAPMemory.load("memory.json")
+```
+
+The structural context ratio is `visible_states / total_states`. It measures the graph share required for a present state's ancestry; it is not a claim about LLM token savings or intelligence.
 
 ## Installation
 
@@ -47,6 +93,10 @@ The list above displays dependency layers. It does not make states in the same l
 patap analyze examples/simple_history.json
 patap view examples/ai_agent_memory.json login_api
 patap explain examples/ai_agent_memory.json auth_tests
+patap memory add memory.json database_schema --data '{"kind":"artifact"}'
+patap memory add memory.json login_api --depends-on database_schema --evidence code_diff tests
+patap memory context memory.json login_api
+patap memory stats memory.json login_api
 ```
 
 Invalid references and cycles result in a readable error and a non-zero exit code.
@@ -87,7 +137,7 @@ current state
     -> LLM
 ```
 
-PATAP supplies the ancestry graph; it makes no claims about token savings.
+PATAP supplies the ancestry graph; it makes no claims about token savings. Run `python examples/agent_memory_demo.py` for a deliberately shuffled agent-memory example, or `python examples/synthetic_memory_benchmark.py` for a reproducible 1000-state experiment.
 
 ## Observer B
 

@@ -13,3 +13,4 @@ class State:
     id: str
     records: set[str] = field(default_factory=set)
     data: dict[str, Any] | None = None
+    evidence: list[str] | None = None

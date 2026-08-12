@@ -32,7 +32,7 @@ class PATAP:
 
     def add_state(
         self, state_id: str, records: Iterable[str] | None = None,
-        data: dict[str, Any] | None = None,
+        data: dict[str, Any] | None = None, evidence: Iterable[str] | None = None,
     ) -> "PATAP":
         """Add or update a state. Unknown records remain forward references."""
         if not isinstance(state_id, str) or not state_id:
@@ -40,7 +40,10 @@ class PATAP:
         record_set = set(records or ())
         if not all(isinstance(record, str) and record for record in record_set):
             raise ValueError("records must contain non-empty string identifiers")
-        self._states[state_id] = State(state_id, record_set, data)
+        evidence_list = list(evidence) if evidence is not None else None
+        if evidence_list is not None and not all(isinstance(item, str) for item in evidence_list):
+            raise ValueError("evidence must contain string values")
+        self._states[state_id] = State(state_id, record_set, data, evidence_list)
         return self
 
     def add_dependency(self, predecessor: str, successor: str) -> "PATAP":
@@ -72,6 +75,8 @@ class PATAP:
         visiting: set[str] = set()
         visited: set[str] = set()
 
+        parents = self._parents()
+
         def visit(node: str, trail: list[str]) -> None:
             if node in visiting:
                 start = trail.index(node)
@@ -79,7 +84,7 @@ class PATAP:
             if node in visited:
                 return
             visiting.add(node)
-            for parent in sorted(self._parents()[node]):
+            for parent in sorted(parents[node]):
                 visit(parent, trail + [node])
             visiting.remove(node)
             visited.add(node)

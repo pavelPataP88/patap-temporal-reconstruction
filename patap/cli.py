@@ -8,6 +8,7 @@ from pathlib import Path
 from typing import Sequence
 
 from .engine import PATAP, ValidationError
+from .memory import PATAPMemory
 
 
 def load_graph(path: str) -> PATAP:
@@ -31,8 +32,40 @@ def main(argv: Sequence[str] | None = None) -> int:
         command.add_argument("file")
         if name != "analyze":
             command.add_argument("state_id")
+    memory_parser = subparsers.add_parser("memory", help="manage persistent structural memory")
+    memory_commands = memory_parser.add_subparsers(dest="memory_command", required=True)
+    add = memory_commands.add_parser("add", help="record a state")
+    add.add_argument("file")
+    add.add_argument("state_id")
+    add.add_argument("--depends-on", nargs="*", default=[])
+    add.add_argument("--data", help="JSON object metadata")
+    add.add_argument("--evidence", nargs="*", default=None)
+    for name in ("context", "explain", "stats"):
+        command = memory_commands.add_parser(name)
+        command.add_argument("file")
+        if name != "stats":
+            command.add_argument("state_id")
+        else:
+            command.add_argument("state_id", nargs="?")
     args = parser.parse_args(argv)
     try:
+        if args.command == "memory":
+            file_path = Path(args.file)
+            memory = PATAPMemory.load(file_path) if file_path.exists() else PATAPMemory()
+            if args.memory_command == "add":
+                data = json.loads(args.data) if args.data else None
+                if data is not None and not isinstance(data, dict):
+                    raise ValidationError("--data must decode to a JSON object")
+                memory.record(args.state_id, args.depends_on, data, args.evidence)
+                memory.save(file_path)
+                print(f"Recorded {args.state_id} in {file_path}")
+            elif args.memory_command == "context":
+                print(json.dumps(memory.context_for(args.state_id), indent=2, ensure_ascii=False))
+            elif args.memory_command == "explain":
+                print("\n".join(memory.explain_context(args.state_id)))
+            else:
+                print(json.dumps(memory.stats(args.state_id), indent=2))
+            return 0
         engine = load_graph(args.file)
         engine.validate()
         if args.command == "analyze":
