@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.0 - 2026-08-12
+
+- Added a reproducible context-selection benchmark with static curated scenarios and baselines.
+- Fixed nested metadata isolation in `PATAP.get_state()` snapshots.
+
 ## 0.2.1 - 2026-08-12
 
 - Added distribution build and clean-install validation to CI.
