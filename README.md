@@ -1,6 +1,6 @@
 # PATAP Temporal Reconstruction
 
-PATAP is a dependency-based temporal reconstruction engine and structural-memory layer. It reconstructs partial event order and relevant history from structural dependencies without relying on timestamps.
+PATAP is a dependency-based partial-order reconstruction and structural-memory library for Python. It reconstructs partial event order and relevant history from structural dependencies without relying on timestamps.
 
 It is a small, deterministic Python core for situations where a state carries records of the states that made it possible. A record `X` inside `Y` means `X -> Y`; PATAP reconstructs only the order implied by those edges. It never uses timestamps, sequence numbers, JSON array position, names, or Git history.
 
@@ -61,31 +61,31 @@ The structural context ratio is `visible_states / total_states`. It measures the
 Requires Python 3.10 or later.
 
 ```bash
-pip install patap-temporal-reconstruction
+python -m pip install "git+https://github.com/pavelPataP88/patap-temporal-reconstruction.git"
 ```
 
 For development from a checkout:
 
 ```bash
-pip install -e .
+git clone https://github.com/pavelPataP88/patap-temporal-reconstruction.git
+cd patap-temporal-reconstruction
+python -m pip install -e .
 python -m unittest discover -s tests -v
 ```
 
 ## Quick start
 
 ```python
-from patap import PATAP
+from patap import PATAPMemory
 
-graph = PATAP()
-graph.add_state("tests", records=["auth"])
-graph.add_state("database")
-graph.add_state("auth", records=["database"])
+memory = PATAPMemory()
+memory.record("requirement")
+memory.record("implementation", depends_on=["requirement"])
 
-print(graph.reconstruct_order())
-# [['database'], ['auth'], ['tests']]
+print(memory.context_for("implementation"))
 ```
 
-The list above displays dependency layers. It does not make states in the same layer sequential.
+The returned context includes only the present state and its structural ancestry.
 
 ## CLI
 

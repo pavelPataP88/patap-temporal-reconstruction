@@ -41,7 +41,7 @@ class PATAPMemory:
     def context_for(self, state_id: str) -> dict[str, Any]:
         """Return the present state and its ancestry, never global descendants."""
         self.validate()
-        if state_id not in self._engine._states:
+        if state_id not in self._engine.state_ids():
             raise UnknownStateError(f"unknown state: {state_id}")
         past = self._engine.past_of(state_id)
         visible = past | {state_id}
@@ -52,9 +52,9 @@ class PATAPMemory:
         ]
         states = {
             node: {
-                "dependencies": sorted(self._engine._states[node].records),
-                "data": self._engine._states[node].data,
-                "evidence": self._engine._states[node].evidence,
+                "dependencies": sorted(self._engine.get_state(node).records),
+                "data": self._engine.get_state(node).data,
+                "evidence": self._engine.get_state(node).evidence,
             }
             for node in sorted(visible)
         }
@@ -73,7 +73,7 @@ class PATAPMemory:
     def stats(self, state_id: str | None = None) -> dict[str, int | float]:
         """Report graph size and, optionally, the visible structural-context ratio."""
         self.validate()
-        total = len(self._engine._states)
+        total = len(self._engine.state_ids())
         if state_id is None:
             return {"total_states": total}
         visible = len(self._engine.past_of(state_id)) + 1
@@ -93,7 +93,10 @@ class PATAPMemory:
                     "data": state.data,
                     "evidence": state.evidence,
                 }
-                for state in sorted(self._engine._states.values(), key=lambda item: item.id)
+                for state in sorted(
+                    (self._engine.get_state(state_id) for state_id in self._engine.state_ids()),
+                    key=lambda item: item.id,
+                )
             ]
         }
         Path(path).write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")

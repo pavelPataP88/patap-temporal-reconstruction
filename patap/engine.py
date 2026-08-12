@@ -43,6 +43,13 @@ class PATAP:
         evidence_list = list(evidence) if evidence is not None else None
         if evidence_list is not None and not all(isinstance(item, str) for item in evidence_list):
             raise ValueError("evidence must contain string values")
+        existing = self._states.get(state_id)
+        if existing is not None:
+            record_set.update(existing.records)
+            if data is None:
+                data = existing.data
+            if evidence_list is None:
+                evidence_list = existing.evidence
         self._states[state_id] = State(state_id, record_set, data, evidence_list)
         return self
 
@@ -56,6 +63,21 @@ class PATAP:
     def _require_state(self, state_id: str) -> None:
         if state_id not in self._states:
             raise UnknownStateError(f"unknown state: {state_id}")
+
+    def state_ids(self) -> set[str]:
+        """Return the identifiers currently known to the graph."""
+        return set(self._states)
+
+    def get_state(self, state_id: str) -> State:
+        """Return a detached snapshot of a state and its metadata."""
+        self._require_state(state_id)
+        state = self._states[state_id]
+        return State(
+            state.id,
+            set(state.records),
+            dict(state.data) if state.data is not None else None,
+            list(state.evidence) if state.evidence is not None else None,
+        )
 
     def _parents(self) -> dict[str, set[str]]:
         return {state_id: set(state.records) for state_id, state in self._states.items()}
