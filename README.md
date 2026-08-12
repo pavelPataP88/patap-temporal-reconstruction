@@ -56,6 +56,10 @@ restored = PATAPMemory.load("memory.json")
 
 The structural context ratio is `visible_states / total_states`. It measures the graph share required for a present state's ancestry; it is not a claim about LLM token savings or intelligence.
 
+## Benchmark
+
+PATAP v0.3.0 includes a reproducible context-selection benchmark comparing structural ancestry with full-history, recency, and simple lexical baselines. Run `python benchmarks/run_context_benchmark.py`; see `benchmark_results/v0.3.0-report.md` for recorded results and limitations.
+
 ## Installation
 
 Requires Python 3.10 or later.
