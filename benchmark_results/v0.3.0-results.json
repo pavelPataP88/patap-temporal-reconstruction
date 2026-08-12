@@ -1,0 +1,1070 @@
+{
+  "benchmark_version": "0.3.0",
+  "python": "3.14.0",
+  "random_seed": 2026030,
+  "dataset_scenario_count": 20,
+  "per_scenario": [
+    {
+      "scenario": "authentication_0",
+      "query": "Why does the authentication current change preserve contract?",
+      "required_fact_ids": [
+        "R0",
+        "I0"
+      ],
+      "metrics": {
+        "FULL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 34592,
+          "full_context_chars": 34592,
+          "context_ratio": 1.0,
+          "irrelevant_fact_load": 518,
+          "all_required_present": true,
+          "selected_state_count": 520,
+          "full_state_count": 520
+        },
+        "PATAP": {
+          "required_fact_recall": 1.0,
+          "context_chars": 173,
+          "full_context_chars": 34592,
+          "context_ratio": 0.005001156336725254,
+          "irrelevant_fact_load": 1,
+          "all_required_present": true,
+          "selected_state_count": 3,
+          "full_state_count": 520
+        },
+        "RECENCY": {
+          "required_fact_recall": 0.0,
+          "context_chars": 134,
+          "full_context_chars": 34592,
+          "context_ratio": 0.0038737280296022203,
+          "irrelevant_fact_load": 2,
+          "all_required_present": false,
+          "selected_state_count": 2,
+          "full_state_count": 520
+        },
+        "LEXICAL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 173,
+          "full_context_chars": 34592,
+          "context_ratio": 0.005001156336725254,
+          "irrelevant_fact_load": 1,
+          "all_required_present": true,
+          "selected_state_count": 3,
+          "full_state_count": 520
+        }
+      }
+    },
+    {
+      "scenario": "database_migration_1",
+      "query": "Why does the database migration current change preserve contract?",
+      "required_fact_ids": [
+        "R1",
+        "I1"
+      ],
+      "metrics": {
+        "FULL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 8272,
+          "full_context_chars": 8272,
+          "context_ratio": 1.0,
+          "irrelevant_fact_load": 118,
+          "all_required_present": true,
+          "selected_state_count": 120,
+          "full_state_count": 120
+        },
+        "PATAP": {
+          "required_fact_recall": 1.0,
+          "context_chars": 185,
+          "full_context_chars": 8272,
+          "context_ratio": 0.022364603481624758,
+          "irrelevant_fact_load": 1,
+          "all_required_present": true,
+          "selected_state_count": 3,
+          "full_state_count": 120
+        },
+        "RECENCY": {
+          "required_fact_recall": 0.0,
+          "context_chars": 142,
+          "full_context_chars": 8272,
+          "context_ratio": 0.01716634429400387,
+          "irrelevant_fact_load": 2,
+          "all_required_present": false,
+          "selected_state_count": 2,
+          "full_state_count": 120
+        },
+        "LEXICAL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 185,
+          "full_context_chars": 8272,
+          "context_ratio": 0.022364603481624758,
+          "irrelevant_fact_load": 1,
+          "all_required_present": true,
+          "selected_state_count": 3,
+          "full_state_count": 120
+        }
+      }
+    },
+    {
+      "scenario": "api_compatibility_2",
+      "query": "Why does the api compatibility current change preserve contract?",
+      "required_fact_ids": [
+        "R2",
+        "I2"
+      ],
+      "metrics": {
+        "FULL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 8152,
+          "full_context_chars": 8152,
+          "context_ratio": 1.0,
+          "irrelevant_fact_load": 118,
+          "all_required_present": true,
+          "selected_state_count": 120,
+          "full_state_count": 120
+        },
+        "PATAP": {
+          "required_fact_recall": 1.0,
+          "context_chars": 182,
+          "full_context_chars": 8152,
+          "context_ratio": 0.022325809617271836,
+          "irrelevant_fact_load": 1,
+          "all_required_present": true,
+          "selected_state_count": 3,
+          "full_state_count": 120
+        },
+        "RECENCY": {
+          "required_fact_recall": 0.0,
+          "context_chars": 140,
+          "full_context_chars": 8152,
+          "context_ratio": 0.01717369970559372,
+          "irrelevant_fact_load": 2,
+          "all_required_present": false,
+          "selected_state_count": 2,
+          "full_state_count": 120
+        },
+        "LEXICAL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 182,
+          "full_context_chars": 8152,
+          "context_ratio": 0.022325809617271836,
+          "irrelevant_fact_load": 1,
+          "all_required_present": true,
+          "selected_state_count": 3,
+          "full_state_count": 120
+        }
+      }
+    },
+    {
+      "scenario": "security_policy_3",
+      "query": "Why does the security policy current change preserve contract?",
+      "required_fact_ids": [
+        "R3",
+        "I3"
+      ],
+      "metrics": {
+        "FULL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 7912,
+          "full_context_chars": 7912,
+          "context_ratio": 1.0,
+          "irrelevant_fact_load": 118,
+          "all_required_present": true,
+          "selected_state_count": 120,
+          "full_state_count": 120
+        },
+        "PATAP": {
+          "required_fact_recall": 1.0,
+          "context_chars": 176,
+          "full_context_chars": 7912,
+          "context_ratio": 0.022244691607684528,
+          "irrelevant_fact_load": 1,
+          "all_required_present": true,
+          "selected_state_count": 3,
+          "full_state_count": 120
+        },
+        "RECENCY": {
+          "required_fact_recall": 0.0,
+          "context_chars": 136,
+          "full_context_chars": 7912,
+          "context_ratio": 0.017189079878665317,
+          "irrelevant_fact_load": 2,
+          "all_required_present": false,
+          "selected_state_count": 2,
+          "full_state_count": 120
+        },
+        "LEXICAL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 176,
+          "full_context_chars": 7912,
+          "context_ratio": 0.022244691607684528,
+          "irrelevant_fact_load": 1,
+          "all_required_present": true,
+          "selected_state_count": 3,
+          "full_state_count": 120
+        }
+      }
+    },
+    {
+      "scenario": "config_rollout_4",
+      "query": "Why does the config rollout current change preserve contract?",
+      "required_fact_ids": [
+        "R4",
+        "I4"
+      ],
+      "metrics": {
+        "FULL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 7792,
+          "full_context_chars": 7792,
+          "context_ratio": 1.0,
+          "irrelevant_fact_load": 118,
+          "all_required_present": true,
+          "selected_state_count": 120,
+          "full_state_count": 120
+        },
+        "PATAP": {
+          "required_fact_recall": 1.0,
+          "context_chars": 173,
+          "full_context_chars": 7792,
+          "context_ratio": 0.022202258726899383,
+          "irrelevant_fact_load": 1,
+          "all_required_present": true,
+          "selected_state_count": 3,
+          "full_state_count": 120
+        },
+        "RECENCY": {
+          "required_fact_recall": 0.0,
+          "context_chars": 134,
+          "full_context_chars": 7792,
+          "context_ratio": 0.017197125256673513,
+          "irrelevant_fact_load": 2,
+          "all_required_present": false,
+          "selected_state_count": 2,
+          "full_state_count": 120
+        },
+        "LEXICAL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 173,
+          "full_context_chars": 7792,
+          "context_ratio": 0.022202258726899383,
+          "irrelevant_fact_load": 1,
+          "all_required_present": true,
+          "selected_state_count": 3,
+          "full_state_count": 120
+        }
+      }
+    },
+    {
+      "scenario": "release_preparation_5",
+      "query": "Why does the release preparation current change preserve contract?",
+      "required_fact_ids": [
+        "R5",
+        "I5"
+      ],
+      "metrics": {
+        "FULL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 2408,
+          "full_context_chars": 2408,
+          "context_ratio": 1.0,
+          "irrelevant_fact_load": 33,
+          "all_required_present": true,
+          "selected_state_count": 35,
+          "full_state_count": 35
+        },
+        "PATAP": {
+          "required_fact_recall": 1.0,
+          "context_chars": 188,
+          "full_context_chars": 2408,
+          "context_ratio": 0.07807308970099668,
+          "irrelevant_fact_load": 1,
+          "all_required_present": true,
+          "selected_state_count": 3,
+          "full_state_count": 35
+        },
+        "RECENCY": {
+          "required_fact_recall": 0.0,
+          "context_chars": 140,
+          "full_context_chars": 2408,
+          "context_ratio": 0.05813953488372093,
+          "irrelevant_fact_load": 2,
+          "all_required_present": false,
+          "selected_state_count": 2,
+          "full_state_count": 35
+        },
+        "LEXICAL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 186,
+          "full_context_chars": 2408,
+          "context_ratio": 0.07724252491694353,
+          "irrelevant_fact_load": 1,
+          "all_required_present": true,
+          "selected_state_count": 3,
+          "full_state_count": 35
+        }
+      }
+    },
+    {
+      "scenario": "incident_fix_6",
+      "query": "Why does the incident fix current change preserve contract?",
+      "required_fact_ids": [
+        "R6",
+        "I6"
+      ],
+      "metrics": {
+        "FULL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 2163,
+          "full_context_chars": 2163,
+          "context_ratio": 1.0,
+          "irrelevant_fact_load": 33,
+          "all_required_present": true,
+          "selected_state_count": 35,
+          "full_state_count": 35
+        },
+        "PATAP": {
+          "required_fact_recall": 1.0,
+          "context_chars": 167,
+          "full_context_chars": 2163,
+          "context_ratio": 0.077207582061951,
+          "irrelevant_fact_load": 1,
+          "all_required_present": true,
+          "selected_state_count": 3,
+          "full_state_count": 35
+        },
+        "RECENCY": {
+          "required_fact_recall": 0.0,
+          "context_chars": 126,
+          "full_context_chars": 2163,
+          "context_ratio": 0.05825242718446602,
+          "irrelevant_fact_load": 2,
+          "all_required_present": false,
+          "selected_state_count": 2,
+          "full_state_count": 35
+        },
+        "LEXICAL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 165,
+          "full_context_chars": 2163,
+          "context_ratio": 0.07628294036061026,
+          "irrelevant_fact_load": 1,
+          "all_required_present": true,
+          "selected_state_count": 3,
+          "full_state_count": 35
+        }
+      }
+    },
+    {
+      "scenario": "dependency_upgrade_7",
+      "query": "Why does the dependency upgrade current change preserve contract?",
+      "required_fact_ids": [
+        "R7",
+        "I7"
+      ],
+      "metrics": {
+        "FULL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 2373,
+          "full_context_chars": 2373,
+          "context_ratio": 1.0,
+          "irrelevant_fact_load": 33,
+          "all_required_present": true,
+          "selected_state_count": 35,
+          "full_state_count": 35
+        },
+        "PATAP": {
+          "required_fact_recall": 1.0,
+          "context_chars": 185,
+          "full_context_chars": 2373,
+          "context_ratio": 0.07796038769490098,
+          "irrelevant_fact_load": 1,
+          "all_required_present": true,
+          "selected_state_count": 3,
+          "full_state_count": 35
+        },
+        "RECENCY": {
+          "required_fact_recall": 0.0,
+          "context_chars": 138,
+          "full_context_chars": 2373,
+          "context_ratio": 0.05815423514538559,
+          "irrelevant_fact_load": 2,
+          "all_required_present": false,
+          "selected_state_count": 2,
+          "full_state_count": 35
+        },
+        "LEXICAL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 183,
+          "full_context_chars": 2373,
+          "context_ratio": 0.07711757269279393,
+          "irrelevant_fact_load": 1,
+          "all_required_present": true,
+          "selected_state_count": 3,
+          "full_state_count": 35
+        }
+      }
+    },
+    {
+      "scenario": "refactor_regression_8",
+      "query": "Why does the refactor regression current change preserve contract?",
+      "required_fact_ids": [
+        "R8",
+        "I8"
+      ],
+      "metrics": {
+        "FULL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 2408,
+          "full_context_chars": 2408,
+          "context_ratio": 1.0,
+          "irrelevant_fact_load": 33,
+          "all_required_present": true,
+          "selected_state_count": 35,
+          "full_state_count": 35
+        },
+        "PATAP": {
+          "required_fact_recall": 1.0,
+          "context_chars": 188,
+          "full_context_chars": 2408,
+          "context_ratio": 0.07807308970099668,
+          "irrelevant_fact_load": 1,
+          "all_required_present": true,
+          "selected_state_count": 3,
+          "full_state_count": 35
+        },
+        "RECENCY": {
+          "required_fact_recall": 0.0,
+          "context_chars": 140,
+          "full_context_chars": 2408,
+          "context_ratio": 0.05813953488372093,
+          "irrelevant_fact_load": 2,
+          "all_required_present": false,
+          "selected_state_count": 2,
+          "full_state_count": 35
+        },
+        "LEXICAL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 186,
+          "full_context_chars": 2408,
+          "context_ratio": 0.07724252491694353,
+          "irrelevant_fact_load": 1,
+          "all_required_present": true,
+          "selected_state_count": 3,
+          "full_state_count": 35
+        }
+      }
+    },
+    {
+      "scenario": "documentation_decision_9",
+      "query": "Why does the documentation decision current change preserve contract?",
+      "required_fact_ids": [
+        "R9",
+        "I9"
+      ],
+      "metrics": {
+        "FULL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 2513,
+          "full_context_chars": 2513,
+          "context_ratio": 1.0,
+          "irrelevant_fact_load": 33,
+          "all_required_present": true,
+          "selected_state_count": 35,
+          "full_state_count": 35
+        },
+        "PATAP": {
+          "required_fact_recall": 1.0,
+          "context_chars": 197,
+          "full_context_chars": 2513,
+          "context_ratio": 0.07839235972940709,
+          "irrelevant_fact_load": 1,
+          "all_required_present": true,
+          "selected_state_count": 3,
+          "full_state_count": 35
+        },
+        "RECENCY": {
+          "required_fact_recall": 0.0,
+          "context_chars": 146,
+          "full_context_chars": 2513,
+          "context_ratio": 0.058097890966971745,
+          "irrelevant_fact_load": 2,
+          "all_required_present": false,
+          "selected_state_count": 2,
+          "full_state_count": 35
+        },
+        "LEXICAL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 195,
+          "full_context_chars": 2513,
+          "context_ratio": 0.07759649820931158,
+          "irrelevant_fact_load": 1,
+          "all_required_present": true,
+          "selected_state_count": 3,
+          "full_state_count": 35
+        }
+      }
+    },
+    {
+      "scenario": "rollback_10",
+      "query": "Why does the rollback current change preserve contract?",
+      "required_fact_ids": [
+        "R10",
+        "I10"
+      ],
+      "metrics": {
+        "FULL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 2060,
+          "full_context_chars": 2060,
+          "context_ratio": 1.0,
+          "irrelevant_fact_load": 33,
+          "all_required_present": true,
+          "selected_state_count": 35,
+          "full_state_count": 35
+        },
+        "PATAP": {
+          "required_fact_recall": 1.0,
+          "context_chars": 160,
+          "full_context_chars": 2060,
+          "context_ratio": 0.07766990291262135,
+          "irrelevant_fact_load": 1,
+          "all_required_present": true,
+          "selected_state_count": 3,
+          "full_state_count": 35
+        },
+        "RECENCY": {
+          "required_fact_recall": 0.0,
+          "context_chars": 120,
+          "full_context_chars": 2060,
+          "context_ratio": 0.05825242718446602,
+          "irrelevant_fact_load": 2,
+          "all_required_present": false,
+          "selected_state_count": 2,
+          "full_state_count": 35
+        },
+        "LEXICAL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 158,
+          "full_context_chars": 2060,
+          "context_ratio": 0.0766990291262136,
+          "irrelevant_fact_load": 1,
+          "all_required_present": true,
+          "selected_state_count": 3,
+          "full_state_count": 35
+        }
+      }
+    },
+    {
+      "scenario": "multi_module_feature_11",
+      "query": "Why does the multi module feature current change preserve contract?",
+      "required_fact_ids": [
+        "R11",
+        "I11"
+      ],
+      "metrics": {
+        "FULL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 2480,
+          "full_context_chars": 2480,
+          "context_ratio": 1.0,
+          "irrelevant_fact_load": 33,
+          "all_required_present": true,
+          "selected_state_count": 35,
+          "full_state_count": 35
+        },
+        "PATAP": {
+          "required_fact_recall": 1.0,
+          "context_chars": 196,
+          "full_context_chars": 2480,
+          "context_ratio": 0.07903225806451612,
+          "irrelevant_fact_load": 1,
+          "all_required_present": true,
+          "selected_state_count": 3,
+          "full_state_count": 35
+        },
+        "RECENCY": {
+          "required_fact_recall": 0.0,
+          "context_chars": 144,
+          "full_context_chars": 2480,
+          "context_ratio": 0.05806451612903226,
+          "irrelevant_fact_load": 2,
+          "all_required_present": false,
+          "selected_state_count": 2,
+          "full_state_count": 35
+        },
+        "LEXICAL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 194,
+          "full_context_chars": 2480,
+          "context_ratio": 0.07822580645161291,
+          "irrelevant_fact_load": 1,
+          "all_required_present": true,
+          "selected_state_count": 3,
+          "full_state_count": 35
+        }
+      }
+    },
+    {
+      "scenario": "test_investigation_12",
+      "query": "Why does the test investigation current change preserve contract?",
+      "required_fact_ids": [
+        "R12",
+        "I12"
+      ],
+      "metrics": {
+        "FULL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 2410,
+          "full_context_chars": 2410,
+          "context_ratio": 1.0,
+          "irrelevant_fact_load": 33,
+          "all_required_present": true,
+          "selected_state_count": 35,
+          "full_state_count": 35
+        },
+        "PATAP": {
+          "required_fact_recall": 1.0,
+          "context_chars": 190,
+          "full_context_chars": 2410,
+          "context_ratio": 0.07883817427385892,
+          "irrelevant_fact_load": 1,
+          "all_required_present": true,
+          "selected_state_count": 3,
+          "full_state_count": 35
+        },
+        "RECENCY": {
+          "required_fact_recall": 0.0,
+          "context_chars": 140,
+          "full_context_chars": 2410,
+          "context_ratio": 0.058091286307053944,
+          "irrelevant_fact_load": 2,
+          "all_required_present": false,
+          "selected_state_count": 2,
+          "full_state_count": 35
+        },
+        "LEXICAL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 188,
+          "full_context_chars": 2410,
+          "context_ratio": 0.07800829875518672,
+          "irrelevant_fact_load": 1,
+          "all_required_present": true,
+          "selected_state_count": 3,
+          "full_state_count": 35
+        }
+      }
+    },
+    {
+      "scenario": "parallel_feature_13",
+      "query": "Why does the parallel feature current change preserve contract?",
+      "required_fact_ids": [
+        "R13",
+        "I13"
+      ],
+      "metrics": {
+        "FULL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 2340,
+          "full_context_chars": 2340,
+          "context_ratio": 1.0,
+          "irrelevant_fact_load": 33,
+          "all_required_present": true,
+          "selected_state_count": 35,
+          "full_state_count": 35
+        },
+        "PATAP": {
+          "required_fact_recall": 1.0,
+          "context_chars": 184,
+          "full_context_chars": 2340,
+          "context_ratio": 0.07863247863247863,
+          "irrelevant_fact_load": 1,
+          "all_required_present": true,
+          "selected_state_count": 3,
+          "full_state_count": 35
+        },
+        "RECENCY": {
+          "required_fact_recall": 0.0,
+          "context_chars": 136,
+          "full_context_chars": 2340,
+          "context_ratio": 0.05811965811965812,
+          "irrelevant_fact_load": 2,
+          "all_required_present": false,
+          "selected_state_count": 2,
+          "full_state_count": 35
+        },
+        "LEXICAL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 182,
+          "full_context_chars": 2340,
+          "context_ratio": 0.07777777777777778,
+          "irrelevant_fact_load": 1,
+          "all_required_present": true,
+          "selected_state_count": 3,
+          "full_state_count": 35
+        }
+      }
+    },
+    {
+      "scenario": "requirement_revision_14",
+      "query": "Why does the requirement revision current change preserve contract?",
+      "required_fact_ids": [
+        "R14",
+        "I14"
+      ],
+      "metrics": {
+        "FULL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 2480,
+          "full_context_chars": 2480,
+          "context_ratio": 1.0,
+          "irrelevant_fact_load": 33,
+          "all_required_present": true,
+          "selected_state_count": 35,
+          "full_state_count": 35
+        },
+        "PATAP": {
+          "required_fact_recall": 1.0,
+          "context_chars": 196,
+          "full_context_chars": 2480,
+          "context_ratio": 0.07903225806451612,
+          "irrelevant_fact_load": 1,
+          "all_required_present": true,
+          "selected_state_count": 3,
+          "full_state_count": 35
+        },
+        "RECENCY": {
+          "required_fact_recall": 0.0,
+          "context_chars": 144,
+          "full_context_chars": 2480,
+          "context_ratio": 0.05806451612903226,
+          "irrelevant_fact_load": 2,
+          "all_required_present": false,
+          "selected_state_count": 2,
+          "full_state_count": 35
+        },
+        "LEXICAL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 194,
+          "full_context_chars": 2480,
+          "context_ratio": 0.07822580645161291,
+          "irrelevant_fact_load": 1,
+          "all_required_present": true,
+          "selected_state_count": 3,
+          "full_state_count": 35
+        }
+      }
+    },
+    {
+      "scenario": "audit_trail_15",
+      "query": "Why does the audit trail current change preserve contract?",
+      "required_fact_ids": [
+        "R15",
+        "I15"
+      ],
+      "metrics": {
+        "FULL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 2165,
+          "full_context_chars": 2165,
+          "context_ratio": 1.0,
+          "irrelevant_fact_load": 33,
+          "all_required_present": true,
+          "selected_state_count": 35,
+          "full_state_count": 35
+        },
+        "PATAP": {
+          "required_fact_recall": 1.0,
+          "context_chars": 169,
+          "full_context_chars": 2165,
+          "context_ratio": 0.07806004618937644,
+          "irrelevant_fact_load": 1,
+          "all_required_present": true,
+          "selected_state_count": 3,
+          "full_state_count": 35
+        },
+        "RECENCY": {
+          "required_fact_recall": 0.0,
+          "context_chars": 126,
+          "full_context_chars": 2165,
+          "context_ratio": 0.058198614318706696,
+          "irrelevant_fact_load": 2,
+          "all_required_present": false,
+          "selected_state_count": 2,
+          "full_state_count": 35
+        },
+        "LEXICAL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 167,
+          "full_context_chars": 2165,
+          "context_ratio": 0.07713625866050808,
+          "irrelevant_fact_load": 1,
+          "all_required_present": true,
+          "selected_state_count": 3,
+          "full_state_count": 35
+        }
+      }
+    },
+    {
+      "scenario": "cache_invalidation_16",
+      "query": "Why does the cache invalidation current change preserve contract?",
+      "required_fact_ids": [
+        "R16",
+        "I16"
+      ],
+      "metrics": {
+        "FULL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 2410,
+          "full_context_chars": 2410,
+          "context_ratio": 1.0,
+          "irrelevant_fact_load": 33,
+          "all_required_present": true,
+          "selected_state_count": 35,
+          "full_state_count": 35
+        },
+        "PATAP": {
+          "required_fact_recall": 1.0,
+          "context_chars": 190,
+          "full_context_chars": 2410,
+          "context_ratio": 0.07883817427385892,
+          "irrelevant_fact_load": 1,
+          "all_required_present": true,
+          "selected_state_count": 3,
+          "full_state_count": 35
+        },
+        "RECENCY": {
+          "required_fact_recall": 0.0,
+          "context_chars": 140,
+          "full_context_chars": 2410,
+          "context_ratio": 0.058091286307053944,
+          "irrelevant_fact_load": 2,
+          "all_required_present": false,
+          "selected_state_count": 2,
+          "full_state_count": 35
+        },
+        "LEXICAL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 188,
+          "full_context_chars": 2410,
+          "context_ratio": 0.07800829875518672,
+          "irrelevant_fact_load": 1,
+          "all_required_present": true,
+          "selected_state_count": 3,
+          "full_state_count": 35
+        }
+      }
+    },
+    {
+      "scenario": "deployment_safety_17",
+      "query": "Why does the deployment safety current change preserve contract?",
+      "required_fact_ids": [
+        "R17",
+        "I17"
+      ],
+      "metrics": {
+        "FULL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 2375,
+          "full_context_chars": 2375,
+          "context_ratio": 1.0,
+          "irrelevant_fact_load": 33,
+          "all_required_present": true,
+          "selected_state_count": 35,
+          "full_state_count": 35
+        },
+        "PATAP": {
+          "required_fact_recall": 1.0,
+          "context_chars": 187,
+          "full_context_chars": 2375,
+          "context_ratio": 0.07873684210526316,
+          "irrelevant_fact_load": 1,
+          "all_required_present": true,
+          "selected_state_count": 3,
+          "full_state_count": 35
+        },
+        "RECENCY": {
+          "required_fact_recall": 0.0,
+          "context_chars": 138,
+          "full_context_chars": 2375,
+          "context_ratio": 0.058105263157894736,
+          "irrelevant_fact_load": 2,
+          "all_required_present": false,
+          "selected_state_count": 2,
+          "full_state_count": 35
+        },
+        "LEXICAL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 185,
+          "full_context_chars": 2375,
+          "context_ratio": 0.07789473684210527,
+          "irrelevant_fact_load": 1,
+          "all_required_present": true,
+          "selected_state_count": 3,
+          "full_state_count": 35
+        }
+      }
+    },
+    {
+      "scenario": "schema_validation_18",
+      "query": "Why does the schema validation current change preserve contract?",
+      "required_fact_ids": [
+        "R18",
+        "I18"
+      ],
+      "metrics": {
+        "FULL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 2375,
+          "full_context_chars": 2375,
+          "context_ratio": 1.0,
+          "irrelevant_fact_load": 33,
+          "all_required_present": true,
+          "selected_state_count": 35,
+          "full_state_count": 35
+        },
+        "PATAP": {
+          "required_fact_recall": 1.0,
+          "context_chars": 187,
+          "full_context_chars": 2375,
+          "context_ratio": 0.07873684210526316,
+          "irrelevant_fact_load": 1,
+          "all_required_present": true,
+          "selected_state_count": 3,
+          "full_state_count": 35
+        },
+        "RECENCY": {
+          "required_fact_recall": 0.0,
+          "context_chars": 138,
+          "full_context_chars": 2375,
+          "context_ratio": 0.058105263157894736,
+          "irrelevant_fact_load": 2,
+          "all_required_present": false,
+          "selected_state_count": 2,
+          "full_state_count": 35
+        },
+        "LEXICAL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 185,
+          "full_context_chars": 2375,
+          "context_ratio": 0.07789473684210527,
+          "irrelevant_fact_load": 1,
+          "all_required_present": true,
+          "selected_state_count": 3,
+          "full_state_count": 35
+        }
+      }
+    },
+    {
+      "scenario": "access_control_19",
+      "query": "Why does the access control current change preserve contract?",
+      "required_fact_ids": [
+        "R19",
+        "I19"
+      ],
+      "metrics": {
+        "FULL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 2270,
+          "full_context_chars": 2270,
+          "context_ratio": 1.0,
+          "irrelevant_fact_load": 33,
+          "all_required_present": true,
+          "selected_state_count": 35,
+          "full_state_count": 35
+        },
+        "PATAP": {
+          "required_fact_recall": 1.0,
+          "context_chars": 178,
+          "full_context_chars": 2270,
+          "context_ratio": 0.07841409691629955,
+          "irrelevant_fact_load": 1,
+          "all_required_present": true,
+          "selected_state_count": 3,
+          "full_state_count": 35
+        },
+        "RECENCY": {
+          "required_fact_recall": 0.0,
+          "context_chars": 132,
+          "full_context_chars": 2270,
+          "context_ratio": 0.05814977973568282,
+          "irrelevant_fact_load": 2,
+          "all_required_present": false,
+          "selected_state_count": 2,
+          "full_state_count": 35
+        },
+        "LEXICAL": {
+          "required_fact_recall": 1.0,
+          "context_chars": 176,
+          "full_context_chars": 2270,
+          "context_ratio": 0.07753303964757709,
+          "irrelevant_fact_load": 1,
+          "all_required_present": true,
+          "selected_state_count": 3,
+          "full_state_count": 35
+        }
+      }
+    }
+  ],
+  "aggregate": {
+    "FULL": {
+      "required_fact_recall": 1.0,
+      "all_required_success_rate": 1.0,
+      "mean_context_ratio": 1.0,
+      "median_context_ratio": 1.0,
+      "mean_selected_states": 76.25
+    },
+    "PATAP": {
+      "required_fact_recall": 1.0,
+      "all_required_success_rate": 1.0,
+      "mean_context_ratio": 0.06349180510982552,
+      "median_context_ratio": 0.07807308970099668,
+      "mean_selected_states": 3.0
+    },
+    "RECENCY": {
+      "required_fact_recall": 0.0,
+      "all_required_success_rate": 0.0,
+      "mean_context_ratio": 0.04723131053876397,
+      "median_context_ratio": 0.058105263157894736,
+      "mean_selected_states": 2.0
+    },
+    "LEXICAL": {
+      "required_fact_recall": 1.0,
+      "all_required_success_rate": 1.0,
+      "mean_context_ratio": 0.06285121850883475,
+      "median_context_ratio": 0.07724252491694353,
+      "mean_selected_states": 3.0
+    }
+  },
+  "sensitivity": {
+    "0% missing": {
+      "required_fact_recall": 1.0,
+      "context_ratio": 0.06349180510982552,
+      "all_required_present": 1.0
+    },
+    "5% missing": {
+      "required_fact_recall": 0.825,
+      "context_ratio": 0.05677207076624069,
+      "all_required_present": 0.75
+    },
+    "10% missing": {
+      "required_fact_recall": 0.775,
+      "context_ratio": 0.05432190465328388,
+      "all_required_present": 0.7
+    },
+    "20% missing": {
+      "required_fact_recall": 0.625,
+      "context_ratio": 0.04690024356017443,
+      "all_required_present": 0.55
+    },
+    "5% false edges": {
+      "required_fact_recall": 0.35,
+      "context_ratio": 0.04589710611228224,
+      "all_required_present": 0.35
+    },
+    "10% false edges": {
+      "required_fact_recall": 0.35,
+      "context_ratio": 0.13502890909340798,
+      "all_required_present": 0.35
+    }
+  }
+}
