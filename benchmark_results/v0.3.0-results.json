@@ -1,6 +1,8 @@
 {
   "benchmark_version": "0.3.0",
-  "dataset_sha256": "25da159714710e850a514e257532d81135f9a297ddf473a1f49debf70d3594b6",
+  "dataset_freeze_commit": "2297f54da6fea2dfd42e58d23811676f61ffca1b",
+  "original_combined_dataset_sha256": "68b36b55747b9f0b997712c9aa9daf0140a7664422e1d834c91c169a3c7fb8f1",
+  "dataset_manifest_sha256": "dfbc2ed0288cff89c0658c905396f686d8882325d70100475d734a2ef8826a74",
   "python": "3.14.0",
   "random_seed": 2026030,
   "dataset_scenario_count": 20,
@@ -15,43 +17,43 @@
       "metrics": {
         "FULL": {
           "required_fact_recall": 1.0,
-          "context_chars": 75554,
-          "full_context_chars": 75554,
+          "context_chars": 2954,
+          "full_context_chars": 2954,
           "context_ratio": 1.0,
-          "irrelevant_fact_load": 522,
+          "irrelevant_fact_load": 20,
           "all_required_present": true,
-          "selected_state_count": 524,
-          "full_state_count": 524
+          "selected_state_count": 22,
+          "full_state_count": 22
         },
         "PATAP": {
           "required_fact_recall": 1.0,
-          "context_chars": 484,
-          "full_context_chars": 75554,
-          "context_ratio": 0.006406014241469677,
+          "context_chars": 428,
+          "full_context_chars": 2954,
+          "context_ratio": 0.14488828706838186,
           "irrelevant_fact_load": 2,
           "all_required_present": true,
           "selected_state_count": 4,
-          "full_state_count": 524
+          "full_state_count": 22
         },
         "RECENCY": {
           "required_fact_recall": 0.0,
-          "context_chars": 435,
-          "full_context_chars": 75554,
-          "context_ratio": 0.0057574714773539456,
+          "context_chars": 426,
+          "full_context_chars": 2954,
+          "context_ratio": 0.14421123899796887,
           "irrelevant_fact_load": 3,
           "all_required_present": false,
           "selected_state_count": 3,
-          "full_state_count": 524
+          "full_state_count": 22
         },
         "LEXICAL": {
           "required_fact_recall": 1.0,
-          "context_chars": 368,
-          "full_context_chars": 75554,
-          "context_ratio": 0.0048706885141752915,
+          "context_chars": 312,
+          "full_context_chars": 2954,
+          "context_ratio": 0.10561949898442789,
           "irrelevant_fact_load": 1,
           "all_required_present": true,
           "selected_state_count": 3,
-          "full_state_count": 524
+          "full_state_count": 22
         }
       }
     },
@@ -65,43 +67,43 @@
       "metrics": {
         "FULL": {
           "required_fact_recall": 1.0,
-          "context_chars": 17088,
-          "full_context_chars": 17088,
+          "context_chars": 2915,
+          "full_context_chars": 2915,
           "context_ratio": 1.0,
-          "irrelevant_fact_load": 127,
+          "irrelevant_fact_load": 21,
           "all_required_present": true,
-          "selected_state_count": 129,
-          "full_state_count": 129
+          "selected_state_count": 23,
+          "full_state_count": 23
         },
         "PATAP": {
           "required_fact_recall": 1.0,
           "context_chars": 418,
-          "full_context_chars": 17088,
-          "context_ratio": 0.024461610486891387,
+          "full_context_chars": 2915,
+          "context_ratio": 0.14339622641509434,
           "irrelevant_fact_load": 2,
           "all_required_present": true,
           "selected_state_count": 4,
-          "full_state_count": 129
+          "full_state_count": 23
         },
         "RECENCY": {
           "required_fact_recall": 0.0,
-          "context_chars": 408,
-          "full_context_chars": 17088,
-          "context_ratio": 0.023876404494382022,
+          "context_chars": 399,
+          "full_context_chars": 2915,
+          "context_ratio": 0.13687821612349915,
           "irrelevant_fact_load": 3,
           "all_required_present": false,
           "selected_state_count": 3,
-          "full_state_count": 129
+          "full_state_count": 23
         },
         "LEXICAL": {
           "required_fact_recall": 1.0,
           "context_chars": 311,
-          "full_context_chars": 17088,
-          "context_ratio": 0.018199906367041198,
+          "full_context_chars": 2915,
+          "context_ratio": 0.10668953687821613,
           "irrelevant_fact_load": 1,
           "all_required_present": true,
           "selected_state_count": 3,
-          "full_state_count": 129
+          "full_state_count": 23
         }
       }
     },
@@ -115,43 +117,43 @@
       "metrics": {
         "FULL": {
           "required_fact_recall": 1.0,
-          "context_chars": 16344,
-          "full_context_chars": 16344,
+          "context_chars": 2898,
+          "full_context_chars": 2898,
           "context_ratio": 1.0,
-          "irrelevant_fact_load": 127,
+          "irrelevant_fact_load": 22,
           "all_required_present": true,
-          "selected_state_count": 129,
-          "full_state_count": 129
+          "selected_state_count": 24,
+          "full_state_count": 24
         },
         "PATAP": {
           "required_fact_recall": 1.0,
-          "context_chars": 424,
-          "full_context_chars": 16344,
-          "context_ratio": 0.02594224180127264,
+          "context_chars": 388,
+          "full_context_chars": 2898,
+          "context_ratio": 0.13388543823326432,
           "irrelevant_fact_load": 2,
           "all_required_present": true,
           "selected_state_count": 4,
-          "full_state_count": 129
+          "full_state_count": 24
         },
         "RECENCY": {
           "required_fact_recall": 0.0,
-          "context_chars": 390,
-          "full_context_chars": 16344,
-          "context_ratio": 0.023861967694566815,
+          "context_chars": 381,
+          "full_context_chars": 2898,
+          "context_ratio": 0.13146997929606624,
           "irrelevant_fact_load": 3,
           "all_required_present": false,
           "selected_state_count": 3,
-          "full_state_count": 129
+          "full_state_count": 24
         },
         "LEXICAL": {
           "required_fact_recall": 1.0,
-          "context_chars": 323,
-          "full_context_chars": 16344,
-          "context_ratio": 0.019762604013705335,
+          "context_chars": 287,
+          "full_context_chars": 2898,
+          "context_ratio": 0.09903381642512077,
           "irrelevant_fact_load": 1,
           "all_required_present": true,
           "selected_state_count": 3,
-          "full_state_count": 129
+          "full_state_count": 24
         }
       }
     },
@@ -165,43 +167,43 @@
       "metrics": {
         "FULL": {
           "required_fact_recall": 1.0,
-          "context_chars": 17876,
-          "full_context_chars": 17876,
+          "context_chars": 3345,
+          "full_context_chars": 3345,
           "context_ratio": 1.0,
-          "irrelevant_fact_load": 127,
+          "irrelevant_fact_load": 23,
           "all_required_present": true,
-          "selected_state_count": 129,
-          "full_state_count": 129
+          "selected_state_count": 25,
+          "full_state_count": 25
         },
         "PATAP": {
           "required_fact_recall": 1.0,
           "context_chars": 456,
-          "full_context_chars": 17876,
-          "context_ratio": 0.025509062430073844,
+          "full_context_chars": 3345,
+          "context_ratio": 0.13632286995515694,
           "irrelevant_fact_load": 2,
           "all_required_present": true,
           "selected_state_count": 4,
-          "full_state_count": 129
+          "full_state_count": 25
         },
         "RECENCY": {
           "required_fact_recall": 0.0,
-          "context_chars": 426,
-          "full_context_chars": 17876,
-          "context_ratio": 0.023830834638621616,
+          "context_chars": 417,
+          "full_context_chars": 3345,
+          "context_ratio": 0.12466367713004484,
           "irrelevant_fact_load": 3,
           "all_required_present": false,
           "selected_state_count": 3,
-          "full_state_count": 129
+          "full_state_count": 25
         },
         "LEXICAL": {
           "required_fact_recall": 1.0,
           "context_chars": 343,
-          "full_context_chars": 17876,
-          "context_ratio": 0.019187737748937124,
+          "full_context_chars": 3345,
+          "context_ratio": 0.10254110612855008,
           "irrelevant_fact_load": 1,
           "all_required_present": true,
           "selected_state_count": 3,
-          "full_state_count": 129
+          "full_state_count": 25
         }
       }
     },
@@ -215,43 +217,43 @@
       "metrics": {
         "FULL": {
           "required_fact_recall": 1.0,
-          "context_chars": 15935,
-          "full_context_chars": 15935,
+          "context_chars": 3088,
+          "full_context_chars": 3088,
           "context_ratio": 1.0,
-          "irrelevant_fact_load": 127,
+          "irrelevant_fact_load": 24,
           "all_required_present": true,
-          "selected_state_count": 129,
-          "full_state_count": 129
+          "selected_state_count": 26,
+          "full_state_count": 26
         },
         "PATAP": {
           "required_fact_recall": 1.0,
           "context_chars": 390,
-          "full_context_chars": 15935,
-          "context_ratio": 0.02447442736115469,
+          "full_context_chars": 3088,
+          "context_ratio": 0.12629533678756477,
           "irrelevant_fact_load": 2,
           "all_required_present": true,
           "selected_state_count": 4,
-          "full_state_count": 129
+          "full_state_count": 26
         },
         "RECENCY": {
           "required_fact_recall": 0.0,
-          "context_chars": 381,
-          "full_context_chars": 15935,
-          "context_ratio": 0.023909632883589584,
+          "context_chars": 372,
+          "full_context_chars": 3088,
+          "context_ratio": 0.12046632124352331,
           "irrelevant_fact_load": 3,
           "all_required_present": false,
           "selected_state_count": 3,
-          "full_state_count": 129
+          "full_state_count": 26
         },
         "LEXICAL": {
           "required_fact_recall": 1.0,
           "context_chars": 292,
-          "full_context_chars": 15935,
-          "context_ratio": 0.018324443049890178,
+          "full_context_chars": 3088,
+          "context_ratio": 0.09455958549222798,
           "irrelevant_fact_load": 1,
           "all_required_present": true,
           "selected_state_count": 3,
-          "full_state_count": 129
+          "full_state_count": 26
         }
       }
     },
@@ -259,49 +261,49 @@
       "scenario": "migration_rollback",
       "query": "What evidence supports the current migration rollback decision?",
       "required_fact_ids": [
-        "migration_rollback:F2",
-        "migration_rollback:F1"
+        "migration_rollback:F3",
+        "migration_rollback:F2"
       ],
       "metrics": {
         "FULL": {
           "required_fact_recall": 1.0,
-          "context_chars": 5462,
-          "full_context_chars": 5462,
+          "context_chars": 3608,
+          "full_context_chars": 3608,
           "context_ratio": 1.0,
-          "irrelevant_fact_load": 39,
+          "irrelevant_fact_load": 26,
           "all_required_present": true,
-          "selected_state_count": 41,
-          "full_state_count": 41
+          "selected_state_count": 28,
+          "full_state_count": 28
         },
         "PATAP": {
           "required_fact_recall": 1.0,
-          "context_chars": 460,
-          "full_context_chars": 5462,
-          "context_ratio": 0.08421823507872574,
-          "irrelevant_fact_load": 2,
+          "context_chars": 510,
+          "full_context_chars": 3608,
+          "context_ratio": 0.14135254988913526,
+          "irrelevant_fact_load": 3,
           "all_required_present": true,
-          "selected_state_count": 4,
-          "full_state_count": 41
+          "selected_state_count": 5,
+          "full_state_count": 28
         },
         "RECENCY": {
-          "required_fact_recall": 0.0,
-          "context_chars": 408,
-          "full_context_chars": 5462,
-          "context_ratio": 0.074697912852435,
+          "required_fact_recall": 0.5,
+          "context_chars": 506,
+          "full_context_chars": 3608,
+          "context_ratio": 0.1402439024390244,
           "irrelevant_fact_load": 3,
           "all_required_present": false,
-          "selected_state_count": 3,
-          "full_state_count": 41
+          "selected_state_count": 4,
+          "full_state_count": 28
         },
         "LEXICAL": {
           "required_fact_recall": 1.0,
-          "context_chars": 350,
-          "full_context_chars": 5462,
-          "context_ratio": 0.06407909190772611,
-          "irrelevant_fact_load": 1,
+          "context_chars": 400,
+          "full_context_chars": 3608,
+          "context_ratio": 0.11086474501108648,
+          "irrelevant_fact_load": 2,
           "all_required_present": true,
-          "selected_state_count": 3,
-          "full_state_count": 41
+          "selected_state_count": 4,
+          "full_state_count": 28
         }
       }
     },
@@ -315,43 +317,43 @@
       "metrics": {
         "FULL": {
           "required_fact_recall": 1.0,
-          "context_chars": 5316,
-          "full_context_chars": 5316,
+          "context_chars": 3490,
+          "full_context_chars": 3490,
           "context_ratio": 1.0,
-          "irrelevant_fact_load": 40,
+          "irrelevant_fact_load": 26,
           "all_required_present": true,
-          "selected_state_count": 42,
-          "full_state_count": 42
+          "selected_state_count": 28,
+          "full_state_count": 28
         },
         "PATAP": {
           "required_fact_recall": 1.0,
-          "context_chars": 406,
-          "full_context_chars": 5316,
-          "context_ratio": 0.0763732129420617,
+          "context_chars": 400,
+          "full_context_chars": 3490,
+          "context_ratio": 0.11461318051575932,
           "irrelevant_fact_load": 2,
           "all_required_present": true,
           "selected_state_count": 4,
-          "full_state_count": 42
+          "full_state_count": 28
         },
         "RECENCY": {
           "required_fact_recall": 0.0,
           "context_chars": 390,
-          "full_context_chars": 5316,
-          "context_ratio": 0.07336343115124154,
+          "full_context_chars": 3490,
+          "context_ratio": 0.11174785100286533,
           "irrelevant_fact_load": 3,
           "all_required_present": false,
           "selected_state_count": 3,
-          "full_state_count": 42
+          "full_state_count": 28
         },
         "LEXICAL": {
           "required_fact_recall": 1.0,
-          "context_chars": 302,
-          "full_context_chars": 5316,
-          "context_ratio": 0.056809631301730626,
+          "context_chars": 296,
+          "full_context_chars": 3490,
+          "context_ratio": 0.08481375358166189,
           "irrelevant_fact_load": 1,
           "all_required_present": true,
           "selected_state_count": 3,
-          "full_state_count": 42
+          "full_state_count": 28
         }
       }
     },
@@ -365,43 +367,43 @@
       "metrics": {
         "FULL": {
           "required_fact_recall": 1.0,
-          "context_chars": 4026,
-          "full_context_chars": 4026,
+          "context_chars": 3191,
+          "full_context_chars": 3191,
           "context_ratio": 1.0,
-          "irrelevant_fact_load": 34,
+          "irrelevant_fact_load": 27,
           "all_required_present": true,
-          "selected_state_count": 36,
-          "full_state_count": 36
+          "selected_state_count": 29,
+          "full_state_count": 29
         },
         "PATAP": {
           "required_fact_recall": 1.0,
-          "context_chars": 376,
-          "full_context_chars": 4026,
-          "context_ratio": 0.09339294585196224,
+          "context_chars": 346,
+          "full_context_chars": 3191,
+          "context_ratio": 0.10842995926041993,
           "irrelevant_fact_load": 2,
           "all_required_present": true,
           "selected_state_count": 4,
-          "full_state_count": 36
+          "full_state_count": 29
         },
         "RECENCY": {
           "required_fact_recall": 0.0,
           "context_chars": 345,
-          "full_context_chars": 4026,
-          "context_ratio": 0.08569299552906111,
+          "full_context_chars": 3191,
+          "context_ratio": 0.1081165778752742,
           "irrelevant_fact_load": 3,
           "all_required_present": false,
           "selected_state_count": 3,
-          "full_state_count": 36
+          "full_state_count": 29
         },
         "LEXICAL": {
           "required_fact_recall": 1.0,
-          "context_chars": 287,
-          "full_context_chars": 4026,
-          "context_ratio": 0.07128663686040736,
+          "context_chars": 257,
+          "full_context_chars": 3191,
+          "context_ratio": 0.08053901598245064,
           "irrelevant_fact_load": 1,
           "all_required_present": true,
           "selected_state_count": 3,
-          "full_state_count": 36
+          "full_state_count": 29
         }
       }
     },
@@ -409,49 +411,49 @@
       "scenario": "test_flake",
       "query": "What evidence supports the current test flake decision?",
       "required_fact_ids": [
-        "test_flake:F2",
-        "test_flake:F1"
+        "test_flake:F3",
+        "test_flake:F2"
       ],
       "metrics": {
         "FULL": {
           "required_fact_recall": 1.0,
-          "context_chars": 4014,
-          "full_context_chars": 4014,
+          "context_chars": 2412,
+          "full_context_chars": 2412,
           "context_ratio": 1.0,
-          "irrelevant_fact_load": 35,
+          "irrelevant_fact_load": 21,
           "all_required_present": true,
-          "selected_state_count": 37,
-          "full_state_count": 37
+          "selected_state_count": 23,
+          "full_state_count": 23
         },
         "PATAP": {
           "required_fact_recall": 1.0,
-          "context_chars": 348,
-          "full_context_chars": 4014,
-          "context_ratio": 0.08669656203288491,
-          "irrelevant_fact_load": 2,
+          "context_chars": 426,
+          "full_context_chars": 2412,
+          "context_ratio": 0.17661691542288557,
+          "irrelevant_fact_load": 3,
           "all_required_present": true,
-          "selected_state_count": 4,
-          "full_state_count": 37
+          "selected_state_count": 5,
+          "full_state_count": 23
         },
         "RECENCY": {
-          "required_fact_recall": 0.0,
-          "context_chars": 336,
-          "full_context_chars": 4014,
-          "context_ratio": 0.08370702541106129,
+          "required_fact_recall": 0.5,
+          "context_chars": 420,
+          "full_context_chars": 2412,
+          "context_ratio": 0.17412935323383086,
           "irrelevant_fact_load": 3,
           "all_required_present": false,
-          "selected_state_count": 3,
-          "full_state_count": 37
+          "selected_state_count": 4,
+          "full_state_count": 23
         },
         "LEXICAL": {
           "required_fact_recall": 1.0,
-          "context_chars": 262,
-          "full_context_chars": 4014,
-          "context_ratio": 0.06527154957648232,
-          "irrelevant_fact_load": 1,
+          "context_chars": 340,
+          "full_context_chars": 2412,
+          "context_ratio": 0.14096185737976782,
+          "irrelevant_fact_load": 2,
           "all_required_present": true,
-          "selected_state_count": 3,
-          "full_state_count": 37
+          "selected_state_count": 4,
+          "full_state_count": 23
         }
       }
     },
@@ -465,43 +467,43 @@
       "metrics": {
         "FULL": {
           "required_fact_recall": 1.0,
-          "context_chars": 5032,
-          "full_context_chars": 5032,
+          "context_chars": 3004,
+          "full_context_chars": 3004,
           "context_ratio": 1.0,
-          "irrelevant_fact_load": 36,
+          "irrelevant_fact_load": 21,
           "all_required_present": true,
-          "selected_state_count": 38,
-          "full_state_count": 38
+          "selected_state_count": 23,
+          "full_state_count": 23
         },
         "PATAP": {
           "required_fact_recall": 1.0,
-          "context_chars": 438,
-          "full_context_chars": 5032,
-          "context_ratio": 0.0870429252782194,
+          "context_chars": 450,
+          "full_context_chars": 3004,
+          "context_ratio": 0.14980026631158455,
           "irrelevant_fact_load": 2,
           "all_required_present": true,
           "selected_state_count": 4,
-          "full_state_count": 38
+          "full_state_count": 23
         },
         "RECENCY": {
           "required_fact_recall": 0.0,
           "context_chars": 408,
-          "full_context_chars": 5032,
-          "context_ratio": 0.08108108108108109,
+          "full_context_chars": 3004,
+          "context_ratio": 0.13581890812250333,
           "irrelevant_fact_load": 3,
           "all_required_present": false,
           "selected_state_count": 3,
-          "full_state_count": 38
+          "full_state_count": 23
         },
         "LEXICAL": {
           "required_fact_recall": 1.0,
-          "context_chars": 328,
-          "full_context_chars": 5032,
-          "context_ratio": 0.06518282988871224,
+          "context_chars": 340,
+          "full_context_chars": 3004,
+          "context_ratio": 0.11318242343541944,
           "irrelevant_fact_load": 1,
           "all_required_present": true,
           "selected_state_count": 3,
-          "full_state_count": 38
+          "full_state_count": 23
         }
       }
     },
@@ -509,49 +511,49 @@
       "scenario": "release_candidate",
       "query": "What evidence supports the current release candidate decision?",
       "required_fact_ids": [
-        "release_candidate:F2",
-        "release_candidate:F1"
+        "release_candidate:F3",
+        "release_candidate:F2"
       ],
       "metrics": {
         "FULL": {
           "required_fact_recall": 1.0,
-          "context_chars": 5073,
-          "full_context_chars": 5073,
+          "context_chars": 3165,
+          "full_context_chars": 3165,
           "context_ratio": 1.0,
-          "irrelevant_fact_load": 37,
+          "irrelevant_fact_load": 23,
           "all_required_present": true,
-          "selected_state_count": 39,
-          "full_state_count": 39
+          "selected_state_count": 25,
+          "full_state_count": 25
         },
         "PATAP": {
-          "required_fact_recall": 1.0,
-          "context_chars": 448,
-          "full_context_chars": 5073,
-          "context_ratio": 0.08831066430120245,
-          "irrelevant_fact_load": 2,
-          "all_required_present": true,
+          "required_fact_recall": 0.5,
+          "context_chars": 426,
+          "full_context_chars": 3165,
+          "context_ratio": 0.13459715639810427,
+          "irrelevant_fact_load": 3,
+          "all_required_present": false,
           "selected_state_count": 4,
-          "full_state_count": 39
+          "full_state_count": 25
         },
         "RECENCY": {
           "required_fact_recall": 0.0,
           "context_chars": 399,
-          "full_context_chars": 5073,
-          "context_ratio": 0.07865168539325842,
+          "full_context_chars": 3165,
+          "context_ratio": 0.12606635071090047,
           "irrelevant_fact_load": 3,
           "all_required_present": false,
           "selected_state_count": 3,
-          "full_state_count": 39
+          "full_state_count": 25
         },
         "LEXICAL": {
           "required_fact_recall": 1.0,
-          "context_chars": 341,
-          "full_context_chars": 5073,
-          "context_ratio": 0.06721860831854919,
+          "context_chars": 319,
+          "full_context_chars": 3165,
+          "context_ratio": 0.10078988941548184,
           "irrelevant_fact_load": 1,
           "all_required_present": true,
           "selected_state_count": 3,
-          "full_state_count": 39
+          "full_state_count": 25
         }
       }
     },
@@ -559,49 +561,49 @@
       "scenario": "incident_triage",
       "query": "What evidence supports the current incident triage decision?",
       "required_fact_ids": [
-        "incident_triage:F2",
-        "incident_triage:F1"
+        "incident_triage:F3",
+        "incident_triage:F2"
       ],
       "metrics": {
         "FULL": {
           "required_fact_recall": 1.0,
-          "context_chars": 4936,
-          "full_context_chars": 4936,
+          "context_chars": 3142,
+          "full_context_chars": 3142,
           "context_ratio": 1.0,
-          "irrelevant_fact_load": 38,
+          "irrelevant_fact_load": 24,
           "all_required_present": true,
-          "selected_state_count": 40,
-          "full_state_count": 40
+          "selected_state_count": 26,
+          "full_state_count": 26
         },
         "PATAP": {
           "required_fact_recall": 1.0,
-          "context_chars": 394,
-          "full_context_chars": 4936,
-          "context_ratio": 0.07982171799027553,
-          "irrelevant_fact_load": 2,
+          "context_chars": 505,
+          "full_context_chars": 3142,
+          "context_ratio": 0.16072565245066836,
+          "irrelevant_fact_load": 3,
           "all_required_present": true,
-          "selected_state_count": 4,
-          "full_state_count": 40
+          "selected_state_count": 5,
+          "full_state_count": 26
         },
         "RECENCY": {
           "required_fact_recall": 0.0,
-          "context_chars": 381,
-          "full_context_chars": 4936,
-          "context_ratio": 0.07718800648298217,
-          "irrelevant_fact_load": 3,
+          "context_chars": 505,
+          "full_context_chars": 3142,
+          "context_ratio": 0.16072565245066836,
+          "irrelevant_fact_load": 4,
           "all_required_present": false,
-          "selected_state_count": 3,
-          "full_state_count": 40
+          "selected_state_count": 4,
+          "full_state_count": 26
         },
         "LEXICAL": {
           "required_fact_recall": 1.0,
-          "context_chars": 293,
-          "full_context_chars": 4936,
-          "context_ratio": 0.059359805510534845,
-          "irrelevant_fact_load": 1,
+          "context_chars": 404,
+          "full_context_chars": 3142,
+          "context_ratio": 0.12858052196053468,
+          "irrelevant_fact_load": 2,
           "all_required_present": true,
-          "selected_state_count": 3,
-          "full_state_count": 40
+          "selected_state_count": 4,
+          "full_state_count": 26
         }
       }
     },
@@ -609,49 +611,49 @@
       "scenario": "multi_module_search",
       "query": "What evidence supports the current multi module search decision?",
       "required_fact_ids": [
-        "multi_module_search:F2",
-        "multi_module_search:F1"
+        "multi_module_search:F3",
+        "multi_module_search:F2"
       ],
       "metrics": {
         "FULL": {
           "required_fact_recall": 1.0,
-          "context_chars": 5585,
-          "full_context_chars": 5585,
+          "context_chars": 3597,
+          "full_context_chars": 3597,
           "context_ratio": 1.0,
-          "irrelevant_fact_load": 39,
+          "irrelevant_fact_load": 25,
           "all_required_present": true,
-          "selected_state_count": 41,
-          "full_state_count": 41
+          "selected_state_count": 27,
+          "full_state_count": 27
         },
         "PATAP": {
           "required_fact_recall": 1.0,
-          "context_chars": 472,
-          "full_context_chars": 5585,
-          "context_ratio": 0.08451208594449418,
-          "irrelevant_fact_load": 2,
+          "context_chars": 569,
+          "full_context_chars": 3597,
+          "context_ratio": 0.1581873783708646,
+          "irrelevant_fact_load": 3,
           "all_required_present": true,
-          "selected_state_count": 4,
-          "full_state_count": 41
+          "selected_state_count": 5,
+          "full_state_count": 27
         },
         "RECENCY": {
           "required_fact_recall": 0.0,
-          "context_chars": 417,
-          "full_context_chars": 5585,
-          "context_ratio": 0.07466427931960609,
-          "irrelevant_fact_load": 3,
+          "context_chars": 556,
+          "full_context_chars": 3597,
+          "context_ratio": 0.15457325549068668,
+          "irrelevant_fact_load": 4,
           "all_required_present": false,
-          "selected_state_count": 3,
-          "full_state_count": 41
+          "selected_state_count": 4,
+          "full_state_count": 27
         },
         "LEXICAL": {
           "required_fact_recall": 1.0,
-          "context_chars": 359,
-          "full_context_chars": 5585,
-          "context_ratio": 0.06427931960608774,
-          "irrelevant_fact_load": 1,
+          "context_chars": 456,
+          "full_context_chars": 3597,
+          "context_ratio": 0.1267723102585488,
+          "irrelevant_fact_load": 2,
           "all_required_present": true,
-          "selected_state_count": 3,
-          "full_state_count": 41
+          "selected_state_count": 4,
+          "full_state_count": 27
         }
       }
     },
@@ -665,43 +667,43 @@
       "metrics": {
         "FULL": {
           "required_fact_recall": 1.0,
-          "context_chars": 4952,
-          "full_context_chars": 4952,
+          "context_chars": 3141,
+          "full_context_chars": 3141,
           "context_ratio": 1.0,
-          "irrelevant_fact_load": 40,
+          "irrelevant_fact_load": 25,
           "all_required_present": true,
-          "selected_state_count": 42,
-          "full_state_count": 42
+          "selected_state_count": 27,
+          "full_state_count": 27
         },
         "PATAP": {
           "required_fact_recall": 1.0,
-          "context_chars": 384,
-          "full_context_chars": 4952,
-          "context_ratio": 0.07754442649434572,
+          "context_chars": 388,
+          "full_context_chars": 3141,
+          "context_ratio": 0.12352753900031838,
           "irrelevant_fact_load": 2,
           "all_required_present": true,
           "selected_state_count": 4,
-          "full_state_count": 42
+          "full_state_count": 27
         },
         "RECENCY": {
           "required_fact_recall": 0.0,
           "context_chars": 363,
-          "full_context_chars": 4952,
-          "context_ratio": 0.07330371567043618,
+          "full_context_chars": 3141,
+          "context_ratio": 0.11556829035339064,
           "irrelevant_fact_load": 3,
           "all_required_present": false,
           "selected_state_count": 3,
-          "full_state_count": 42
+          "full_state_count": 27
         },
         "LEXICAL": {
           "required_fact_recall": 1.0,
-          "context_chars": 289,
-          "full_context_chars": 4952,
-          "context_ratio": 0.05836025848142165,
+          "context_chars": 293,
+          "full_context_chars": 3141,
+          "context_ratio": 0.09328239414199299,
           "irrelevant_fact_load": 1,
           "all_required_present": true,
           "selected_state_count": 3,
-          "full_state_count": 42
+          "full_state_count": 27
         }
       }
     },
@@ -715,43 +717,43 @@
       "metrics": {
         "FULL": {
           "required_fact_recall": 1.0,
-          "context_chars": 4652,
-          "full_context_chars": 4652,
+          "context_chars": 3588,
+          "full_context_chars": 3588,
           "context_ratio": 1.0,
-          "irrelevant_fact_load": 34,
+          "irrelevant_fact_load": 26,
           "all_required_present": true,
-          "selected_state_count": 36,
-          "full_state_count": 36
+          "selected_state_count": 28,
+          "full_state_count": 28
         },
         "PATAP": {
           "required_fact_recall": 1.0,
           "context_chars": 426,
-          "full_context_chars": 4652,
-          "context_ratio": 0.09157351676698194,
+          "full_context_chars": 3588,
+          "context_ratio": 0.11872909698996656,
           "irrelevant_fact_load": 2,
           "all_required_present": true,
           "selected_state_count": 4,
-          "full_state_count": 36
+          "full_state_count": 28
         },
         "RECENCY": {
           "required_fact_recall": 0.0,
           "context_chars": 399,
-          "full_context_chars": 4652,
-          "context_ratio": 0.08576956147893379,
+          "full_context_chars": 3588,
+          "context_ratio": 0.11120401337792642,
           "irrelevant_fact_load": 3,
           "all_required_present": false,
           "selected_state_count": 3,
-          "full_state_count": 36
+          "full_state_count": 28
         },
         "LEXICAL": {
           "required_fact_recall": 1.0,
           "context_chars": 319,
-          "full_context_chars": 4652,
-          "context_ratio": 0.06857265692175409,
+          "full_context_chars": 3588,
+          "context_ratio": 0.08890746934225195,
           "irrelevant_fact_load": 1,
           "all_required_present": true,
           "selected_state_count": 3,
-          "full_state_count": 36
+          "full_state_count": 28
         }
       }
     },
@@ -765,43 +767,43 @@
       "metrics": {
         "FULL": {
           "required_fact_recall": 1.0,
-          "context_chars": 5584,
-          "full_context_chars": 5584,
+          "context_chars": 4338,
+          "full_context_chars": 4338,
           "context_ratio": 1.0,
-          "irrelevant_fact_load": 35,
+          "irrelevant_fact_load": 27,
           "all_required_present": true,
-          "selected_state_count": 37,
-          "full_state_count": 37
+          "selected_state_count": 29,
+          "full_state_count": 29
         },
         "PATAP": {
           "required_fact_recall": 1.0,
-          "context_chars": 532,
-          "full_context_chars": 5584,
-          "context_ratio": 0.09527220630372493,
+          "context_chars": 518,
+          "full_context_chars": 4338,
+          "context_ratio": 0.11940986629783311,
           "irrelevant_fact_load": 2,
           "all_required_present": true,
           "selected_state_count": 4,
-          "full_state_count": 37
+          "full_state_count": 29
         },
         "RECENCY": {
           "required_fact_recall": 0.0,
           "context_chars": 462,
-          "full_context_chars": 5584,
-          "context_ratio": 0.08273638968481375,
+          "full_context_chars": 4338,
+          "context_ratio": 0.10650069156293222,
           "irrelevant_fact_load": 3,
           "all_required_present": false,
           "selected_state_count": 3,
-          "full_state_count": 37
+          "full_state_count": 29
         },
         "LEXICAL": {
           "required_fact_recall": 1.0,
-          "context_chars": 404,
-          "full_context_chars": 5584,
-          "context_ratio": 0.07234957020057306,
+          "context_chars": 390,
+          "full_context_chars": 4338,
+          "context_ratio": 0.08990318118948824,
           "irrelevant_fact_load": 1,
           "all_required_present": true,
           "selected_state_count": 3,
-          "full_state_count": 37
+          "full_state_count": 29
         }
       }
     },
@@ -815,43 +817,43 @@
       "metrics": {
         "FULL": {
           "required_fact_recall": 1.0,
-          "context_chars": 3998,
-          "full_context_chars": 3998,
+          "context_chars": 2272,
+          "full_context_chars": 2272,
           "context_ratio": 1.0,
-          "irrelevant_fact_load": 36,
+          "irrelevant_fact_load": 20,
           "all_required_present": true,
-          "selected_state_count": 38,
-          "full_state_count": 38
+          "selected_state_count": 22,
+          "full_state_count": 22
         },
         "PATAP": {
           "required_fact_recall": 1.0,
-          "context_chars": 322,
-          "full_context_chars": 3998,
-          "context_ratio": 0.08054027013506754,
+          "context_chars": 340,
+          "full_context_chars": 2272,
+          "context_ratio": 0.14964788732394366,
           "irrelevant_fact_load": 2,
           "all_required_present": true,
           "selected_state_count": 4,
-          "full_state_count": 38
+          "full_state_count": 22
         },
         "RECENCY": {
-          "required_fact_recall": 0.5,
-          "context_chars": 293,
-          "full_context_chars": 3998,
-          "context_ratio": 0.07328664332166084,
-          "irrelevant_fact_load": 2,
+          "required_fact_recall": 0.0,
+          "context_chars": 327,
+          "full_context_chars": 2272,
+          "context_ratio": 0.14392605633802816,
+          "irrelevant_fact_load": 3,
           "all_required_present": false,
           "selected_state_count": 3,
-          "full_state_count": 38
+          "full_state_count": 22
         },
         "LEXICAL": {
           "required_fact_recall": 1.0,
-          "context_chars": 239,
-          "full_context_chars": 3998,
-          "context_ratio": 0.059779889944972485,
+          "context_chars": 257,
+          "full_context_chars": 2272,
+          "context_ratio": 0.1131161971830986,
           "irrelevant_fact_load": 1,
           "all_required_present": true,
           "selected_state_count": 3,
-          "full_state_count": 38
+          "full_state_count": 22
         }
       }
     },
@@ -865,43 +867,43 @@
       "metrics": {
         "FULL": {
           "required_fact_recall": 1.0,
-          "context_chars": 4956,
-          "full_context_chars": 4956,
+          "context_chars": 2856,
+          "full_context_chars": 2856,
           "context_ratio": 1.0,
-          "irrelevant_fact_load": 37,
+          "irrelevant_fact_load": 21,
           "all_required_present": true,
-          "selected_state_count": 39,
-          "full_state_count": 39
+          "selected_state_count": 23,
+          "full_state_count": 23
         },
         "PATAP": {
           "required_fact_recall": 1.0,
-          "context_chars": 436,
-          "full_context_chars": 4956,
-          "context_ratio": 0.08797417271993543,
+          "context_chars": 416,
+          "full_context_chars": 2856,
+          "context_ratio": 0.14565826330532214,
           "irrelevant_fact_load": 2,
           "all_required_present": true,
           "selected_state_count": 4,
-          "full_state_count": 39
+          "full_state_count": 23
         },
         "RECENCY": {
           "required_fact_recall": 0.0,
           "context_chars": 390,
-          "full_context_chars": 4956,
-          "context_ratio": 0.07869249394673124,
+          "full_context_chars": 2856,
+          "context_ratio": 0.13655462184873948,
           "irrelevant_fact_load": 3,
           "all_required_present": false,
           "selected_state_count": 3,
-          "full_state_count": 39
+          "full_state_count": 23
         },
         "LEXICAL": {
           "required_fact_recall": 1.0,
-          "context_chars": 332,
-          "full_context_chars": 4956,
-          "context_ratio": 0.06698950766747377,
+          "context_chars": 312,
+          "full_context_chars": 2856,
+          "context_ratio": 0.1092436974789916,
           "irrelevant_fact_load": 1,
           "all_required_present": true,
           "selected_state_count": 3,
-          "full_state_count": 39
+          "full_state_count": 23
         }
       }
     },
@@ -915,43 +917,43 @@
       "metrics": {
         "FULL": {
           "required_fact_recall": 1.0,
-          "context_chars": 5190,
-          "full_context_chars": 5190,
+          "context_chars": 3066,
+          "full_context_chars": 3066,
           "context_ratio": 1.0,
-          "irrelevant_fact_load": 38,
+          "irrelevant_fact_load": 22,
           "all_required_present": true,
-          "selected_state_count": 40,
-          "full_state_count": 40
+          "selected_state_count": 24,
+          "full_state_count": 24
         },
         "PATAP": {
           "required_fact_recall": 1.0,
-          "context_chars": 432,
-          "full_context_chars": 5190,
-          "context_ratio": 0.08323699421965318,
+          "context_chars": 436,
+          "full_context_chars": 3066,
+          "context_ratio": 0.14220482713633398,
           "irrelevant_fact_load": 2,
           "all_required_present": true,
           "selected_state_count": 4,
-          "full_state_count": 40
+          "full_state_count": 24
         },
         "RECENCY": {
           "required_fact_recall": 0.0,
           "context_chars": 399,
-          "full_context_chars": 5190,
-          "context_ratio": 0.07687861271676301,
+          "full_context_chars": 3066,
+          "context_ratio": 0.13013698630136986,
           "irrelevant_fact_load": 3,
           "all_required_present": false,
           "selected_state_count": 3,
-          "full_state_count": 40
+          "full_state_count": 24
         },
         "LEXICAL": {
           "required_fact_recall": 1.0,
-          "context_chars": 325,
-          "full_context_chars": 5190,
-          "context_ratio": 0.0626204238921002,
+          "context_chars": 329,
+          "full_context_chars": 3066,
+          "context_ratio": 0.10730593607305935,
           "irrelevant_fact_load": 1,
           "all_required_present": true,
           "selected_state_count": 3,
-          "full_state_count": 40
+          "full_state_count": 24
         }
       }
     },
@@ -965,43 +967,43 @@
       "metrics": {
         "FULL": {
           "required_fact_recall": 1.0,
-          "context_chars": 5071,
-          "full_context_chars": 5071,
+          "context_chars": 3049,
+          "full_context_chars": 3049,
           "context_ratio": 1.0,
-          "irrelevant_fact_load": 39,
+          "irrelevant_fact_load": 23,
           "all_required_present": true,
-          "selected_state_count": 41,
-          "full_state_count": 41
+          "selected_state_count": 25,
+          "full_state_count": 25
         },
         "PATAP": {
           "required_fact_recall": 1.0,
-          "context_chars": 402,
-          "full_context_chars": 5071,
-          "context_ratio": 0.07927430487083416,
+          "context_chars": 412,
+          "full_context_chars": 3049,
+          "context_ratio": 0.13512627090849458,
           "irrelevant_fact_load": 2,
           "all_required_present": true,
           "selected_state_count": 4,
-          "full_state_count": 41
+          "full_state_count": 25
         },
         "RECENCY": {
           "required_fact_recall": 0.0,
           "context_chars": 381,
-          "full_context_chars": 5071,
-          "context_ratio": 0.07513310984026819,
+          "full_context_chars": 3049,
+          "context_ratio": 0.12495900295178747,
           "irrelevant_fact_load": 3,
           "all_required_present": false,
           "selected_state_count": 3,
-          "full_state_count": 41
+          "full_state_count": 25
         },
         "LEXICAL": {
           "required_fact_recall": 1.0,
-          "context_chars": 301,
-          "full_context_chars": 5071,
-          "context_ratio": 0.05935712877144547,
+          "context_chars": 311,
+          "full_context_chars": 3049,
+          "context_ratio": 0.1020006559527714,
           "irrelevant_fact_load": 1,
           "all_required_present": true,
           "selected_state_count": 3,
-          "full_state_count": 41
+          "full_state_count": 25
         }
       }
     }
@@ -1012,66 +1014,71 @@
       "all_required_success_rate": 1.0,
       "mean_context_ratio": 1.0,
       "median_context_ratio": 1.0,
-      "mean_selected_states": 81.35
+      "mean_selected_states": 25.35,
+      "mean_irrelevant_fact_load": 23.35
     },
     "PATAP": {
-      "required_fact_recall": 1.0,
-      "all_required_success_rate": 1.0,
-      "mean_context_ratio": 0.06912887986256157,
-      "median_context_ratio": 0.08323699421965318,
-      "mean_selected_states": 4.0
+      "required_fact_recall": 0.975,
+      "all_required_success_rate": 0.95,
+      "mean_context_ratio": 0.13817074840205484,
+      "median_context_ratio": 0.14135254988913526,
+      "mean_selected_states": 4.2,
+      "mean_irrelevant_fact_load": 2.25
     },
     "RECENCY": {
-      "required_fact_recall": 0.025,
+      "required_fact_recall": 0.05,
       "all_required_success_rate": 0.0,
-      "mean_context_ratio": 0.06380416275344239,
-      "median_context_ratio": 0.07513310984026819,
-      "mean_selected_states": 3.0
+      "mean_context_ratio": 0.1318980473425515,
+      "median_context_ratio": 0.13146997929606624,
+      "mean_selected_states": 3.2,
+      "mean_irrelevant_fact_load": 3.1
     },
     "LEXICAL": {
       "required_fact_recall": 1.0,
       "all_required_success_rate": 1.0,
-      "mean_context_ratio": 0.05209311442718602,
-      "median_context_ratio": 0.0626204238921002,
-      "mean_selected_states": 3.0
+      "mean_context_ratio": 0.10493537961475743,
+      "median_context_ratio": 0.10561949898442789,
+      "mean_selected_states": 3.2,
+      "mean_irrelevant_fact_load": 1.2
     }
   },
   "sensitivity": {
     "0% missing": {
-      "required_fact_recall": 1.0,
-      "context_ratio": 0.06912887986256157,
-      "all_required_present": 1.0,
-      "invalid_graph_rate": 0
-    },
-    "5% missing": {
-      "required_fact_recall": 1.0,
-      "context_ratio": 0.06912887986256157,
-      "all_required_present": 1.0,
-      "invalid_graph_rate": 0
-    },
-    "10% missing": {
       "required_fact_recall": 0.975,
-      "context_ratio": 0.065771330630238,
+      "context_ratio": 0.13817074840205484,
       "all_required_present": 0.95,
       "invalid_graph_rate": 0
     },
+    "5% missing": {
+      "required_fact_recall": 0.875,
+      "context_ratio": 0.12881067119442297,
+      "all_required_present": 0.8,
+      "invalid_graph_rate": 0
+    },
+    "10% missing": {
+      "required_fact_recall": 0.825,
+      "context_ratio": 0.12372263377442108,
+      "all_required_present": 0.7,
+      "invalid_graph_rate": 0
+    },
     "20% missing": {
-      "required_fact_recall": 0.95,
-      "context_ratio": 0.0643262613376898,
-      "all_required_present": 0.9,
+      "required_fact_recall": 0.75,
+      "context_ratio": 0.11632553038292785,
+      "all_required_present": 0.6,
       "invalid_graph_rate": 0
     },
     "5% false edges": {
-      "required_fact_recall": 1.0,
-      "context_ratio": 0.07289711324991975,
-      "all_required_present": 1.0,
+      "required_fact_recall": 0.975,
+      "context_ratio": 0.14664285943386962,
+      "all_required_present": 0.95,
       "invalid_graph_rate": 0
     },
     "10% false edges": {
-      "required_fact_recall": 1.0,
-      "context_ratio": 0.07034642686345682,
-      "all_required_present": 1.0,
+      "required_fact_recall": 0.975,
+      "context_ratio": 0.14576918844754347,
+      "all_required_present": 0.95,
       "invalid_graph_rate": 0
     }
   }
 }
+
