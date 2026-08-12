@@ -1,1006 +1,1007 @@
 {
   "benchmark_version": "0.3.0",
+  "dataset_sha256": "25da159714710e850a514e257532d81135f9a297ddf473a1f49debf70d3594b6",
   "python": "3.14.0",
   "random_seed": 2026030,
   "dataset_scenario_count": 20,
   "per_scenario": [
     {
-      "scenario": "authentication_0",
-      "query": "Why does the authentication current change preserve contract?",
+      "scenario": "auth_password_policy",
+      "query": "What evidence supports the current auth password policy decision?",
       "required_fact_ids": [
-        "R0",
-        "I0"
+        "auth_password_policy:F2",
+        "auth_password_policy:F1"
       ],
       "metrics": {
         "FULL": {
           "required_fact_recall": 1.0,
-          "context_chars": 34592,
-          "full_context_chars": 34592,
+          "context_chars": 75554,
+          "full_context_chars": 75554,
           "context_ratio": 1.0,
-          "irrelevant_fact_load": 518,
+          "irrelevant_fact_load": 522,
           "all_required_present": true,
-          "selected_state_count": 520,
-          "full_state_count": 520
+          "selected_state_count": 524,
+          "full_state_count": 524
         },
         "PATAP": {
           "required_fact_recall": 1.0,
-          "context_chars": 173,
-          "full_context_chars": 34592,
-          "context_ratio": 0.005001156336725254,
-          "irrelevant_fact_load": 1,
+          "context_chars": 484,
+          "full_context_chars": 75554,
+          "context_ratio": 0.006406014241469677,
+          "irrelevant_fact_load": 2,
           "all_required_present": true,
-          "selected_state_count": 3,
-          "full_state_count": 520
+          "selected_state_count": 4,
+          "full_state_count": 524
         },
         "RECENCY": {
           "required_fact_recall": 0.0,
-          "context_chars": 134,
-          "full_context_chars": 34592,
-          "context_ratio": 0.0038737280296022203,
-          "irrelevant_fact_load": 2,
+          "context_chars": 435,
+          "full_context_chars": 75554,
+          "context_ratio": 0.0057574714773539456,
+          "irrelevant_fact_load": 3,
           "all_required_present": false,
-          "selected_state_count": 2,
-          "full_state_count": 520
+          "selected_state_count": 3,
+          "full_state_count": 524
         },
         "LEXICAL": {
           "required_fact_recall": 1.0,
-          "context_chars": 173,
-          "full_context_chars": 34592,
-          "context_ratio": 0.005001156336725254,
+          "context_chars": 368,
+          "full_context_chars": 75554,
+          "context_ratio": 0.0048706885141752915,
           "irrelevant_fact_load": 1,
           "all_required_present": true,
           "selected_state_count": 3,
-          "full_state_count": 520
+          "full_state_count": 524
         }
       }
     },
     {
-      "scenario": "database_migration_1",
-      "query": "Why does the database migration current change preserve contract?",
+      "scenario": "database_backfill",
+      "query": "What evidence supports the current database backfill decision?",
       "required_fact_ids": [
-        "R1",
-        "I1"
+        "database_backfill:F2",
+        "database_backfill:F1"
       ],
       "metrics": {
         "FULL": {
           "required_fact_recall": 1.0,
-          "context_chars": 8272,
-          "full_context_chars": 8272,
+          "context_chars": 17088,
+          "full_context_chars": 17088,
           "context_ratio": 1.0,
-          "irrelevant_fact_load": 118,
+          "irrelevant_fact_load": 127,
           "all_required_present": true,
-          "selected_state_count": 120,
-          "full_state_count": 120
+          "selected_state_count": 129,
+          "full_state_count": 129
         },
         "PATAP": {
           "required_fact_recall": 1.0,
-          "context_chars": 185,
-          "full_context_chars": 8272,
-          "context_ratio": 0.022364603481624758,
-          "irrelevant_fact_load": 1,
+          "context_chars": 418,
+          "full_context_chars": 17088,
+          "context_ratio": 0.024461610486891387,
+          "irrelevant_fact_load": 2,
           "all_required_present": true,
-          "selected_state_count": 3,
-          "full_state_count": 120
+          "selected_state_count": 4,
+          "full_state_count": 129
         },
         "RECENCY": {
           "required_fact_recall": 0.0,
-          "context_chars": 142,
-          "full_context_chars": 8272,
-          "context_ratio": 0.01716634429400387,
-          "irrelevant_fact_load": 2,
+          "context_chars": 408,
+          "full_context_chars": 17088,
+          "context_ratio": 0.023876404494382022,
+          "irrelevant_fact_load": 3,
           "all_required_present": false,
-          "selected_state_count": 2,
-          "full_state_count": 120
+          "selected_state_count": 3,
+          "full_state_count": 129
         },
         "LEXICAL": {
           "required_fact_recall": 1.0,
-          "context_chars": 185,
-          "full_context_chars": 8272,
-          "context_ratio": 0.022364603481624758,
+          "context_chars": 311,
+          "full_context_chars": 17088,
+          "context_ratio": 0.018199906367041198,
           "irrelevant_fact_load": 1,
           "all_required_present": true,
           "selected_state_count": 3,
-          "full_state_count": 120
+          "full_state_count": 129
         }
       }
     },
     {
-      "scenario": "api_compatibility_2",
-      "query": "Why does the api compatibility current change preserve contract?",
+      "scenario": "api_deprecation",
+      "query": "What evidence supports the current api deprecation decision?",
       "required_fact_ids": [
-        "R2",
-        "I2"
+        "api_deprecation:F2",
+        "api_deprecation:F1"
       ],
       "metrics": {
         "FULL": {
           "required_fact_recall": 1.0,
-          "context_chars": 8152,
-          "full_context_chars": 8152,
+          "context_chars": 16344,
+          "full_context_chars": 16344,
           "context_ratio": 1.0,
-          "irrelevant_fact_load": 118,
+          "irrelevant_fact_load": 127,
           "all_required_present": true,
-          "selected_state_count": 120,
-          "full_state_count": 120
+          "selected_state_count": 129,
+          "full_state_count": 129
         },
         "PATAP": {
           "required_fact_recall": 1.0,
-          "context_chars": 182,
-          "full_context_chars": 8152,
-          "context_ratio": 0.022325809617271836,
-          "irrelevant_fact_load": 1,
+          "context_chars": 424,
+          "full_context_chars": 16344,
+          "context_ratio": 0.02594224180127264,
+          "irrelevant_fact_load": 2,
           "all_required_present": true,
-          "selected_state_count": 3,
-          "full_state_count": 120
+          "selected_state_count": 4,
+          "full_state_count": 129
         },
         "RECENCY": {
           "required_fact_recall": 0.0,
-          "context_chars": 140,
-          "full_context_chars": 8152,
-          "context_ratio": 0.01717369970559372,
-          "irrelevant_fact_load": 2,
+          "context_chars": 390,
+          "full_context_chars": 16344,
+          "context_ratio": 0.023861967694566815,
+          "irrelevant_fact_load": 3,
           "all_required_present": false,
-          "selected_state_count": 2,
-          "full_state_count": 120
+          "selected_state_count": 3,
+          "full_state_count": 129
         },
         "LEXICAL": {
           "required_fact_recall": 1.0,
-          "context_chars": 182,
-          "full_context_chars": 8152,
-          "context_ratio": 0.022325809617271836,
+          "context_chars": 323,
+          "full_context_chars": 16344,
+          "context_ratio": 0.019762604013705335,
           "irrelevant_fact_load": 1,
           "all_required_present": true,
           "selected_state_count": 3,
-          "full_state_count": 120
+          "full_state_count": 129
         }
       }
     },
     {
-      "scenario": "security_policy_3",
-      "query": "Why does the security policy current change preserve contract?",
+      "scenario": "refactor_regression",
+      "query": "What evidence supports the current refactor regression decision?",
       "required_fact_ids": [
-        "R3",
-        "I3"
+        "refactor_regression:F2",
+        "refactor_regression:F1"
       ],
       "metrics": {
         "FULL": {
           "required_fact_recall": 1.0,
-          "context_chars": 7912,
-          "full_context_chars": 7912,
+          "context_chars": 17876,
+          "full_context_chars": 17876,
           "context_ratio": 1.0,
-          "irrelevant_fact_load": 118,
+          "irrelevant_fact_load": 127,
           "all_required_present": true,
-          "selected_state_count": 120,
-          "full_state_count": 120
+          "selected_state_count": 129,
+          "full_state_count": 129
         },
         "PATAP": {
           "required_fact_recall": 1.0,
-          "context_chars": 176,
-          "full_context_chars": 7912,
-          "context_ratio": 0.022244691607684528,
-          "irrelevant_fact_load": 1,
+          "context_chars": 456,
+          "full_context_chars": 17876,
+          "context_ratio": 0.025509062430073844,
+          "irrelevant_fact_load": 2,
           "all_required_present": true,
-          "selected_state_count": 3,
-          "full_state_count": 120
+          "selected_state_count": 4,
+          "full_state_count": 129
         },
         "RECENCY": {
           "required_fact_recall": 0.0,
-          "context_chars": 136,
-          "full_context_chars": 7912,
-          "context_ratio": 0.017189079878665317,
-          "irrelevant_fact_load": 2,
+          "context_chars": 426,
+          "full_context_chars": 17876,
+          "context_ratio": 0.023830834638621616,
+          "irrelevant_fact_load": 3,
           "all_required_present": false,
-          "selected_state_count": 2,
-          "full_state_count": 120
+          "selected_state_count": 3,
+          "full_state_count": 129
         },
         "LEXICAL": {
           "required_fact_recall": 1.0,
-          "context_chars": 176,
-          "full_context_chars": 7912,
-          "context_ratio": 0.022244691607684528,
+          "context_chars": 343,
+          "full_context_chars": 17876,
+          "context_ratio": 0.019187737748937124,
           "irrelevant_fact_load": 1,
           "all_required_present": true,
           "selected_state_count": 3,
-          "full_state_count": 120
+          "full_state_count": 129
         }
       }
     },
     {
-      "scenario": "config_rollout_4",
-      "query": "Why does the config rollout current change preserve contract?",
+      "scenario": "oauth_callback",
+      "query": "What evidence supports the current oauth callback decision?",
       "required_fact_ids": [
-        "R4",
-        "I4"
+        "oauth_callback:F2",
+        "oauth_callback:F1"
       ],
       "metrics": {
         "FULL": {
           "required_fact_recall": 1.0,
-          "context_chars": 7792,
-          "full_context_chars": 7792,
+          "context_chars": 15935,
+          "full_context_chars": 15935,
           "context_ratio": 1.0,
-          "irrelevant_fact_load": 118,
+          "irrelevant_fact_load": 127,
           "all_required_present": true,
-          "selected_state_count": 120,
-          "full_state_count": 120
+          "selected_state_count": 129,
+          "full_state_count": 129
         },
         "PATAP": {
           "required_fact_recall": 1.0,
-          "context_chars": 173,
-          "full_context_chars": 7792,
-          "context_ratio": 0.022202258726899383,
-          "irrelevant_fact_load": 1,
+          "context_chars": 390,
+          "full_context_chars": 15935,
+          "context_ratio": 0.02447442736115469,
+          "irrelevant_fact_load": 2,
           "all_required_present": true,
-          "selected_state_count": 3,
-          "full_state_count": 120
+          "selected_state_count": 4,
+          "full_state_count": 129
         },
         "RECENCY": {
           "required_fact_recall": 0.0,
-          "context_chars": 134,
-          "full_context_chars": 7792,
-          "context_ratio": 0.017197125256673513,
-          "irrelevant_fact_load": 2,
+          "context_chars": 381,
+          "full_context_chars": 15935,
+          "context_ratio": 0.023909632883589584,
+          "irrelevant_fact_load": 3,
           "all_required_present": false,
-          "selected_state_count": 2,
-          "full_state_count": 120
+          "selected_state_count": 3,
+          "full_state_count": 129
         },
         "LEXICAL": {
           "required_fact_recall": 1.0,
-          "context_chars": 173,
-          "full_context_chars": 7792,
-          "context_ratio": 0.022202258726899383,
+          "context_chars": 292,
+          "full_context_chars": 15935,
+          "context_ratio": 0.018324443049890178,
           "irrelevant_fact_load": 1,
           "all_required_present": true,
           "selected_state_count": 3,
-          "full_state_count": 120
+          "full_state_count": 129
         }
       }
     },
     {
-      "scenario": "release_preparation_5",
-      "query": "Why does the release preparation current change preserve contract?",
+      "scenario": "migration_rollback",
+      "query": "What evidence supports the current migration rollback decision?",
       "required_fact_ids": [
-        "R5",
-        "I5"
+        "migration_rollback:F2",
+        "migration_rollback:F1"
       ],
       "metrics": {
         "FULL": {
           "required_fact_recall": 1.0,
-          "context_chars": 2408,
-          "full_context_chars": 2408,
+          "context_chars": 5462,
+          "full_context_chars": 5462,
           "context_ratio": 1.0,
-          "irrelevant_fact_load": 33,
+          "irrelevant_fact_load": 39,
           "all_required_present": true,
-          "selected_state_count": 35,
-          "full_state_count": 35
+          "selected_state_count": 41,
+          "full_state_count": 41
         },
         "PATAP": {
           "required_fact_recall": 1.0,
-          "context_chars": 188,
-          "full_context_chars": 2408,
-          "context_ratio": 0.07807308970099668,
-          "irrelevant_fact_load": 1,
+          "context_chars": 460,
+          "full_context_chars": 5462,
+          "context_ratio": 0.08421823507872574,
+          "irrelevant_fact_load": 2,
           "all_required_present": true,
-          "selected_state_count": 3,
-          "full_state_count": 35
+          "selected_state_count": 4,
+          "full_state_count": 41
         },
         "RECENCY": {
           "required_fact_recall": 0.0,
-          "context_chars": 140,
-          "full_context_chars": 2408,
-          "context_ratio": 0.05813953488372093,
-          "irrelevant_fact_load": 2,
+          "context_chars": 408,
+          "full_context_chars": 5462,
+          "context_ratio": 0.074697912852435,
+          "irrelevant_fact_load": 3,
           "all_required_present": false,
-          "selected_state_count": 2,
-          "full_state_count": 35
+          "selected_state_count": 3,
+          "full_state_count": 41
         },
         "LEXICAL": {
           "required_fact_recall": 1.0,
-          "context_chars": 186,
-          "full_context_chars": 2408,
-          "context_ratio": 0.07724252491694353,
+          "context_chars": 350,
+          "full_context_chars": 5462,
+          "context_ratio": 0.06407909190772611,
           "irrelevant_fact_load": 1,
           "all_required_present": true,
           "selected_state_count": 3,
-          "full_state_count": 35
+          "full_state_count": 41
         }
       }
     },
     {
-      "scenario": "incident_fix_6",
-      "query": "Why does the incident fix current change preserve contract?",
+      "scenario": "security_headers",
+      "query": "What evidence supports the current security headers decision?",
       "required_fact_ids": [
-        "R6",
-        "I6"
+        "security_headers:F2",
+        "security_headers:F1"
       ],
       "metrics": {
         "FULL": {
           "required_fact_recall": 1.0,
-          "context_chars": 2163,
-          "full_context_chars": 2163,
+          "context_chars": 5316,
+          "full_context_chars": 5316,
           "context_ratio": 1.0,
-          "irrelevant_fact_load": 33,
+          "irrelevant_fact_load": 40,
           "all_required_present": true,
-          "selected_state_count": 35,
-          "full_state_count": 35
+          "selected_state_count": 42,
+          "full_state_count": 42
         },
         "PATAP": {
           "required_fact_recall": 1.0,
-          "context_chars": 167,
-          "full_context_chars": 2163,
-          "context_ratio": 0.077207582061951,
-          "irrelevant_fact_load": 1,
+          "context_chars": 406,
+          "full_context_chars": 5316,
+          "context_ratio": 0.0763732129420617,
+          "irrelevant_fact_load": 2,
           "all_required_present": true,
-          "selected_state_count": 3,
-          "full_state_count": 35
+          "selected_state_count": 4,
+          "full_state_count": 42
         },
         "RECENCY": {
           "required_fact_recall": 0.0,
-          "context_chars": 126,
-          "full_context_chars": 2163,
-          "context_ratio": 0.05825242718446602,
-          "irrelevant_fact_load": 2,
+          "context_chars": 390,
+          "full_context_chars": 5316,
+          "context_ratio": 0.07336343115124154,
+          "irrelevant_fact_load": 3,
           "all_required_present": false,
-          "selected_state_count": 2,
-          "full_state_count": 35
+          "selected_state_count": 3,
+          "full_state_count": 42
         },
         "LEXICAL": {
           "required_fact_recall": 1.0,
-          "context_chars": 165,
-          "full_context_chars": 2163,
-          "context_ratio": 0.07628294036061026,
+          "context_chars": 302,
+          "full_context_chars": 5316,
+          "context_ratio": 0.056809631301730626,
           "irrelevant_fact_load": 1,
           "all_required_present": true,
           "selected_state_count": 3,
-          "full_state_count": 35
+          "full_state_count": 42
         }
       }
     },
     {
-      "scenario": "dependency_upgrade_7",
-      "query": "Why does the dependency upgrade current change preserve contract?",
+      "scenario": "config_flag",
+      "query": "What evidence supports the current config flag decision?",
       "required_fact_ids": [
-        "R7",
-        "I7"
+        "config_flag:F2",
+        "config_flag:F1"
       ],
       "metrics": {
         "FULL": {
           "required_fact_recall": 1.0,
-          "context_chars": 2373,
-          "full_context_chars": 2373,
+          "context_chars": 4026,
+          "full_context_chars": 4026,
           "context_ratio": 1.0,
-          "irrelevant_fact_load": 33,
+          "irrelevant_fact_load": 34,
           "all_required_present": true,
-          "selected_state_count": 35,
-          "full_state_count": 35
+          "selected_state_count": 36,
+          "full_state_count": 36
         },
         "PATAP": {
           "required_fact_recall": 1.0,
-          "context_chars": 185,
-          "full_context_chars": 2373,
-          "context_ratio": 0.07796038769490098,
-          "irrelevant_fact_load": 1,
+          "context_chars": 376,
+          "full_context_chars": 4026,
+          "context_ratio": 0.09339294585196224,
+          "irrelevant_fact_load": 2,
           "all_required_present": true,
-          "selected_state_count": 3,
-          "full_state_count": 35
+          "selected_state_count": 4,
+          "full_state_count": 36
         },
         "RECENCY": {
           "required_fact_recall": 0.0,
-          "context_chars": 138,
-          "full_context_chars": 2373,
-          "context_ratio": 0.05815423514538559,
-          "irrelevant_fact_load": 2,
+          "context_chars": 345,
+          "full_context_chars": 4026,
+          "context_ratio": 0.08569299552906111,
+          "irrelevant_fact_load": 3,
           "all_required_present": false,
-          "selected_state_count": 2,
-          "full_state_count": 35
+          "selected_state_count": 3,
+          "full_state_count": 36
         },
         "LEXICAL": {
           "required_fact_recall": 1.0,
-          "context_chars": 183,
-          "full_context_chars": 2373,
-          "context_ratio": 0.07711757269279393,
+          "context_chars": 287,
+          "full_context_chars": 4026,
+          "context_ratio": 0.07128663686040736,
           "irrelevant_fact_load": 1,
           "all_required_present": true,
           "selected_state_count": 3,
-          "full_state_count": 35
+          "full_state_count": 36
         }
       }
     },
     {
-      "scenario": "refactor_regression_8",
-      "query": "Why does the refactor regression current change preserve contract?",
+      "scenario": "test_flake",
+      "query": "What evidence supports the current test flake decision?",
       "required_fact_ids": [
-        "R8",
-        "I8"
+        "test_flake:F2",
+        "test_flake:F1"
       ],
       "metrics": {
         "FULL": {
           "required_fact_recall": 1.0,
-          "context_chars": 2408,
-          "full_context_chars": 2408,
+          "context_chars": 4014,
+          "full_context_chars": 4014,
           "context_ratio": 1.0,
-          "irrelevant_fact_load": 33,
+          "irrelevant_fact_load": 35,
           "all_required_present": true,
-          "selected_state_count": 35,
-          "full_state_count": 35
+          "selected_state_count": 37,
+          "full_state_count": 37
         },
         "PATAP": {
           "required_fact_recall": 1.0,
-          "context_chars": 188,
-          "full_context_chars": 2408,
-          "context_ratio": 0.07807308970099668,
-          "irrelevant_fact_load": 1,
+          "context_chars": 348,
+          "full_context_chars": 4014,
+          "context_ratio": 0.08669656203288491,
+          "irrelevant_fact_load": 2,
           "all_required_present": true,
-          "selected_state_count": 3,
-          "full_state_count": 35
+          "selected_state_count": 4,
+          "full_state_count": 37
         },
         "RECENCY": {
           "required_fact_recall": 0.0,
-          "context_chars": 140,
-          "full_context_chars": 2408,
-          "context_ratio": 0.05813953488372093,
-          "irrelevant_fact_load": 2,
+          "context_chars": 336,
+          "full_context_chars": 4014,
+          "context_ratio": 0.08370702541106129,
+          "irrelevant_fact_load": 3,
           "all_required_present": false,
-          "selected_state_count": 2,
-          "full_state_count": 35
+          "selected_state_count": 3,
+          "full_state_count": 37
         },
         "LEXICAL": {
           "required_fact_recall": 1.0,
-          "context_chars": 186,
-          "full_context_chars": 2408,
-          "context_ratio": 0.07724252491694353,
+          "context_chars": 262,
+          "full_context_chars": 4014,
+          "context_ratio": 0.06527154957648232,
           "irrelevant_fact_load": 1,
           "all_required_present": true,
           "selected_state_count": 3,
-          "full_state_count": 35
+          "full_state_count": 37
         }
       }
     },
     {
-      "scenario": "documentation_decision_9",
-      "query": "Why does the documentation decision current change preserve contract?",
+      "scenario": "dependency_upgrade",
+      "query": "What evidence supports the current dependency upgrade decision?",
       "required_fact_ids": [
-        "R9",
-        "I9"
+        "dependency_upgrade:F2",
+        "dependency_upgrade:F1"
       ],
       "metrics": {
         "FULL": {
           "required_fact_recall": 1.0,
-          "context_chars": 2513,
-          "full_context_chars": 2513,
+          "context_chars": 5032,
+          "full_context_chars": 5032,
           "context_ratio": 1.0,
-          "irrelevant_fact_load": 33,
+          "irrelevant_fact_load": 36,
           "all_required_present": true,
-          "selected_state_count": 35,
-          "full_state_count": 35
+          "selected_state_count": 38,
+          "full_state_count": 38
         },
         "PATAP": {
           "required_fact_recall": 1.0,
-          "context_chars": 197,
-          "full_context_chars": 2513,
-          "context_ratio": 0.07839235972940709,
-          "irrelevant_fact_load": 1,
+          "context_chars": 438,
+          "full_context_chars": 5032,
+          "context_ratio": 0.0870429252782194,
+          "irrelevant_fact_load": 2,
           "all_required_present": true,
-          "selected_state_count": 3,
-          "full_state_count": 35
+          "selected_state_count": 4,
+          "full_state_count": 38
         },
         "RECENCY": {
           "required_fact_recall": 0.0,
-          "context_chars": 146,
-          "full_context_chars": 2513,
-          "context_ratio": 0.058097890966971745,
-          "irrelevant_fact_load": 2,
+          "context_chars": 408,
+          "full_context_chars": 5032,
+          "context_ratio": 0.08108108108108109,
+          "irrelevant_fact_load": 3,
           "all_required_present": false,
-          "selected_state_count": 2,
-          "full_state_count": 35
+          "selected_state_count": 3,
+          "full_state_count": 38
         },
         "LEXICAL": {
           "required_fact_recall": 1.0,
-          "context_chars": 195,
-          "full_context_chars": 2513,
-          "context_ratio": 0.07759649820931158,
+          "context_chars": 328,
+          "full_context_chars": 5032,
+          "context_ratio": 0.06518282988871224,
           "irrelevant_fact_load": 1,
           "all_required_present": true,
           "selected_state_count": 3,
-          "full_state_count": 35
+          "full_state_count": 38
         }
       }
     },
     {
-      "scenario": "rollback_10",
-      "query": "Why does the rollback current change preserve contract?",
+      "scenario": "release_candidate",
+      "query": "What evidence supports the current release candidate decision?",
       "required_fact_ids": [
-        "R10",
-        "I10"
+        "release_candidate:F2",
+        "release_candidate:F1"
       ],
       "metrics": {
         "FULL": {
           "required_fact_recall": 1.0,
-          "context_chars": 2060,
-          "full_context_chars": 2060,
+          "context_chars": 5073,
+          "full_context_chars": 5073,
           "context_ratio": 1.0,
-          "irrelevant_fact_load": 33,
+          "irrelevant_fact_load": 37,
           "all_required_present": true,
-          "selected_state_count": 35,
-          "full_state_count": 35
+          "selected_state_count": 39,
+          "full_state_count": 39
         },
         "PATAP": {
           "required_fact_recall": 1.0,
-          "context_chars": 160,
-          "full_context_chars": 2060,
-          "context_ratio": 0.07766990291262135,
-          "irrelevant_fact_load": 1,
+          "context_chars": 448,
+          "full_context_chars": 5073,
+          "context_ratio": 0.08831066430120245,
+          "irrelevant_fact_load": 2,
           "all_required_present": true,
-          "selected_state_count": 3,
-          "full_state_count": 35
+          "selected_state_count": 4,
+          "full_state_count": 39
         },
         "RECENCY": {
           "required_fact_recall": 0.0,
-          "context_chars": 120,
-          "full_context_chars": 2060,
-          "context_ratio": 0.05825242718446602,
-          "irrelevant_fact_load": 2,
+          "context_chars": 399,
+          "full_context_chars": 5073,
+          "context_ratio": 0.07865168539325842,
+          "irrelevant_fact_load": 3,
           "all_required_present": false,
-          "selected_state_count": 2,
-          "full_state_count": 35
+          "selected_state_count": 3,
+          "full_state_count": 39
         },
         "LEXICAL": {
           "required_fact_recall": 1.0,
-          "context_chars": 158,
-          "full_context_chars": 2060,
-          "context_ratio": 0.0766990291262136,
+          "context_chars": 341,
+          "full_context_chars": 5073,
+          "context_ratio": 0.06721860831854919,
           "irrelevant_fact_load": 1,
           "all_required_present": true,
           "selected_state_count": 3,
-          "full_state_count": 35
+          "full_state_count": 39
         }
       }
     },
     {
-      "scenario": "multi_module_feature_11",
-      "query": "Why does the multi module feature current change preserve contract?",
+      "scenario": "incident_triage",
+      "query": "What evidence supports the current incident triage decision?",
       "required_fact_ids": [
-        "R11",
-        "I11"
+        "incident_triage:F2",
+        "incident_triage:F1"
       ],
       "metrics": {
         "FULL": {
           "required_fact_recall": 1.0,
-          "context_chars": 2480,
-          "full_context_chars": 2480,
+          "context_chars": 4936,
+          "full_context_chars": 4936,
           "context_ratio": 1.0,
-          "irrelevant_fact_load": 33,
+          "irrelevant_fact_load": 38,
           "all_required_present": true,
-          "selected_state_count": 35,
-          "full_state_count": 35
+          "selected_state_count": 40,
+          "full_state_count": 40
         },
         "PATAP": {
           "required_fact_recall": 1.0,
-          "context_chars": 196,
-          "full_context_chars": 2480,
-          "context_ratio": 0.07903225806451612,
-          "irrelevant_fact_load": 1,
+          "context_chars": 394,
+          "full_context_chars": 4936,
+          "context_ratio": 0.07982171799027553,
+          "irrelevant_fact_load": 2,
           "all_required_present": true,
-          "selected_state_count": 3,
-          "full_state_count": 35
+          "selected_state_count": 4,
+          "full_state_count": 40
         },
         "RECENCY": {
           "required_fact_recall": 0.0,
-          "context_chars": 144,
-          "full_context_chars": 2480,
-          "context_ratio": 0.05806451612903226,
-          "irrelevant_fact_load": 2,
+          "context_chars": 381,
+          "full_context_chars": 4936,
+          "context_ratio": 0.07718800648298217,
+          "irrelevant_fact_load": 3,
           "all_required_present": false,
-          "selected_state_count": 2,
-          "full_state_count": 35
+          "selected_state_count": 3,
+          "full_state_count": 40
         },
         "LEXICAL": {
           "required_fact_recall": 1.0,
-          "context_chars": 194,
-          "full_context_chars": 2480,
-          "context_ratio": 0.07822580645161291,
+          "context_chars": 293,
+          "full_context_chars": 4936,
+          "context_ratio": 0.059359805510534845,
           "irrelevant_fact_load": 1,
           "all_required_present": true,
           "selected_state_count": 3,
-          "full_state_count": 35
+          "full_state_count": 40
         }
       }
     },
     {
-      "scenario": "test_investigation_12",
-      "query": "Why does the test investigation current change preserve contract?",
+      "scenario": "multi_module_search",
+      "query": "What evidence supports the current multi module search decision?",
       "required_fact_ids": [
-        "R12",
-        "I12"
+        "multi_module_search:F2",
+        "multi_module_search:F1"
       ],
       "metrics": {
         "FULL": {
           "required_fact_recall": 1.0,
-          "context_chars": 2410,
-          "full_context_chars": 2410,
+          "context_chars": 5585,
+          "full_context_chars": 5585,
           "context_ratio": 1.0,
-          "irrelevant_fact_load": 33,
+          "irrelevant_fact_load": 39,
           "all_required_present": true,
-          "selected_state_count": 35,
-          "full_state_count": 35
+          "selected_state_count": 41,
+          "full_state_count": 41
         },
         "PATAP": {
           "required_fact_recall": 1.0,
-          "context_chars": 190,
-          "full_context_chars": 2410,
-          "context_ratio": 0.07883817427385892,
-          "irrelevant_fact_load": 1,
+          "context_chars": 472,
+          "full_context_chars": 5585,
+          "context_ratio": 0.08451208594449418,
+          "irrelevant_fact_load": 2,
           "all_required_present": true,
-          "selected_state_count": 3,
-          "full_state_count": 35
+          "selected_state_count": 4,
+          "full_state_count": 41
         },
         "RECENCY": {
           "required_fact_recall": 0.0,
-          "context_chars": 140,
-          "full_context_chars": 2410,
-          "context_ratio": 0.058091286307053944,
-          "irrelevant_fact_load": 2,
+          "context_chars": 417,
+          "full_context_chars": 5585,
+          "context_ratio": 0.07466427931960609,
+          "irrelevant_fact_load": 3,
           "all_required_present": false,
-          "selected_state_count": 2,
-          "full_state_count": 35
+          "selected_state_count": 3,
+          "full_state_count": 41
         },
         "LEXICAL": {
           "required_fact_recall": 1.0,
-          "context_chars": 188,
-          "full_context_chars": 2410,
-          "context_ratio": 0.07800829875518672,
+          "context_chars": 359,
+          "full_context_chars": 5585,
+          "context_ratio": 0.06427931960608774,
           "irrelevant_fact_load": 1,
           "all_required_present": true,
           "selected_state_count": 3,
-          "full_state_count": 35
+          "full_state_count": 41
         }
       }
     },
     {
-      "scenario": "parallel_feature_13",
-      "query": "Why does the parallel feature current change preserve contract?",
+      "scenario": "docs_contract",
+      "query": "What evidence supports the current docs contract decision?",
       "required_fact_ids": [
-        "R13",
-        "I13"
+        "docs_contract:F2",
+        "docs_contract:F1"
       ],
       "metrics": {
         "FULL": {
           "required_fact_recall": 1.0,
-          "context_chars": 2340,
-          "full_context_chars": 2340,
+          "context_chars": 4952,
+          "full_context_chars": 4952,
           "context_ratio": 1.0,
-          "irrelevant_fact_load": 33,
+          "irrelevant_fact_load": 40,
           "all_required_present": true,
-          "selected_state_count": 35,
-          "full_state_count": 35
+          "selected_state_count": 42,
+          "full_state_count": 42
         },
         "PATAP": {
           "required_fact_recall": 1.0,
-          "context_chars": 184,
-          "full_context_chars": 2340,
-          "context_ratio": 0.07863247863247863,
-          "irrelevant_fact_load": 1,
+          "context_chars": 384,
+          "full_context_chars": 4952,
+          "context_ratio": 0.07754442649434572,
+          "irrelevant_fact_load": 2,
           "all_required_present": true,
-          "selected_state_count": 3,
-          "full_state_count": 35
+          "selected_state_count": 4,
+          "full_state_count": 42
         },
         "RECENCY": {
           "required_fact_recall": 0.0,
-          "context_chars": 136,
-          "full_context_chars": 2340,
-          "context_ratio": 0.05811965811965812,
-          "irrelevant_fact_load": 2,
+          "context_chars": 363,
+          "full_context_chars": 4952,
+          "context_ratio": 0.07330371567043618,
+          "irrelevant_fact_load": 3,
           "all_required_present": false,
-          "selected_state_count": 2,
-          "full_state_count": 35
+          "selected_state_count": 3,
+          "full_state_count": 42
         },
         "LEXICAL": {
           "required_fact_recall": 1.0,
-          "context_chars": 182,
-          "full_context_chars": 2340,
-          "context_ratio": 0.07777777777777778,
+          "context_chars": 289,
+          "full_context_chars": 4952,
+          "context_ratio": 0.05836025848142165,
           "irrelevant_fact_load": 1,
           "all_required_present": true,
           "selected_state_count": 3,
-          "full_state_count": 35
+          "full_state_count": 42
         }
       }
     },
     {
-      "scenario": "requirement_revision_14",
-      "query": "Why does the requirement revision current change preserve contract?",
+      "scenario": "parallel_checkout",
+      "query": "What evidence supports the current parallel checkout decision?",
       "required_fact_ids": [
-        "R14",
-        "I14"
+        "parallel_checkout:F2",
+        "parallel_checkout:F1"
       ],
       "metrics": {
         "FULL": {
           "required_fact_recall": 1.0,
-          "context_chars": 2480,
-          "full_context_chars": 2480,
+          "context_chars": 4652,
+          "full_context_chars": 4652,
           "context_ratio": 1.0,
-          "irrelevant_fact_load": 33,
+          "irrelevant_fact_load": 34,
           "all_required_present": true,
-          "selected_state_count": 35,
-          "full_state_count": 35
+          "selected_state_count": 36,
+          "full_state_count": 36
         },
         "PATAP": {
           "required_fact_recall": 1.0,
-          "context_chars": 196,
-          "full_context_chars": 2480,
-          "context_ratio": 0.07903225806451612,
-          "irrelevant_fact_load": 1,
+          "context_chars": 426,
+          "full_context_chars": 4652,
+          "context_ratio": 0.09157351676698194,
+          "irrelevant_fact_load": 2,
           "all_required_present": true,
-          "selected_state_count": 3,
-          "full_state_count": 35
+          "selected_state_count": 4,
+          "full_state_count": 36
         },
         "RECENCY": {
           "required_fact_recall": 0.0,
-          "context_chars": 144,
-          "full_context_chars": 2480,
-          "context_ratio": 0.05806451612903226,
-          "irrelevant_fact_load": 2,
+          "context_chars": 399,
+          "full_context_chars": 4652,
+          "context_ratio": 0.08576956147893379,
+          "irrelevant_fact_load": 3,
           "all_required_present": false,
-          "selected_state_count": 2,
-          "full_state_count": 35
+          "selected_state_count": 3,
+          "full_state_count": 36
         },
         "LEXICAL": {
           "required_fact_recall": 1.0,
-          "context_chars": 194,
-          "full_context_chars": 2480,
-          "context_ratio": 0.07822580645161291,
+          "context_chars": 319,
+          "full_context_chars": 4652,
+          "context_ratio": 0.06857265692175409,
           "irrelevant_fact_load": 1,
           "all_required_present": true,
           "selected_state_count": 3,
-          "full_state_count": 35
+          "full_state_count": 36
         }
       }
     },
     {
-      "scenario": "audit_trail_15",
-      "query": "Why does the audit trail current change preserve contract?",
+      "scenario": "requirement_supersession",
+      "query": "What evidence supports the current requirement supersession decision?",
       "required_fact_ids": [
-        "R15",
-        "I15"
+        "requirement_supersession:F2",
+        "requirement_supersession:F1"
       ],
       "metrics": {
         "FULL": {
           "required_fact_recall": 1.0,
-          "context_chars": 2165,
-          "full_context_chars": 2165,
+          "context_chars": 5584,
+          "full_context_chars": 5584,
           "context_ratio": 1.0,
-          "irrelevant_fact_load": 33,
+          "irrelevant_fact_load": 35,
           "all_required_present": true,
-          "selected_state_count": 35,
-          "full_state_count": 35
+          "selected_state_count": 37,
+          "full_state_count": 37
         },
         "PATAP": {
           "required_fact_recall": 1.0,
-          "context_chars": 169,
-          "full_context_chars": 2165,
-          "context_ratio": 0.07806004618937644,
-          "irrelevant_fact_load": 1,
+          "context_chars": 532,
+          "full_context_chars": 5584,
+          "context_ratio": 0.09527220630372493,
+          "irrelevant_fact_load": 2,
           "all_required_present": true,
-          "selected_state_count": 3,
-          "full_state_count": 35
+          "selected_state_count": 4,
+          "full_state_count": 37
         },
         "RECENCY": {
           "required_fact_recall": 0.0,
-          "context_chars": 126,
-          "full_context_chars": 2165,
-          "context_ratio": 0.058198614318706696,
-          "irrelevant_fact_load": 2,
+          "context_chars": 462,
+          "full_context_chars": 5584,
+          "context_ratio": 0.08273638968481375,
+          "irrelevant_fact_load": 3,
           "all_required_present": false,
-          "selected_state_count": 2,
-          "full_state_count": 35
+          "selected_state_count": 3,
+          "full_state_count": 37
         },
         "LEXICAL": {
           "required_fact_recall": 1.0,
-          "context_chars": 167,
-          "full_context_chars": 2165,
-          "context_ratio": 0.07713625866050808,
+          "context_chars": 404,
+          "full_context_chars": 5584,
+          "context_ratio": 0.07234957020057306,
           "irrelevant_fact_load": 1,
           "all_required_present": true,
           "selected_state_count": 3,
-          "full_state_count": 35
+          "full_state_count": 37
         }
       }
     },
     {
-      "scenario": "cache_invalidation_16",
-      "query": "Why does the cache invalidation current change preserve contract?",
+      "scenario": "cache_fix",
+      "query": "What evidence supports the current cache fix decision?",
       "required_fact_ids": [
-        "R16",
-        "I16"
+        "cache_fix:F2",
+        "cache_fix:F1"
       ],
       "metrics": {
         "FULL": {
           "required_fact_recall": 1.0,
-          "context_chars": 2410,
-          "full_context_chars": 2410,
+          "context_chars": 3998,
+          "full_context_chars": 3998,
           "context_ratio": 1.0,
-          "irrelevant_fact_load": 33,
+          "irrelevant_fact_load": 36,
           "all_required_present": true,
-          "selected_state_count": 35,
-          "full_state_count": 35
+          "selected_state_count": 38,
+          "full_state_count": 38
         },
         "PATAP": {
           "required_fact_recall": 1.0,
-          "context_chars": 190,
-          "full_context_chars": 2410,
-          "context_ratio": 0.07883817427385892,
-          "irrelevant_fact_load": 1,
+          "context_chars": 322,
+          "full_context_chars": 3998,
+          "context_ratio": 0.08054027013506754,
+          "irrelevant_fact_load": 2,
           "all_required_present": true,
-          "selected_state_count": 3,
-          "full_state_count": 35
+          "selected_state_count": 4,
+          "full_state_count": 38
         },
         "RECENCY": {
-          "required_fact_recall": 0.0,
-          "context_chars": 140,
-          "full_context_chars": 2410,
-          "context_ratio": 0.058091286307053944,
+          "required_fact_recall": 0.5,
+          "context_chars": 293,
+          "full_context_chars": 3998,
+          "context_ratio": 0.07328664332166084,
           "irrelevant_fact_load": 2,
           "all_required_present": false,
-          "selected_state_count": 2,
-          "full_state_count": 35
+          "selected_state_count": 3,
+          "full_state_count": 38
         },
         "LEXICAL": {
           "required_fact_recall": 1.0,
-          "context_chars": 188,
-          "full_context_chars": 2410,
-          "context_ratio": 0.07800829875518672,
+          "context_chars": 239,
+          "full_context_chars": 3998,
+          "context_ratio": 0.059779889944972485,
           "irrelevant_fact_load": 1,
           "all_required_present": true,
           "selected_state_count": 3,
-          "full_state_count": 35
+          "full_state_count": 38
         }
       }
     },
     {
-      "scenario": "deployment_safety_17",
-      "query": "Why does the deployment safety current change preserve contract?",
+      "scenario": "permission_audit",
+      "query": "What evidence supports the current permission audit decision?",
       "required_fact_ids": [
-        "R17",
-        "I17"
+        "permission_audit:F2",
+        "permission_audit:F1"
       ],
       "metrics": {
         "FULL": {
           "required_fact_recall": 1.0,
-          "context_chars": 2375,
-          "full_context_chars": 2375,
+          "context_chars": 4956,
+          "full_context_chars": 4956,
           "context_ratio": 1.0,
-          "irrelevant_fact_load": 33,
+          "irrelevant_fact_load": 37,
           "all_required_present": true,
-          "selected_state_count": 35,
-          "full_state_count": 35
+          "selected_state_count": 39,
+          "full_state_count": 39
         },
         "PATAP": {
           "required_fact_recall": 1.0,
-          "context_chars": 187,
-          "full_context_chars": 2375,
-          "context_ratio": 0.07873684210526316,
-          "irrelevant_fact_load": 1,
+          "context_chars": 436,
+          "full_context_chars": 4956,
+          "context_ratio": 0.08797417271993543,
+          "irrelevant_fact_load": 2,
           "all_required_present": true,
-          "selected_state_count": 3,
-          "full_state_count": 35
+          "selected_state_count": 4,
+          "full_state_count": 39
         },
         "RECENCY": {
           "required_fact_recall": 0.0,
-          "context_chars": 138,
-          "full_context_chars": 2375,
-          "context_ratio": 0.058105263157894736,
-          "irrelevant_fact_load": 2,
+          "context_chars": 390,
+          "full_context_chars": 4956,
+          "context_ratio": 0.07869249394673124,
+          "irrelevant_fact_load": 3,
           "all_required_present": false,
-          "selected_state_count": 2,
-          "full_state_count": 35
+          "selected_state_count": 3,
+          "full_state_count": 39
         },
         "LEXICAL": {
           "required_fact_recall": 1.0,
-          "context_chars": 185,
-          "full_context_chars": 2375,
-          "context_ratio": 0.07789473684210527,
+          "context_chars": 332,
+          "full_context_chars": 4956,
+          "context_ratio": 0.06698950766747377,
           "irrelevant_fact_load": 1,
           "all_required_present": true,
           "selected_state_count": 3,
-          "full_state_count": 35
+          "full_state_count": 39
         }
       }
     },
     {
-      "scenario": "schema_validation_18",
-      "query": "Why does the schema validation current change preserve contract?",
+      "scenario": "schema_validation",
+      "query": "What evidence supports the current schema validation decision?",
       "required_fact_ids": [
-        "R18",
-        "I18"
+        "schema_validation:F2",
+        "schema_validation:F1"
       ],
       "metrics": {
         "FULL": {
           "required_fact_recall": 1.0,
-          "context_chars": 2375,
-          "full_context_chars": 2375,
+          "context_chars": 5190,
+          "full_context_chars": 5190,
           "context_ratio": 1.0,
-          "irrelevant_fact_load": 33,
+          "irrelevant_fact_load": 38,
           "all_required_present": true,
-          "selected_state_count": 35,
-          "full_state_count": 35
+          "selected_state_count": 40,
+          "full_state_count": 40
         },
         "PATAP": {
           "required_fact_recall": 1.0,
-          "context_chars": 187,
-          "full_context_chars": 2375,
-          "context_ratio": 0.07873684210526316,
-          "irrelevant_fact_load": 1,
+          "context_chars": 432,
+          "full_context_chars": 5190,
+          "context_ratio": 0.08323699421965318,
+          "irrelevant_fact_load": 2,
           "all_required_present": true,
-          "selected_state_count": 3,
-          "full_state_count": 35
+          "selected_state_count": 4,
+          "full_state_count": 40
         },
         "RECENCY": {
           "required_fact_recall": 0.0,
-          "context_chars": 138,
-          "full_context_chars": 2375,
-          "context_ratio": 0.058105263157894736,
-          "irrelevant_fact_load": 2,
+          "context_chars": 399,
+          "full_context_chars": 5190,
+          "context_ratio": 0.07687861271676301,
+          "irrelevant_fact_load": 3,
           "all_required_present": false,
-          "selected_state_count": 2,
-          "full_state_count": 35
+          "selected_state_count": 3,
+          "full_state_count": 40
         },
         "LEXICAL": {
           "required_fact_recall": 1.0,
-          "context_chars": 185,
-          "full_context_chars": 2375,
-          "context_ratio": 0.07789473684210527,
+          "context_chars": 325,
+          "full_context_chars": 5190,
+          "context_ratio": 0.0626204238921002,
           "irrelevant_fact_load": 1,
           "all_required_present": true,
           "selected_state_count": 3,
-          "full_state_count": 35
+          "full_state_count": 40
         }
       }
     },
     {
-      "scenario": "access_control_19",
-      "query": "Why does the access control current change preserve contract?",
+      "scenario": "deployment_gate",
+      "query": "What evidence supports the current deployment gate decision?",
       "required_fact_ids": [
-        "R19",
-        "I19"
+        "deployment_gate:F2",
+        "deployment_gate:F1"
       ],
       "metrics": {
         "FULL": {
           "required_fact_recall": 1.0,
-          "context_chars": 2270,
-          "full_context_chars": 2270,
+          "context_chars": 5071,
+          "full_context_chars": 5071,
           "context_ratio": 1.0,
-          "irrelevant_fact_load": 33,
+          "irrelevant_fact_load": 39,
           "all_required_present": true,
-          "selected_state_count": 35,
-          "full_state_count": 35
+          "selected_state_count": 41,
+          "full_state_count": 41
         },
         "PATAP": {
           "required_fact_recall": 1.0,
-          "context_chars": 178,
-          "full_context_chars": 2270,
-          "context_ratio": 0.07841409691629955,
-          "irrelevant_fact_load": 1,
+          "context_chars": 402,
+          "full_context_chars": 5071,
+          "context_ratio": 0.07927430487083416,
+          "irrelevant_fact_load": 2,
           "all_required_present": true,
-          "selected_state_count": 3,
-          "full_state_count": 35
+          "selected_state_count": 4,
+          "full_state_count": 41
         },
         "RECENCY": {
           "required_fact_recall": 0.0,
-          "context_chars": 132,
-          "full_context_chars": 2270,
-          "context_ratio": 0.05814977973568282,
-          "irrelevant_fact_load": 2,
+          "context_chars": 381,
+          "full_context_chars": 5071,
+          "context_ratio": 0.07513310984026819,
+          "irrelevant_fact_load": 3,
           "all_required_present": false,
-          "selected_state_count": 2,
-          "full_state_count": 35
+          "selected_state_count": 3,
+          "full_state_count": 41
         },
         "LEXICAL": {
           "required_fact_recall": 1.0,
-          "context_chars": 176,
-          "full_context_chars": 2270,
-          "context_ratio": 0.07753303964757709,
+          "context_chars": 301,
+          "full_context_chars": 5071,
+          "context_ratio": 0.05935712877144547,
           "irrelevant_fact_load": 1,
           "all_required_present": true,
           "selected_state_count": 3,
-          "full_state_count": 35
+          "full_state_count": 41
         }
       }
     }
@@ -1011,60 +1012,66 @@
       "all_required_success_rate": 1.0,
       "mean_context_ratio": 1.0,
       "median_context_ratio": 1.0,
-      "mean_selected_states": 76.25
+      "mean_selected_states": 81.35
     },
     "PATAP": {
       "required_fact_recall": 1.0,
       "all_required_success_rate": 1.0,
-      "mean_context_ratio": 0.06349180510982552,
-      "median_context_ratio": 0.07807308970099668,
-      "mean_selected_states": 3.0
+      "mean_context_ratio": 0.06912887986256157,
+      "median_context_ratio": 0.08323699421965318,
+      "mean_selected_states": 4.0
     },
     "RECENCY": {
-      "required_fact_recall": 0.0,
+      "required_fact_recall": 0.025,
       "all_required_success_rate": 0.0,
-      "mean_context_ratio": 0.04723131053876397,
-      "median_context_ratio": 0.058105263157894736,
-      "mean_selected_states": 2.0
+      "mean_context_ratio": 0.06380416275344239,
+      "median_context_ratio": 0.07513310984026819,
+      "mean_selected_states": 3.0
     },
     "LEXICAL": {
       "required_fact_recall": 1.0,
       "all_required_success_rate": 1.0,
-      "mean_context_ratio": 0.06285121850883475,
-      "median_context_ratio": 0.07724252491694353,
+      "mean_context_ratio": 0.05209311442718602,
+      "median_context_ratio": 0.0626204238921002,
       "mean_selected_states": 3.0
     }
   },
   "sensitivity": {
     "0% missing": {
       "required_fact_recall": 1.0,
-      "context_ratio": 0.06349180510982552,
-      "all_required_present": 1.0
+      "context_ratio": 0.06912887986256157,
+      "all_required_present": 1.0,
+      "invalid_graph_rate": 0
     },
     "5% missing": {
-      "required_fact_recall": 0.825,
-      "context_ratio": 0.05677207076624069,
-      "all_required_present": 0.75
+      "required_fact_recall": 1.0,
+      "context_ratio": 0.06912887986256157,
+      "all_required_present": 1.0,
+      "invalid_graph_rate": 0
     },
     "10% missing": {
-      "required_fact_recall": 0.775,
-      "context_ratio": 0.05432190465328388,
-      "all_required_present": 0.7
+      "required_fact_recall": 0.975,
+      "context_ratio": 0.065771330630238,
+      "all_required_present": 0.95,
+      "invalid_graph_rate": 0
     },
     "20% missing": {
-      "required_fact_recall": 0.625,
-      "context_ratio": 0.04690024356017443,
-      "all_required_present": 0.55
+      "required_fact_recall": 0.95,
+      "context_ratio": 0.0643262613376898,
+      "all_required_present": 0.9,
+      "invalid_graph_rate": 0
     },
     "5% false edges": {
-      "required_fact_recall": 0.35,
-      "context_ratio": 0.04589710611228224,
-      "all_required_present": 0.35
+      "required_fact_recall": 1.0,
+      "context_ratio": 0.07289711324991975,
+      "all_required_present": 1.0,
+      "invalid_graph_rate": 0
     },
     "10% false edges": {
-      "required_fact_recall": 0.35,
-      "context_ratio": 0.13502890909340798,
-      "all_required_present": 0.35
+      "required_fact_recall": 1.0,
+      "context_ratio": 0.07034642686345682,
+      "all_required_present": 1.0,
+      "invalid_graph_rate": 0
     }
   }
 }
