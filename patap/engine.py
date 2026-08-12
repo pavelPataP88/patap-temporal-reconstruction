@@ -111,7 +111,22 @@ class PATAP:
                 stack.extend(self._states[node].records)
         return past
 
-    def reconstruct_order(…188 tokens truncated…ning.difference_update(ready)
+    def reconstruct_order(self) -> list[list[str]]:
+        """Return dependency layers, preserving concurrency within each layer.
+
+        The outer layer order follows the partial order. Items in one layer are
+        sorted only for deterministic display; that sort does not assert order.
+        """
+        self.validate()
+        parents = self._parents()
+        remaining = set(self._states)
+        layers: list[list[str]] = []
+        while remaining:
+            ready = sorted(node for node in remaining if not (parents[node] & remaining))
+            if not ready:  # Defensive; validate() already gives a useful cycle error.
+                raise CycleError("dependency cycle")
+            layers.append(ready)
+            remaining.difference_update(ready)
         return layers
 
     def layers(self) -> list[list[str]]:
