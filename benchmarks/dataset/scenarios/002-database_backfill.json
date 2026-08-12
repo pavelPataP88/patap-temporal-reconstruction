@@ -1,0 +1,248 @@
+{
+  "id": "database_backfill",
+  "query": "What evidence supports the current database backfill decision?",
+  "current_state": "database_backfill_current",
+  "required_fact_ids": [
+    "database_backfill:F2",
+    "database_backfill:F1"
+  ],
+  "states": [
+    {
+      "id": "database_backfill_incident",
+      "sequence_index": 0,
+      "content": "database backfill incident decision and evidence",
+      "depends_on": [],
+      "facts": [
+        "database_backfill:F0"
+      ]
+    },
+    {
+      "id": "database_backfill_trace",
+      "sequence_index": 1,
+      "content": "database backfill trace decision and evidence",
+      "depends_on": [
+        "database_backfill_incident"
+      ],
+      "facts": [
+        "database_backfill:F1"
+      ]
+    },
+    {
+      "id": "database_backfill_fix",
+      "sequence_index": 2,
+      "content": "database backfill fix decision and evidence",
+      "depends_on": [
+        "database_backfill_trace"
+      ],
+      "facts": [
+        "database_backfill:F2"
+      ]
+    },
+    {
+      "id": "database_backfill_parallel_0",
+      "sequence_index": 4,
+      "content": "parallel unrelated database_backfill workstream 0 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "database_backfill:N0"
+      ]
+    },
+    {
+      "id": "database_backfill_parallel_1",
+      "sequence_index": 5,
+      "content": "parallel unrelated database_backfill workstream 1 distractor detail",
+      "depends_on": [
+        "database_backfill_parallel_0"
+      ],
+      "facts": [
+        "database_backfill:N1"
+      ]
+    },
+    {
+      "id": "database_backfill_parallel_2",
+      "sequence_index": 6,
+      "content": "parallel unrelated database_backfill workstream 2 distractor detail",
+      "depends_on": [
+        "database_backfill_parallel_1"
+      ],
+      "facts": [
+        "database_backfill:N2"
+      ]
+    },
+    {
+      "id": "database_backfill_parallel_3",
+      "sequence_index": 7,
+      "content": "parallel unrelated database_backfill workstream 3 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "database_backfill:N3"
+      ]
+    },
+    {
+      "id": "database_backfill_parallel_4",
+      "sequence_index": 8,
+      "content": "parallel unrelated database_backfill workstream 4 distractor detail",
+      "depends_on": [
+        "database_backfill_parallel_3"
+      ],
+      "facts": [
+        "database_backfill:N4"
+      ]
+    },
+    {
+      "id": "database_backfill_parallel_5",
+      "sequence_index": 9,
+      "content": "parallel unrelated database_backfill workstream 5 distractor detail",
+      "depends_on": [
+        "database_backfill_parallel_4"
+      ],
+      "facts": [
+        "database_backfill:N5"
+      ]
+    },
+    {
+      "id": "database_backfill_parallel_6",
+      "sequence_index": 10,
+      "content": "parallel unrelated database_backfill workstream 6 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "database_backfill:N6"
+      ]
+    },
+    {
+      "id": "database_backfill_parallel_7",
+      "sequence_index": 11,
+      "content": "parallel unrelated database_backfill workstream 7 distractor detail",
+      "depends_on": [
+        "database_backfill_parallel_6"
+      ],
+      "facts": [
+        "database_backfill:N7"
+      ]
+    },
+    {
+      "id": "database_backfill_parallel_8",
+      "sequence_index": 12,
+      "content": "parallel unrelated database_backfill workstream 8 distractor detail",
+      "depends_on": [
+        "database_backfill_parallel_7"
+      ],
+      "facts": [
+        "database_backfill:N8"
+      ]
+    },
+    {
+      "id": "database_backfill_parallel_9",
+      "sequence_index": 13,
+      "content": "parallel unrelated database_backfill workstream 9 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "database_backfill:N9"
+      ]
+    },
+    {
+      "id": "database_backfill_parallel_10",
+      "sequence_index": 14,
+      "content": "parallel unrelated database_backfill workstream 10 distractor detail",
+      "depends_on": [
+        "database_backfill_parallel_9"
+      ],
+      "facts": [
+        "database_backfill:N10"
+      ]
+    },
+    {
+      "id": "database_backfill_parallel_11",
+      "sequence_index": 15,
+      "content": "parallel unrelated database_backfill workstream 11 distractor detail",
+      "depends_on": [
+        "database_backfill_parallel_10"
+      ],
+      "facts": [
+        "database_backfill:N11"
+      ]
+    },
+    {
+      "id": "database_backfill_parallel_12",
+      "sequence_index": 16,
+      "content": "parallel unrelated database_backfill workstream 12 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "database_backfill:N12"
+      ]
+    },
+    {
+      "id": "database_backfill_parallel_13",
+      "sequence_index": 17,
+      "content": "parallel unrelated database_backfill workstream 13 distractor detail",
+      "depends_on": [
+        "database_backfill_parallel_12"
+      ],
+      "facts": [
+        "database_backfill:N13"
+      ]
+    },
+    {
+      "id": "database_backfill_parallel_14",
+      "sequence_index": 18,
+      "content": "parallel unrelated database_backfill workstream 14 distractor detail",
+      "depends_on": [
+        "database_backfill_parallel_13"
+      ],
+      "facts": [
+        "database_backfill:N14"
+      ]
+    },
+    {
+      "id": "database_backfill_parallel_15",
+      "sequence_index": 19,
+      "content": "parallel unrelated database_backfill workstream 15 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "database_backfill:N15"
+      ]
+    },
+    {
+      "id": "database_backfill_parallel_16",
+      "sequence_index": 20,
+      "content": "parallel unrelated database_backfill workstream 16 distractor detail",
+      "depends_on": [
+        "database_backfill_parallel_15"
+      ],
+      "facts": [
+        "database_backfill:N16"
+      ]
+    },
+    {
+      "id": "database_backfill_parallel_17",
+      "sequence_index": 21,
+      "content": "parallel unrelated database_backfill workstream 17 distractor detail",
+      "depends_on": [
+        "database_backfill_parallel_16"
+      ],
+      "facts": [
+        "database_backfill:N17"
+      ]
+    },
+    {
+      "id": "database_backfill_parallel_18",
+      "sequence_index": 22,
+      "content": "parallel unrelated database_backfill workstream 18 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "database_backfill:N18"
+      ]
+    },
+    {
+      "id": "database_backfill_current",
+      "sequence_index": 23,
+      "content": "database backfill current decision and evidence",
+      "depends_on": [
+        "database_backfill_fix"
+      ],
+      "facts": [
+        "database_backfill:F3"
+      ]
+    }
+  ]
+}

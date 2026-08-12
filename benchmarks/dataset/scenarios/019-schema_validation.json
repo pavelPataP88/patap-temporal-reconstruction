@@ -1,0 +1,259 @@
+{
+  "id": "schema_validation",
+  "query": "What evidence supports the current schema validation decision?",
+  "current_state": "schema_validation_current",
+  "required_fact_ids": [
+    "schema_validation:F2",
+    "schema_validation:F1"
+  ],
+  "states": [
+    {
+      "id": "schema_validation_release",
+      "sequence_index": 0,
+      "content": "schema validation release decision and evidence",
+      "depends_on": [],
+      "facts": [
+        "schema_validation:F0"
+      ]
+    },
+    {
+      "id": "schema_validation_candidate",
+      "sequence_index": 1,
+      "content": "schema validation candidate decision and evidence",
+      "depends_on": [
+        "schema_validation_release"
+      ],
+      "facts": [
+        "schema_validation:F1"
+      ]
+    },
+    {
+      "id": "schema_validation_checklist",
+      "sequence_index": 2,
+      "content": "schema validation checklist decision and evidence",
+      "depends_on": [
+        "schema_validation_candidate"
+      ],
+      "facts": [
+        "schema_validation:F2"
+      ]
+    },
+    {
+      "id": "schema_validation_parallel_0",
+      "sequence_index": 4,
+      "content": "parallel unrelated schema_validation workstream 0 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "schema_validation:N0"
+      ]
+    },
+    {
+      "id": "schema_validation_parallel_1",
+      "sequence_index": 5,
+      "content": "parallel unrelated schema_validation workstream 1 distractor detail",
+      "depends_on": [
+        "schema_validation_parallel_0"
+      ],
+      "facts": [
+        "schema_validation:N1"
+      ]
+    },
+    {
+      "id": "schema_validation_parallel_2",
+      "sequence_index": 6,
+      "content": "parallel unrelated schema_validation workstream 2 distractor detail",
+      "depends_on": [
+        "schema_validation_parallel_1"
+      ],
+      "facts": [
+        "schema_validation:N2"
+      ]
+    },
+    {
+      "id": "schema_validation_parallel_3",
+      "sequence_index": 7,
+      "content": "parallel unrelated schema_validation workstream 3 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "schema_validation:N3"
+      ]
+    },
+    {
+      "id": "schema_validation_parallel_4",
+      "sequence_index": 8,
+      "content": "parallel unrelated schema_validation workstream 4 distractor detail",
+      "depends_on": [
+        "schema_validation_parallel_3"
+      ],
+      "facts": [
+        "schema_validation:N4"
+      ]
+    },
+    {
+      "id": "schema_validation_parallel_5",
+      "sequence_index": 9,
+      "content": "parallel unrelated schema_validation workstream 5 distractor detail",
+      "depends_on": [
+        "schema_validation_parallel_4"
+      ],
+      "facts": [
+        "schema_validation:N5"
+      ]
+    },
+    {
+      "id": "schema_validation_parallel_6",
+      "sequence_index": 10,
+      "content": "parallel unrelated schema_validation workstream 6 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "schema_validation:N6"
+      ]
+    },
+    {
+      "id": "schema_validation_parallel_7",
+      "sequence_index": 11,
+      "content": "parallel unrelated schema_validation workstream 7 distractor detail",
+      "depends_on": [
+        "schema_validation_parallel_6"
+      ],
+      "facts": [
+        "schema_validation:N7"
+      ]
+    },
+    {
+      "id": "schema_validation_parallel_8",
+      "sequence_index": 12,
+      "content": "parallel unrelated schema_validation workstream 8 distractor detail",
+      "depends_on": [
+        "schema_validation_parallel_7"
+      ],
+      "facts": [
+        "schema_validation:N8"
+      ]
+    },
+    {
+      "id": "schema_validation_parallel_9",
+      "sequence_index": 13,
+      "content": "parallel unrelated schema_validation workstream 9 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "schema_validation:N9"
+      ]
+    },
+    {
+      "id": "schema_validation_parallel_10",
+      "sequence_index": 14,
+      "content": "parallel unrelated schema_validation workstream 10 distractor detail",
+      "depends_on": [
+        "schema_validation_parallel_9"
+      ],
+      "facts": [
+        "schema_validation:N10"
+      ]
+    },
+    {
+      "id": "schema_validation_parallel_11",
+      "sequence_index": 15,
+      "content": "parallel unrelated schema_validation workstream 11 distractor detail",
+      "depends_on": [
+        "schema_validation_parallel_10"
+      ],
+      "facts": [
+        "schema_validation:N11"
+      ]
+    },
+    {
+      "id": "schema_validation_parallel_12",
+      "sequence_index": 16,
+      "content": "parallel unrelated schema_validation workstream 12 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "schema_validation:N12"
+      ]
+    },
+    {
+      "id": "schema_validation_parallel_13",
+      "sequence_index": 17,
+      "content": "parallel unrelated schema_validation workstream 13 distractor detail",
+      "depends_on": [
+        "schema_validation_parallel_12"
+      ],
+      "facts": [
+        "schema_validation:N13"
+      ]
+    },
+    {
+      "id": "schema_validation_parallel_14",
+      "sequence_index": 18,
+      "content": "parallel unrelated schema_validation workstream 14 distractor detail",
+      "depends_on": [
+        "schema_validation_parallel_13"
+      ],
+      "facts": [
+        "schema_validation:N14"
+      ]
+    },
+    {
+      "id": "schema_validation_parallel_15",
+      "sequence_index": 19,
+      "content": "parallel unrelated schema_validation workstream 15 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "schema_validation:N15"
+      ]
+    },
+    {
+      "id": "schema_validation_parallel_16",
+      "sequence_index": 20,
+      "content": "parallel unrelated schema_validation workstream 16 distractor detail",
+      "depends_on": [
+        "schema_validation_parallel_15"
+      ],
+      "facts": [
+        "schema_validation:N16"
+      ]
+    },
+    {
+      "id": "schema_validation_parallel_17",
+      "sequence_index": 21,
+      "content": "parallel unrelated schema_validation workstream 17 distractor detail",
+      "depends_on": [
+        "schema_validation_parallel_16"
+      ],
+      "facts": [
+        "schema_validation:N17"
+      ]
+    },
+    {
+      "id": "schema_validation_parallel_18",
+      "sequence_index": 22,
+      "content": "parallel unrelated schema_validation workstream 18 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "schema_validation:N18"
+      ]
+    },
+    {
+      "id": "schema_validation_parallel_19",
+      "sequence_index": 23,
+      "content": "parallel unrelated schema_validation workstream 19 distractor detail",
+      "depends_on": [
+        "schema_validation_parallel_18"
+      ],
+      "facts": [
+        "schema_validation:N19"
+      ]
+    },
+    {
+      "id": "schema_validation_current",
+      "sequence_index": 24,
+      "content": "schema validation current decision and evidence",
+      "depends_on": [
+        "schema_validation_checklist"
+      ],
+      "facts": [
+        "schema_validation:F3"
+      ]
+    }
+  ]
+}

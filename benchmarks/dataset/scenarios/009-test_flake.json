@@ -1,0 +1,251 @@
+{
+  "id": "test_flake",
+  "query": "What evidence supports the current test flake decision?",
+  "current_state": "test_flake_current",
+  "required_fact_ids": [
+    "test_flake:F3",
+    "test_flake:F2"
+  ],
+  "states": [
+    {
+      "id": "test_flake_contract",
+      "sequence_index": 0,
+      "content": "test flake contract decision and evidence",
+      "depends_on": [],
+      "facts": [
+        "test_flake:F0"
+      ]
+    },
+    {
+      "id": "test_flake_server",
+      "sequence_index": 1,
+      "content": "test flake server decision and evidence",
+      "depends_on": [
+        "test_flake_contract"
+      ],
+      "facts": [
+        "test_flake:F1"
+      ]
+    },
+    {
+      "id": "test_flake_client",
+      "sequence_index": 2,
+      "content": "test flake client decision and evidence",
+      "depends_on": [
+        "test_flake_contract"
+      ],
+      "facts": [
+        "test_flake:F2"
+      ]
+    },
+    {
+      "id": "test_flake_compat",
+      "sequence_index": 3,
+      "content": "test flake compat decision and evidence",
+      "depends_on": [
+        "test_flake_server",
+        "test_flake_client"
+      ],
+      "facts": [
+        "test_flake:F3"
+      ]
+    },
+    {
+      "id": "test_flake_parallel_0",
+      "sequence_index": 5,
+      "content": "parallel unrelated test_flake workstream 0 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "test_flake:N0"
+      ]
+    },
+    {
+      "id": "test_flake_parallel_1",
+      "sequence_index": 6,
+      "content": "parallel unrelated test_flake workstream 1 distractor detail",
+      "depends_on": [
+        "test_flake_parallel_0"
+      ],
+      "facts": [
+        "test_flake:N1"
+      ]
+    },
+    {
+      "id": "test_flake_parallel_2",
+      "sequence_index": 7,
+      "content": "parallel unrelated test_flake workstream 2 distractor detail",
+      "depends_on": [
+        "test_flake_parallel_1"
+      ],
+      "facts": [
+        "test_flake:N2"
+      ]
+    },
+    {
+      "id": "test_flake_parallel_3",
+      "sequence_index": 8,
+      "content": "parallel unrelated test_flake workstream 3 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "test_flake:N3"
+      ]
+    },
+    {
+      "id": "test_flake_parallel_4",
+      "sequence_index": 9,
+      "content": "parallel unrelated test_flake workstream 4 distractor detail",
+      "depends_on": [
+        "test_flake_parallel_3"
+      ],
+      "facts": [
+        "test_flake:N4"
+      ]
+    },
+    {
+      "id": "test_flake_parallel_5",
+      "sequence_index": 10,
+      "content": "parallel unrelated test_flake workstream 5 distractor detail",
+      "depends_on": [
+        "test_flake_parallel_4"
+      ],
+      "facts": [
+        "test_flake:N5"
+      ]
+    },
+    {
+      "id": "test_flake_parallel_6",
+      "sequence_index": 11,
+      "content": "parallel unrelated test_flake workstream 6 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "test_flake:N6"
+      ]
+    },
+    {
+      "id": "test_flake_parallel_7",
+      "sequence_index": 12,
+      "content": "parallel unrelated test_flake workstream 7 distractor detail",
+      "depends_on": [
+        "test_flake_parallel_6"
+      ],
+      "facts": [
+        "test_flake:N7"
+      ]
+    },
+    {
+      "id": "test_flake_parallel_8",
+      "sequence_index": 13,
+      "content": "parallel unrelated test_flake workstream 8 distractor detail",
+      "depends_on": [
+        "test_flake_parallel_7"
+      ],
+      "facts": [
+        "test_flake:N8"
+      ]
+    },
+    {
+      "id": "test_flake_parallel_9",
+      "sequence_index": 14,
+      "content": "parallel unrelated test_flake workstream 9 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "test_flake:N9"
+      ]
+    },
+    {
+      "id": "test_flake_parallel_10",
+      "sequence_index": 15,
+      "content": "parallel unrelated test_flake workstream 10 distractor detail",
+      "depends_on": [
+        "test_flake_parallel_9"
+      ],
+      "facts": [
+        "test_flake:N10"
+      ]
+    },
+    {
+      "id": "test_flake_parallel_11",
+      "sequence_index": 16,
+      "content": "parallel unrelated test_flake workstream 11 distractor detail",
+      "depends_on": [
+        "test_flake_parallel_10"
+      ],
+      "facts": [
+        "test_flake:N11"
+      ]
+    },
+    {
+      "id": "test_flake_parallel_12",
+      "sequence_index": 17,
+      "content": "parallel unrelated test_flake workstream 12 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "test_flake:N12"
+      ]
+    },
+    {
+      "id": "test_flake_parallel_13",
+      "sequence_index": 18,
+      "content": "parallel unrelated test_flake workstream 13 distractor detail",
+      "depends_on": [
+        "test_flake_parallel_12"
+      ],
+      "facts": [
+        "test_flake:N13"
+      ]
+    },
+    {
+      "id": "test_flake_parallel_14",
+      "sequence_index": 19,
+      "content": "parallel unrelated test_flake workstream 14 distractor detail",
+      "depends_on": [
+        "test_flake_parallel_13"
+      ],
+      "facts": [
+        "test_flake:N14"
+      ]
+    },
+    {
+      "id": "test_flake_parallel_15",
+      "sequence_index": 20,
+      "content": "parallel unrelated test_flake workstream 15 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "test_flake:N15"
+      ]
+    },
+    {
+      "id": "test_flake_parallel_16",
+      "sequence_index": 21,
+      "content": "parallel unrelated test_flake workstream 16 distractor detail",
+      "depends_on": [
+        "test_flake_parallel_15"
+      ],
+      "facts": [
+        "test_flake:N16"
+      ]
+    },
+    {
+      "id": "test_flake_parallel_17",
+      "sequence_index": 22,
+      "content": "parallel unrelated test_flake workstream 17 distractor detail",
+      "depends_on": [
+        "test_flake_parallel_16"
+      ],
+      "facts": [
+        "test_flake:N17"
+      ]
+    },
+    {
+      "id": "test_flake_current",
+      "sequence_index": 23,
+      "content": "test flake current decision and evidence",
+      "depends_on": [
+        "test_flake_compat"
+      ],
+      "facts": [
+        "test_flake:F4"
+      ]
+    }
+  ]
+}

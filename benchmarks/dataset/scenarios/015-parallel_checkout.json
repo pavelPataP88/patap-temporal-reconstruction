@@ -1,0 +1,301 @@
+{
+  "id": "parallel_checkout",
+  "query": "What evidence supports the current parallel checkout decision?",
+  "current_state": "parallel_checkout_current",
+  "required_fact_ids": [
+    "parallel_checkout:F2",
+    "parallel_checkout:F1"
+  ],
+  "states": [
+    {
+      "id": "parallel_checkout_request",
+      "sequence_index": 0,
+      "content": "parallel checkout request decision and evidence",
+      "depends_on": [],
+      "facts": [
+        "parallel_checkout:F0"
+      ]
+    },
+    {
+      "id": "parallel_checkout_spike",
+      "sequence_index": 1,
+      "content": "parallel checkout spike decision and evidence",
+      "depends_on": [
+        "parallel_checkout_request"
+      ],
+      "facts": [
+        "parallel_checkout:F1"
+      ]
+    },
+    {
+      "id": "parallel_checkout_approval",
+      "sequence_index": 2,
+      "content": "parallel checkout approval decision and evidence",
+      "depends_on": [
+        "parallel_checkout_spike"
+      ],
+      "facts": [
+        "parallel_checkout:F2"
+      ]
+    },
+    {
+      "id": "parallel_checkout_parallel_0",
+      "sequence_index": 4,
+      "content": "parallel unrelated parallel_checkout workstream 0 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "parallel_checkout:N0"
+      ]
+    },
+    {
+      "id": "parallel_checkout_parallel_1",
+      "sequence_index": 5,
+      "content": "parallel unrelated parallel_checkout workstream 1 distractor detail",
+      "depends_on": [
+        "parallel_checkout_parallel_0"
+      ],
+      "facts": [
+        "parallel_checkout:N1"
+      ]
+    },
+    {
+      "id": "parallel_checkout_parallel_2",
+      "sequence_index": 6,
+      "content": "parallel unrelated parallel_checkout workstream 2 distractor detail",
+      "depends_on": [
+        "parallel_checkout_parallel_1"
+      ],
+      "facts": [
+        "parallel_checkout:N2"
+      ]
+    },
+    {
+      "id": "parallel_checkout_parallel_3",
+      "sequence_index": 7,
+      "content": "parallel unrelated parallel_checkout workstream 3 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "parallel_checkout:N3"
+      ]
+    },
+    {
+      "id": "parallel_checkout_parallel_4",
+      "sequence_index": 8,
+      "content": "parallel unrelated parallel_checkout workstream 4 distractor detail",
+      "depends_on": [
+        "parallel_checkout_parallel_3"
+      ],
+      "facts": [
+        "parallel_checkout:N4"
+      ]
+    },
+    {
+      "id": "parallel_checkout_parallel_5",
+      "sequence_index": 9,
+      "content": "parallel unrelated parallel_checkout workstream 5 distractor detail",
+      "depends_on": [
+        "parallel_checkout_parallel_4"
+      ],
+      "facts": [
+        "parallel_checkout:N5"
+      ]
+    },
+    {
+      "id": "parallel_checkout_parallel_6",
+      "sequence_index": 10,
+      "content": "parallel unrelated parallel_checkout workstream 6 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "parallel_checkout:N6"
+      ]
+    },
+    {
+      "id": "parallel_checkout_parallel_7",
+      "sequence_index": 11,
+      "content": "parallel unrelated parallel_checkout workstream 7 distractor detail",
+      "depends_on": [
+        "parallel_checkout_parallel_6"
+      ],
+      "facts": [
+        "parallel_checkout:N7"
+      ]
+    },
+    {
+      "id": "parallel_checkout_parallel_8",
+      "sequence_index": 12,
+      "content": "parallel unrelated parallel_checkout workstream 8 distractor detail",
+      "depends_on": [
+        "parallel_checkout_parallel_7"
+      ],
+      "facts": [
+        "parallel_checkout:N8"
+      ]
+    },
+    {
+      "id": "parallel_checkout_parallel_9",
+      "sequence_index": 13,
+      "content": "parallel unrelated parallel_checkout workstream 9 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "parallel_checkout:N9"
+      ]
+    },
+    {
+      "id": "parallel_checkout_parallel_10",
+      "sequence_index": 14,
+      "content": "parallel unrelated parallel_checkout workstream 10 distractor detail",
+      "depends_on": [
+        "parallel_checkout_parallel_9"
+      ],
+      "facts": [
+        "parallel_checkout:N10"
+      ]
+    },
+    {
+      "id": "parallel_checkout_parallel_11",
+      "sequence_index": 15,
+      "content": "parallel unrelated parallel_checkout workstream 11 distractor detail",
+      "depends_on": [
+        "parallel_checkout_parallel_10"
+      ],
+      "facts": [
+        "parallel_checkout:N11"
+      ]
+    },
+    {
+      "id": "parallel_checkout_parallel_12",
+      "sequence_index": 16,
+      "content": "parallel unrelated parallel_checkout workstream 12 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "parallel_checkout:N12"
+      ]
+    },
+    {
+      "id": "parallel_checkout_parallel_13",
+      "sequence_index": 17,
+      "content": "parallel unrelated parallel_checkout workstream 13 distractor detail",
+      "depends_on": [
+        "parallel_checkout_parallel_12"
+      ],
+      "facts": [
+        "parallel_checkout:N13"
+      ]
+    },
+    {
+      "id": "parallel_checkout_parallel_14",
+      "sequence_index": 18,
+      "content": "parallel unrelated parallel_checkout workstream 14 distractor detail",
+      "depends_on": [
+        "parallel_checkout_parallel_13"
+      ],
+      "facts": [
+        "parallel_checkout:N14"
+      ]
+    },
+    {
+      "id": "parallel_checkout_parallel_15",
+      "sequence_index": 19,
+      "content": "parallel unrelated parallel_checkout workstream 15 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "parallel_checkout:N15"
+      ]
+    },
+    {
+      "id": "parallel_checkout_parallel_16",
+      "sequence_index": 20,
+      "content": "parallel unrelated parallel_checkout workstream 16 distractor detail",
+      "depends_on": [
+        "parallel_checkout_parallel_15"
+      ],
+      "facts": [
+        "parallel_checkout:N16"
+      ]
+    },
+    {
+      "id": "parallel_checkout_parallel_17",
+      "sequence_index": 21,
+      "content": "parallel unrelated parallel_checkout workstream 17 distractor detail",
+      "depends_on": [
+        "parallel_checkout_parallel_16"
+      ],
+      "facts": [
+        "parallel_checkout:N17"
+      ]
+    },
+    {
+      "id": "parallel_checkout_parallel_18",
+      "sequence_index": 22,
+      "content": "parallel unrelated parallel_checkout workstream 18 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "parallel_checkout:N18"
+      ]
+    },
+    {
+      "id": "parallel_checkout_parallel_19",
+      "sequence_index": 23,
+      "content": "parallel unrelated parallel_checkout workstream 19 distractor detail",
+      "depends_on": [
+        "parallel_checkout_parallel_18"
+      ],
+      "facts": [
+        "parallel_checkout:N19"
+      ]
+    },
+    {
+      "id": "parallel_checkout_parallel_20",
+      "sequence_index": 24,
+      "content": "parallel unrelated parallel_checkout workstream 20 distractor detail",
+      "depends_on": [
+        "parallel_checkout_parallel_19"
+      ],
+      "facts": [
+        "parallel_checkout:N20"
+      ]
+    },
+    {
+      "id": "parallel_checkout_parallel_21",
+      "sequence_index": 25,
+      "content": "parallel unrelated parallel_checkout workstream 21 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "parallel_checkout:N21"
+      ]
+    },
+    {
+      "id": "parallel_checkout_parallel_22",
+      "sequence_index": 26,
+      "content": "parallel unrelated parallel_checkout workstream 22 distractor detail",
+      "depends_on": [
+        "parallel_checkout_parallel_21"
+      ],
+      "facts": [
+        "parallel_checkout:N22"
+      ]
+    },
+    {
+      "id": "parallel_checkout_parallel_23",
+      "sequence_index": 27,
+      "content": "parallel unrelated parallel_checkout workstream 23 distractor detail",
+      "depends_on": [
+        "parallel_checkout_parallel_22"
+      ],
+      "facts": [
+        "parallel_checkout:N23"
+      ]
+    },
+    {
+      "id": "parallel_checkout_current",
+      "sequence_index": 28,
+      "content": "parallel checkout current decision and evidence",
+      "depends_on": [
+        "parallel_checkout_approval"
+      ],
+      "facts": [
+        "parallel_checkout:F3"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "dataset_version": "0.3.0",
+  "scenario_count": 20,
+  "scenario_files": [
+    {
+      "id": "auth_password_policy",
+      "file": "scenarios/001-auth_password_policy.json",
+      "sha256": "92778e640a2431b9014d49c6ba55dfdda781e59bc71bfd86bc5745b937c9330c"
+    },
+    {
+      "id": "database_backfill",
+      "file": "scenarios/002-database_backfill.json",
+      "sha256": "b2f20b826f6941416ccbc7e0aed16ef088b0290c08a12b328974d2c171e05cde"
+    },
+    {
+      "id": "api_deprecation",
+      "file": "scenarios/003-api_deprecation.json",
+      "sha256": "2f9b00c17eced3760ce739de5d17650834eff1043200989ff669b631528b0d4a"
+    },
+    {
+      "id": "refactor_regression",
+      "file": "scenarios/004-refactor_regression.json",
+      "sha256": "3ab8176196ae5d3d0bdd5a028f26843dbde483325328bc428ac64ded4e411c86"
+    },
+    {
+      "id": "oauth_callback",
+      "file": "scenarios/005-oauth_callback.json",
+      "sha256": "d48945f1791a15e1d87205febe335635be0fe2c1daf78bc14a45dc84b5f00570"
+    },
+    {
+      "id": "migration_rollback",
+      "file": "scenarios/006-migration_rollback.json",
+      "sha256": "e9d38f0a5f179093341183d6348ca65d169b3bfb4609ac88952bc645af275003"
+    },
+    {
+      "id": "security_headers",
+      "file": "scenarios/007-security_headers.json",
+      "sha256": "e64f10b7e4705090c407541febaee38464b6cc27b0507837e15b61f7ecec4c94"
+    },
+    {
+      "id": "config_flag",
+      "file": "scenarios/008-config_flag.json",
+      "sha256": "e0af469c6bb7956210be3b9a27bb1d53a6b0593858088d18c694a9026fa508de"
+    },
+    {
+      "id": "test_flake",
+      "file": "scenarios/009-test_flake.json",
+      "sha256": "393cfdffcb38df09290b879159e4d07578932d6b0a809b2e2d03fab1a369d706"
+    },
+    {
+      "id": "dependency_upgrade",
+      "file": "scenarios/010-dependency_upgrade.json",
+      "sha256": "60d805717fc1be192508b3981532c4f7950b49995008f1c90d1911a1f7d22573"
+    },
+    {
+      "id": "release_candidate",
+      "file": "scenarios/011-release_candidate.json",
+      "sha256": "846c910e954495da230badd7ee9f76186b44d7f82e305780422403769352950e"
+    },
+    {
+      "id": "incident_triage",
+      "file": "scenarios/012-incident_triage.json",
+      "sha256": "0d8a8c42e72eff2e56de2d0c186310abd9bf686f45052136402d4aa3d77a3baa"
+    },
+    {
+      "id": "multi_module_search",
+      "file": "scenarios/013-multi_module_search.json",
+      "sha256": "23f9ceb25d40fdcc9f327ad08e3d3cf5f0a0b9ace2d09a1bee1c68f5fe769370"
+    },
+    {
+      "id": "docs_contract",
+      "file": "scenarios/014-docs_contract.json",
+      "sha256": "607243c6fd31fb74812908c140e8e4e2a3795677e9d6d7f40792216ae4488257"
+    },
+    {
+      "id": "parallel_checkout",
+      "file": "scenarios/015-parallel_checkout.json",
+      "sha256": "76c742c5f4632e2acf1f13c1f4927ba6f6034e8dff435b120afbcd02063bb29f"
+    },
+    {
+      "id": "requirement_supersession",
+      "file": "scenarios/016-requirement_supersession.json",
+      "sha256": "90bd30f1795f904f4803f6888f170d5acc2f8a3c45f3f1ca6fc0e36b21373abf"
+    },
+    {
+      "id": "cache_fix",
+      "file": "scenarios/017-cache_fix.json",
+      "sha256": "7c5447ec29b225a5c5b529e50de30534a11126f90fd17b778ed2d16640210a4d"
+    },
+    {
+      "id": "permission_audit",
+      "file": "scenarios/018-permission_audit.json",
+      "sha256": "bb3853629cf8815e121eb558154827e4a283aac7b87a4521e43370ed29d868d2"
+    },
+    {
+      "id": "schema_validation",
+      "file": "scenarios/019-schema_validation.json",
+      "sha256": "987c0a47afc69aef28bdc9821dc2c765c0a0bd8f9f390a7465489da185d1c7d5"
+    },
+    {
+      "id": "deployment_gate",
+      "file": "scenarios/020-deployment_gate.json",
+      "sha256": "4e4f2327ccb2261c53635c8c6a9d35cf840fda73a2181f31c4127a7d10e2ba71"
+    }
+  ],
+  "original_combined_dataset_sha256": "68b36b55747b9f0b997712c9aa9daf0140a7664422e1d834c91c169a3c7fb8f1"
+}

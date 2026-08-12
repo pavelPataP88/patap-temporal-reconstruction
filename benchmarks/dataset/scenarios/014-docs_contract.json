@@ -1,0 +1,290 @@
+{
+  "id": "docs_contract",
+  "query": "What evidence supports the current docs contract decision?",
+  "current_state": "docs_contract_current",
+  "required_fact_ids": [
+    "docs_contract:F2",
+    "docs_contract:F1"
+  ],
+  "states": [
+    {
+      "id": "docs_contract_baseline",
+      "sequence_index": 0,
+      "content": "docs contract baseline decision and evidence",
+      "depends_on": [],
+      "facts": [
+        "docs_contract:F0"
+      ]
+    },
+    {
+      "id": "docs_contract_upgrade",
+      "sequence_index": 1,
+      "content": "docs contract upgrade decision and evidence",
+      "depends_on": [
+        "docs_contract_baseline"
+      ],
+      "facts": [
+        "docs_contract:F1"
+      ]
+    },
+    {
+      "id": "docs_contract_regression",
+      "sequence_index": 2,
+      "content": "docs contract regression decision and evidence",
+      "depends_on": [
+        "docs_contract_upgrade"
+      ],
+      "facts": [
+        "docs_contract:F2"
+      ]
+    },
+    {
+      "id": "docs_contract_parallel_0",
+      "sequence_index": 4,
+      "content": "parallel unrelated docs_contract workstream 0 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "docs_contract:N0"
+      ]
+    },
+    {
+      "id": "docs_contract_parallel_1",
+      "sequence_index": 5,
+      "content": "parallel unrelated docs_contract workstream 1 distractor detail",
+      "depends_on": [
+        "docs_contract_parallel_0"
+      ],
+      "facts": [
+        "docs_contract:N1"
+      ]
+    },
+    {
+      "id": "docs_contract_parallel_2",
+      "sequence_index": 6,
+      "content": "parallel unrelated docs_contract workstream 2 distractor detail",
+      "depends_on": [
+        "docs_contract_parallel_1"
+      ],
+      "facts": [
+        "docs_contract:N2"
+      ]
+    },
+    {
+      "id": "docs_contract_parallel_3",
+      "sequence_index": 7,
+      "content": "parallel unrelated docs_contract workstream 3 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "docs_contract:N3"
+      ]
+    },
+    {
+      "id": "docs_contract_parallel_4",
+      "sequence_index": 8,
+      "content": "parallel unrelated docs_contract workstream 4 distractor detail",
+      "depends_on": [
+        "docs_contract_parallel_3"
+      ],
+      "facts": [
+        "docs_contract:N4"
+      ]
+    },
+    {
+      "id": "docs_contract_parallel_5",
+      "sequence_index": 9,
+      "content": "parallel unrelated docs_contract workstream 5 distractor detail",
+      "depends_on": [
+        "docs_contract_parallel_4"
+      ],
+      "facts": [
+        "docs_contract:N5"
+      ]
+    },
+    {
+      "id": "docs_contract_parallel_6",
+      "sequence_index": 10,
+      "content": "parallel unrelated docs_contract workstream 6 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "docs_contract:N6"
+      ]
+    },
+    {
+      "id": "docs_contract_parallel_7",
+      "sequence_index": 11,
+      "content": "parallel unrelated docs_contract workstream 7 distractor detail",
+      "depends_on": [
+        "docs_contract_parallel_6"
+      ],
+      "facts": [
+        "docs_contract:N7"
+      ]
+    },
+    {
+      "id": "docs_contract_parallel_8",
+      "sequence_index": 12,
+      "content": "parallel unrelated docs_contract workstream 8 distractor detail",
+      "depends_on": [
+        "docs_contract_parallel_7"
+      ],
+      "facts": [
+        "docs_contract:N8"
+      ]
+    },
+    {
+      "id": "docs_contract_parallel_9",
+      "sequence_index": 13,
+      "content": "parallel unrelated docs_contract workstream 9 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "docs_contract:N9"
+      ]
+    },
+    {
+      "id": "docs_contract_parallel_10",
+      "sequence_index": 14,
+      "content": "parallel unrelated docs_contract workstream 10 distractor detail",
+      "depends_on": [
+        "docs_contract_parallel_9"
+      ],
+      "facts": [
+        "docs_contract:N10"
+      ]
+    },
+    {
+      "id": "docs_contract_parallel_11",
+      "sequence_index": 15,
+      "content": "parallel unrelated docs_contract workstream 11 distractor detail",
+      "depends_on": [
+        "docs_contract_parallel_10"
+      ],
+      "facts": [
+        "docs_contract:N11"
+      ]
+    },
+    {
+      "id": "docs_contract_parallel_12",
+      "sequence_index": 16,
+      "content": "parallel unrelated docs_contract workstream 12 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "docs_contract:N12"
+      ]
+    },
+    {
+      "id": "docs_contract_parallel_13",
+      "sequence_index": 17,
+      "content": "parallel unrelated docs_contract workstream 13 distractor detail",
+      "depends_on": [
+        "docs_contract_parallel_12"
+      ],
+      "facts": [
+        "docs_contract:N13"
+      ]
+    },
+    {
+      "id": "docs_contract_parallel_14",
+      "sequence_index": 18,
+      "content": "parallel unrelated docs_contract workstream 14 distractor detail",
+      "depends_on": [
+        "docs_contract_parallel_13"
+      ],
+      "facts": [
+        "docs_contract:N14"
+      ]
+    },
+    {
+      "id": "docs_contract_parallel_15",
+      "sequence_index": 19,
+      "content": "parallel unrelated docs_contract workstream 15 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "docs_contract:N15"
+      ]
+    },
+    {
+      "id": "docs_contract_parallel_16",
+      "sequence_index": 20,
+      "content": "parallel unrelated docs_contract workstream 16 distractor detail",
+      "depends_on": [
+        "docs_contract_parallel_15"
+      ],
+      "facts": [
+        "docs_contract:N16"
+      ]
+    },
+    {
+      "id": "docs_contract_parallel_17",
+      "sequence_index": 21,
+      "content": "parallel unrelated docs_contract workstream 17 distractor detail",
+      "depends_on": [
+        "docs_contract_parallel_16"
+      ],
+      "facts": [
+        "docs_contract:N17"
+      ]
+    },
+    {
+      "id": "docs_contract_parallel_18",
+      "sequence_index": 22,
+      "content": "parallel unrelated docs_contract workstream 18 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "docs_contract:N18"
+      ]
+    },
+    {
+      "id": "docs_contract_parallel_19",
+      "sequence_index": 23,
+      "content": "parallel unrelated docs_contract workstream 19 distractor detail",
+      "depends_on": [
+        "docs_contract_parallel_18"
+      ],
+      "facts": [
+        "docs_contract:N19"
+      ]
+    },
+    {
+      "id": "docs_contract_parallel_20",
+      "sequence_index": 24,
+      "content": "parallel unrelated docs_contract workstream 20 distractor detail",
+      "depends_on": [
+        "docs_contract_parallel_19"
+      ],
+      "facts": [
+        "docs_contract:N20"
+      ]
+    },
+    {
+      "id": "docs_contract_parallel_21",
+      "sequence_index": 25,
+      "content": "parallel unrelated docs_contract workstream 21 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "docs_contract:N21"
+      ]
+    },
+    {
+      "id": "docs_contract_parallel_22",
+      "sequence_index": 26,
+      "content": "parallel unrelated docs_contract workstream 22 distractor detail",
+      "depends_on": [
+        "docs_contract_parallel_21"
+      ],
+      "facts": [
+        "docs_contract:N22"
+      ]
+    },
+    {
+      "id": "docs_contract_current",
+      "sequence_index": 27,
+      "content": "docs contract current decision and evidence",
+      "depends_on": [
+        "docs_contract_regression"
+      ],
+      "facts": [
+        "docs_contract:F3"
+      ]
+    }
+  ]
+}

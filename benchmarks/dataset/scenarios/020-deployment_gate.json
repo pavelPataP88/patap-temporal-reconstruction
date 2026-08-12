@@ -1,0 +1,270 @@
+{
+  "id": "deployment_gate",
+  "query": "What evidence supports the current deployment gate decision?",
+  "current_state": "deployment_gate_current",
+  "required_fact_ids": [
+    "deployment_gate:F2",
+    "deployment_gate:F1"
+  ],
+  "states": [
+    {
+      "id": "deployment_gate_problem",
+      "sequence_index": 0,
+      "content": "deployment gate problem decision and evidence",
+      "depends_on": [],
+      "facts": [
+        "deployment_gate:F0"
+      ]
+    },
+    {
+      "id": "deployment_gate_investigation",
+      "sequence_index": 1,
+      "content": "deployment gate investigation decision and evidence",
+      "depends_on": [
+        "deployment_gate_problem"
+      ],
+      "facts": [
+        "deployment_gate:F1"
+      ]
+    },
+    {
+      "id": "deployment_gate_patch",
+      "sequence_index": 2,
+      "content": "deployment gate patch decision and evidence",
+      "depends_on": [
+        "deployment_gate_investigation"
+      ],
+      "facts": [
+        "deployment_gate:F2"
+      ]
+    },
+    {
+      "id": "deployment_gate_parallel_0",
+      "sequence_index": 4,
+      "content": "parallel unrelated deployment_gate workstream 0 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "deployment_gate:N0"
+      ]
+    },
+    {
+      "id": "deployment_gate_parallel_1",
+      "sequence_index": 5,
+      "content": "parallel unrelated deployment_gate workstream 1 distractor detail",
+      "depends_on": [
+        "deployment_gate_parallel_0"
+      ],
+      "facts": [
+        "deployment_gate:N1"
+      ]
+    },
+    {
+      "id": "deployment_gate_parallel_2",
+      "sequence_index": 6,
+      "content": "parallel unrelated deployment_gate workstream 2 distractor detail",
+      "depends_on": [
+        "deployment_gate_parallel_1"
+      ],
+      "facts": [
+        "deployment_gate:N2"
+      ]
+    },
+    {
+      "id": "deployment_gate_parallel_3",
+      "sequence_index": 7,
+      "content": "parallel unrelated deployment_gate workstream 3 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "deployment_gate:N3"
+      ]
+    },
+    {
+      "id": "deployment_gate_parallel_4",
+      "sequence_index": 8,
+      "content": "parallel unrelated deployment_gate workstream 4 distractor detail",
+      "depends_on": [
+        "deployment_gate_parallel_3"
+      ],
+      "facts": [
+        "deployment_gate:N4"
+      ]
+    },
+    {
+      "id": "deployment_gate_parallel_5",
+      "sequence_index": 9,
+      "content": "parallel unrelated deployment_gate workstream 5 distractor detail",
+      "depends_on": [
+        "deployment_gate_parallel_4"
+      ],
+      "facts": [
+        "deployment_gate:N5"
+      ]
+    },
+    {
+      "id": "deployment_gate_parallel_6",
+      "sequence_index": 10,
+      "content": "parallel unrelated deployment_gate workstream 6 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "deployment_gate:N6"
+      ]
+    },
+    {
+      "id": "deployment_gate_parallel_7",
+      "sequence_index": 11,
+      "content": "parallel unrelated deployment_gate workstream 7 distractor detail",
+      "depends_on": [
+        "deployment_gate_parallel_6"
+      ],
+      "facts": [
+        "deployment_gate:N7"
+      ]
+    },
+    {
+      "id": "deployment_gate_parallel_8",
+      "sequence_index": 12,
+      "content": "parallel unrelated deployment_gate workstream 8 distractor detail",
+      "depends_on": [
+        "deployment_gate_parallel_7"
+      ],
+      "facts": [
+        "deployment_gate:N8"
+      ]
+    },
+    {
+      "id": "deployment_gate_parallel_9",
+      "sequence_index": 13,
+      "content": "parallel unrelated deployment_gate workstream 9 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "deployment_gate:N9"
+      ]
+    },
+    {
+      "id": "deployment_gate_parallel_10",
+      "sequence_index": 14,
+      "content": "parallel unrelated deployment_gate workstream 10 distractor detail",
+      "depends_on": [
+        "deployment_gate_parallel_9"
+      ],
+      "facts": [
+        "deployment_gate:N10"
+      ]
+    },
+    {
+      "id": "deployment_gate_parallel_11",
+      "sequence_index": 15,
+      "content": "parallel unrelated deployment_gate workstream 11 distractor detail",
+      "depends_on": [
+        "deployment_gate_parallel_10"
+      ],
+      "facts": [
+        "deployment_gate:N11"
+      ]
+    },
+    {
+      "id": "deployment_gate_parallel_12",
+      "sequence_index": 16,
+      "content": "parallel unrelated deployment_gate workstream 12 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "deployment_gate:N12"
+      ]
+    },
+    {
+      "id": "deployment_gate_parallel_13",
+      "sequence_index": 17,
+      "content": "parallel unrelated deployment_gate workstream 13 distractor detail",
+      "depends_on": [
+        "deployment_gate_parallel_12"
+      ],
+      "facts": [
+        "deployment_gate:N13"
+      ]
+    },
+    {
+      "id": "deployment_gate_parallel_14",
+      "sequence_index": 18,
+      "content": "parallel unrelated deployment_gate workstream 14 distractor detail",
+      "depends_on": [
+        "deployment_gate_parallel_13"
+      ],
+      "facts": [
+        "deployment_gate:N14"
+      ]
+    },
+    {
+      "id": "deployment_gate_parallel_15",
+      "sequence_index": 19,
+      "content": "parallel unrelated deployment_gate workstream 15 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "deployment_gate:N15"
+      ]
+    },
+    {
+      "id": "deployment_gate_parallel_16",
+      "sequence_index": 20,
+      "content": "parallel unrelated deployment_gate workstream 16 distractor detail",
+      "depends_on": [
+        "deployment_gate_parallel_15"
+      ],
+      "facts": [
+        "deployment_gate:N16"
+      ]
+    },
+    {
+      "id": "deployment_gate_parallel_17",
+      "sequence_index": 21,
+      "content": "parallel unrelated deployment_gate workstream 17 distractor detail",
+      "depends_on": [
+        "deployment_gate_parallel_16"
+      ],
+      "facts": [
+        "deployment_gate:N17"
+      ]
+    },
+    {
+      "id": "deployment_gate_parallel_18",
+      "sequence_index": 22,
+      "content": "parallel unrelated deployment_gate workstream 18 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "deployment_gate:N18"
+      ]
+    },
+    {
+      "id": "deployment_gate_parallel_19",
+      "sequence_index": 23,
+      "content": "parallel unrelated deployment_gate workstream 19 distractor detail",
+      "depends_on": [
+        "deployment_gate_parallel_18"
+      ],
+      "facts": [
+        "deployment_gate:N19"
+      ]
+    },
+    {
+      "id": "deployment_gate_parallel_20",
+      "sequence_index": 24,
+      "content": "parallel unrelated deployment_gate workstream 20 distractor detail",
+      "depends_on": [
+        "deployment_gate_parallel_19"
+      ],
+      "facts": [
+        "deployment_gate:N20"
+      ]
+    },
+    {
+      "id": "deployment_gate_current",
+      "sequence_index": 25,
+      "content": "deployment gate current decision and evidence",
+      "depends_on": [
+        "deployment_gate_patch"
+      ],
+      "facts": [
+        "deployment_gate:F3"
+      ]
+    }
+  ]
+}

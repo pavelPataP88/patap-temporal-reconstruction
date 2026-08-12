@@ -1,0 +1,248 @@
+{
+  "id": "dependency_upgrade",
+  "query": "What evidence supports the current dependency upgrade decision?",
+  "current_state": "dependency_upgrade_current",
+  "required_fact_ids": [
+    "dependency_upgrade:F2",
+    "dependency_upgrade:F1"
+  ],
+  "states": [
+    {
+      "id": "dependency_upgrade_signal",
+      "sequence_index": 0,
+      "content": "dependency upgrade signal decision and evidence",
+      "depends_on": [],
+      "facts": [
+        "dependency_upgrade:F0"
+      ]
+    },
+    {
+      "id": "dependency_upgrade_hypothesis",
+      "sequence_index": 1,
+      "content": "dependency upgrade hypothesis decision and evidence",
+      "depends_on": [
+        "dependency_upgrade_signal"
+      ],
+      "facts": [
+        "dependency_upgrade:F1"
+      ]
+    },
+    {
+      "id": "dependency_upgrade_experiment",
+      "sequence_index": 2,
+      "content": "dependency upgrade experiment decision and evidence",
+      "depends_on": [
+        "dependency_upgrade_hypothesis"
+      ],
+      "facts": [
+        "dependency_upgrade:F2"
+      ]
+    },
+    {
+      "id": "dependency_upgrade_parallel_0",
+      "sequence_index": 4,
+      "content": "parallel unrelated dependency_upgrade workstream 0 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "dependency_upgrade:N0"
+      ]
+    },
+    {
+      "id": "dependency_upgrade_parallel_1",
+      "sequence_index": 5,
+      "content": "parallel unrelated dependency_upgrade workstream 1 distractor detail",
+      "depends_on": [
+        "dependency_upgrade_parallel_0"
+      ],
+      "facts": [
+        "dependency_upgrade:N1"
+      ]
+    },
+    {
+      "id": "dependency_upgrade_parallel_2",
+      "sequence_index": 6,
+      "content": "parallel unrelated dependency_upgrade workstream 2 distractor detail",
+      "depends_on": [
+        "dependency_upgrade_parallel_1"
+      ],
+      "facts": [
+        "dependency_upgrade:N2"
+      ]
+    },
+    {
+      "id": "dependency_upgrade_parallel_3",
+      "sequence_index": 7,
+      "content": "parallel unrelated dependency_upgrade workstream 3 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "dependency_upgrade:N3"
+      ]
+    },
+    {
+      "id": "dependency_upgrade_parallel_4",
+      "sequence_index": 8,
+      "content": "parallel unrelated dependency_upgrade workstream 4 distractor detail",
+      "depends_on": [
+        "dependency_upgrade_parallel_3"
+      ],
+      "facts": [
+        "dependency_upgrade:N4"
+      ]
+    },
+    {
+      "id": "dependency_upgrade_parallel_5",
+      "sequence_index": 9,
+      "content": "parallel unrelated dependency_upgrade workstream 5 distractor detail",
+      "depends_on": [
+        "dependency_upgrade_parallel_4"
+      ],
+      "facts": [
+        "dependency_upgrade:N5"
+      ]
+    },
+    {
+      "id": "dependency_upgrade_parallel_6",
+      "sequence_index": 10,
+      "content": "parallel unrelated dependency_upgrade workstream 6 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "dependency_upgrade:N6"
+      ]
+    },
+    {
+      "id": "dependency_upgrade_parallel_7",
+      "sequence_index": 11,
+      "content": "parallel unrelated dependency_upgrade workstream 7 distractor detail",
+      "depends_on": [
+        "dependency_upgrade_parallel_6"
+      ],
+      "facts": [
+        "dependency_upgrade:N7"
+      ]
+    },
+    {
+      "id": "dependency_upgrade_parallel_8",
+      "sequence_index": 12,
+      "content": "parallel unrelated dependency_upgrade workstream 8 distractor detail",
+      "depends_on": [
+        "dependency_upgrade_parallel_7"
+      ],
+      "facts": [
+        "dependency_upgrade:N8"
+      ]
+    },
+    {
+      "id": "dependency_upgrade_parallel_9",
+      "sequence_index": 13,
+      "content": "parallel unrelated dependency_upgrade workstream 9 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "dependency_upgrade:N9"
+      ]
+    },
+    {
+      "id": "dependency_upgrade_parallel_10",
+      "sequence_index": 14,
+      "content": "parallel unrelated dependency_upgrade workstream 10 distractor detail",
+      "depends_on": [
+        "dependency_upgrade_parallel_9"
+      ],
+      "facts": [
+        "dependency_upgrade:N10"
+      ]
+    },
+    {
+      "id": "dependency_upgrade_parallel_11",
+      "sequence_index": 15,
+      "content": "parallel unrelated dependency_upgrade workstream 11 distractor detail",
+      "depends_on": [
+        "dependency_upgrade_parallel_10"
+      ],
+      "facts": [
+        "dependency_upgrade:N11"
+      ]
+    },
+    {
+      "id": "dependency_upgrade_parallel_12",
+      "sequence_index": 16,
+      "content": "parallel unrelated dependency_upgrade workstream 12 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "dependency_upgrade:N12"
+      ]
+    },
+    {
+      "id": "dependency_upgrade_parallel_13",
+      "sequence_index": 17,
+      "content": "parallel unrelated dependency_upgrade workstream 13 distractor detail",
+      "depends_on": [
+        "dependency_upgrade_parallel_12"
+      ],
+      "facts": [
+        "dependency_upgrade:N13"
+      ]
+    },
+    {
+      "id": "dependency_upgrade_parallel_14",
+      "sequence_index": 18,
+      "content": "parallel unrelated dependency_upgrade workstream 14 distractor detail",
+      "depends_on": [
+        "dependency_upgrade_parallel_13"
+      ],
+      "facts": [
+        "dependency_upgrade:N14"
+      ]
+    },
+    {
+      "id": "dependency_upgrade_parallel_15",
+      "sequence_index": 19,
+      "content": "parallel unrelated dependency_upgrade workstream 15 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "dependency_upgrade:N15"
+      ]
+    },
+    {
+      "id": "dependency_upgrade_parallel_16",
+      "sequence_index": 20,
+      "content": "parallel unrelated dependency_upgrade workstream 16 distractor detail",
+      "depends_on": [
+        "dependency_upgrade_parallel_15"
+      ],
+      "facts": [
+        "dependency_upgrade:N16"
+      ]
+    },
+    {
+      "id": "dependency_upgrade_parallel_17",
+      "sequence_index": 21,
+      "content": "parallel unrelated dependency_upgrade workstream 17 distractor detail",
+      "depends_on": [
+        "dependency_upgrade_parallel_16"
+      ],
+      "facts": [
+        "dependency_upgrade:N17"
+      ]
+    },
+    {
+      "id": "dependency_upgrade_parallel_18",
+      "sequence_index": 22,
+      "content": "parallel unrelated dependency_upgrade workstream 18 distractor detail",
+      "depends_on": [],
+      "facts": [
+        "dependency_upgrade:N18"
+      ]
+    },
+    {
+      "id": "dependency_upgrade_current",
+      "sequence_index": 23,
+      "content": "dependency upgrade current decision and evidence",
+      "depends_on": [
+        "dependency_upgrade_experiment"
+      ],
+      "facts": [
+        "dependency_upgrade:F3"
+      ]
+    }
+  ]
+}

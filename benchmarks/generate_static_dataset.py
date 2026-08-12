@@ -1,5 +1,6 @@
-"""Build the frozen static dataset; do not run after the freeze commit."""
+"""Build source data and split it into immutable storage files before freezing."""
 import json
+import hashlib
 from pathlib import Path
 
 NAMES = ["auth_password_policy","database_backfill","api_deprecation","refactor_regression","oauth_callback","migration_rollback","security_headers","config_flag","test_flake","dependency_upgrade","release_candidate","incident_triage","multi_module_search","docs_contract","parallel_checkout","requirement_supersession","cache_fix","permission_audit","schema_validation","deployment_gate"]
@@ -30,4 +31,16 @@ def make(index, name):
     current["sequence_index"]=len(core)+count
     return {"id":name,"query":f"What evidence supports the current {name.replace('_',' ')} decision?","current_state":current['id'],"required_fact_ids":required,"states":core[:-1]+noise+[current]}
 data={"version":"0.3.0","schema":"context-selection-v2","scenarios":[make(i,n) for i,n in enumerate(NAMES)]}
-Path(__file__).with_name('dataset').joinpath('context_scenarios.json').write_text(json.dumps(data,indent=2)+"\n",encoding='utf-8')
+dataset_dir=Path(__file__).with_name('dataset')
+combined=dataset_dir/'context_scenarios.json'
+combined.write_text(json.dumps(data,indent=2)+"\n",encoding='utf-8')
+original_sha=hashlib.sha256(combined.read_bytes()).hexdigest()
+scenario_dir=dataset_dir/'scenarios'; scenario_dir.mkdir(exist_ok=True)
+entries=[]
+for number, scenario in enumerate(data['scenarios'], 1):
+    name=f"{number:03d}-{scenario['id']}.json"
+    path=scenario_dir/name
+    path.write_text(json.dumps(scenario,indent=2)+"\n",encoding='utf-8')
+    entries.append({"id":scenario['id'],"file":f"scenarios/{name}","sha256":hashlib.sha256(path.read_bytes()).hexdigest()})
+manifest={"dataset_version":"0.3.0","scenario_count":len(entries),"scenario_files":entries,"original_combined_dataset_sha256":original_sha}
+(dataset_dir/'manifest.json').write_text(json.dumps(manifest,indent=2)+"\n",encoding='utf-8')
