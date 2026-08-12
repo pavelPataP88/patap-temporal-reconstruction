@@ -100,6 +100,29 @@ class PATAPTests(unittest.TestCase):
         self.assertEqual(memory.context_for("D")["layers"], [["A"], ["B"], ["C"], ["D"]])
         self.assertEqual(memory.stats("D"), {"total_states": 5, "visible_states": 4, "context_ratio": 0.8})
 
+    def test_repeat_state_preserves_dependencies_and_omitted_metadata(self):
+        graph = PATAP().add_state("A").add_state("B")
+        graph.add_state("C", ["A"], {"kind": "artifact"}, ["first"])
+        graph.add_state("C", ["B"])
+        state = graph.get_state("C")
+        self.assertEqual(state.records, {"A", "B"})
+        self.assertEqual(state.data, {"kind": "artifact"})
+        self.assertEqual(state.evidence, ["first"])
+        graph.add_state("C", data={"kind": "updated"}, evidence=["second"])
+        updated = graph.get_state("C")
+        self.assertEqual(updated.records, {"A", "B"})
+        self.assertEqual(updated.data, {"kind": "updated"})
+        self.assertEqual(updated.evidence, ["second"])
+
+    def test_public_state_accessors_are_detached(self):
+        graph = PATAP().add_state("A", data={"kind": "artifact"}, evidence=["record"])
+        snapshot = graph.get_state("A")
+        snapshot.data["kind"] = "changed"
+        snapshot.evidence.append("changed")
+        self.assertEqual(graph.state_ids(), {"A"})
+        self.assertEqual(graph.get_state("A").data, {"kind": "artifact"})
+        self.assertEqual(graph.get_state("A").evidence, ["record"])
+
 
 if __name__ == "__main__":
     unittest.main()
