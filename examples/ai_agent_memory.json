@@ -1,0 +1,8 @@
+{
+  "states": [
+    {"id": "auth_tests", "records": ["login_api"]},
+    {"id": "database_schema", "records": []},
+    {"id": "login_api", "records": ["database_schema", "auth_requirement"], "data": {"evidence": ["code_diff", "decision_record"]}},
+    {"id": "auth_requirement", "records": []}
+  ]
+}
