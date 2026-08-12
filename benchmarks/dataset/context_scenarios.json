@@ -12,31 +12,31 @@
       ],
       "states": [
         {
-          "id": "auth_password_policy_requirement",
+          "id": "auth_password_policy_r",
           "sequence_index": 0,
-          "content": "auth password policy requirement decision and evidence",
+          "content": "auth password policy r decision and evidence",
           "depends_on": [],
           "facts": [
             "auth_password_policy:F0"
           ]
         },
         {
-          "id": "auth_password_policy_design",
+          "id": "auth_password_policy_d",
           "sequence_index": 1,
-          "content": "auth password policy design decision and evidence",
+          "content": "auth password policy d decision and evidence",
           "depends_on": [
-            "auth_password_policy_requirement"
+            "auth_password_policy_r"
           ],
           "facts": [
             "auth_password_policy:F1"
           ]
         },
         {
-          "id": "auth_password_policy_implementation",
+          "id": "auth_password_policy_i",
           "sequence_index": 2,
-          "content": "auth password policy implementation decision and evidence",
+          "content": "auth password policy i decision and evidence",
           "depends_on": [
-            "auth_password_policy_design"
+            "auth_password_policy_d"
           ],
           "facts": [
             "auth_password_policy:F2"
@@ -229,370 +229,736 @@
           ]
         },
         {
-          "id": "auth_password_policy_parallel_18",
+          "id": "auth_password_policy_current",
           "sequence_index": 22,
-          "content": "parallel unrelated auth_password_policy workstream 18 distractor detail",
+          "content": "auth password policy current decision and evidence",
+          "depends_on": [
+            "auth_password_policy_i"
+          ],
+          "facts": [
+            "auth_password_policy:F3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "database_backfill",
+      "query": "What evidence supports the current database backfill decision?",
+      "current_state": "database_backfill_current",
+      "required_fact_ids": [
+        "database_backfill:F2",
+        "database_backfill:F1"
+      ],
+      "states": [
+        {
+          "id": "database_backfill_incident",
+          "sequence_index": 0,
+          "content": "database backfill incident decision and evidence",
           "depends_on": [],
           "facts": [
-            "auth_password_policy:N18"
+            "database_backfill:F0"
           ]
         },
         {
-          "id": "auth_password_policy_parallel_19",
+          "id": "database_backfill_trace",
+          "sequence_index": 1,
+          "content": "database backfill trace decision and evidence",
+          "depends_on": [
+            "database_backfill_incident"
+          ],
+          "facts": [
+            "database_backfill:F1"
+          ]
+        },
+        {
+          "id": "database_backfill_fix",
+          "sequence_index": 2,
+          "content": "database backfill fix decision and evidence",
+          "depends_on": [
+            "database_backfill_trace"
+          ],
+          "facts": [
+            "database_backfill:F2"
+          ]
+        },
+        {
+          "id": "database_backfill_parallel_0",
+          "sequence_index": 4,
+          "content": "parallel unrelated database_backfill workstream 0 distractor detail",
+          "depends_on": [],
+          "facts": [
+            "database_backfill:N0"
+          ]
+        },
+        {
+          "id": "database_backfill_parallel_1",
+          "sequence_index": 5,
+          "content": "parallel unrelated database_backfill workstream 1 distractor detail",
+          "depends_on": [
+            "database_backfill_parallel_0"
+          ],
+          "facts": [
+            "database_backfill:N1"
+          ]
+        },
+        {
+          "id": "database_backfill_parallel_2",
+          "sequence_index": 6,
+          "content": "parallel unrelated database_backfill workstream 2 distractor detail",
+          "depends_on": [
+            "database_backfill_parallel_1"
+          ],
+          "facts": [
+            "database_backfill:N2"
+          ]
+        },
+        {
+          "id": "database_backfill_parallel_3",
+          "sequence_index": 7,
+          "content": "parallel unrelated database_backfill workstream 3 distractor detail",
+          "depends_on": [],
+          "facts": [
+            "database_backfill:N3"
+          ]
+        },
+        {
+          "id": "database_backfill_parallel_4",
+          "sequence_index": 8,
+          "content": "parallel unrelated database_backfill workstream 4 distractor detail",
+          "depends_on": [
+            "database_backfill_parallel_3"
+          ],
+          "facts": [
+            "database_backfill:N4"
+          ]
+        },
+        {
+          "id": "database_backfill_parallel_5",
+          "sequence_index": 9,
+          "content": "parallel unrelated database_backfill workstream 5 distractor detail",
+          "depends_on": [
+            "database_backfill_parallel_4"
+          ],
+          "facts": [
+            "database_backfill:N5"
+          ]
+        },
+        {
+          "id": "database_backfill_parallel_6",
+          "sequence_index": 10,
+          "content": "parallel unrelated database_backfill workstream 6 distractor detail",
+          "depends_on": [],
+          "facts": [
+            "database_backfill:N6"
+          ]
+        },
+        {
+          "id": "database_backfill_parallel_7",
+          "sequence_index": 11,
+          "content": "parallel unrelated database_backfill workstream 7 distractor detail",
+          "depends_on": [
+            "database_backfill_parallel_6"
+          ],
+          "facts": [
+            "database_backfill:N7"
+          ]
+        },
+        {
+          "id": "database_backfill_parallel_8",
+          "sequence_index": 12,
+          "content": "parallel unrelated database_backfill workstream 8 distractor detail",
+          "depends_on": [
+            "database_backfill_parallel_7"
+          ],
+          "facts": [
+            "database_backfill:N8"
+          ]
+        },
+        {
+          "id": "database_backfill_parallel_9",
+          "sequence_index": 13,
+          "content": "parallel unrelated database_backfill workstream 9 distractor detail",
+          "depends_on": [],
+          "facts": [
+            "database_backfill:N9"
+          ]
+        },
+        {
+          "id": "database_backfill_parallel_10",
+          "sequence_index": 14,
+          "content": "parallel unrelated database_backfill workstream 10 distractor detail",
+          "depends_on": [
+            "database_backfill_parallel_9"
+          ],
+          "facts": [
+            "database_backfill:N10"
+          ]
+        },
+        {
+          "id": "database_backfill_parallel_11",
+          "sequence_index": 15,
+          "content": "parallel unrelated database_backfill workstream 11 distractor detail",
+          "depends_on": [
+            "database_backfill_parallel_10"
+          ],
+          "facts": [
+            "database_backfill:N11"
+          ]
+        },
+        {
+          "id": "database_backfill_parallel_12",
+          "sequence_index": 16,
+          "content": "parallel unrelated database_backfill workstream 12 distractor detail",
+          "depends_on": [],
+          "facts": [
+            "database_backfill:N12"
+          ]
+        },
+        {
+          "id": "database_backfill_parallel_13",
+          "sequence_index": 17,
+          "content": "parallel unrelated database_backfill workstream 13 distractor detail",
+          "depends_on": [
+            "database_backfill_parallel_12"
+          ],
+          "facts": [
+            "database_backfill:N13"
+          ]
+        },
+        {
+          "id": "database_backfill_parallel_14",
+          "sequence_index": 18,
+          "content": "parallel unrelated database_backfill workstream 14 distractor detail",
+          "depends_on": [
+            "database_backfill_parallel_13"
+          ],
+          "facts": [
+            "database_backfill:N14"
+          ]
+        },
+        {
+          "id": "database_backfill_parallel_15",
+          "sequence_index": 19,
+          "content": "parallel unrelated database_backfill workstream 15 distractor detail",
+          "depends_on": [],
+          "facts": [
+            "database_backfill:N15"
+          ]
+        },
+        {
+          "id": "database_backfill_parallel_16",
+          "sequence_index": 20,
+          "content": "parallel unrelated database_backfill workstream 16 distractor detail",
+          "depends_on": [
+            "database_backfill_parallel_15"
+          ],
+          "facts": [
+            "database_backfill:N16"
+          ]
+        },
+        {
+          "id": "database_backfill_parallel_17",
+          "sequence_index": 21,
+          "content": "parallel unrelated database_backfill workstream 17 distractor detail",
+          "depends_on": [
+            "database_backfill_parallel_16"
+          ],
+          "facts": [
+            "database_backfill:N17"
+          ]
+        },
+        {
+          "id": "database_backfill_parallel_18",
+          "sequence_index": 22,
+          "content": "parallel unrelated database_backfill workstream 18 distractor detail",
+          "depends_on": [],
+          "facts": [
+            "database_backfill:N18"
+          ]
+        },
+        {
+          "id": "database_backfill_current",
           "sequence_index": 23,
-          "content": "parallel unrelated auth_password_policy workstream 19 distractor detail",
+          "content": "database backfill current decision and evidence",
           "depends_on": [
-            "auth_password_policy_parallel_18"
+            "database_backfill_fix"
           ],
           "facts": [
-            "auth_password_policy:N19"
+            "database_backfill:F3"
           ]
-        },
+        }
+      ]
+    },
+    {
+      "id": "api_deprecation",
+      "query": "What evidence supports the current api deprecation decision?",
+      "current_state": "api_deprecation_current",
+      "required_fact_ids": [
+        "api_deprecation:F2",
+        "api_deprecation:F1"
+      ],
+      "states": [
         {
-          "id": "auth_password_policy_parallel_20",
-          "sequence_index": 24,
-          "content": "parallel unrelated auth_password_policy workstream 20 distractor detail",
-          "depends_on": [
-            "auth_password_policy_parallel_19"
-          ],
-          "facts": [
-            "auth_password_policy:N20"
-          ]
-        },
-        {
-          "id": "auth_password_policy_parallel_21",
-          "sequence_index": 25,
-          "content": "parallel unrelated auth_password_policy workstream 21 distractor detail",
+          "id": "api_deprecation_old",
+          "sequence_index": 0,
+          "content": "api deprecation old decision and evidence",
           "depends_on": [],
           "facts": [
-            "auth_password_policy:N21"
+            "api_deprecation:F0"
           ]
         },
         {
-          "id": "auth_password_policy_parallel_22",
-          "sequence_index": 26,
-          "content": "parallel unrelated auth_password_policy workstream 22 distractor detail",
-          "depends_on": [
-            "auth_password_policy_parallel_21"
-          ],
-          "facts": [
-            "auth_password_policy:N22"
-          ]
-        },
-        {
-          "id": "auth_password_policy_parallel_23",
-          "sequence_index": 27,
-          "content": "parallel unrelated auth_password_policy workstream 23 distractor detail",
-          "depends_on": [
-            "auth_password_policy_parallel_22"
-          ],
-          "facts": [
-            "auth_password_policy:N23"
-          ]
-        },
-        {
-          "id": "auth_password_policy_parallel_24",
-          "sequence_index": 28,
-          "content": "parallel unrelated auth_password_policy workstream 24 distractor detail",
+          "id": "api_deprecation_new",
+          "sequence_index": 1,
+          "content": "api deprecation new decision and evidence",
           "depends_on": [],
           "facts": [
-            "auth_password_policy:N24"
+            "api_deprecation:F1"
           ]
         },
         {
-          "id": "auth_password_policy_parallel_25",
-          "sequence_index": 29,
-          "content": "parallel unrelated auth_password_policy workstream 25 distractor detail",
+          "id": "api_deprecation_adapter",
+          "sequence_index": 2,
+          "content": "api deprecation adapter decision and evidence",
           "depends_on": [
-            "auth_password_policy_parallel_24"
+            "api_deprecation_old",
+            "api_deprecation_new"
           ],
           "facts": [
-            "auth_password_policy:N25"
+            "api_deprecation:F2"
           ]
         },
         {
-          "id": "auth_password_policy_parallel_26",
-          "sequence_index": 30,
-          "content": "parallel unrelated auth_password_policy workstream 26 distractor detail",
-          "depends_on": [
-            "auth_password_policy_parallel_25"
-          ],
-          "facts": [
-            "auth_password_policy:N26"
-          ]
-        },
-        {
-          "id": "auth_password_policy_parallel_27",
-          "sequence_index": 31,
-          "content": "parallel unrelated auth_password_policy workstream 27 distractor detail",
+          "id": "api_deprecation_parallel_0",
+          "sequence_index": 4,
+          "content": "parallel unrelated api_deprecation workstream 0 distractor detail",
           "depends_on": [],
           "facts": [
-            "auth_password_policy:N27"
+            "api_deprecation:N0"
           ]
         },
         {
-          "id": "auth_password_policy_parallel_28",
-          "sequence_index": 32,
-          "content": "parallel unrelated auth_password_policy workstream 28 distractor detail",
+          "id": "api_deprecation_parallel_1",
+          "sequence_index": 5,
+          "content": "parallel unrelated api_deprecation workstream 1 distractor detail",
           "depends_on": [
-            "auth_password_policy_parallel_27"
+            "api_deprecation_parallel_0"
           ],
           "facts": [
-            "auth_password_policy:N28"
+            "api_deprecation:N1"
           ]
         },
         {
-          "id": "auth_password_policy_parallel_29",
-          "sequence_index": 33,
-          "content": "parallel unrelated auth_password_policy workstream 29 distractor detail",
+          "id": "api_deprecation_parallel_2",
+          "sequence_index": 6,
+          "content": "parallel unrelated api_deprecation workstream 2 distractor detail",
           "depends_on": [
-            "auth_password_policy_parallel_28"
+            "api_deprecation_parallel_1"
           ],
           "facts": [
-            "auth_password_policy:N29"
+            "api_deprecation:N2"
           ]
         },
         {
-          "id": "auth_password_policy_parallel_30",
-          "sequence_index": 34,
-          "content": "parallel unrelated auth_password_policy workstream 30 distractor detail",
+          "id": "api_deprecation_parallel_3",
+          "sequence_index": 7,
+          "content": "parallel unrelated api_deprecation workstream 3 distractor detail",
           "depends_on": [],
           "facts": [
-            "auth_password_policy:N30"
+            "api_deprecation:N3"
           ]
         },
         {
-          "id": "auth_password_policy_parallel_31",
-          "sequence_index": 35,
-          "content": "parallel unrelated auth_password_policy workstream 31 distractor detail",
+          "id": "api_deprecation_parallel_4",
+          "sequence_index": 8,
+          "content": "parallel unrelated api_deprecation workstream 4 distractor detail",
           "depends_on": [
-            "auth_password_policy_parallel_30"
+            "api_deprecation_parallel_3"
           ],
           "facts": [
-            "auth_password_policy:N31"
+            "api_deprecation:N4"
           ]
         },
         {
-          "id": "auth_password_policy_parallel_32",
-          "sequence_index": 36,
-          "content": "parallel unrelated auth_password_policy workstream 32 distractor detail",
+          "id": "api_deprecation_parallel_5",
+          "sequence_index": 9,
+          "content": "parallel unrelated api_deprecation workstream 5 distractor detail",
           "depends_on": [
-            "auth_password_policy_parallel_31"
+            "api_deprecation_parallel_4"
           ],
           "facts": [
-            "auth_password_policy:N32"
+            "api_deprecation:N5"
           ]
         },
         {
-          "id": "auth_password_policy_parallel_33",
-          "sequence_index": 37,
-          "content": "parallel unrelated auth_password_policy workstream 33 distractor detail",
+          "id": "api_deprecation_parallel_6",
+          "sequence_index": 10,
+          "content": "parallel unrelated api_deprecation workstream 6 distractor detail",
           "depends_on": [],
           "facts": [
-            "auth_password_policy:N33"
+            "api_deprecation:N6"
           ]
         },
         {
-          "id": "auth_password_policy_parallel_34",
-          "sequence_index": 38,
-          "content": "parallel unrelated auth_password_policy workstream 34 distractor detail",
+          "id": "api_deprecation_parallel_7",
+          "sequence_index": 11,
+          "content": "parallel unrelated api_deprecation workstream 7 distractor detail",
           "depends_on": [
-            "auth_password_policy_parallel_33"
+            "api_deprecation_parallel_6"
           ],
           "facts": [
-            "auth_password_policy:N34"
+            "api_deprecation:N7"
           ]
         },
         {
-          "id": "auth_password_policy_parallel_35",
-          "sequence_index": 39,
-          "content": "parallel unrelated auth_password_policy workstream 35 distractor detail",
+          "id": "api_deprecation_parallel_8",
+          "sequence_index": 12,
+          "content": "parallel unrelated api_deprecation workstream 8 distractor detail",
           "depends_on": [
-            "auth_password_policy_parallel_34"
+            "api_deprecation_parallel_7"
           ],
           "facts": [
-            "auth_password_policy:N35"
+            "api_deprecation:N8"
           ]
         },
         {
-          "id": "auth_password_policy_parallel_36",
-          "sequence_index": 40,
-          "content": "parallel unrelated auth_password_policy workstream 36 distractor detail",
+          "id": "api_deprecation_parallel_9",
+  …33347 tokens truncated…ctor detail",
+          "depends_on": [
+            "permission_audit_parallel_9"
+          ],
+          "facts": [
+            "permission_audit:N10"
+          ]
+        },
+        {
+          "id": "permission_audit_parallel_11",
+          "sequence_index": 15,
+          "content": "parallel unrelated permission_audit workstream 11 distractor detail",
+          "depends_on": [
+            "permission_audit_parallel_10"
+          ],
+          "facts": [
+            "permission_audit:N11"
+          ]
+        },
+        {
+          "id": "permission_audit_parallel_12",
+          "sequence_index": 16,
+          "content": "parallel unrelated permission_audit workstream 12 distractor detail",
           "depends_on": [],
           "facts": [
-            "auth_password_policy:N36"
+            "permission_audit:N12"
           ]
         },
         {
-          "id": "auth_password_policy_parallel_37",
-          "sequence_index": 41,
-          "content": "parallel unrelated auth_password_policy workstream 37 distractor detail",
+          "id": "permission_audit_parallel_13",
+          "sequence_index": 17,
+          "content": "parallel unrelated permission_audit workstream 13 distractor detail",
           "depends_on": [
-            "auth_password_policy_parallel_36"
+            "permission_audit_parallel_12"
           ],
           "facts": [
-            "auth_password_policy:N37"
+            "permission_audit:N13"
           ]
         },
         {
-          "id": "auth_password_policy_parallel_38",
-          "sequence_index": 42,
-          "content": "parallel unrelated auth_password_policy workstream 38 distractor detail",
+          "id": "permission_audit_parallel_14",
+          "sequence_index": 18,
+          "content": "parallel unrelated permission_audit workstream 14 distractor detail",
           "depends_on": [
-            "auth_password_policy_parallel_37"
+            "permission_audit_parallel_13"
           ],
           "facts": [
-            "auth_password_policy:N38"
+            "permission_audit:N14"
           ]
         },
         {
-          "id": "auth_password_policy_parallel_39",
-          "sequence_index": 43,
-          "content": "parallel unrelated auth_password_policy workstream 39 distractor detail",
+          "id": "permission_audit_parallel_15",
+          "sequence_index": 19,
+          "content": "parallel unrelated permission_audit workstream 15 distractor detail",
           "depends_on": [],
           "facts": [
-            "auth_password_policy:N39"
+            "permission_audit:N15"
           ]
         },
         {
-          "id": "auth_password_policy_parallel_40",
-          "sequence_index": 44,
-          "content": "parallel unrelated auth_password_policy workstream 40 distractor detail",
+          "id": "permission_audit_parallel_16",
+          "sequence_index": 20,
+          "content": "parallel unrelated permission_audit workstream 16 distractor detail",
           "depends_on": [
-            "auth_password_policy_parallel_39"
+            "permission_audit_parallel_15"
           ],
           "facts": [
-            "auth_password_policy:N40"
+            "permission_audit:N16"
           ]
         },
         {
-          "id": "auth_password_policy_parallel_41",
-          "sequence_index": 45,
-          "content": "parallel unrelated auth_password_policy workstream 41 distractor detail",
+          "id": "permission_audit_parallel_17",
+          "sequence_index": 21,
+          "content": "parallel unrelated permission_audit workstream 17 distractor detail",
           "depends_on": [
-            "auth_password_policy_parallel_40"
+            "permission_audit_parallel_16"
           ],
           "facts": [
-            "auth_password_policy:N41"
+            "permission_audit:N17"
           ]
         },
         {
-          "id": "auth_password_policy_parallel_42",
-          "sequence_index": 46,
-          "content": "parallel unrelated auth_password_policy workstream 42 distractor detail",
+          "id": "permission_audit_parallel_18",
+          "sequence_index": 22,
+          "content": "parallel unrelated permission_audit workstream 18 distractor detail",
           "depends_on": [],
           "facts": [
-            "auth_password_policy:N42"
+            "permission_audit:N18"
           ]
         },
         {
-          "id": "auth_password_policy_parallel_43",
-          "sequence_index": 47,
-          "content": "parallel unrelated auth_password_policy workstream 43 distractor detail",
+          "id": "permission_audit_current",
+          "sequence_index": 23,
+          "content": "permission audit current decision and evidence",
           "depends_on": [
-            "auth_password_policy_parallel_42"
+            "permission_audit_security",
+            "permission_audit_ux"
           ],
           "facts": [
-            "auth_password_policy:N43"
+            "permission_audit:F3"
           ]
-        },
+        }
+      ]
+    },
+    {
+      "id": "schema_validation",
+      "query": "What evidence supports the current schema validation decision?",
+      "current_state": "schema_validation_current",
+      "required_fact_ids": [
+        "schema_validation:F2",
+        "schema_validation:F1"
+      ],
+      "states": [
         {
-          "id": "auth_password_policy_parallel_44",
-          "sequence_index": 48,
-          "content": "parallel unrelated auth_password_policy workstream 44 distractor detail",
-          "depends_on": [
-            "auth_password_policy_parallel_43"
-          ],
-          "facts": [
-            "auth_password_policy:N44"
-          ]
-        },
-        {
-          "id": "auth_password_policy_parallel_45",
-          "sequence_index": 49,
-          "content": "parallel unrelated auth_password_policy workstream 45 distractor detail",
+          "id": "schema_validation_release",
+          "sequence_index": 0,
+          "content": "schema validation release decision and evidence",
           "depends_on": [],
           "facts": [
-            "auth_password_policy:N45"
+            "schema_validation:F0"
           ]
         },
         {
-          "id": "auth_password_policy_parallel_46",
-          "sequence_index": 50,
-          "content": "parallel unrelated auth_password_policy workstream 46 distractor detail",
+          "id": "schema_validation_candidate",
+          "sequence_index": 1,
+          "content": "schema validation candidate decision and evidence",
           "depends_on": [
-            "auth_password_policy_parallel_45"
+            "schema_validation_release"
           ],
           "facts": [
-            "auth_password_policy:N46"
+            "schema_validation:F1"
           ]
         },
         {
-          "id": "auth_password_policy_parallel_47",
-          "sequence_index": 51,
-          "content": "parallel unrelated auth_password_policy workstream 47 distractor detail",
+          "id": "schema_validation_checklist",
+          "sequence_index": 2,
+          "content": "schema validation checklist decision and evidence",
           "depends_on": [
-            "auth_password_policy_parallel_46"
+            "schema_validation_candidate"
           ],
           "facts": [
-            "auth_password_policy:N47"
+            "schema_validation:F2"
           ]
         },
         {
-          "id": "auth_password_policy_parallel_48",
-          "sequence_index": 52,
-          "content": "parallel unrelated auth_password_policy workstream 48 distractor detail",
+          "id": "schema_validation_parallel_0",
+          "sequence_index": 4,
+          "content": "parallel unrelated schema_validation workstream 0 distractor detail",
           "depends_on": [],
           "facts": [
-            "auth_password_policy:N48"
+            "schema_validation:N0"
           ]
         },
         {
-          "id": "auth_password_policy_parallel_49",
-          "sequence_index": 53,
-          "content": "parallel unrelated auth_password_policy workstream 49 distractor detail",
+          "id": "schema_validation_parallel_1",
+          "sequence_index": 5,
+          "content": "parallel unrelated schema_validation workstream 1 distractor detail",
           "depends_on": [
-            "auth_password_policy_parallel_48"
+            "schema_validation_parallel_0"
           ],
           "facts": [
-            "auth_password_policy:N49"
+            "schema_validation:N1"
           ]
         },
         {
-          "id": "auth_password_policy_parallel_50",
-          "sequence_index": 54,
-          "content": "parallel unrelated auth_password_policy workstream 50 distractor detail",
+          "id": "schema_validation_parallel_2",
+          "sequence_index": 6,
+          "content": "parallel unrelated schema_validation workstream 2 distractor detail",
           "depends_on": [
-            "auth_password_policy_parallel_49"
+            "schema_validation_parallel_1"
           ],
           "facts": [
-            "auth_password_policy:N50"
+            "schema_validation:N2"
           ]
         },
         {
-          "id": "auth_password_policy_parallel_51",
-          "sequence_index": 55,
-          "content": "parallel unrelated auth_password_policy workstream 51 distractor detail",
+          "id": "schema_validation_parallel_3",
+          "sequence_index": 7,
+          "content": "parallel unrelated schema_validation workstream 3 distractor detail",
           "depends_on": [],
           "facts": [
-            "auth_password_policy:N51"
+            "schema_validation:N3"
           ]
         },
         {
-          "id": "auth_password_policy_parallel_52",
-          "sequence_index": 56,
-          "content": "parallel unrelated auth_password_policy workstream 52 distractor detail",
+          "id": "schema_validation_parallel_4",
+          "sequence_index": 8,
+          "content": "parallel unrelated schema_validation workstream 4 distractor detail",
           "depends_on": [
-            "auth_password_policy_parallel_51"
+            "schema_validation_parallel_3"
           ],
           "facts": [
-            "auth_password_policy:N52"
+            "schema_validation:N4"
           ]
         },
         {
-          "id": "auth_password_policy_parallel_53",
-          "sequence_index": 57,
-          "content": "parallel unrel…129719 tokens truncated…        "facts": [
+          "id": "schema_validation_parallel_5",
+          "sequence_index": 9,
+          "content": "parallel unrelated schema_validation workstream 5 distractor detail",
+          "depends_on": [
+            "schema_validation_parallel_4"
+          ],
+          "facts": [
+            "schema_validation:N5"
+          ]
+        },
+        {
+          "id": "schema_validation_parallel_6",
+          "sequence_index": 10,
+          "content": "parallel unrelated schema_validation workstream 6 distractor detail",
+          "depends_on": [],
+          "facts": [
+            "schema_validation:N6"
+          ]
+        },
+        {
+          "id": "schema_validation_parallel_7",
+          "sequence_index": 11,
+          "content": "parallel unrelated schema_validation workstream 7 distractor detail",
+          "depends_on": [
+            "schema_validation_parallel_6"
+          ],
+          "facts": [
+            "schema_validation:N7"
+          ]
+        },
+        {
+          "id": "schema_validation_parallel_8",
+          "sequence_index": 12,
+          "content": "parallel unrelated schema_validation workstream 8 distractor detail",
+          "depends_on": [
+            "schema_validation_parallel_7"
+          ],
+          "facts": [
+            "schema_validation:N8"
+          ]
+        },
+        {
+          "id": "schema_validation_parallel_9",
+          "sequence_index": 13,
+          "content": "parallel unrelated schema_validation workstream 9 distractor detail",
+          "depends_on": [],
+          "facts": [
+            "schema_validation:N9"
+          ]
+        },
+        {
+          "id": "schema_validation_parallel_10",
+          "sequence_index": 14,
+          "content": "parallel unrelated schema_validation workstream 10 distractor detail",
+          "depends_on": [
+            "schema_validation_parallel_9"
+          ],
+          "facts": [
+            "schema_validation:N10"
+          ]
+        },
+        {
+          "id": "schema_validation_parallel_11",
+          "sequence_index": 15,
+          "content": "parallel unrelated schema_validation workstream 11 distractor detail",
+          "depends_on": [
+            "schema_validation_parallel_10"
+          ],
+          "facts": [
+            "schema_validation:N11"
+          ]
+        },
+        {
+          "id": "schema_validation_parallel_12",
+          "sequence_index": 16,
+          "content": "parallel unrelated schema_validation workstream 12 distractor detail",
+          "depends_on": [],
+          "facts": [
+            "schema_validation:N12"
+          ]
+        },
+        {
+          "id": "schema_validation_parallel_13",
+          "sequence_index": 17,
+          "content": "parallel unrelated schema_validation workstream 13 distractor detail",
+          "depends_on": [
+            "schema_validation_parallel_12"
+          ],
+          "facts": [
+            "schema_validation:N13"
+          ]
+        },
+        {
+          "id": "schema_validation_parallel_14",
+          "sequence_index": 18,
+          "content": "parallel unrelated schema_validation workstream 14 distractor detail",
+          "depends_on": [
+            "schema_validation_parallel_13"
+          ],
+          "facts": [
+            "schema_validation:N14"
+          ]
+        },
+        {
+          "id": "schema_validation_parallel_15",
+          "sequence_index": 19,
+          "content": "parallel unrelated schema_validation workstream 15 distractor detail",
+          "depends_on": [],
+          "facts": [
+            "schema_validation:N15"
+          ]
+        },
+        {
+          "id": "schema_validation_parallel_16",
+          "sequence_index": 20,
+          "content": "parallel unrelated schema_validation workstream 16 distractor detail",
+          "depends_on": [
+            "schema_validation_parallel_15"
+          ],
+          "facts": [
+            "schema_validation:N16"
+          ]
+        },
+        {
+          "id": "schema_validation_parallel_17",
+          "sequence_index": 21,
+          "content": "parallel unrelated schema_validation workstream 17 distractor detail",
+          "depends_on": [
+            "schema_validation_parallel_16"
+          ],
+          "facts": [
+            "schema_validation:N17"
+          ]
+        },
+        {
+          "id": "schema_validation_parallel_18",
+          "sequence_index": 22,
+          "content": "parallel unrelated schema_validation workstream 18 distractor detail",
+          "depends_on": [],
+          "facts": [
             "schema_validation:N18"
           ]
         },
@@ -608,177 +974,11 @@
           ]
         },
         {
-          "id": "schema_validation_parallel_20",
-          "sequence_index": 24,
-          "content": "parallel unrelated schema_validation workstream 20 distractor detail",
-          "depends_on": [
-            "schema_validation_parallel_19"
-          ],
-          "facts": [
-            "schema_validation:N20"
-          ]
-        },
-        {
-          "id": "schema_validation_parallel_21",
-          "sequence_index": 25,
-          "content": "parallel unrelated schema_validation workstream 21 distractor detail",
-          "depends_on": [],
-          "facts": [
-            "schema_validation:N21"
-          ]
-        },
-        {
-          "id": "schema_validation_parallel_22",
-          "sequence_index": 26,
-          "content": "parallel unrelated schema_validation workstream 22 distractor detail",
-          "depends_on": [
-            "schema_validation_parallel_21"
-          ],
-          "facts": [
-            "schema_validation:N22"
-          ]
-        },
-        {
-          "id": "schema_validation_parallel_23",
-          "sequence_index": 27,
-          "content": "parallel unrelated schema_validation workstream 23 distractor detail",
-          "depends_on": [
-            "schema_validation_parallel_22"
-          ],
-          "facts": [
-            "schema_validation:N23"
-          ]
-        },
-        {
-          "id": "schema_validation_parallel_24",
-          "sequence_index": 28,
-          "content": "parallel unrelated schema_validation workstream 24 distractor detail",
-          "depends_on": [],
-          "facts": [
-            "schema_validation:N24"
-          ]
-        },
-        {
-          "id": "schema_validation_parallel_25",
-          "sequence_index": 29,
-          "content": "parallel unrelated schema_validation workstream 25 distractor detail",
-          "depends_on": [
-            "schema_validation_parallel_24"
-          ],
-          "facts": [
-            "schema_validation:N25"
-          ]
-        },
-        {
-          "id": "schema_validation_parallel_26",
-          "sequence_index": 30,
-          "content": "parallel unrelated schema_validation workstream 26 distractor detail",
-          "depends_on": [
-            "schema_validation_parallel_25"
-          ],
-          "facts": [
-            "schema_validation:N26"
-          ]
-        },
-        {
-          "id": "schema_validation_parallel_27",
-          "sequence_index": 31,
-          "content": "parallel unrelated schema_validation workstream 27 distractor detail",
-          "depends_on": [],
-          "facts": [
-            "schema_validation:N27"
-          ]
-        },
-        {
-          "id": "schema_validation_parallel_28",
-          "sequence_index": 32,
-          "content": "parallel unrelated schema_validation workstream 28 distractor detail",
-          "depends_on": [
-            "schema_validation_parallel_27"
-          ],
-          "facts": [
-            "schema_validation:N28"
-          ]
-        },
-        {
-          "id": "schema_validation_parallel_29",
-          "sequence_index": 33,
-          "content": "parallel unrelated schema_validation workstream 29 distractor detail",
-          "depends_on": [
-            "schema_validation_parallel_28"
-          ],
-          "facts": [
-            "schema_validation:N29"
-          ]
-        },
-        {
-          "id": "schema_validation_parallel_30",
-          "sequence_index": 34,
-          "content": "parallel unrelated schema_validation workstream 30 distractor detail",
-          "depends_on": [],
-          "facts": [
-            "schema_validation:N30"
-          ]
-        },
-        {
-          "id": "schema_validation_parallel_31",
-          "sequence_index": 35,
-          "content": "parallel unrelated schema_validation workstream 31 distractor detail",
-          "depends_on": [
-            "schema_validation_parallel_30"
-          ],
-          "facts": [
-            "schema_validation:N31"
-          ]
-        },
-        {
-          "id": "schema_validation_parallel_32",
-          "sequence_index": 36,
-          "content": "parallel unrelated schema_validation workstream 32 distractor detail",
-          "depends_on": [
-            "schema_validation_parallel_31"
-          ],
-          "facts": [
-            "schema_validation:N32"
-          ]
-        },
-        {
-          "id": "schema_validation_parallel_33",
-          "sequence_index": 37,
-          "content": "parallel unrelated schema_validation workstream 33 distractor detail",
-          "depends_on": [],
-          "facts": [
-            "schema_validation:N33"
-          ]
-        },
-        {
-          "id": "schema_validation_parallel_34",
-          "sequence_index": 38,
-          "content": "parallel unrelated schema_validation workstream 34 distractor detail",
-          "depends_on": [
-            "schema_validation_parallel_33"
-          ],
-          "facts": [
-            "schema_validation:N34"
-          ]
-        },
-        {
-          "id": "schema_validation_parallel_35",
-          "sequence_index": 39,
-          "content": "parallel unrelated schema_validation workstream 35 distractor detail",
-          "depends_on": [
-            "schema_validation_parallel_34"
-          ],
-          "facts": [
-            "schema_validation:N35"
-          ]
-        },
-        {
           "id": "schema_validation_current",
-          "sequence_index": 40,
+          "sequence_index": 24,
           "content": "schema validation current decision and evidence",
           "depends_on": [
-            "schema_validation_backfill"
+            "schema_validation_checklist"
           ],
           "facts": [
             "schema_validation:F3"
@@ -796,31 +996,31 @@
       ],
       "states": [
         {
-          "id": "deployment_gate_policy",
+          "id": "deployment_gate_problem",
           "sequence_index": 0,
-          "content": "deployment gate policy decision and evidence",
+          "content": "deployment gate problem decision and evidence",
           "depends_on": [],
           "facts": [
             "deployment_gate:F0"
           ]
         },
         {
-          "id": "deployment_gate_validator",
+          "id": "deployment_gate_investigation",
           "sequence_index": 1,
-          "content": "deployment gate validator decision and evidence",
+          "content": "deployment gate investigation decision and evidence",
           "depends_on": [
-            "deployment_gate_policy"
+            "deployment_gate_problem"
           ],
           "facts": [
             "deployment_gate:F1"
           ]
         },
         {
-          "id": "deployment_gate_tests",
+          "id": "deployment_gate_patch",
           "sequence_index": 2,
-          "content": "deployment gate tests decision and evidence",
+          "content": "deployment gate patch decision and evidence",
           "depends_on": [
-            "deployment_gate_validator"
+            "deployment_gate_investigation"
           ],
           "facts": [
             "deployment_gate:F2"
@@ -1044,176 +1244,11 @@
           ]
         },
         {
-          "id": "deployment_gate_parallel_21",
-          "sequence_index": 25,
-          "content": "parallel unrelated deployment_gate workstream 21 distractor detail",
-          "depends_on": [],
-          "facts": [
-            "deployment_gate:N21"
-          ]
-        },
-        {
-          "id": "deployment_gate_parallel_22",
-          "sequence_index": 26,
-          "content": "parallel unrelated deployment_gate workstream 22 distractor detail",
-          "depends_on": [
-            "deployment_gate_parallel_21"
-          ],
-          "facts": [
-            "deployment_gate:N22"
-          ]
-        },
-        {
-          "id": "deployment_gate_parallel_23",
-          "sequence_index": 27,
-          "content": "parallel unrelated deployment_gate workstream 23 distractor detail",
-          "depends_on": [
-            "deployment_gate_parallel_22"
-          ],
-          "facts": [
-            "deployment_gate:N23"
-          ]
-        },
-        {
-          "id": "deployment_gate_parallel_24",
-          "sequence_index": 28,
-          "content": "parallel unrelated deployment_gate workstream 24 distractor detail",
-          "depends_on": [],
-          "facts": [
-            "deployment_gate:N24"
-          ]
-        },
-        {
-          "id": "deployment_gate_parallel_25",
-          "sequence_index": 29,
-          "content": "parallel unrelated deployment_gate workstream 25 distractor detail",
-          "depends_on": [
-            "deployment_gate_parallel_24"
-          ],
-          "facts": [
-            "deployment_gate:N25"
-          ]
-        },
-        {
-          "id": "deployment_gate_parallel_26",
-          "sequence_index": 30,
-          "content": "parallel unrelated deployment_gate workstream 26 distractor detail",
-          "depends_on": [
-            "deployment_gate_parallel_25"
-          ],
-          "facts": [
-            "deployment_gate:N26"
-          ]
-        },
-        {
-          "id": "deployment_gate_parallel_27",
-          "sequence_index": 31,
-          "content": "parallel unrelated deployment_gate workstream 27 distractor detail",
-          "depends_on": [],
-          "facts": [
-            "deployment_gate:N27"
-          ]
-        },
-        {
-          "id": "deployment_gate_parallel_28",
-          "sequence_index": 32,
-          "content": "parallel unrelated deployment_gate workstream 28 distractor detail",
-          "depends_on": [
-            "deployment_gate_parallel_27"
-          ],
-          "facts": [
-            "deployment_gate:N28"
-          ]
-        },
-        {
-          "id": "deployment_gate_parallel_29",
-          "sequence_index": 33,
-          "content": "parallel unrelated deployment_gate workstream 29 distractor detail",
-          "depends_on": [
-            "deployment_gate_parallel_28"
-          ],
-          "facts": [
-            "deployment_gate:N29"
-          ]
-        },
-        {
-          "id": "deployment_gate_parallel_30",
-          "sequence_index": 34,
-          "content": "parallel unrelated deployment_gate workstream 30 distractor detail",
-          "depends_on": [],
-          "facts": [
-            "deployment_gate:N30"
-          ]
-        },
-        {
-          "id": "deployment_gate_parallel_31",
-          "sequence_index": 35,
-          "content": "parallel unrelated deployment_gate workstream 31 distractor detail",
-          "depends_on": [
-            "deployment_gate_parallel_30"
-          ],
-          "facts": [
-            "deployment_gate:N31"
-          ]
-        },
-        {
-          "id": "deployment_gate_parallel_32",
-          "sequence_index": 36,
-          "content": "parallel unrelated deployment_gate workstream 32 distractor detail",
-          "depends_on": [
-            "deployment_gate_parallel_31"
-          ],
-          "facts": [
-            "deployment_gate:N32"
-          ]
-        },
-        {
-          "id": "deployment_gate_parallel_33",
-          "sequence_index": 37,
-          "content": "parallel unrelated deployment_gate workstream 33 distractor detail",
-          "depends_on": [],
-          "facts": [
-            "deployment_gate:N33"
-          ]
-        },
-        {
-          "id": "deployment_gate_parallel_34",
-          "sequence_index": 38,
-          "content": "parallel unrelated deployment_gate workstream 34 distractor detail",
-          "depends_on": [
-            "deployment_gate_parallel_33"
-          ],
-          "facts": [
-            "deployment_gate:N34"
-          ]
-        },
-        {
-          "id": "deployment_gate_parallel_35",
-          "sequence_index": 39,
-          "content": "parallel unrelated deployment_gate workstream 35 distractor detail",
-          "depends_on": [
-            "deployment_gate_parallel_34"
-          ],
-          "facts": [
-            "deployment_gate:N35"
-          ]
-        },
-        {
-          "id": "deployment_gate_parallel_36",
-          "sequence_index": 40,
-          "content": "parallel unrelated deployment_gate workstream 36 distractor detail",
-          "depends_on": [],
-          "facts": [
-            "deployment_gate:N36"
-          ]
-        },
-        {
           "id": "deployment_gate_current",
-          "sequence_index": 41,
+          "sequence_index": 25,
           "content": "deployment gate current decision and evidence",
           "depends_on": [
-            "deployment_gate_validator",
-            "deployment_gate_tests"
+            "deployment_gate_patch"
           ],
           "facts": [
             "deployment_gate:F3"
