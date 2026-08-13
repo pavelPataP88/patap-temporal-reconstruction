@@ -67,15 +67,33 @@ static bool snapshot(pid_t pid,int fd, bool writable, struct fd_state *s) {
   snprintf(s->hash,sizeof s->hash,"%016" PRIx64,h);s->snapshot=true;return true;
 }
 static void copy_task(struct task *from,pid_t child) { struct task *to=find_task(child,true); if(to) { memcpy(to->fd,from->fd,sizeof to->fd);to->epoch=from->epoch;to->syscall_entry=false; } }
-static void enter_syscall(struct task *t, struct user_regs_struct *r) { t->syscall_no=r->orig_rax;t->args[0]=r->rdi;t->args[1]=r->rsi;t->args[2]=r->rdx;t->args[3]=r->r10;t->args[4]=r->r8;t->args[5]=r->r9;t->syscall_entry=true; }
+static void invalidate_readers(struct task *writer, const struct fd_state *written) {
+  for (int i=0;i<MAX_TASKS;i++) if (tasks[i].pid) for (int fd=0;fd<MAX_FDS;fd++) {
+    struct fd_state *r=&tasks[i].fd[fd];
+    if (r->known && !r->writable && r->dev==written->dev && r->ino==written->ino) {
+      r->snapshot=false; strcpy(r->hash,"UNRESOLVED");
+      emit("read_invalidated_by_concurrent_mutation",tasks[i].pid,tasks[i].epoch,fd,r,NULL);
+    }
+  }
+  (void)writer;
+}
+static void enter_syscall(struct task *t, struct user_regs_struct *r) {
+  t->syscall_no=r->orig_rax;t->args[0]=r->rdi;t->args[1]=r->rsi;t->args[2]=r->rdx;t->args[3]=r->r10;t->args[4]=r->r8;t->args[5]=r->r9;t->syscall_entry=true;
+  /* close removes /proc/<pid>/fd/N. Snapshot a completed dirty output before
+     allowing the close, never by reopening its pathname after the build. */
+  if (t->syscall_no==3) { int fd=(int)t->args[0]; if(fd>=0&&fd<MAX_FDS&&t->fd[fd].known&&t->fd[fd].dirty) {
+    uint64_t h=fnv_fd(t->pid,fd); if(h)snprintf(t->fd[fd].hash,sizeof t->fd[fd].hash,"%016" PRIx64,h);else strcpy(t->fd[fd].hash,"UNRESOLVED");
+    emit("publish_preclose",t->pid,t->epoch,fd,&t->fd[fd],NULL);
+  }}
+}
 static void exit_syscall(struct task *t, struct user_regs_struct *r) {
   long ret=(long)r->rax, no=t->syscall_no; t->syscall_entry=false; if(ret<0)return;
   if (no==2 || no==257 || no==85) { /* open, openat, creat */
     int fd=(int)ret; unsigned long flags=no==257?t->args[2]:(no==2?t->args[1]:O_WRONLY|O_CREAT|O_TRUNC);
     if(fd>=0&&fd<MAX_FDS) { bool w=(flags&O_WRONLY)||(flags&O_RDWR); if(snapshot(t->pid,fd,w,&t->fd[fd])) emit(w?"open_write_unresolved":"read_snapshot",t->pid,t->epoch,fd,&t->fd[fd],NULL); else emit("nonregular_open",t->pid,t->epoch,fd,NULL,NULL); }
   } else if (no==0 || no==17) { /* read/pread64 */ int fd=(int)t->args[0]; if(fd>=0&&fd<MAX_FDS&&t->fd[fd].known) emit(t->fd[fd].snapshot?"read_version":"read_unresolved",t->pid,t->epoch,fd,&t->fd[fd],NULL);
-  } else if (no==1 || no==18) { int fd=(int)t->args[0]; if(fd>=0&&fd<MAX_FDS&&t->fd[fd].known){t->fd[fd].dirty=true;emit("write",t->pid,t->epoch,fd,&t->fd[fd],NULL);}
-  } else if (no==3) { int fd=(int)t->args[0];if(fd>=0&&fd<MAX_FDS&&t->fd[fd].known){if(t->fd[fd].dirty){uint64_t h=fnv_fd(t->pid,fd);if(h)snprintf(t->fd[fd].hash,sizeof t->fd[fd].hash,"%016" PRIx64,h);else strcpy(t->fd[fd].hash,"UNRESOLVED");emit("publish_close",t->pid,t->epoch,fd,&t->fd[fd],NULL);}memset(&t->fd[fd],0,sizeof t->fd[fd]);}
+  } else if (no==1 || no==18) { int fd=(int)t->args[0]; if(fd>=0&&fd<MAX_FDS&&t->fd[fd].known){t->fd[fd].dirty=true;invalidate_readers(t,&t->fd[fd]);emit("write",t->pid,t->epoch,fd,&t->fd[fd],NULL);}
+  } else if (no==3) { int fd=(int)t->args[0];if(fd>=0&&fd<MAX_FDS&&t->fd[fd].known){memset(&t->fd[fd],0,sizeof t->fd[fd]);}
   } else if (no==32 || no==33 || no==292) { int old=(int)t->args[0], fd=(int)ret;if(old>=0&&old<MAX_FDS&&fd>=0&&fd<MAX_FDS){t->fd[fd]=t->fd[old];emit("dup",t->pid,t->epoch,fd,&t->fd[fd],NULL);}
   } else if (no==9) { emit("mmap_unresolved",t->pid,t->epoch,(int)t->args[4],NULL,"mmap requires explicit mapping-lifetime audit"); }
 }
