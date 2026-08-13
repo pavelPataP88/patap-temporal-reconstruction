@@ -60,6 +60,16 @@ The structural context ratio is `visible_states / total_states`. It measures the
 
 PATAP v0.3.0 includes a reproducible context-selection benchmark comparing structural ancestry with full-history, recency, and simple lexical baselines. Run `python benchmarks/run_context_benchmark.py`; see `benchmark_results/v0.3.0-report.md` for recorded results and limitations.
 
+## Research foundation
+
+The original PATAP research question is narrower than a DAG or retrieval claim:
+can observer-accessible non-temporal traces support reconstruction of a local
+partial order without receiving declared edges or a global clock? The
+[research foundation](docs/PATAP_RESEARCH_FOUNDATION.md) distinguishes this
+question from existing partial-order, provenance, event-structure, and
+causal-set work; separates propositions from hypotheses; and records the
+remaining external-validation gap.
+
 ## Installation
 
 Requires Python 3.10 or later.
