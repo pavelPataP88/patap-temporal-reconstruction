@@ -15,24 +15,31 @@ def world(seed,secondary=False):
   a={'state':'Q'+h(f'{seed}:duplicate:a'),'data':b'DUP','inputs':[]};b={'state':'Q'+h(f'{seed}:duplicate:b'),'data':b'DUP','inputs':[]};y=op('Q'+h(f'{seed}:duplicate:y'),[a],f'{seed}:duplicate:y');operations += [a,b,y]
  truth={(x['state'],o['state']) for o in operations for x in o['inputs']};return operations,truth
 def observe(operations,loss=0,corrupt=0,removed=False,rename=False,false_trusted=False):
- r=random.Random(404001+int(loss*1000)+int(corrupt*10000)+(7 if rename else 0)+(19 if false_trusted else 0));ids={o['state']:'Q'+h('renamed:'+o['state']) for o in operations} if rename else {o['state']:o['state'] for o in operations};rows=[];expected_unknown=[];expected_ambiguous=[];false_events=[]
+ r=random.Random(404001+int(loss*1000)+int(corrupt*10000)+(7 if rename else 0)+(19 if false_trusted else 0));ids={o['state']:'Q'+h('renamed:'+o['state']) for o in operations} if rename else {o['state']:o['state'] for o in operations};rows=[];false_events=[]
  for index,o in enumerate(operations):
   traces={} if removed else {'output_fingerprint':fp(o['data'])}
   if not removed and o['inputs'] and r.random()>=loss: traces['immediate_input_fingerprints']=[fp(x['data']) for x in o['inputs']]
   if not removed and o['inputs'] and corrupt and r.random()<corrupt:
-   traces['immediate_input_fingerprints']=['invalid-'+h(f'{o["state"]}:{index}')];expected_unknown.append((ids[o['state']],'unresolved_immediate_input_fingerprints'))
+   traces['immediate_input_fingerprints']=['invalid-'+h(f'{o["state"]}:{index}')]
   rows.append({'id':ids[o['state']],'content':'repeated neutral content','traces':traces})
  if not removed:
-  producers={}
-  for producer in operations: producers.setdefault(fp(producer['data']),[]).append(producer)
-  for o in operations:
-   if o['inputs']:
-    for x in o['inputs']:
-     if len(producers[fp(x['data'])])>1: expected_ambiguous.append((ids[o['state']],'immediate_input_fingerprints'))
   if false_trusted:
-   target=next(o for o in reversed(operations) if o['inputs']);used={fp(x['data']) for x in target['inputs']};candidate=next(o for o in operations if o is not target and fp(o['data']) not in used)
-   assert candidate not in target['inputs'] and fp(candidate['data']) not in used
+   target=next(o for o in reversed(operations) if o['inputs']);used={fp(x['data']) for x in target['inputs']}
+   counts={fp(o['data']):sum(fp(other['data'])==fp(o['data']) for other in operations) for o in operations}
+   candidate=next(o for o in operations if o is not target and fp(o['data']) not in used and counts[fp(o['data'])]==1)
+   assert candidate not in target['inputs'] and fp(candidate['data']) not in used and counts[fp(candidate['data'])]==1
    row=next(x for x in rows if x['id']==ids[target['state']]);row['traces']['immediate_input_fingerprints']=[fp(candidate['data'])];false_events.append((ids[candidate['state']],ids[target['state']]))
+ # Expected classifications are derived from the actual public T(W) rows, not W.
+ public_producers={}
+ for row in rows:
+  value=row['traces'].get('output_fingerprint')
+  if isinstance(value,str): public_producers.setdefault(value,set()).add(row['id'])
+ expected_unknown=[];expected_ambiguous=[]
+ for row in rows:
+  for value in row['traces'].get('immediate_input_fingerprints',[]):
+   owners=public_producers.get(value,set())
+   if len(owners)==0: expected_unknown.append((row['id'],'unresolved_immediate_input_fingerprints'))
+   elif len(owners)>1: expected_ambiguous.append((row['id'],'immediate_input_fingerprints'))
  r.shuffle(rows);return rows,ids,{'unknown':expected_unknown,'ambiguous':expected_ambiguous,'false_trusted':false_events}
 def extract(rows):
  producers={}
@@ -71,6 +78,6 @@ def run(n,seed,secondary=False):
   return {'direct':combine('direct'),'order':combine('order'),'unknown_correctness':labels('unknown'),'ambiguous_correctness':labels('ambiguous'),'false_trusted_events':sum(len(x['false_trusted_expected']) for x in rows)}
  return {'worlds':n,'shuffle_invariance_rate':sum(shuffles)/n,'conditions':{k:aggregate(v) for k,v in data.items()},'raw_per_world':data}
 def main():
- primary=run(1000,404001);secondary=run(300,404002,True);OUT.write_text(json.dumps({'protocol_freeze':'PENDING_NEW_FREEZE','primary':primary,'secondary':secondary},indent=2)+'\n');print(OUT)
+ primary=run(1000,404001);secondary=run(300,404002,True);OUT.write_text(json.dumps({'protocol_revision':'v3','random_seeds':{'primary':404001,'secondary':404002,'shuffle':[404100,404101,404102,404103,404104]},'primary':primary,'secondary':secondary},indent=2)+'\n');print(OUT)
 if __name__=='__main__':main()
 
