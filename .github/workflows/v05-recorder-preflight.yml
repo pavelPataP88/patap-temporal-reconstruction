@@ -1,0 +1,16 @@
+name: v05-recorder-preflight
+
+on:
+  push:
+    branches: [codex/patap-v0.5-external-validation]
+  workflow_dispatch:
+
+jobs:
+  descriptor-recorder-smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compile ptrace descriptor recorder
+        run: gcc -std=c11 -Wall -Wextra -Werror -O2 benchmarks/v05_external/recorder/ptrace_recorder.c -o /tmp/patap-ptrace-recorder
+      - name: Exercise version-aware recorder on disposable world
+        run: bash benchmarks/v05_external/recorder/ptrace_smoke.sh /tmp/patap-ptrace-recorder
