@@ -1,0 +1,34 @@
+{
+  "protocol_version": "0.5.0",
+  "projects": [
+    {
+      "name": "inih",
+      "ecosystem": "C/Meson",
+      "url": "https://github.com/benhoyt/inih.git",
+      "commit": "577ae2dee1f0d9c2d11c7f10375c1715f3d6940c",
+      "command": "meson setup build && meson compile -C build"
+    },
+    {
+      "name": "byteorder",
+      "ecosystem": "Rust/Cargo",
+      "url": "https://github.com/BurntSushi/byteorder.git",
+      "commit": "5a82625fae462e8ba64cec8146b24a372b4d75c6",
+      "command": "CARGO_TARGET_DIR=$PWD/.patap-target cargo build --lib"
+    },
+    {
+      "name": "go-isatty",
+      "ecosystem": "Go",
+      "url": "https://github.com/mattn/go-isatty.git",
+      "commit": "c44dc0b9c702c76577fdb7898032969e0611efc2",
+      "command": "GOCACHE=$PWD/.patap-gocache go build ./..."
+    }
+  ],
+  "controls": ["normal", "inputs_removed", "shuffled", "opaque_ids", "loss25", "loss50", "false_trusted"],
+  "seed": 505001,
+  "success_gate": {
+    "aggregate_direct_precision": 0.95,
+    "aggregate_direct_recall": 0.80,
+    "per_project_direct_precision": 0.90,
+    "per_project_direct_recall": 0.70
+  }
+}
