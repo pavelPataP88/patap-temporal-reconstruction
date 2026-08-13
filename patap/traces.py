@@ -7,8 +7,9 @@ ancestral record. It never accepts dependency edges, timestamps, positions, or
 evaluator labels.
 
 The result distinguishes justified direct edges from evidence that is missing,
-ambiguous, ancestral-only, malformed, or inconsistent. In particular, an
-ancestral fingerprint is not silently promoted to a direct dependency.
+ambiguous, ancestral-only, or inconsistent. Malformed records are rejected at
+the public boundary. In particular, an ancestral fingerprint is not silently
+promoted to a direct dependency.
 """
 
 from __future__ import annotations
@@ -32,7 +33,6 @@ class EvidenceStatus(str, Enum):
     UNKNOWN = "unknown"
     AMBIGUOUS = "ambiguous"
     CONFLICT = "conflict"
-    MALFORMED = "malformed"
 
 
 def _fingerprint_set(values: Iterable[str], field_name: str) -> frozenset[str]:
