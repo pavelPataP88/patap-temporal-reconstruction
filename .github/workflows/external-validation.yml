@@ -1,0 +1,21 @@
+name: external-validation-v05
+
+on:
+  push:
+    branches: [codex/patap-v0.4-trace-reconstruction]
+  workflow_dispatch:
+
+jobs:
+  external-validation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Prepare frozen capture environment
+        run: sudo apt-get update && sudo apt-get install -y strace cmake
+      - name: Run frozen external corpus once
+        run: python benchmarks/v05_external/run_external_validation.py
+      - name: Upload raw public observations, evaluator truth, and results
+        uses: actions/upload-artifact@v4
+        with:
+          name: v0.5-external-validation
+          path: benchmark_results/v0.5-external/
