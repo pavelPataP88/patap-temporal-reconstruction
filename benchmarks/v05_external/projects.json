@@ -3,10 +3,10 @@
   "projects": [
     {
       "name": "inih",
-      "ecosystem": "C/CMake",
+      "ecosystem": "C/Meson",
       "url": "https://github.com/benhoyt/inih.git",
       "commit": "577ae2dee1f0d9c2d11c7f10375c1715f3d6940c",
-      "command": "cmake -S . -B build && cmake --build build --parallel 1"
+      "command": "meson setup build && meson compile -C build"
     },
     {
       "name": "byteorder",
