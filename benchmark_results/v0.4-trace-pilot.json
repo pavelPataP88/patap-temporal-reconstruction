@@ -1,0 +1,727 @@
+{
+  "pilot": "v0.4-hand-worked",
+  "worlds": [
+    {
+      "world": "exact_direct",
+      "true_order": [
+        [
+          "S0101",
+          "S0102"
+        ]
+      ],
+      "visible_traces": [
+        {
+          "id": "S0101",
+          "content": "local record with repeated neutral vocabulary",
+          "traces": {
+            "output_fingerprint": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+            "immediate_input_fingerprints": []
+          }
+        },
+        {
+          "id": "S0102",
+          "content": "local record with repeated neutral vocabulary",
+          "traces": {
+            "output_fingerprint": "73ab66a033c267e00b7429bb256f6deb2734ebc4cd4ff5b564a8c9f9b2c8a719",
+            "immediate_input_fingerprints": [
+              "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8"
+            ]
+          }
+        }
+      ],
+      "recovered_order": {
+        "direct_edges": [
+          [
+            "S0101",
+            "S0102"
+          ]
+        ],
+        "ancestor_edges": [],
+        "unknown": [],
+        "ambiguous": []
+      },
+      "false_positives": [],
+      "false_negatives": [],
+      "shuffle_invariant": true,
+      "trace_removed_control": {
+        "direct_edges": [],
+        "ancestor_edges": [],
+        "unknown": [],
+        "ambiguous": []
+      }
+    },
+    {
+      "world": "composition",
+      "true_order": [
+        [
+          "S0201",
+          "S0203"
+        ],
+        [
+          "S0202",
+          "S0203"
+        ]
+      ],
+      "visible_traces": [
+        {
+          "id": "S0201",
+          "content": "local record with repeated neutral vocabulary",
+          "traces": {
+            "output_fingerprint": "36e64f19f57a05c8cd5b6bf7eff72703b4bbab19def7832eb4e686e7fa482eef",
+            "immediate_input_fingerprints": []
+          }
+        },
+        {
+          "id": "S0202",
+          "content": "local record with repeated neutral vocabulary",
+          "traces": {
+            "output_fingerprint": "e5e239560bc125a20ff2ac1fea50915bc198dd4f5b5256ec447a8a71e00132b3",
+            "immediate_input_fingerprints": []
+          }
+        },
+        {
+          "id": "S0203",
+          "content": "local record with repeated neutral vocabulary",
+          "traces": {
+            "output_fingerprint": "0a4207f0e945085d313e99f30082e4e7f3b5f132ecc3a95143c7885f9a99a405",
+            "immediate_input_fingerprints": [
+              "36e64f19f57a05c8cd5b6bf7eff72703b4bbab19def7832eb4e686e7fa482eef",
+              "e5e239560bc125a20ff2ac1fea50915bc198dd4f5b5256ec447a8a71e00132b3"
+            ]
+          }
+        }
+      ],
+      "recovered_order": {
+        "direct_edges": [
+          [
+            "S0201",
+            "S0203"
+          ],
+          [
+            "S0202",
+            "S0203"
+          ]
+        ],
+        "ancestor_edges": [],
+        "unknown": [],
+        "ambiguous": []
+      },
+      "false_positives": [],
+      "false_negatives": [],
+      "shuffle_invariant": true,
+      "trace_removed_control": {
+        "direct_edges": [],
+        "ancestor_edges": [],
+        "unknown": [],
+        "ambiguous": []
+      }
+    },
+    {
+      "world": "diamond",
+      "true_order": [
+        [
+          "S0301",
+          "S0302"
+        ],
+        [
+          "S0301",
+          "S0303"
+        ],
+        [
+          "S0302",
+          "S0304"
+        ],
+        [
+          "S0303",
+          "S0304"
+        ]
+      ],
+      "visible_traces": [
+        {
+          "id": "S0301",
+          "content": "local record with repeated neutral vocabulary",
+          "traces": {
+            "output_fingerprint": "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb",
+            "immediate_input_fingerprints": []
+          }
+        },
+        {
+          "id": "S0302",
+          "content": "local record with repeated neutral vocabulary",
+          "traces": {
+            "output_fingerprint": "970f519c2cadbcefb1e81694f904bc6229dd2a8300e98c6d0d4fc4bfca584140",
+            "immediate_input_fingerprints": [
+              "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb"
+            ]
+          }
+        },
+        {
+          "id": "S0303",
+          "content": "local record with repeated neutral vocabulary",
+          "traces": {
+            "output_fingerprint": "6959097001d10501ac7d54c0bdb8db61420f658f2922cc26e46d536119a31126",
+            "immediate_input_fingerprints": [
+              "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb"
+            ]
+          }
+        },
+        {
+          "id": "S0304",
+          "content": "local record with repeated neutral vocabulary",
+          "traces": {
+            "output_fingerprint": "b081aeadec97c74c7b3a1195816e8f5addff3be566287c016d39034a7375a8e3",
+            "immediate_input_fingerprints": [
+              "970f519c2cadbcefb1e81694f904bc6229dd2a8300e98c6d0d4fc4bfca584140",
+              "6959097001d10501ac7d54c0bdb8db61420f658f2922cc26e46d536119a31126"
+            ]
+          }
+        }
+      ],
+      "recovered_order": {
+        "direct_edges": [
+          [
+            "S0301",
+            "S0302"
+          ],
+          [
+            "S0301",
+            "S0303"
+          ],
+          [
+            "S0302",
+            "S0304"
+          ],
+          [
+            "S0303",
+            "S0304"
+          ]
+        ],
+        "ancestor_edges": [],
+        "unknown": [],
+        "ambiguous": []
+      },
+      "false_positives": [],
+      "false_negatives": [],
+      "shuffle_invariant": true,
+      "trace_removed_control": {
+        "direct_edges": [],
+        "ancestor_edges": [],
+        "unknown": [],
+        "ambiguous": []
+      }
+    },
+    {
+      "world": "shared_schema",
+      "true_order": [
+        [
+          "S0401",
+          "S0402"
+        ],
+        [
+          "S0401",
+          "S0403"
+        ]
+      ],
+      "visible_traces": [
+        {
+          "id": "S0401",
+          "content": "local record with repeated neutral vocabulary",
+          "traces": {
+            "output_fingerprint": "9e8085bff175fbb18e36cc6f090ae84e00a7381d6059af28a17ce54f7a04b519",
+            "immediate_input_fingerprints": []
+          }
+        },
+        {
+          "id": "S0402",
+          "content": "local record with repeated neutral vocabulary",
+          "traces": {
+            "output_fingerprint": "40679a4d12c3aa3118dad1103f215b2b7701a1a69ff0a69599bcc9e180e05878",
+            "immediate_input_fingerprints": [],
+            "schema_fingerprint": "9e8085bff175fbb18e36cc6f090ae84e00a7381d6059af28a17ce54f7a04b519"
+          }
+        },
+        {
+          "id": "S0403",
+          "content": "local record with repeated neutral vocabulary",
+          "traces": {
+            "output_fingerprint": "931a6172f3ae2a16859df29617616b779de90e915d02ee68e599fc5925ff94d1",
+            "immediate_input_fingerprints": [],
+            "schema_fingerprint": "9e8085bff175fbb18e36cc6f090ae84e00a7381d6059af28a17ce54f7a04b519"
+          }
+        }
+      ],
+      "recovered_order": {
+        "direct_edges": [
+          [
+            "S0401",
+            "S0402"
+          ],
+          [
+            "S0401",
+            "S0403"
+          ]
+        ],
+        "ancestor_edges": [],
+        "unknown": [],
+        "ambiguous": []
+      },
+      "false_positives": [],
+      "false_negatives": [],
+      "shuffle_invariant": true,
+      "trace_removed_control": {
+        "direct_edges": [],
+        "ancestor_edges": [],
+        "unknown": [],
+        "ambiguous": []
+      }
+    },
+    {
+      "world": "identical_ambiguity",
+      "true_order": [
+        [
+          "S0501",
+          "S0503"
+        ]
+      ],
+      "visible_traces": [
+        {
+          "id": "S0501",
+          "content": "local record with repeated neutral vocabulary",
+          "traces": {
+            "output_fingerprint": "2e1cfa82b035c26cbbbdae632cea070514eb8b773f616aaeaf668e2f0be8f10d",
+            "immediate_input_fingerprints": []
+          }
+        },
+        {
+          "id": "S0502",
+          "content": "local record with repeated neutral vocabulary",
+          "traces": {
+            "output_fingerprint": "2e1cfa82b035c26cbbbdae632cea070514eb8b773f616aaeaf668e2f0be8f10d",
+            "immediate_input_fingerprints": []
+          }
+        },
+        {
+          "id": "S0503",
+          "content": "local record with repeated neutral vocabulary",
+          "traces": {
+            "output_fingerprint": "85fda6a519f8412de6774c1b58ae03d813aef499c5a44fa9c13b46bc7190c546",
+            "immediate_input_fingerprints": [
+              "2e1cfa82b035c26cbbbdae632cea070514eb8b773f616aaeaf668e2f0be8f10d"
+            ]
+          }
+        }
+      ],
+      "recovered_order": {
+        "direct_edges": [],
+        "ancestor_edges": [],
+        "unknown": [],
+        "ambiguous": [
+          {
+            "state": "S0503",
+            "fingerprint": "2e1cfa82b035c26cbbbdae632cea070514eb8b773f616aaeaf668e2f0be8f10d",
+            "kind": "immediate_input_fingerprints",
+            "owners": [
+              "S0501",
+              "S0502"
+            ]
+          }
+        ]
+      },
+      "false_positives": [],
+      "false_negatives": [
+        [
+          "S0501",
+          "S0503"
+        ]
+      ],
+      "shuffle_invariant": true,
+      "trace_removed_control": {
+        "direct_edges": [],
+        "ancestor_edges": [],
+        "unknown": [],
+        "ambiguous": []
+      }
+    },
+    {
+      "world": "missing_trace",
+      "true_order": [
+        [
+          "S0601",
+          "S0602"
+        ]
+      ],
+      "visible_traces": [
+        {
+          "id": "S0601",
+          "content": "local record with repeated neutral vocabulary",
+          "traces": {
+            "output_fingerprint": "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb",
+            "immediate_input_fingerprints": []
+          }
+        },
+        {
+          "id": "S0602",
+          "content": "local record with repeated neutral vocabulary",
+          "traces": {
+            "output_fingerprint": "970f519c2cadbcefb1e81694f904bc6229dd2a8300e98c6d0d4fc4bfca584140"
+          }
+        }
+      ],
+      "recovered_order": {
+        "direct_edges": [],
+        "ancestor_edges": [],
+        "unknown": [],
+        "ambiguous": []
+      },
+      "false_positives": [],
+      "false_negatives": [
+        [
+          "S0601",
+          "S0602"
+        ]
+      ],
+      "shuffle_invariant": true,
+      "trace_removed_control": {
+        "direct_edges": [],
+        "ancestor_edges": [],
+        "unknown": [],
+        "ambiguous": []
+      }
+    },
+    {
+      "world": "stale_irrelevant",
+      "true_order": [
+        [
+          "S0701",
+          "S0703"
+        ]
+      ],
+      "visible_traces": [
+        {
+          "id": "S0701",
+          "content": "local record with repeated neutral vocabulary",
+          "traces": {
+            "output_fingerprint": "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb",
+            "immediate_input_fingerprints": []
+          }
+        },
+        {
+          "id": "S0702",
+          "content": "local record with repeated neutral vocabulary",
+          "traces": {
+            "output_fingerprint": "cba06b5736faf67e54b07b561eae94395e774c517a7d910a54369e1263ccfbd4",
+            "immediate_input_fingerprints": []
+          }
+        },
+        {
+          "id": "S0703",
+          "content": "local record with repeated neutral vocabulary",
+          "traces": {
+            "output_fingerprint": "970f519c2cadbcefb1e81694f904bc6229dd2a8300e98c6d0d4fc4bfca584140",
+            "immediate_input_fingerprints": [
+              "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb"
+            ],
+            "stale_diagnostic_fingerprint": "cba06b5736faf67e54b07b561eae94395e774c517a7d910a54369e1263ccfbd4"
+          }
+        }
+      ],
+      "recovered_order": {
+        "direct_edges": [
+          [
+            "S0701",
+            "S0703"
+          ]
+        ],
+        "ancestor_edges": [],
+        "unknown": [],
+        "ambiguous": []
+      },
+      "false_positives": [],
+      "false_negatives": [],
+      "shuffle_invariant": true,
+      "trace_removed_control": {
+        "direct_edges": [],
+        "ancestor_edges": [],
+        "unknown": [],
+        "ambiguous": []
+      }
+    },
+    {
+      "world": "transitive",
+      "true_order": [
+        [
+          "S0801",
+          "S0802"
+        ],
+        [
+          "S0802",
+          "S0803"
+        ]
+      ],
+      "visible_traces": [
+        {
+          "id": "S0801",
+          "content": "local record with repeated neutral vocabulary",
+          "traces": {
+            "output_fingerprint": "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb",
+            "immediate_input_fingerprints": []
+          }
+        },
+        {
+          "id": "S0802",
+          "content": "local record with repeated neutral vocabulary",
+          "traces": {
+            "output_fingerprint": "970f519c2cadbcefb1e81694f904bc6229dd2a8300e98c6d0d4fc4bfca584140",
+            "immediate_input_fingerprints": [
+              "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb"
+            ]
+          }
+        },
+        {
+          "id": "S0803",
+          "content": "local record with repeated neutral vocabulary",
+          "traces": {
+            "output_fingerprint": "6d970874d0db767a7058798973f22cf6589601edab57996312f2ef7b56e5584d",
+            "immediate_input_fingerprints": [
+              "970f519c2cadbcefb1e81694f904bc6229dd2a8300e98c6d0d4fc4bfca584140"
+            ],
+            "inherited_component_fingerprints": [
+              "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb"
+            ]
+          }
+        }
+      ],
+      "recovered_order": {
+        "direct_edges": [
+          [
+            "S0801",
+            "S0802"
+          ],
+          [
+            "S0802",
+            "S0803"
+          ]
+        ],
+        "ancestor_edges": [
+          [
+            "S0801",
+            "S0803"
+          ]
+        ],
+        "unknown": [],
+        "ambiguous": []
+      },
+      "false_positives": [],
+      "false_negatives": [],
+      "shuffle_invariant": true,
+      "trace_removed_control": {
+        "direct_edges": [],
+        "ancestor_edges": [],
+        "unknown": [],
+        "ambiguous": []
+      }
+    },
+    {
+      "world": "independent",
+      "true_order": [
+        [
+          "S0901",
+          "S0902"
+        ],
+        [
+          "S0903",
+          "S0904"
+        ]
+      ],
+      "visible_traces": [
+        {
+          "id": "S0901",
+          "content": "local record with repeated neutral vocabulary",
+          "traces": {
+            "output_fingerprint": "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb",
+            "immediate_input_fingerprints": []
+          }
+        },
+        {
+          "id": "S0902",
+          "content": "local record with repeated neutral vocabulary",
+          "traces": {
+            "output_fingerprint": "970f519c2cadbcefb1e81694f904bc6229dd2a8300e98c6d0d4fc4bfca584140",
+            "immediate_input_fingerprints": [
+              "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb"
+            ]
+          }
+        },
+        {
+          "id": "S0903",
+          "content": "local record with repeated neutral vocabulary",
+          "traces": {
+            "output_fingerprint": "2d711642b726b04401627ca9fbac32f5c8530fb1903cc4db02258717921a4881",
+            "immediate_input_fingerprints": []
+          }
+        },
+        {
+          "id": "S0904",
+          "content": "local record with repeated neutral vocabulary",
+          "traces": {
+            "output_fingerprint": "ec6aded56b9556c0fac421d34acaaeeb25a67cdc29b626e1c19cf9d2b70be057",
+            "immediate_input_fingerprints": [
+              "2d711642b726b04401627ca9fbac32f5c8530fb1903cc4db02258717921a4881"
+            ]
+          }
+        }
+      ],
+      "recovered_order": {
+        "direct_edges": [
+          [
+            "S0901",
+            "S0902"
+          ],
+          [
+            "S0903",
+            "S0904"
+          ]
+        ],
+        "ancestor_edges": [],
+        "unknown": [],
+        "ambiguous": []
+      },
+      "false_positives": [],
+      "false_negatives": [],
+      "shuffle_invariant": true,
+      "trace_removed_control": {
+        "direct_edges": [],
+        "ancestor_edges": [],
+        "unknown": [],
+        "ambiguous": []
+      }
+    },
+    {
+      "world": "merge",
+      "true_order": [
+        [
+          "S1001",
+          "S1003"
+        ],
+        [
+          "S1002",
+          "S1003"
+        ]
+      ],
+      "visible_traces": [
+        {
+          "id": "S1001",
+          "content": "local record with repeated neutral vocabulary",
+          "traces": {
+            "output_fingerprint": "acac86c0e609ca906f632b0e2dacccb2b77d22b0621f20ebece1a4835b93f6f0",
+            "immediate_input_fingerprints": []
+          }
+        },
+        {
+          "id": "S1002",
+          "content": "local record with repeated neutral vocabulary",
+          "traces": {
+            "output_fingerprint": "454349e422f05297191ead13e21d3db520e5abef52055e4964b82fb213f593a1",
+            "immediate_input_fingerprints": []
+          }
+        },
+        {
+          "id": "S1003",
+          "content": "local record with repeated neutral vocabulary",
+          "traces": {
+            "output_fingerprint": "6896b0801b055abe89f0a03bd707a5d106f421a45bd8e2e4f780cdc4a4fe23c3",
+            "immediate_input_fingerprints": [
+              "acac86c0e609ca906f632b0e2dacccb2b77d22b0621f20ebece1a4835b93f6f0",
+              "454349e422f05297191ead13e21d3db520e5abef52055e4964b82fb213f593a1"
+            ]
+          }
+        }
+      ],
+      "recovered_order": {
+        "direct_edges": [
+          [
+            "S1001",
+            "S1003"
+          ],
+          [
+            "S1002",
+            "S1003"
+          ]
+        ],
+        "ancestor_edges": [],
+        "unknown": [],
+        "ambiguous": []
+      },
+      "false_positives": [],
+      "false_negatives": [],
+      "shuffle_invariant": true,
+      "trace_removed_control": {
+        "direct_edges": [],
+        "ancestor_edges": [],
+        "unknown": [],
+        "ambiguous": []
+      }
+    }
+  ],
+  "false_trusted_trace": {
+    "world": "false_trusted",
+    "true_order": [
+      [
+        "S1102",
+        "S1103"
+      ]
+    ],
+    "visible_traces": [
+      {
+        "id": "S1101",
+        "content": "local record with repeated neutral vocabulary",
+        "traces": {
+          "output_fingerprint": "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb",
+          "immediate_input_fingerprints": []
+        }
+      },
+      {
+        "id": "S1102",
+        "content": "local record with repeated neutral vocabulary",
+        "traces": {
+          "output_fingerprint": "2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6",
+          "immediate_input_fingerprints": []
+        }
+      },
+      {
+        "id": "S1103",
+        "content": "local record with repeated neutral vocabulary",
+        "traces": {
+          "output_fingerprint": "1e0bbd6c686ba050b8eb03ffeedc64fdc9d80947fce821abbe5d6dc8d252c5ac",
+          "immediate_input_fingerprints": [
+            "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb"
+          ]
+        }
+      }
+    ],
+    "recovered_order": {
+      "direct_edges": [
+        [
+          "S1101",
+          "S1103"
+        ]
+      ],
+      "ancestor_edges": [],
+      "unknown": [],
+      "ambiguous": []
+    },
+    "false_positives": [
+      [
+        "S1101",
+        "S1103"
+      ]
+    ],
+    "false_negatives": [
+      [
+        "S1102",
+        "S1103"
+      ]
+    ]
+  }
+}
+
